@@ -6,6 +6,8 @@ content:
   sources:
   - url: ./
     branches: main
+  - url: https://github.com/master-csmi/csmi-stages
+    branches: main
 ui:
   bundle:
     url: https://gitlab.com/feelpp/antora-ui-default/-/jobs/artifacts/feelpp/raw/build/ui-bundle.zip?job=bundle-stable

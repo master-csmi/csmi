@@ -5,5 +5,4 @@ prerelease: '-alpha.1'
 start_page: csmi:index.adoc
 nav:
 - modules/csmi/nav.adoc
-- modules/2021-m1/nav.adoc
-- modules/2021-m2/nav.adoc
+
