@@ -1,7 +1,6 @@
 name: csmi
 title: Master CSMI
-version: '0.1.0'
-prerelease: '-alpha.1'
+version: master
 start_page: csmi:index.adoc
 nav:
 - modules/csmi/nav.adoc
