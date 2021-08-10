@@ -7,5 +7,5 @@ ifdef::env-github,env-browser,env-vscode[:imagesprefix:]
 Ceci est le site du Master CSMI.
 Sur ce site sont collectés les rapports de stage et de projets.
 
-- xref:csmi-stages:ROOT:index.adoc[Année {year}]
+- xref:csmi-stages:ROOT:index.adoc[Template]
 

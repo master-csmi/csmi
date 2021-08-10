@@ -1,1 +1,0 @@
-* xref:index.adoc[M1 2021]
