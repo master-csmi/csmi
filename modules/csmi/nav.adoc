@@ -1,1 +1,3 @@
 * xref:index.adoc[Master CSMI]
+* xref:team.adoc[Equipe pédagogique]
+* xref:stages.adoc[Stages]

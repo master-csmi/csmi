@@ -1,0 +1,36 @@
+= Stages
+
+== Années précédentes
+
+- xref:csmi-stages-2021:ROOT:index.adoc[Stages 2021]
+
+== Rapport de stages
+
+=== Introduction 
+
+=== Plan
+
+==== Objectifs
+
+==== Contexte
+
+==== Contributions
+
+==== Bilan
+
+==== Bibliographie
+
+=== La Forme
+
+==== Orthographe et Grammaire
+
+==== Bibliographie
+
+
+=== Soutenance
+
+Les soutenances ont lieu fin août, elles permettent à l'étudiant de présenter son travail de manière concise devant un jury de 3 personnes qui assistent à l'ensemble des présentations.
+
+Les présentations durent 30 minutes dont 20 minutes de présentations et 10 minutes de questions.
+
+

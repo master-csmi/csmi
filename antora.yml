@@ -2,6 +2,11 @@ name: csmi
 title: Master CSMI
 version: master
 start_page: csmi:index.adoc
+asciidoc: 
+  attributes: 
+    hide-uri-scheme: '' 
+    year: 2021
+    pp: ++
 nav:
 - modules/csmi/nav.adoc
 
