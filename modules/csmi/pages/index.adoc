@@ -5,9 +5,16 @@ ifdef::env-github,env-browser,env-vscode[:imagesprefix:]
 = Master CSMI
 
 Responsable de la formation: Christophe Prud'homme <prudhomme@unistra.fr>
+
+Responsable administrative: Marie-Line Vos <marieline.vos@unistra.fr>
+
 Twitter: https://twitter.com/master_csmi
 
+LinkedIn: https://www.linkedin.com/company/master-csmi
+
+
 == Objectifs 
+
 La spécialité CSMI a pour objectif de former des mathématiciens de haut niveau avec une double compétence en mathématiques et en informatique. 
 Les aspects théoriques et appliqués sont abordés conjointement tout au long du parcours. 
 L’étudiant est confronté à des problématiques industrielles au travers de projets avec des entreprises puis en stages M1 et M2.
