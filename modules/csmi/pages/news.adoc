@@ -34,3 +34,7 @@ image::calendar-m1.png[]
 - link:{attachmentsdir}/calendar-m2.ics[Calendrier M2 format ICalendar (Outlook/Mozilla/Google Calendar/ICal)]
 
 image::calendar-m2.png[]
+
+=== Remise de diplôme
+
+La cérémonie de remise de diplôme se tient au mois de mai de l'année suivant votre diplôme au Palais Universitaire.
