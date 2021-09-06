@@ -19,6 +19,7 @@ Lors de la réunion,
 
 - [x] https://docs.google.com/forms/d/e/1FAIpQLSds4mpj1ARkmYO8L6xwo1rLecIuHiFrY--0tvMrl1Q4cDzAOw/viewform?usp=sf_link[remplir ce formulaire]
 - [x] https://github.com/signup[créer un compte Github]
+- [x] https://join.slack.com/t/feelpp/shared_invite/zt-2qe0q9hw-4pVbhohCXUE6Po9Ma8dbiQ[créer un compte sur Slack et rejoindre #csmi-2022] 
 
 
 === Calendrier
