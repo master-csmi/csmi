@@ -2,7 +2,7 @@
 :imagesprefix:
 ifdef::env-github,env-browser,env-vscode[:imagesprefix:]
 
-= Master CSMI
+= Master CSMI {master-year}
 
 Responsable de la formation: Christophe Prud'homme <prudhomme@unistra.fr>
 

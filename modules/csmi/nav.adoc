@@ -1,5 +1,5 @@
 * xref:index.adoc[Master CSMI]
-* xref:news.adoc[News 2021-2022] 
+* xref:news.adoc[Actualités] 
 * xref:team.adoc[Equipe pédagogique]
 * xref:stages.adoc[Stages]
 * xref:outils.adoc[Outils]

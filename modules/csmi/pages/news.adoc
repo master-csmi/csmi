@@ -10,3 +10,13 @@ Lors de la réunion,
 
 - des informations administrations et sur le déroulement du master seront données.
 - les contrats pédagogiques seront distribués
+
+=== À faire
+
+- [x] remplir votre contrat pédagogique et le rendre à Mme Vos avant le 15 september. Vous aurez à choisir votre langue 2, a priori c'est Anglais sauf pour les étudiants étrangers anglophones et dans ce cas Francais.
+
+==== Uniquement les M1
+
+- [x] https://docs.google.com/forms/d/e/1FAIpQLSds4mpj1ARkmYO8L6xwo1rLecIuHiFrY--0tvMrl1Q4cDzAOw/viewform?usp=sf_link[remplir ce formulaire]
+- [x] https://github.com/signup[créer un compte Github]
+
