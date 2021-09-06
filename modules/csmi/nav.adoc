@@ -1,6 +1,6 @@
 * xref:index.adoc[Master CSMI]
 * xref:news.adoc[Actualités] 
-* xref:news.adoc[Emplois] 
+* xref:emplois.adoc[Emplois] 
 * xref:team.adoc[Equipe pédagogique]
 * xref:stages.adoc[Stages]
 * xref:outils.adoc[Outils]
