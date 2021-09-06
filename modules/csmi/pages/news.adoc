@@ -20,3 +20,17 @@ Lors de la réunion,
 - [x] https://docs.google.com/forms/d/e/1FAIpQLSds4mpj1ARkmYO8L6xwo1rLecIuHiFrY--0tvMrl1Q4cDzAOw/viewform?usp=sf_link[remplir ce formulaire]
 - [x] https://github.com/signup[créer un compte Github]
 
+
+=== Calendrier
+
+==== M1
+
+- link:{attachmentsdir}/calendar-m1.ics[Calendrier M1 format ICalendar (Outlook/Mozilla/Google Calendar/ICal)]
+
+image::calendar-m1.png[]
+
+==== M2
+
+- link:{attachmentsdir}/calendar-m2.ics[Calendrier M2 format ICalendar (Outlook/Mozilla/Google Calendar/ICal)]
+
+image::calendar-m2.png[]
