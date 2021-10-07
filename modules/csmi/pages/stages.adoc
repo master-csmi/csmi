@@ -1,5 +1,19 @@
 = Stages
 
+== Modalités
+
+Les stages de M2 durent au minimum 4 mois et au maximum 6 mois entre les mois de février et septembre.
+
+Les stages de M1 durent en 6 semaines et 2 mois entre les mois de juin et août.
+
+Les soutenances ont lieu fin août.
+
+1. L'étudiant contacte le responsable de la formation afin de valider le sujet de stage avec une description suffisante 
+2. L'étudiant devra remplir ensuite une demande de convention de stage sur l'ENT 
+3. Ensuite la convention sera à signer par les différentes parties: étudiant, entreprise, direction de l'UFR,  responsable de stage, responsable de formation.
+
+NOTE: Au delà de 2 mois, le stage doit être rémunéré. 
+
 == Années précédentes
 
 - xref:csmi-stages-2021:ROOT:index.adoc[Stages 2021]
