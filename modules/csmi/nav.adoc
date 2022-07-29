@@ -1,5 +1,5 @@
 * xref:index.adoc[Master CSMI]
-* https://github.com/master-csmi/discussions[Actualités] 
+* https://github.com/master-csmi/csmi/discussions[Actualités] 
 * xref:emplois.adoc[Emplois] 
 * xref:team.adoc[Equipe pédagogique]
 * xref:stages.adoc[Stages]
