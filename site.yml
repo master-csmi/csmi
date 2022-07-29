@@ -20,6 +20,7 @@ output:
   
 asciidoc:
   attributes:
+    responsable: Christophe Prud'homme <prudhomme@unistra.fr>
     project_version: 0.1
     deploymentRoot: ""
     numbered: true
