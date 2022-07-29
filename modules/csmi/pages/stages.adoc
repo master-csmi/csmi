@@ -12,7 +12,7 @@ Les soutenances ont lieu fin août.
 2. L'étudiant devra remplir ensuite une demande de convention de stage sur l'ENT 
 3. Ensuite la convention sera à signer par les différentes parties: étudiant, entreprise, direction de l'UFR,  responsable de stage, responsable de formation.
 
-NOTE: Au delà de 2 mois, le stage doit être rémunéré. 
+CAUTION: Au delà de 2 mois, le stage doit être rémunéré. 
 
 == Années précédentes
 
