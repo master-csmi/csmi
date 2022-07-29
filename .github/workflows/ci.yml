@@ -5,7 +5,7 @@ on: [push]
 jobs:
 
   activate:
-    runs-on: self-ubuntu-20.04
+    runs-on: self-ubuntu-22.04
     if: |
       github.repository == 'master-csmi/csmi' &&
       !startsWith(github.event.head_commit.message, 'Release ') &&
@@ -16,7 +16,7 @@ jobs:
   docs:
     if: "!contains(github.event.head_commit.message, 'doc skip')"
     needs: activate
-    runs-on: self-ubuntu-20.04
+    runs-on: self-ubuntu-22.04
     steps:
     - uses: actions/checkout@v2.3.1
     - uses: actions/setup-node@v2
