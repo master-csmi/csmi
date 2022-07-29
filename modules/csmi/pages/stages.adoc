@@ -16,6 +16,7 @@ NOTE: Au delà de 2 mois, le stage doit être rémunéré.
 
 == Années précédentes
 
+- xref:csmi-stages-2022:ROOT:index.adoc[Stages 2022]
 - xref:csmi-stages-2021:ROOT:index.adoc[Stages 2021]
 
 == Rapport de stages
