@@ -15,12 +15,19 @@ Twitter: https://twitter.com/master_csmi
 LinkedIn: https://www.linkedin.com/company/master-csmi
 
 
+[.panel]
+--
+[discrete]
 == Objectifs 
 
 La spécialité CSMI a pour objectif de former des mathématiciens de haut niveau avec une double compétence en mathématiques et en informatique. 
 Les aspects théoriques et appliqués sont abordés conjointement tout au long du parcours. 
 L’étudiant est confronté à des problématiques industrielles au travers de projets avec des entreprises puis en stages M1 et M2.
+--
 
+[.panel]
+--
+[discrete]
 == Compétences à acquérir
 
 L’ensemble du parcours du Master CSMI a été conçu pour que les étudiants acquièrent des compétences avancées en modélisation-simulation-optimisation, signal et image, fouille de données et calcul haute performance. 
@@ -28,15 +35,16 @@ Ces technologies clés identifiées par le rapport EISEM sont au coeur des besoi
 Cela nécessite à la fois des compétences en algorithmique, en calcul scientifique, en équations aux dérivées partielles, en statistiques et en probabilités, en algèbre ou encore en géométrie tant du point de vue théorique qu’appliqué très souvent au travers de l’outil informatique.
 La maîtrise de différents langages de programmation ainsi que de logiciels et de plateformes numériques sera acquise au cours du parcours.
 Ces compétences pourront directement être mises en oeuvre dans les projets avec les entreprises.
+--
 
+[discrete]
 == Admission
 
-=== Admission en M1
+[.grid.has-emblems]
+[.emblem]#Admission en M1#::
+Sur dossier et après avis de la commission pédagogique pour les titulaires d’une licence de Mathématiques ou équivalent.
 
-- Sur dossier et après avis de la commission pédagogique pour les titulaires d’une licence de Mathématiques ou équivalent.
-
-=== Admission en M2
-
+[.emblem]#Admission en M2#::
 - De plein droit pour les titulaires du M1 CSMI.  
 - Sur dossier et après avis de la commission pédagogique pour les titulaires d'un M1 équivalent.
 
