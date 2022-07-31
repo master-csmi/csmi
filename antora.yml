@@ -5,7 +5,7 @@ start_page: csmi:index.adoc
 asciidoc: 
   attributes: 
     hide-uri-scheme: '' 
-    year: 2021
+    year: 2022
     master-year: 2021-2022
     pp: ++
 nav:
