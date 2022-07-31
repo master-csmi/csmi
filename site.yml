@@ -6,6 +6,8 @@ content:
   sources:
   - url: https://github.com/master-csmi/csmi
     branches: main
+  - url: https://github.com/master-csmi/csmi-stages-2020
+    branches: main    
   - url: https://github.com/master-csmi/csmi-stages-2021
     branches: main
   - url: https://github.com/master-csmi/csmi-stages-2022
