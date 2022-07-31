@@ -15,14 +15,22 @@
 
 [.grid.has-emblems]
 [.emblem]#Forum Emploi Math#::
+La plus grande rencontre étudiants, diplomés et entreprises en France en Mathématiques. Il aura lieu le 11 Octobre 2022 à La Villette, Paris.
 btn:[https://www.2022.forum-emploi-maths.com/[> Site Web]]
 btn:[https://twitter.com/forumemploimath[> Twitter]] +
-Il aura lieu le 11 Octobre 2022 à La Villette, Paris
+
 
 [.emblem]#Forum AlsaTech Unistra#::
+La plus grande rencontre étudiants, diplômés et entreprises du Grand Est. Il aura lieu les 22 Octobre 2022 à Strasbourg.
 btn:[https://forum.alsacetech.unistra.fr/[> Site web]]
 btn:[https://www.linkedin.com/company/forum-alsace-tech-unistra/about/[> LinkedIn]] +
-Il aura lieu les 22 Octobre 2022 à Strasbiurg
+
+
+[.emblem]#Onisep#::
+La brochure sur les métiers des Mathématiques, de la Statistique et de l'Informatique, 2021.
+btn:[https://www.onisep.fr/Decouvrir-les-metiers/Des-metiers-qui-recrutent/La-collection-Zoom-sur-les-metiers/Les-metiers-des-mathematiques-de-la-statistique-et-de-l-informatique[> Onisep]]
+btn:[https://www.onisep.fr/content/download/769765/14361027/version=3/file/ZOOM-MATHS_partenaires.pdf[> PDF]
+
 --
 
 [discrete]
