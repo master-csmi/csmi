@@ -8,8 +8,6 @@
 - Créer un compte sur LinkedIn et autres plateformes de mise en relation pour un emploi.
 ====
 
-[panel]
---
 [discrete]
 == Forums Emploi 
 
@@ -31,10 +29,9 @@ La brochure sur les métiers des Mathématiques, de la Statistique et de l'Infor
 btn:[https://www.onisep.fr/Decouvrir-les-metiers/Des-metiers-qui-recrutent/La-collection-Zoom-sur-les-metiers/Les-metiers-des-mathematiques-de-la-statistique-et-de-l-informatique[> Onisep]]
 btn:[https://www.onisep.fr/content/download/769765/14361027/version=3/file/ZOOM-MATHS_partenaires.pdf[> PDF]]
 
---
 
 [discrete]
-=== Portail Emploi
+== Portails Emploi
 
 [.grid.has-emblems]
 [.emblem]#Stages & Emplois#::
