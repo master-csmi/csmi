@@ -1,27 +1,38 @@
-= Forum Emploi 
+= Emplois pour le Master CSMI
+:page-role: home
+:experimental:
 
-== Forum Emploi Math
+[TIP]
+====
+- Le réseau est la première modalité pour trouver un emploi. Créer le votre et développer vos contacts.
+- Créer un compte sur LinkedIn et autres plateformes de mise en relation pour un emploi.
+====
 
-Site Web: https://www.2021.forum-emploi-maths.com/
+[panel]
+--
+[discrete]
+== Forums Emploi 
 
-Twitter: https://twitter.com/forumemploimath
+[.grid.has-emblems]
+[.emblem]#Forum Emploi Math#::
+btn:[https://www.2022.forum-emploi-maths.com/[> Site Web]]
+btn:[https://twitter.com/forumemploimath[> Twitter]] +
+Il aura lieu le 11 Octobre 2022 à La Villette, Paris
 
-Il aura lieu le 12 Octobre 2021 en digital encore cette année
+[.emblem]#Forum AlsaTech Unistra#::
+btn:[https://forum.alsacetech.unistra.fr/[> Site web]]
+btn:[https://www.linkedin.com/company/forum-alsace-tech-unistra/about/[> LinkedIn]] +
+Il aura lieu les 22 Octobre 2022 à Strasbiurg
+--
 
-== Forum AlsaTech Unistra 
+[discrete]
+=== Portail Emploi
 
-Site web: https://forum.alsacetech.unistra.fr/
+[.grid.has-emblems]
+[.emblem]#AMIES/EU-Maths-In#::
+btn:[https://jobs.eu-maths-in.eu/jobs[> Portail]]
 
-LinkedIn: https://www.linkedin.com/company/forum-alsace-tech-unistra/about/
-
-Il aura lieu les 21 et 22 Octobre 2021.
-
-=== AMIES/EU-Maths-In 
-
-- [x] https://jobs.eu-maths-in.eu/jobs[Jobs Portal]
-
-=== LinkedIn
-
-Il faut créer votre profil sous LinkedIn, c'est un réseau professionel puissant.
-
-- [x] https://www.linkedin.com/
+    
+[.emblem]#LinkedIn#::
+Il faut créer votre profil sous LinkedIn, c'est un réseau professionel. 
+btn:[https://www.linkedin.com/[> LinkedIn]]
