@@ -120,7 +120,7 @@ Le _bilan_ doit montrer votre recul par rapport au stage : vous pouvez alors rev
 ==== Typographie
 
 La rédaction de textes obéit à des règles précises en
-Français : cela s'appelle la _typographie_, voir <<<Jandre, les petites leçons de typographie de Jacques André>>>. 
+Français : cela s'appelle la _typographie_, voir <<<JAndre, les petites leçons de typographie de Jacques André>>>. 
 
 TIP: Il est intéressant de s'en imprégner pour donner à votre document un aspect de qualité et éviter des erreurs grossières.
 
@@ -163,7 +163,7 @@ sérieux ?). Vous devez indiquer les documents :
 - qui permettent au lecteur d'en savoir plus sur tel ou tel point de votre mémoire que vous ne pouvez davantage développer.
 
 
-La bibliographie, voir <<<SavoirCDI, le document sur citer ses sources et présenter une bibliographie par Savoirs CDI>>> vient en annexe, elle doit donner tous les renseignements nécessaires pour permettre au lecteur de retrouver les documents concernés : auteur, titre du document ou de l'ouvrage, éditeur, année de publication, URL si nécessaire, date de consultation pour un site Web, etc.
+La bibliographie, voir <<<SavoirsCDI, le document sur citer ses sources et présenter une bibliographie par Savoirs CDI>>> vient en annexe, elle doit donner tous les renseignements nécessaires pour permettre au lecteur de retrouver les documents concernés : auteur, titre du document ou de l'ouvrage, éditeur, année de publication, URL si nécessaire, date de consultation pour un site Web, etc.
 
 Chaque document dans la bibliographie comporte une référence (un numéro, une abréviation ou autre), que vous devez citer dans le texte : un document non cité ne devrait pas apparaître dans la bibliographie.
 
