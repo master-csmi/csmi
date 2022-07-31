@@ -29,6 +29,9 @@ Il aura lieu les 22 Octobre 2022 à Strasbiurg
 === Portail Emploi
 
 [.grid.has-emblems]
+[.emblem]#Stages & Emplois#::
+btn:[https://github.com/master-csmi/csmi/discussions/categories/stages-et-emplois/[> CSMI]]
+
 [.emblem]#AMIES/EU-Maths-In#::
 btn:[https://jobs.eu-maths-in.eu/jobs[> Portail]]
 
