@@ -28,8 +28,8 @@
     "linkcheck": "broken-link-checker --filter-level 3 --recursive --verbose"
   },
   "dependencies": {
-    "@antora/cli": "^2.3",
-    "@antora/site-generator-default": "^2.3",
+    "@antora/cli": "^3.0",
+    "@antora/site-generator-default": "^3.0",
     "@djencks/asciidoctor-template": "^0.0.3"
   },
   "devDependencies": {
