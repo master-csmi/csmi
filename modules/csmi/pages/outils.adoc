@@ -1,9 +1,9 @@
 = Outils 
+:page-role: home
 
 
 == Système d'exploitation
-
-- Linux, eg Ubuntu 20.04 LTS
+- Linux, eg Ubuntu 20.04 LTS ou plus récente
 - Windows 10 avec support WSL
 - Mac avec homebrew 
 
@@ -14,20 +14,23 @@ Nous allons utiliser les outils suivants dans plusieurs cours
 - https://code.visualstudio.com/[Visual Studio Code]
 - https://github.com[Github]
 
+Nous utiliserons les https://github.com/features/issues[outils de management de Github] pour le suivi des projets et des devoirs.
+
 === Github
 
 Il faut créer un compte sur Github, un formulaire sera envoyé en début d'année de M1 et votre compte vous suivra pendant les 2 années.
 Il servira
 
-- lors des projets n S2 et S3
+- lors des projets en S2 et S3
 - lors des stages pour déposer vos rapports et présentations
 - lors des stages pour certains d'entre vous pour le suivi 
-- lors des cours EDP (S2) et CS3 via la plateforme github classroom pour rendre vos devoir maison
+- lors des cours EDP (S2) et CS3 via la plateforme https://classroom.github.com[github classroom] pour rendre vos devoirs 
 
 Une référence: https://lab.github.com/ mais il y en a plein d'autres.
 
 === Langages
 
 - Python3
+- Rust
 - C{pp}
 - C
