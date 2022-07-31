@@ -3,16 +3,23 @@
 ifdef::env-github,env-browser,env-vscode[:imagesprefix:]
 
 = Master CSMI {master-year}
+:navtitle: Home
+:page-role: home
 
-Responsable de la formation: Christophe Prud'homme <prudhomme@unistra.fr>
+Responsable de la formation::
+Christophe Prud'homme <prudhomme@unistra.fr>
 
-Responsable administrative: Marie-Line Vos <marieline.vos@unistra.fr>
+Responsable administrative::
+Marie-Line Vos <marieline.vos@unistra.fr>
 
-Discussions: https://github.com/master-csmi/csmi/discussions
+Discussions::
+https://github.com/master-csmi/csmi/discussions
 
-Twitter: https://twitter.com/master_csmi
+Twitter::
+https://twitter.com/master_csmi
 
-LinkedIn: https://www.linkedin.com/company/master-csmi
+LinkedIn::
+https://www.linkedin.com/company/master-csmi
 
 
 [.panel]
@@ -22,7 +29,7 @@ LinkedIn: https://www.linkedin.com/company/master-csmi
 
 La spécialité CSMI a pour objectif de former des mathématiciens de haut niveau avec une double compétence en mathématiques et en informatique. 
 Les aspects théoriques et appliqués sont abordés conjointement tout au long du parcours. 
-L’étudiant est confronté à des problématiques industrielles au travers de projets avec des entreprises puis en stages M1 et M2.
+L'étudiant est confronté à des problématiques industrielles au travers de projets avec des entreprises puis en stages M1 et M2.
 --
 
 [.panel]
@@ -30,9 +37,9 @@ L’étudiant est confronté à des problématiques industrielles au travers de 
 [discrete]
 == Compétences à acquérir
 
-L’ensemble du parcours du Master CSMI a été conçu pour que les étudiants acquièrent des compétences avancées en modélisation-simulation-optimisation, signal et image, fouille de données et calcul haute performance. 
+L'ensemble du parcours du Master CSMI a été conçu pour que les étudiants acquièrent des compétences avancées en modélisation-simulation-optimisation, signal et image, fouille de données et calcul haute performance. 
 Ces technologies clés identifiées par le rapport EISEM sont au coeur des besoins du monde socio-économique. 
-Cela nécessite à la fois des compétences en algorithmique, en calcul scientifique, en équations aux dérivées partielles, en statistiques et en probabilités, en algèbre ou encore en géométrie tant du point de vue théorique qu’appliqué très souvent au travers de l’outil informatique.
+Cela nécessite à la fois des compétences en algorithmique, en calcul scientifique, en équations aux dérivées partielles, en statistiques et en probabilités, en algèbre ou encore en géométrie tant du point de vue théorique qu'appliqué très souvent au travers de l'outil informatique.
 La maîtrise de différents langages de programmation ainsi que de logiciels et de plateformes numériques sera acquise au cours du parcours.
 Ces compétences pourront directement être mises en oeuvre dans les projets avec les entreprises.
 --
@@ -42,7 +49,7 @@ Ces compétences pourront directement être mises en oeuvre dans les projets ave
 
 [.grid.has-emblems]
 [.emblem]#Admission en M1#::
-Sur dossier et après avis de la commission pédagogique pour les titulaires d’une licence de Mathématiques ou équivalent.
+Sur dossier et après avis de la commission pédagogique pour les titulaires d'une licence de Mathématiques ou équivalent.
 
 [.emblem]#Admission en M2#::
 - De plein droit pour les titulaires du M1 CSMI.  
@@ -52,7 +59,7 @@ Sur dossier et après avis de la commission pédagogique pour les titulaires d�
 
 === Poursuite d'étude
 
-- La majorité des diplômés s’orientent vers les services de recherche et développement des entreprises (des start-ups aux grands groupes), les sociétés de services et les entreprises de consulting spécialisées ou les postes d’ingénieur dans les universités et les organismes de recherche publics ou privés.
+- La majorité des diplômés s'orientent vers les services de recherche et développement des entreprises (des start-ups aux grands groupes), les sociétés de services et les entreprises de consulting spécialisées ou les postes d'ingénieur dans les universités et les organismes de recherche publics ou privés.
 - Les étudiants de la filière les plus motivés par la recherche appliquée pourront également poursuivre en thèse, en laboratoire ou en entreprise.
 
 === Codes Rome
