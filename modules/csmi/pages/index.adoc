@@ -6,19 +6,21 @@ ifdef::env-github,env-browser,env-vscode[:imagesprefix:]
 :navtitle: Home
 :page-role: home
 
-Responsable de la formation::
+[.grid.has-emblems]
+[.emblem]#Responsable de la formation#::
 Christophe Prud'homme <prudhomme@unistra.fr>
 
-Responsable administrative::
+[.emblem]#Responsable administrative#::
 Marie-Line Vos <marieline.vos@unistra.fr>
 
-Discussions::
+[.grid.has-emblems]
+[.emblem]#Discussions#::
 https://github.com/master-csmi/csmi/discussions
 
-Twitter::
+[.emblem]#Twitter#::
 https://twitter.com/master_csmi
 
-LinkedIn::
+[.emblem]#LinkedIn#::
 https://www.linkedin.com/company/master-csmi
 
 
