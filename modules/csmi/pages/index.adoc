@@ -55,15 +55,18 @@ Sur dossier et après avis de la commission pédagogique pour les titulaires d'u
 - De plein droit pour les titulaires du M1 CSMI.  
 - Sur dossier et après avis de la commission pédagogique pour les titulaires d'un M1 équivalent.
 
+[discrete]
 == Débouchés
 
-=== Poursuite d'étude
-
+[.grid.has-emblems]
+[.emblem]#Services de R&D#::
 - La majorité des diplômés s'orientent vers les services de recherche et développement des entreprises (des start-ups aux grands groupes), les sociétés de services et les entreprises de consulting spécialisées ou les postes d'ingénieur dans les universités et les organismes de recherche publics ou privés.
-- Les étudiants de la filière les plus motivés par la recherche appliquée pourront également poursuivre en thèse, en laboratoire ou en entreprise.
 
-=== Codes Rome
-M1802 - Conseil et maîtrise d'ouvrage en systèmes d'information
+[.emblem]#Doctorat#::
+- Les étudiants de la filière les plus motivés par la recherche appliquée pourront également poursuivre en doctorat, en laboratoire ou en entreprise.
+
+//=== Codes Rome
+//M1802 - Conseil et maîtrise d'ouvrage en systèmes d'information
 
 // Sur ce site sont collectés les rapports de stage et de projets.
 
