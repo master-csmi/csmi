@@ -176,11 +176,6 @@ include::example$eqnum.adoc[]
 
 ====
 
-[stem#eq-lap,reftext=Equation ({counter:eqs})]
-++++
--\Delta u = f
-++++
-
 TIP: Utilisez des références si vous devez mettre en relation plusieurs éléments de votre discours en Latex (`\ref`, `\pageref` et `\label`).
 
 
