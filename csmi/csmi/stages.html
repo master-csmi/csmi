@@ -32,6 +32,7 @@ MathJax.Hub.Config({
   },
 
   TeX: {
+      equationNumbers: {autoNumber: "AMS"},
       Macros: {
       RR: "{\\mathbb R}",
       NN: "{\\mathbb N}",
@@ -85,7 +86,10 @@ MathJax.Hub.Config({
 </script>
 <!--<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML"></script>-->
 <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script> -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML'>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML'> -->
 </script>
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.0/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>-->
 
@@ -566,12 +570,113 @@ relire par un tiers. C&#8217;est dommage de perdre des points sur ce critère.</
 </li>
 </ul>
 </div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Laissez à Latex le soin de numéroter automatiquement, il le fera mieux que vous <em>manuellement</em>.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>Laissez à Latex le soin de numéroter
-automatiquement, il le fera mieux que vous <em>manuellement</em>.</p>
+<p>Pour les utilisateurs d&#8217;Antora, voici un template pour les équations qui utilisent un compteur:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">[stem#eq-&lt;some label&gt;,reftext=Equation ({counter:eqs})]
+++++
+&lt;Equation here&gt;
+++++</code></pre>
+</div>
+</div>
+<div id="ex-eqnum" class="listingblock">
+<div class="title">Exemple complet avec numérotation d&#8217;équations</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">= My Report
+:sectnums:
+:stem: latexmath
+:eqnums: all
+
+== Theory
+
+[stem#eq-ode,reftext=Equation ({counter:eqs})]
+++++
+\mathbf{M}(t)\mathbf{\ddot{q}}(t) + \mathbf{C}(t)\mathbf{\dot{q}}(t) + \mathbf{K}(t)\mathbf{q}(t)
+= \mathbf{F}(\mathbf{q}, \mathbf{\dot{q}}, t)
+++++
+
+See &lt;&lt;eq-ode&gt;&gt; for definition.
+
+[stem#eq-emc,reftext=Equation ({counter:eqs})]
+++++
+E = mc^2
+++++
+
+&lt;&lt;eq-emc&gt;&gt; is another equation.</code></pre>
+</div>
+</div>
+<details>
+<summary class="title">View result of <a href="#ex-eqnum">Exemple complet avec numérotation d&#8217;équations</a></summary>
+<div class="content">
+<div class="paragraph">
+<p>= My Report
+:sectnums:
+:stem: latexmath
+:eqnums: all</p>
 </div>
 <div class="paragraph">
-<p>Utilisez des références si vous devez mettre en relation plusieurs éléments de votre discours en Latex (<code>\ref</code>, <code>\pageref</code> et <code>\label</code>).</p>
+<p>== Theory</p>
+</div>
+<div id="eq-ode" class="stemblock">
+<div class="content">
+\[\mathbf{M}(t)\mathbf{\ddot{q}}(t) + \mathbf{C}(t)\mathbf{\dot{q}}(t) + \mathbf{K}(t)\mathbf{q}(t)
+= \mathbf{F}(\mathbf{q}, \mathbf{\dot{q}}, t)\]
+</div>
+</div>
+<div class="paragraph">
+<p>See <a href="#eq-ode">Equation (1)</a> for definition.</p>
+</div>
+<div id="eq-emc" class="stemblock">
+<div class="content">
+\[E = mc^2\]
+</div>
+</div>
+<div class="paragraph">
+<p><a href="#eq-emc">Equation (2)</a> is another equation.</p>
+</div>
+</div>
+</details>
+</td>
+</tr>
+</table>
+</div>
+<div id="eq-lap" class="stemblock">
+<div class="content">
+\[-\Delta u = f\]
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Utilisez des références si vous devez mettre en relation plusieurs éléments de votre discours en Latex (<code>\ref</code>, <code>\pageref</code> et <code>\label</code>).
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect3">
