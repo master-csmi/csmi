@@ -1,5 +1,10 @@
 = Stages
+:sectnums:
 :experimental:
+:collapsible:
+:stem: latexmath
+:eqnums: all
+
 
 == Modalités
 
@@ -143,10 +148,40 @@ Numérotez tout ce qui peut l'être.
 - équations,
 - bibliographie. 
 
-Laissez à Latex le soin de numéroter
-automatiquement, il le fera mieux que vous _manuellement_. 
+TIP: Laissez à Latex le soin de numéroter automatiquement, il le fera mieux que vous _manuellement_. 
 
-Utilisez des références si vous devez mettre en relation plusieurs éléments de votre discours en Latex (`\ref`, `\pageref` et `\label`).
+[TIP]
+====
+Pour les utilisateurs d'Antora, voici un template pour les équations qui utilisent un compteur:
+[source,asciidoc]
+----
+[stem#eq-<some label>,reftext=Equation ({counter:eqs})]
+++++
+<Equation here>
+++++
+----
+
+.Exemple complet avec numérotation d'équations 
+[#ex-eqnum]
+[source,asciidoc]
+--
+include::example$eqnum.adoc[]
+--
+
+.View result of <<ex-eqnum>>
+[%collapsible]
+======
+include::example$eqnum.adoc[]
+======
+
+====
+
+[stem#eq-lap,reftext=Equation ({counter:eqs})]
+++++
+-\Delta u = f
+++++
+
+TIP: Utilisez des références si vous devez mettre en relation plusieurs éléments de votre discours en Latex (`\ref`, `\pageref` et `\label`).
 
 
 ==== Bibliographie
