@@ -1,6 +1,11 @@
 name: CI
 
-on: [push]
+on: 
+  push:
+    branches:
+      - main
+  repository_dispatch:
+    types: [stages-updates]
 
 jobs:
 
