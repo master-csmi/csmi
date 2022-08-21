@@ -1,9 +1,9 @@
 :feelpp: Feel++
-= Master CSMI
+= Master CSMI website
 
 image:https://github.com/master-csmi/csmi/workflows/CI/badge.svg[CI]
 
-== Generating the document 
+== Generating the website 
 
 ===  Prerequisites
 
