@@ -6,7 +6,7 @@ asciidoc:
   attributes: 
     hide-uri-scheme: '' 
     year: 2022
-    master-year: 2021-2022
+    master-year: 2022-2023
     pp: ++
 nav:
 - modules/csmi/nav.adoc
