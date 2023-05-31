@@ -84,6 +84,13 @@ Enhancing the reputation of the program:: By offering a program that is up-to-da
 
 In particular, we propose to add courses on high-performance computing, machine learning, as these are all areas where there is high demand for skilled professionals. We also propose to introduce more interdisciplinary coursework, such as courses on scientific machine learning and data assimilation, to help students understand the connections between mathematics and computer science and other fields.
 
+=== English courses versus Courses in English
+
+Due to feedback from students, the Master CSMI program has made changes to the curriculum regarding English language courses. The two 3 ECTS English courses, which were previously offered in Semester 1 and Semester 3 to improve English skills, have been removed. These courses were not well received by the students.
+
+Instead, the program now includes 2 or 3 standard courses per semester taught in English, along with the projects where the students have to write reports and make presentations in english. This modification aims to provide students with more flexibility in their course selection while still incorporating English language instruction. By integrating English language learning within regular courses, students can develop their English skills in a more practical and contextual manner.
+
+The adjustments in the curriculum aim to ensure that students receive a well-rounded education that meets their needs and preferences.
 
 === Introduction to Scientific Maching Learning
 
