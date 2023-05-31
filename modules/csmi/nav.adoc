@@ -4,3 +4,4 @@
 * xref:team.adoc[Equipe pédagogique]
 * xref:stages.adoc[Stages]
 * xref:outils.adoc[Outils]
+* xref:csmi-2024-2028/index.adoc[CSMI 2024-2028]

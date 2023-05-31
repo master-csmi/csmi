@@ -1,0 +1,384 @@
+= Master CSMI: Proposition de maquette pour 2024-2028
+Christophe Prud'homme 
+v1.0, 2023-05-11
+:doctype: book
+:title-page:
+:title-page-background-image: image:media/digital-background.png[]
+:title-logo-image: image:media/logo-csmi.png[top=25%,align=center,pdfwidth=2in]
+:sectnums:
+:toc: left
+:toclevels: 2
+:icons: font
+:icon-set: fab
+
+[.metadata]
+{author} -- version {revnumber}, {revdate}
+
+== Introduction 
+
+
+We discuss here the evolution of the Master Track.  It's important to ensure that the program is meeting the needs of students and providing them with the skills and knowledge necessary for success in their chosen careers.
+
+The main purpose of the CSMI Master's program is to provide students with advanced skills in both mathematics and computer science, with a focus on modeling, simulation, optimization, signal and image processing, data mining, and high-performance computing. 
+The program aims to equip students with the theoretical and practical knowledge necessary to tackle complex problems in the socio-economic world, and to prepare them for careers in research and development departments of companies, service companies, specialized consulting firms, or engineering positions in universities and public or private research organizations.
+
+In real life work, the skills developed in the CSMI program are highly valued by employers in a wide range of fields. For example:
+
+- Modeling, simulation, and optimization skills are highly relevant in industries such as finance, energy, transportation, and healthcare, where companies must optimize complex systems to improve efficiency and reduce costs.
+- Signal and image processing skills are valuable in fields such as telecommunications, defense, and medical imaging, where companies must analyze and interpret large volumes of data.
+- Data mining skills are highly sought after in industries such as marketing, e-commerce, and finance, where companies must analyze large datasets to identify trends and patterns.
+- High-performance computing skills are valuable in many scientific and engineering fields, where companies must simulate complex systems or process large amounts of data in a timely manner.
+
+Overall, the CSMI Master's program is designed to prepare students for highly rewarding careers in a wide range of fields, where they can apply their skills to tackle complex real-world problems and make a positive impact on society.
+
+We start by recalling the socio-economical impact study of mathemacs (EISEM in french) then a short presentation of the current Master track, then we discuss the evolution of the program, and finally we propose a new maquette for the program.
+
+== EISEM report
+
+The EISEM report, which was commissioned by the governement the Agency for mathematics in interaction with entreprises and mathematical societies, in 2015 and updated in 2022, to evaluate the socio-economic impact of mathematics in France. The report highlighted the crucial role that mathematics plays in driving innovation and competitiveness in a wide range of industries, and identified key technologies that are central to the needs of the socio-economic world.
+
+The CSMI Master's program at the University of Strasbourg is specifically designed to address these needs, by providing students with advanced skills in the key technologies identified by the EISEM report. For example, the program includes courses in modeling, simulation, optimization, signal and image processing, data mining, and high-performance computing, which are all key areas highlighted in the EISEM report.
+
+By equipping students with these advanced skills, the CSMI program aims to prepare them for careers in research and development departments of companies, service companies, specialized consulting firms, or engineering positions in universities and public or private research organizations. These are all areas where mathematics plays a crucial role in driving innovation and competitiveness, and where the skills developed in the CSMI program can make a significant contribution.
+
+The november 2022 version is available link:https://www.insmi.cnrs.fr/fr/cnrsinfo/les-mathematiques-un-impact-majeur#:~:text=Math%C3%A9matiques%20%3A%20un%20atout%20pour%20l,de%20valeur%20ajout%C3%A9e%20en%202019[here].
+
+Here are some key points of the latest report:
+
+* In 2019, 3.3 million salaried jobs, or 13% of all salaried jobs, were impacted by mathematics, contributing 381 billion euros in added value​​.
+* From 2012 to 2019, the share of salaried jobs impacted by mathematics in total salaried employment in France increased by almost 14%. Moreover, the contribution of mathematics to the country's gross domestic product (GDP) grew by two percentage points, from 16% to 18%​​.
+*Almost half of the salaried jobs impacted by mathematics are concentrated in Ile-de-France (35%) and Auvergne-Rhône-Alpes (12%)​​.
+* Sectors that heavily demand mathematics include: computer services (78% of jobs impacted by mathematics), scientific research and development (72%), production and distribution of electricity and gas (59%), telecommunications (59%), and manufacturing of computer, electronic, and optical products (57%). From 2016 to 2019, the share of jobs impacted by mathematics significantly increased in telecommunications (47% in 2016 vs. 59% in 2019), the pharmaceutical industry (41% to 44%), and financial and insurance activities (29% to 32%)​​.
+* Five sectors account for half of the jobs impacted by mathematics: legal, accounting, management, architecture, engineering, control, and technical analysis services (15%); computer services (11%); financial and insurance activities (8%); commerce (8%); construction (6%)​​.
+* There is a risk of a shortage of people with mathematical training, which companies fear could impact the country's sovereignty. Economic actors are actively seeking three types of intermediate and advanced skills that are in short supply: advanced skills in mathematics development (often destined for R&D positions) and advanced skills in multidisciplinary use of mathematics (usually destined for R&D positions or data scientist roles).
+
+The text highlights several areas where collaborations between the academic world of mathematics and businesses should be encouraged:
+
+Identification of Mathematical Skills:: Businesses often don't identify the mathematical skills that can be mobilized in the economic world. Therefore, efforts should be made to improve the understanding of the skills of PhDs in mathematics and how these can be applied in a business context.
+
+Increasing Visibility and Access:: The visibility of and access to the scientific mathematical community are crucial factors for collaboration. Actions by the Agency for Mathematics in Interaction with Enterprises and Society (AMIES) that provide an interface between businesses and research laboratories, such as funding for exploratory first support (PEPS) projects and weeks of mathematical business studies (SEME), should be amplified and made known to all businesses.
+
+Enhancing Innovation:: France is a nation of mathematics whose quality of training and research is regularly acclaimed, notably by the highest international awards (for example, the Fields Medal awarded to Hugo Duminil-Copin). About 33% of mathematics PhD graduates in 2017 specialized in fields immediately useful to businesses (numerical analysis and scientific computing, statistics, probabilities, and stochastic models). All mathematics PhD students acquire skills necessary for businesses, such as the ability to work on a complex, time-limited project by dividing it into projects with intermediate objectives, and the ability to communicate results.
+
+// include previous version of the master track
+include::csmi-prev.adoc[leveloffset=+1]
+
+== Evolution
+
+There are several reasons why updating the Master track CSMI could be beneficial. Here are a few potential reasons:
+
+Keeping up with changing industry demands:: The world of mathematics and computer science is constantly evolving, and so are the needs of employers. By updating the Master track CSMI, we can ensure that our graduates have the skills and knowledge that are most in demand in the current job market.
+
+Attracting more students:: Students are often drawn to Master's programs that offer cutting-edge courses and relevant, practical training. By updating the CSMI program with new courses on high-performance computing, machine learning, and data assimilation, we may be able to attract more students who are interested in these fields.
+
+Strengthening industry partnerships:: By incorporating projects with companies and internships throughout the program, as well as courses that are directly relevant to industry needs, we can build stronger partnerships with companies and potentially create more job opportunities for our graduates.
+
+Enhancing the reputation of the program:: By offering a program that is up-to-date and relevant, we can enhance the reputation of the CSMI program and increase its visibility both nationally and internationally. This can help attract the best students and faculty to the program, and create more opportunities for collaboration and funding.
+
+
+- Updating the course offerings to reflect new developments in mathematics and computer science
+- Introducing new courses or modifying existing courses to better meet the needs of students
+- Increasing the number of courses taught in English to better prepare students for international settings
+- Providing more opportunities for practical experience, such as internships or industry partnerships
+- Incorporating more interdisciplinary coursework to help students understand the connections between mathematics and computer science and other fields
+
+In particular, we propose to add courses on high-performance computing, machine learning, as these are all areas where there is high demand for skilled professionals. We also propose to introduce more interdisciplinary coursework, such as courses on scientific machine learning and data assimilation, to help students understand the connections between mathematics and computer science and other fields.
+
+
+=== Introduction to Scientific Maching Learning
+
+The SciML courses would ideally complement and bridge the knowledge provided by the standalone Machine Learning (ML) and Scientific Computing courses in a master's track. Here's a brief overview of how they might fit:
+
+ML Courses:: These provide the fundamental concepts and techniques of machine learning. They would cover topics like linear regression, logistic regression, SVMs, neural networks, and more advanced topics like deep learning, reinforcement learning, and unsupervised learning methods. They would also discuss evaluation metrics, overfitting, underfitting, and other concepts relevant to ML model training and validation.
+
+Scientific Computing Courses:: These would delve into the mathematical and computational methods used to model and solve scientific and engineering problems. Topics would include numerical methods, linear algebra, differential equations, optimization, and potentially high-performance computing.
+
+SciML Courses:: These courses would serve as the bridge between the ML and Scientific Computing courses. They would take the machine learning techniques learned in the ML courses and apply them to the problems discussed in the Scientific Computing courses, and vice versa.
+
+In terms of the order, it would be ideal for students to first complete the ML and Scientific Computing courses, as these will provide the foundational knowledge necessary for understanding and applying SciML. The SciML courses could then be taken towards the end of the master's track, allowing students to apply all the knowledge they've gained in a novel and interdisciplinary way. The final projects in the SciML courses could potentially even serve as the basis for a master's thesis or capstone project.
+
+
+Scientific Machine Learning (SciML) courses can be highly beneficial for applied mathematicians in a master's track for several reasons:
+
+Interdisciplinary Knowledge:: SciML is inherently interdisciplinary, combining elements of computer science, applied mathematics, and domain-specific knowledge (e.g., physics, biology, etc.). This wide range of knowledge can be beneficial for applied mathematicians who want to apply their skills in various fields.
+
+Real-World Applications:: SciML has a host of real-world applications. These range from climate modeling to drug discovery to predictive maintenance and more. This can provide applied mathematicians with a practical outlet for their skills.
+
+Cutting Edge:: SciML is a relatively new and rapidly developing field. Being trained in this area can provide applied mathematicians with skills that are in high demand in both academia and industry.
+
+Data-Driven Modeling:: Traditionally, applied mathematics has focused on model-driven approaches where mathematical models are derived based on understanding of the underlying phenomena. However, in many real-world problems, the phenomena are too complex to be fully captured by such models. In such cases, data-driven modeling, as used in SciML, can be a powerful tool.
+
+Improved Prediction and Generalization:: Incorporating physical laws and principles into ML models, as is done in SciML, can lead to better generalization and predictive performance, particularly when data is scarce. This can be a valuable skill for applied mathematicians working on data-limited problems.
+
+Here is an example as of May 2023 of a SciML course:
+
+* The https://engineering.purdue.edu/online/courses/introduction-scientific-machine-learning[course "Introduction to Scientific Machine Learning" at Purdue University] provides an excellent framework for an introductory course in SciML. The course introduces data science to engineers with no prior knowledge and follows a probabilistic perspective that highlights the first principles behind the presented methods. It covers a variety of topics, including supervised learning, unsupervised learning, state space models, and physics-informed deep learning. It also offers training in various Python coding skills and commonly used data analytics software​​.
+
+and here is an example of introductory course for ML:
+
+* https://www.edx.org/course/introduction-to-machine-learning-2[Another comprehensive course that could serve as a reference is the edX course also from Purdue University], which provides an extensive review of probability theory, uncertainty propagation, supervised and unsupervised learning, state-space models, and automated Bayesian inference. It also covers advanced topics such as Gaussian process regression, neural networks, and advanced methods for characterizing posteriors. The prerequisites for this course include a working knowledge of multivariate calculus and basic linear algebra, basic Python knowledge, and familiarity with probability and numerical methods for engineering​​.
+
+=== Blurring the line between Model driven versus data driven modeling and data assimilation
+
+Model-driven modeling and data-driven modeling represent two different approaches to understanding and predicting system behavior. 
+We plan on showing CSMI students how to use both approaches in their work, and how to combine them in a principled and practical way.
+
+Model-driven Modeling:: This approach is based on the use of first principles, often derived from the physical sciences, to create a mathematical model of a system. The model incorporates known laws of physics, chemistry, or other relevant fields to predict system behavior. This method is powerful for situations where the underlying physical processes are well-understood and can be accurately represented mathematically. However, it can struggle in situations where the system is too complex or poorly understood to be accurately represented by a simplified mathematical model.
+
+Data-driven Modeling:: This approach is based on the use of data and statistical methods to understand system behavior. In this case, a model is created based on observed data rather than on first principles. Machine learning techniques are often used to "learn" the model from the data. Data-driven modeling can be very effective in situations where there is a lot of high-quality data available, and it can capture complex, non-linear relationships that might be missed by a simpler model-driven approach. However, it can struggle in situations where data is scarce or noisy, and it can sometimes result in models that are difficult to interpret or that do not generalize well to new situations.
+
+In the context of advanced courses at a master's level, it can be beneficial to teach both model-driven and data-driven modeling techniques, as well as ways to combine the two approaches. This can be done in several ways:
+
+Model-informed Machine Learning:: In this approach, physical models are used to inform the structure or training of machine learning models. For example, conservation laws or other physical principles can be used as constraints in the learning process. This can help to improve the accuracy and generalizability of machine learning models, particularly in situations where data is scarce or noisy.
+
+Machine Learning-enhanced Modeling:: In this approach, machine learning models are used to enhance traditional model-driven modeling techniques. For example, machine learning models can be used to learn error terms or corrections to a physics-based model, or to model complex phenomena that are not well-captured by a simple physics-based model.
+
+In these advanced courses, students can be exposed to the strengths and weaknesses of each approach, and learn how to choose and apply the most appropriate modeling techniques for a given problem. They can also learn how to integrate physical knowledge with machine learning in a principled way, which is a key aspect of Scientific Machine Learning. Practical exercises and projects that involve both model-driven and data-driven modeling can be a valuable part of these courses, providing students with hands-on experience of the techniques they are learning.
+
+Data assimilation is another powerful method that blends model-driven and data-driven modeling, and it's often used in fields such as meteorology, oceanography, and geophysics where both model predictions and observational data are available.
+
+Data Assimilation:: This process involves combining observational data with the output of a predictive model to improve the model's estimates of the state of a system. This is often done in a sequential manner, where the model's state estimate is updated each time new data becomes available. The goal is to minimize the discrepancy between the model's predictions and the actual observations, and to account for uncertainties in both the model and the data.
+
+There are several methods of data assimilation, including:
+
+Kalman Filter:: This is a recursive method used for estimating the state of a linear dynamic system from a series of measurements. It takes into account the uncertainties in the model and the measurements.
+
+Ensemble Kalman Filter:: This is an extension of the Kalman filter which is used for non-linear systems. It uses a Monte Carlo approach to represent the probability distribution of the state estimate.
+
+4D-Var (Four-Dimensional Variational data assimilation):: This method involves adjusting the model's state at the start of a time window to minimize the discrepancy between the model's predictions and the observations over the entire time window. This methodology stems for Control Theory.
+
+In the context of master-level courses, data assimilation can be a valuable topic to cover, as it provides students with practical techniques for integrating model-driven and data-driven approaches. It also provides exposure to important concepts such as uncertainty quantification and state estimation. Coursework could include practical exercises involving the implementation and application of data assimilation methods, and could cover advanced topics such as the design of optimal observation systems.
+
+
+
+=== Courses
+
+Here's a proposed modification to the semester courses of CSMI:
+
+[cols="2,1,1,1,1,1", options="header"]
+|===
+| Course | ECTS | Type | Topics | Semester | Teacher 
+
+| Système d'exploitation | 3 | CI | BASE | S1 | P. David  
+| Algorithmique & Graphe | 3 | CI | BASE | S1 | À définir 
+| Projet 1 | 3 | CI | BASE | S1 | C Prud'homme  
+| Traitement et fouille de données | 3 | CI | BASE | S1 | V. Vigon
+| Base de données | 3 | CI | HPC | S1 | Vacataire
+| C++ | 3 | CI | HPC | S1 | V. Chabannes
+| Calcul Haute Performance 1 | 3 | CI | HPC | S1 | V. Chabannes
+| Calcul scientifique 1 | 3 | CI | BASE | S1 | P. Helluy
+| Calcul scientifique 2 | 3 | CI | MSO | S1 | L. Navoret
+| Modèles aléatoires | 3 | CI | MSO | S1 | V. Vigon
+
+| Traitement du signal et image 1 | 3 | CI | DATA | S2 | V. Vigon
+| Scientific machine learning 1 | 3 | CI | ML / ROM | S2 | L. Navoret
+| Méthodes numériques EDP 1 | 6 | CI | MSO | S2 | C Prud'homme
+| Optimisation | 6 | CI | MSO | S2 | L. Navoret
+| Calcul Haute Performance 2 | 3 | CI | HPC | S2 | B. Bramas
+| Projet 2 | 3 | CI | BASE | S2 | C Prud'homme
+| Stage ou mémoire | 6 | Stage | BASE | S2 | Responsable Formation
+
+| ROM & Data driven ROM | 3 | CI | ML / ROM | S3 | C Prud'homme
+| Contrôle Optimal | 6 | CI | MSO | S3 | B Rao
+| Méthodes numérique pour les EDP 2 | 3 | CI | MSO | S3 | P. Helluy
+| Calcul Haute Performance 3 | 3 | CI | HPC | S3 | B. Bramas
+| Incertitudes | 3 | CI | MSO | S3 | E. Birmelé
+| Traitement du signal et des images 2 | 3 | CI | DATA | S3 | V. Vigon
+| Scientific machine learning 2 | 3 | CI | ML / ROM | S3 | E. Franck
+| Réseaux  OU Pre et PostProcessing en Calcul Scientifique | 3 | CI | MSO | S3 | P. David OU Trophime / Sarton
+| Projet 3 | 3 | CI | BASE | S3 | C Prud'homme
+
+| Stage ou Mémoire | 30 | Stage | BASE | S4 | Responsable Formation
+|===
+
+
+In this modification, we added three courses on high-performance computing, which covers various topics such as multigrid, domain decomposition, MPI, OpenMP, CUDA, and optimization of codes for high-performance computing architectures. We also added two courses on machine learning, one on scientific machine learning and the other on generative adversarial networks. Finally, we included a course on data assimilation and digital twins in the third semester.
+
+==== Semester 1
+
+Operating system:: This course delves into the principles of operating systems, focusing on process and memory management, file systems, and I/O handling. For Applied Mathematics students, this knowledge is essential as it allows for the efficient execution of mathematical computations and simulations on computer systems, and provides a foundation for understanding how software interacts with hardware.
+
+Algorithmics and Graphs:: This course provides a deep understanding of algorithm design and analysis, including data structures, sorting algorithms, graph algorithms, and dynamic programming. It equips Applied Mathematics students with the skills to implement mathematical algorithms efficiently, which is crucial for problem-solving in various mathematical fields.
+
+Project 1:: This course introduces students to project management and programming environments. It covers modern software project management techniques, Continuous Integration, Delivery, Deployment, container technologies, and the usage of cloud environments like GitHub, Azure, or AWS. The course includes a practical project, providing Applied Mathematics students with hands-on experience in managing and implementing software projects.
+
+Data Processing and Mining:: This course provides a comprehensive understanding of data processing and mining, including data cleaning, pre-processing, feature selection, clustering, and classification. Applied Mathematics students will gain the skills to analyze large datasets efficiently, which is crucial in fields such as data science, machine learning, and statistical analysis.
+
+Database:: This course delves into the principles of database design and implementation, including relational database models, SQL, and NoSQL. For Applied Mathematics students, this knowledge is essential for the efficient storage and retrieval of data, which is a key component of many fields including data analysis, machine learning, and software development.
+
+C++:: This course provides a comprehensive understanding of C++ programming, including object-oriented programming, templates, and the Standard Template Library. Applied Mathematics students will gain the skills to implement mathematical algorithms efficiently, which is crucial for problem-solving in various mathematical fields.
+
+High-Performance Computing 1:: This course provides a deep understanding of high-performance computing, including multigrid, domain decomposition, iterative solvers, parallel algorithms, and optimization of codes for high-performance computing architectures. Applied Mathematics students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.
+
+Scientific Computing 1:: This course provides a comprehensive understanding of scientific computing, including the finite difference method. Applied Mathematics students will gain the skills to implement mathematical algorithms on computer systems, which is crucial for fields such as computational mathematics, data science, and machine learning.
+
+Scientific Computing 2:: This course provides a comprehensive understanding of advanced scientific computing topics, including sparse linear system solvers, resolution of sparse eigenvalue systems, numerical methods for partial differential equations in 1D using finite elements, and advanced Python programming. Applied Mathematics students will gain the skills to implement mathematical algorithms on computer systems, which is crucial for fields such as computational mathematics, data science, and machine learning.
+
+Random Models:: This course provides a deep understanding of random models, including the Law of Large Numbers, Central Limit Theorem, Monte Carlo method, rejection method, scale invariance, isotropy, stochastic homogeneity, random walk, Brownian motion, diffusion, stochastic differential calculus, Markov chains, MCMC, particle systems, and simulated annealing. Applied Mathematics students will gain the skills to model stochastic processes efficiently, which is crucial for fields such as financial mathematics, risk analysis, and machine learning.
+
+==== Semester 2
+
+Signal and Image Processing 1:: This course provides a comprehensive understanding of signal and image processing, including 1D (sound) and 2D (image) signals, sampling, Fourier series, FFT filtering, time-frequency analysis, aliasing phenomena, chromatic spaces, quantization, edge detection, denoising, segmentation, JPEG compression, and image calibration. Applied Mathematics students will gain the skills to analyze signals and images efficiently, which is crucial for fields such as data science, machine learning, and multimedia processing.
+
+Scientific Machine Learning 1:: This course provides a deep understanding of scientific machine learning, including supervised and unsupervised learning, deep learning, and generative models. Applied Mathematics students will gain the skills to analyze large datasets efficiently, which is crucial for fields such as data science, machine learning, and statistical analysis.
+
+Numerical Methods for PDE:: This course provides a comprehensive understanding of numerical methods for partial differential equations, particularly the finite element method and the study of various standard PDEs. Applied Mathematics students will gain the skills to implement mathematical algorithms on computer systems, which is crucial for fields such as computational mathematics and sciences.
+
+Optimization:: This course provides a deep understanding of optimization, including convex analysis, solution existence and uniqueness theorems, optimality conditions such as Euler equations and inequalities, Lagrange multipliers, Kuhn-Tucker relations, saddle point and duality theory, and numerical algorithms including gradient, relaxation, Newton and quasi-Newton, penalization, and Uzawa methods. Applied Mathematics students will gain the skills to implement mathematical algorithms efficiently, which is crucial for fields such as operations research, machine learning, and financial mathematics.
+
+High-Performance Computing 2:: This course provides a comprehensive understanding of high-performance computing, including performance modeling, profiling, optimization, GPU computing, and optimization of codes for high-performance computing architectures. Applied Mathematics students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.
+
+Project 2:: This course involves collaborative projects with both academia and enterprises, providing students with hands-on experience in applying their theoretical knowledge in research-oriented and real-world industry settings. This experience is invaluable for Applied Mathematics students as it provides a practical context for their theoretical knowledge.
+
+Internship:: A 2-month internship in a company or research laboratory provides Applied Mathematics students with practical experience in a professional setting, allowing them to apply their theoretical knowledge and skills in real-world scenarios.
+
+==== Semester 3
+
+ROM & Data driven ROM:: This course provides a deep understanding of reduced order modeling and data driven reduced order modeling, including proper orthogonal decomposition, reduced basis methods, data assimilation and data driven ROM. Applied Mathematics students will gain the skills to implement mathematical algorithms efficiently, which is crucial for fields such as computational mathematics, machine learning, control systems and various computational sciences.
+
+Optimal Control:: This course provides a comprehensive understanding of optimal control, including Pontryagin's maximum principle, dynamic programming, data assimilation, and numerical methods for optimal control. Applied Mathematics students will gain the skills to implement mathematical algorithms efficiently, which is crucial for fields such as control systems, operations research, and financial mathematics.
+
+Numerical Methods for PDE 2:: This course provides a deep understanding of numerical methods for partial differential equations, particularly the finite volume method and DG methods for hyperbolic systems. Applied Mathematics students will gain the skills to implement mathematical algorithms on computer systems, which is crucial for fields such as computational mathematics, fluid dynamics, and mathematical physics.
+
+High-Performance Computing 3:: This course provides a comprehensive understanding of high-performance computing, including performance modeling, profiling, optimization, GPU computing, and optimization of codes for high-performance computing architectures. Applied Mathematics students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.
+
+Uncertainties:: This course provides a deep understanding of uncertainties, including stochastic modeling, uncertainty quantification, and sensitivity analysis. Applied Mathematics students will gain the skills to model stochastic processes efficiently, which is crucial for fields such as financial mathematics, risk analysis, and machine learning.
+
+Signal and Image Processing 2:: This course provides a comprehensive understanding of advanced signal and image processing, including classification, segmentation, and generation of images, sounds, and text using deep learning techniques. Applied Mathematics students will gain the skills to analyze signals and images efficiently, which is crucial for fields such as data science, machine learning, and multimedia processing.
+
+Scientific Machine Learning 2:: This course provides a deep understanding of scientific machine learning, including supervised and unsupervised learning, deep learning, and generative models. Applied Mathematics students will gain the skills to analyze large datasets efficiently, which is crucial for fields such as data science, machine learning, and statistical analysis.
+
+Pre and PostProcessing in Scientific Computing:: This course provides a comprehensive understanding of pre and post processing in scientific computing, including geometry and mesh generation, mesh adaptation, visualization, and data analysis. Applied Mathematics students will gain the skills to implement mathematical algorithms on computer systems, which is crucial for fields such as computational mathematics, data science,and machine learning.
+
+Networks:: This course provides a deep understanding of networks including Network architectures, OSI and network Protocols. Applied Mathematics students will gain the skills to implement mathematical algorithms on computer systems, which is crucial for fields such as data science, machine learning, and telecommunications.
+
+Project 3:: This course involves collaborative projects with both academia and enterprises, providing students with hands-on experience in applying their theoretical knowledge in research-oriented and real-world industry settings. This experience is invaluable for Applied Mathematics students as it provides a practical context for their theoretical knowledge.
+
+==== Semester 4
+
+Internship:: A 6-month internship in a company or research laboratory provides Applied Mathematics students with practical experience in a professional setting, allowing them to apply their theoretical knowledge and skills in real-world scenarios. This experience is invaluable for Applied Mathematics students as it provides a practical context for their theoretical knowledge and prepares them for their future careers.
+
+=== Skills set to be acquired by CSMI Students
+
+Problem-Solving Skills:: The ability to apply mathematical and computational methods to solve complex problems.
+
+Programming Skills:: Proficiency in programming languages such as C++, and understanding of software development principles.
+
+Data Analysis Skills:: The ability to process, analyze, and interpret large datasets using various data analysis techniques.
+
+Algorithm Design and Analysis:: Understanding of how to design, implement, and analyze algorithms for various computational problems.
+
+High-Performance Computing:: Understanding of how to optimize and parallelize computations to run efficiently on high-performance computing systems.
+
+Database Management:: Understanding of how to design, implement, and manage databases.
+
+Machine Learning:: Understanding of various machine learning techniques and their applications.
+
+Signal and Image Processing:: Understanding of how to analyze and process signals and images.
+
+Project Management:: Understanding of how to manage software projects, including the use of modern software project management techniques and tools.
+
+Communication Skills:: The ability to effectively communicate complex mathematical and computational concepts, both orally and in writing.
+
+Collaboration Skills:: The ability to work effectively in a team, including in collaborative projects with academia and enterprises.
+
+Research Skills:: The ability to conduct independent research, including the ability to read and understand academic papers, and to design and implement research projects.
+
+Professional Skills:: Understanding of professional practices, including ethical considerations, and the ability to apply theoretical knowledge in practical, real-world settings through internships.
+
+=== Courses and Skills
+
+The following is present the courses with the skills acquired by the students in the CSMI program:
+
+[cols="2a,2a"]
+|===
+|Courses |Skills Acquired
+
+|Semester 1 |
+|Operating system
+|Problem-Solving Skills, High-Performance Computing, Database Management
+
+|Algorithmics and Graphs
+|Problem-Solving Skills, Algorithm Design and Analysis
+
+|Project 1
+|Project Management, Programming Skills, Collaboration Skills
+
+|Data Processing and Mining
+|Data Analysis Skills, Machine Learning
+
+|Database
+|Database Management
+
+|C++
+|Programming Skills, Problem-Solving Skills
+
+|High-Performance Computing 1
+|High-Performance Computing, Problem-Solving Skills
+
+|Scientific Computing 1
+|High-Performance Computing, Problem-Solving Skills
+
+|Scientific Computing 2
+|High-Performance Computing, Problem-Solving Skills
+
+|Random Models
+|Problem-Solving Skills, Machine Learning
+
+|Semester 2 |
+|Signal and Image Processing 1
+|Signal and Image Processing, Data Analysis Skills, Machine Learning
+
+|Scientific Machine Learning 1
+|Data Analysis Skills, Machine Learning
+
+|Numerical Methods for PDE
+|High-Performance Computing, Problem-Solving Skills
+
+|Optimization
+|Problem-Solving Skills, Algorithm Design and Analysis
+
+|High-Performance Computing 2
+|High-Performance Computing, Problem-Solving Skills
+
+|Project 2
+|Project Management, Collaboration Skills
+
+|Internship
+|Project Management, Professional Skills, Collaboration Skills, Problem-Solving Skills
+
+|Semester 3 |
+|ROM & Data driven ROM
+|High-Performance Computing, Problem-Solving Skills
+
+|Optimal Control
+|Problem-Solving Skills, Optimization
+
+|Numerical Methods for PDE 2
+|High-Performance Computing, Problem-Solving Skills
+
+|High-Performance Computing 3
+|High-Performance Computing, Problem-Solving Skills
+
+|Uncertainties
+|Problem-Solving Skills, Machine Learning
+
+|Signal and Image Processing 2
+|Signal and Image Processing, Data Analysis Skills, Machine Learning
+
+|Scientific Machine Learning 2
+|Data Analysis Skills, Machine Learning
+
+|Pre and PostProcessing in Scientific Computing
+|High-Performance Computing, Problem-Solving Skills
+
+|Networks
+|High-Performance Computing, Problem-Solving Skills
+
+|Project 3
+|Project Management, Collaboration Skills
+
+|Semester 4 |
+|Internship
+|Project Management, Professional Skills, Collaboration Skills, Problem-Solving Skills
+|===
