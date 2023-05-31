@@ -269,7 +269,7 @@ Internship:: A 6-month internship in a company or research laboratory provides A
 
 Problem-Solving Skills:: The ability to apply mathematical and computational methods to solve complex problems.
 
-Programming Skills:: Proficiency in programming languages such as C++, and understanding of software development principles.
+Programming Skills:: Proficiency in programming languages --- C/C++, Python and Rust --- and understanding of software development principles.
 
 Data Analysis Skills:: The ability to process, analyze, and interpret large datasets using various data analysis techniques.
 
