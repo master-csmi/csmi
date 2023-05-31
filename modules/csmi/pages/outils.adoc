@@ -1,22 +1,30 @@
 = Outils 
 :page-role: home
 
+== Communication
+
+CSMI utilise link:https://slack.com/intl/fr-fr/[Slack] pour communiquer avec les promotions et sur les projets.
+Vous pouvez installer slack et créer votre compte avec votre email `@etu.unistra.fr` une fois que vous l'avez.
+Vous recevrez une invitation au moment de la rentrée.
 
 == Système d'exploitation
-- Linux, eg Ubuntu 20.04 LTS ou plus récente
-- Windows 10 avec support WSL
-- Mac avec homebrew 
+- Linux, eg link:https://ubuntu.com/download/desktop/thank-you?version=22.04.1&architecture=amd64[Ubuntu 22.04 LTS] ou plus récente
+- Windows 10 avec link:https://docs.microsoft.com/fr-fr/windows/wsl/install[support WSL] puis link:https://apps.microsoft.com/store/detail/ubuntu-22041-lts/9PN20MSR04DW?hl=fr-fr&gl=FR[Ubuntu 22.04]
+- Mac avec link:https://brew.sh/index_fr[Homebrew]
 
 == Programmation
 
 Nous allons utiliser les outils suivants dans plusieurs cours
 
-- https://code.visualstudio.com/[Visual Studio Code]
+- https://code.visualstudio.com/[Visual Studio Code] un éditeur open-source très puissant, en particulier pour 
+   ** se connecter sur des machines à distance
+   ** travailler sur un ou plusieurs projets à la fois
+   ** utiliser git
 - https://github.com[Github]
 
 Nous utiliserons les https://github.com/features/issues[outils de management de Github] pour le suivi des projets et des devoirs.
 
-=== Github
+== Github
 
 Il faut créer un compte sur Github, un formulaire sera envoyé en début d'année de M1 et votre compte vous suivra pendant les 2 années.
 Il servira
@@ -28,9 +36,12 @@ Il servira
 
 Une référence: https://lab.github.com/ mais il y en a plein d'autres.
 
-=== Langages
+== Langages 
 
+voici les langages de programmation  que vous serez amenés à utiliser:
+
+- C 
+- C{pp} 
 - Python3
 - Rust
-- C{pp}
-- C
+

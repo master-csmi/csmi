@@ -2,6 +2,7 @@ site:
   title: Master CSMI
   url: https://master-csmi.github.io/csmi
   start_page: csmi::index.adoc
+  robots: allow
 content:
   sources:
   - url: https://github.com/master-csmi/csmi

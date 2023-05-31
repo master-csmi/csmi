@@ -1,5 +1,6 @@
 :stem: latexmath
 :imagesprefix:
+:experimental:
 ifdef::env-github,env-browser,env-vscode[:imagesprefix:]
 
 = Master CSMI {master-year}
@@ -67,10 +68,8 @@ Sur dossier et après avis de la commission pédagogique pour les titulaires d'u
 [.emblem]#Doctorat#::
 - Les étudiants de la filière les plus motivés par la recherche appliquée pourront également poursuivre en doctorat, en laboratoire ou en entreprise.
 
-//=== Codes Rome
-//M1802 - Conseil et maîtrise d'ouvrage en systèmes d'information
+[discrete]
+=== Calendrier
 
-// Sur ce site sont collectés les rapports de stage et de projets.
-
-// - xref:csmi-stages:ROOT:index.adoc[Template] pour chaque année
+Le calendrier de l'année {master-year} est disponible ici btn:[https://mathinfo.unistra.fr/websites/math-info/math-info/doc_etudiant/Calendrier_Universitaire/Calendrier_2022-2023/Calendrier_etu_MasterMath_2022-2023_240822.pdf[> PDF]]
 
