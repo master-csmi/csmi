@@ -166,34 +166,34 @@ Here's a proposed modification to the semester courses of CSMI:
 |===
 | Course | ECTS | Type | Topics | Semester | Teacher 
 
-| Système d'exploitation | 3 | CI | BASE | S1 | P. David  
-| Algorithmique & Graphe | 3 | CI | BASE | S1 | À définir 
-| Projet 1 | 3 | CI | BASE | S1 | C Prud'homme  
-| Traitement et fouille de données | 3 | CI | BASE | S1 | V. Vigon
-| Base de données | 3 | CI | HPC | S1 | Vacataire
-| C++ | 3 | CI | HPC | S1 | V. Chabannes
-| Calcul Haute Performance 1 | 3 | CI | HPC | S1 | V. Chabannes
-| Calcul scientifique 1 | 3 | CI | BASE | S1 | P. Helluy
-| Calcul scientifique 2 | 3 | CI | MSO | S1 | L. Navoret
-| Modèles aléatoires | 3 | CI | MSO | S1 | V. Vigon
+| Système d'exploitation | 3 (28h eq TD) | CI | BASE | S1 | P. David  
+| Algorithmique & Graphe | 3 (28h eq TD) | CI | BASE | S1 | À définir 
+| Projet 1 | 3 (28h eq TD) | CI | BASE | S1 | C Prud'homme  
+| Traitement et fouille de données | 3 (28h eq TD) | CI | BASE | S1 | V. Vigon
+| Base de données | 3 (28h eq TD) | CI | HPC | S1 | Vacataire
+| C++ | 3 (28h eq TD) | CI | HPC | S1 | V. Chabannes
+| Calcul Haute Performance 1 | 3 (28h eq TD) | CI | HPC | S1 | B. Bramas, V. Chabannes
+| Calcul scientifique 1 | 3 (28h eq TD) | CI | BASE | S1 | P. Helluy
+| Calcul scientifique 2 | 3 (28h eq TD) | CI | MSO | S1 | L. Navoret
+| Modèles aléatoires | 3 (28h eq TD) | CI | MSO | S1 | V. Vigon
 
-| Traitement du signal et image 1 | 3 | CI | DATA | S2 | V. Vigon
-| Scientific machine learning 1 | 3 | CI | ML / ROM | S2 | L. Navoret
-| Méthodes numériques EDP 1 | 6 | CI | MSO | S2 | C Prud'homme
-| Optimisation | 6 | CI | MSO | S2 | L. Navoret
-| Calcul Haute Performance 2 | 3 | CI | HPC | S2 | B. Bramas
-| Projet 2 | 3 | CI | BASE | S2 | C Prud'homme
-| Stage ou mémoire | 6 | Stage | BASE | S2 | Responsable Formation
+| Traitement du signal et image 1 | 3 (28h eq TD) | CI | DATA | S2 | V. Vigon
+| Scientific machine learning 1 | 3 (28h eq TD) | CI | ML / ROM | S2 | L. Navoret
+| Méthodes numériques EDP 1 | 6 (58h eq TD) | CI | MSO | S2 | C Prud'homme
+| Optimisation | 6 (58h eq TD) | CI | MSO | S2 | L. Navoret
+| Calcul Haute Performance 2 | 3 (28h eq TD) | CI | HPC | S2 | B. Bramas, V. Chabannes
+| Projet 2 | 3 (28h eq TD) | CI | BASE | S2 | C Prud'homme
+| Stage ou mémoire | 6 (58h eq TD) | Stage | BASE | S2 | Responsable Formation
 
-| ROM & Data driven ROM | 3 | CI | ML / ROM | S3 | C Prud'homme
-| Contrôle Optimal | 6 | CI | MSO | S3 | B Rao
-| Méthodes numérique pour les EDP 2 | 3 | CI | MSO | S3 | P. Helluy
-| Calcul Haute Performance 3 | 3 | CI | HPC | S3 | B. Bramas
-| Incertitudes | 3 | CI | MSO | S3 | E. Birmelé
-| Traitement du signal et des images 2 | 3 | CI | DATA | S3 | V. Vigon
-| Scientific machine learning 2 | 3 | CI | ML / ROM | S3 | E. Franck
-| Réseaux  OU Pre et PostProcessing en Calcul Scientifique | 3 | CI | MSO | S3 | P. David OU Trophime / Sarton
-| Projet 3 | 3 | CI | BASE | S3 | C Prud'homme
+| ROM & Data driven ROM | 3 (28h eq TD) | CI | ML / ROM | S3 | C Prud'homme
+| Contrôle Optimal | 6 (58h eq TD) | CI | MSO | S3 | B Rao, M Duprez, C Prud'homme
+| Méthodes numérique pour les EDP 2 | 3 (28h eq TD) | CI | MSO | S3 | P. Helluy
+| Calcul Haute Performance 3 | 3 (28h eq TD) | CI | HPC | S3 | B. Bramas, V. Chabannes
+| Incertitudes | 3 (28h eq TD) | CI | MSO | S3 | E. Birmelé
+| Traitement du signal et des images 2 | 3 (28h eq TD) | CI | DATA | S3 | V. Vigon
+| Scientific machine learning 2 | 3 (28h eq TD) | CI | ML / ROM | S3 | E. Franck
+| Réseaux  OU Pre et PostProcessing en Calcul Scientifique | 3 (28h eq TD) | CI | MSO | S3 | P. David OU Trophime / Sarton
+| Projet 3 | 3 (28h eq TD) | CI | BASE | S3 | C Prud'homme
 
 | Stage ou Mémoire | 30 | Stage | BASE | S4 | Responsable Formation
 |===
