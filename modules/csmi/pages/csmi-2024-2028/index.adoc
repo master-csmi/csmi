@@ -1,6 +1,6 @@
 = Master CSMI: Proposition de maquette pour 2024-2028
 Christophe Prud'homme 
-v1.0, 2023-05-11
+v1.0, 2023-06-01
 :doctype: book
 :title-page:
 :title-page-background-image: image:media/digital-background.png[]
