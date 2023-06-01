@@ -110,6 +110,7 @@ Strengthening industry partnerships:: By incorporating projects with companies a
 Enhancing the reputation of the program:: By offering a program that is up-to-date and relevant, we can enhance the reputation of the CSMI program and increase its visibility both nationally and internationally. This can help attract the best students and faculty to the program, and create more opportunities for collaboration and funding.
 
 We aim at updating the Master track CSMI in several ways:
+
 - Updating the course offerings to reflect new developments in mathematics and computer science
 - Introducing new courses or modifying existing courses to better meet the needs of students
 - Increasing the number of courses taught in English to better prepare students for international settings
