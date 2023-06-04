@@ -1,6 +1,6 @@
 = Master CSMI: Proposition de maquette pour 2024-2028
 Christophe Prud'homme 
-v1.0, 2023-06-01
+v1.1, 2023-06-04
 :doctype: book
 :title-page:
 :title-page-background-image: image:media/digital-background.png[]
@@ -230,14 +230,14 @@ Here's a proposed modification to the semester courses of CSMI:
 | Semester 2 | | | | | 
 | Signal and Image Processing 1 | 3 (28h equiv. TD) | CI | DATA | S2 | V. Vigon
 | Scientific Machine Learning 1 | 3 (28h equiv. TD) | CI | ML / ROM | S2 | L. Navoret
-| Numerical Methods for PDE 1 | 6 (58h equiv. TD) | CI | MSO | S2 | C. Prud'homme
-| Optimization | 6 (58h equiv. TD) | CI | MSO | S2 | L. Navoret
+| Numerical Methods for PDE 1 | 6 (56h equiv. TD) | CI | MSO | S2 | C. Prud'homme
+| Optimization | 6 (56h equiv. TD) | CI | MSO | S2 | L. Navoret
 | High-Performance Computing 2 | 3 (28h equiv. TD) | CI | HPC | S2 | B. Bramas, V. Chabannes
 | Project 2 | 3 (28h equiv. TD) | CI | BASE | S2 | C. Prud'homme
-| Internship or Thesis | 6 (58h equiv. TD) | Internship | BASE | S2 | Program Coordinator
+| Internship or Thesis | 6 (56h equiv. TD) | Internship | BASE | S2 | Program Coordinator
 | Semester 3 | | | | | 
 | ROM & Data-Driven ROM | 3 (28h equiv. TD) | CI | ML / ROM | S3 | C. Prud'homme
-| Optimal Control | 6 (58h equiv. TD) | CI | MSO | S3 | B. Rao, M. Duprez, C. Prud'homme
+| Optimal Control | 6 (56h equiv. TD) | CI | MSO | S3 | B. Rao, M. Duprez, C. Prud'homme
 | Numerical Methods for PDE 2 | 3 (28h equiv. TD) | CI | MSO | S3 | P. Helluy
 | High-Performance Computing 3 | 3 (28h equiv. TD) | CI | HPC | S3 | B. Bramas, V. Chabannes
 | Uncertainties | 3 (28h equiv. TD) | CI | MSO | S3 | E. Birmelé
@@ -438,4 +438,220 @@ The following is present the courses with the skills acquired by the students in
 |Semester 4 |
 |Internship
 |Project Management, Professional Skills, Collaboration Skills, Problem-Solving Skills
+|===
+
+We now break down the macro skills into micro skills in the following tables
+
+==== Micro skills breakdown
+
+.Semester 1
+|===
+| Course | Macro Skills | Micro Skills
+
+| Operating System
+| Problem-Solving Skills, High-Performance Computing, Database Management
+a| - Understand process management
+- Manage memory
+- Perform file system operations
+- Handle I/O
+- Use hardware-software interactions effectively
+
+| Algorithmics and Graphs
+| Problem-Solving Skills, Algorithm Design and Analysis
+a| - Understand data structures
+- Perform sorting algorithms
+- Implement graph algorithms
+- Apply dynamic programming techniques
+
+| Project 1
+| Project Management, Programming Skills, Collaboration Skills
+a| - Apply software project management techniques
+- Perform continuous integration
+- Use cloud environments (GitHub, Azure, AWS)
+- Implement practical projects
+
+| Data Processing and Mining
+| Data Analysis Skills, Machine Learning
+a| - Clean and preprocess data
+- Perform feature selection
+- Apply clustering and classification algorithms
+- Analyze large datasets efficiently
+
+| Database
+| Database Management
+a| - Design and implement relational database models
+- Use SQL and NoSQL effectively
+- Manage databases efficiently
+
+| C++
+| Programming Skills, Problem-Solving Skills
+a| - Implement object-oriented programming concepts in C++
+- Use templates and meta programming
+- Apply the Standard Template Library (STL)
+
+| High-Performance Computing 1
+| High-Performance Computing, Problem-Solving Skills
+a| - Understand and implement multigrid methods
+- Perform domain decomposition
+- Use iterative solvers
+- Optimize codes for high-performance computing architectures
+
+| Scientific Computing 1
+| High-Performance Computing, Problem-Solving Skills
+a| - Apply the finite difference method
+- Implement mathematical algorithms efficiently on computer systems
+
+| Scientific Computing 2
+| High-Performance Computing, Problem-Solving Skills
+a| - Use sparse linear system solvers
+- Resolve sparse eigenvalue systems
+- Implement numerical methods for partial differential equations in 1D using finite elements
+- Apply advanced Python programming techniques
+
+| Random Models
+| Problem-Solving Skills, Machine Learning
+a| - Understand random models
+- Apply the Law of Large Numbers, Central Limit Theorem
+- Use Monte Carlo methods
+- Perform stochastic differential calculus
+- Analyze Markov chains
+- Implement particle systems
+- Apply simulated annealing
+|===
+
+.Semester 2
+|===
+| Course | Macro Skills | Micro Skills
+
+| Signal and Image Processing 1
+| Signal and Image Processing, Data Analysis Skills, Machine Learning
+a| - Analyze 1D and 2D signals
+- Perform Fourier analysis
+- Filter signals using FFT
+- Apply time-frequency analysis techniques
+- Handle image processing tasks such as denoising, segmentation, JPEG compression, and image calibration
+
+| Scientific Machine Learning 1
+| Data Analysis Skills, Machine Learning
+a| - Apply supervised and unsupervised learning algorithms
+- Implement deep learning techniques
+- Use generative models in scientific applications
+
+| Numerical Methods for PDE
+| High-Performance Computing, Problem-Solving Skills
+a| - Understand and implement the finite element method
+- Apply numerical methods to solve partial differential equations
+- Analyze theoretical and practical aspects of standard PDEs
+
+| Optimization
+| Problem-Solving Skills, Algorithm Design and Analysis
+a| - Apply convex analysis techniques
+- Understand optimality conditions
+- Use Lagrange multipliers
+- Implement numerical optimization algorithms such as gradient methods, relaxation methods, Newton methods, quasi-Newton methods, penalization methods, and Uzawa methods
+
+| High-Performance Computing 2
+| High-Performance Computing, Problem-Solving Skills
+a| - Model performance
+- Profile computations
+- Optimize codes for high-performance computing architectures
+- Use GPU computing techniques
+
+| Project 2
+| Project Management, Collaboration Skills
+a| - Collaborate in projects with academia or enterprises
+- Apply theoretical knowledge and skills in real-world settings
+- Perform project tasks collaboratively
+
+| Internship
+| Project Management, Professional Skills, Collaboration Skills, Problem-Solving Skills
+a| - Gain practical experience in a professional setting
+- Apply theoretical knowledge and skills in real-world scenarios
+- Implement projects
+- Communicate professionally
+- Solve problems in a practical context
+|===
+
+.Semester 3
+|===
+| Course | Macro Skills | Micro Skills
+
+| ROM & Data driven ROM
+| High-Performance Computing, Problem-Solving Skills
+a| - Understand reduced order modeling
+- Apply data-driven reduced order modeling techniques
+- Perform proper orthogonal decomposition
+- Use data assimilation methods effectively
+
+| Optimal Control
+| Problem-Solving Skills, Optimization
+a| - Apply Pontryagin's maximum principle
+- Implement dynamic programming
+- Use data assimilation techniques
+- Apply numerical methods for optimal control
+
+| Numerical Methods for PDE 2
+| High-Performance Computing, Problem-Solving Skills
+a | - Implement the finite volume method
+- Apply discontinuous Galerkin methods for hyperbolic systems
+- Use numerical methods to solve PDEs
+
+| High-Performance Computing 3
+| High-Performance Computing, Problem-Solving Skills
+a| - Model performance
+- Profile computations
+- Optimize codes for high-performance computing architectures
+- Use advanced techniques such as GPU computing
+
+| Uncertainties
+| Problem-Solving Skills, Machine Learning
+a| - Model stochastic processes
+- Quantify uncertainties
+- Perform sensitivity analysis
+- Handle and model uncertainties effectively
+
+| Signal and Image Processing 2
+| Signal and Image Processing, Data Analysis Skills, Machine Learning
+a| - Apply advanced techniques for signal and image processing
+- Perform classification, segmentation
+- Generate images, sounds, and text using deep learning methods
+
+| Scientific Machine Learning 2
+| Data Analysis Skills, Machine Learning
+a| - Apply supervised and unsupervised learning algorithms
+- Implement deep learning techniques
+- Use generative models in scientific applications
+
+| Pre and PostProcessing in Scientific Computing
+| High-Performance Computing, Problem-Solving Skills
+a| - Generate geometry and meshes
+- Adapt meshes
+- Visualize scientific data
+- Perform data analysis tasks in scientific computing
+| Networks
+| High-Performance Computing, Problem-Solving Skills
+a| - Understand network architectures
+
+- Implement network protocols
+- Perform network-related algorithms
+| Project 3
+| Project Management, Collaboration Skills
+a| - Collaborate in projects with academia or enterprises
+- Apply theoretical knowledge and skills in research-oriented or real-world industry settings
+- Perform project tasks collaboratively
+|===
+
+.Semester 4
+|===
+| Course | Macro Skills | Micro Skills
+
+| Internship
+| Project Management, Professional Skills, Collaboration Skills, Problem-Solving Skills
+a| 
+ * Gain practical experience in a professional setting
+ * Apply theoretical knowledge and skills in real-world scenarios
+ * Implement projects
+ * Communicate professionally
+ *  Solve problems in a practical context
+
 |===
