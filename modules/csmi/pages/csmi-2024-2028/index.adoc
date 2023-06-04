@@ -14,6 +14,8 @@ v1.1, 2023-06-04
 [.metadata]
 {author} -- version {revnumber}, {revdate}
 
+This document is also available in xref:attachment$csmi-2024-2028.pdf[> PDF format].
+
 == Introduction 
 
 
