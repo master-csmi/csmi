@@ -1,6 +1,6 @@
 = Master CSMI: Proposition de maquette pour 2024-2028
 Christophe Prud'homme 
-v1.1, 2023-06-04
+v1.2, 2023-06-04
 :doctype: book
 :title-page:
 :title-page-background-image: image:media/digital-background.png[]
@@ -225,7 +225,7 @@ Here's a proposed modification to the semester courses of CSMI:
 | Data Processing and Mining | 3 (28h equiv. TD) | CI | BASE | S1 | V. Vigon
 | Database | 3 (28h equiv. TD) | CI | HPC | S1 | Guest Lecturer
 | C++ | 3 (28h equiv. TD) | CI | HPC | S1 | V. Chabannes
-| High-Performance Computing 1 | 3 (28h equiv. TD) | CI | HPC | S1 | B. Bramas, V. Chabannes
+| High-Performance Computing 1 | 3 (28h equiv. TD) | CI | HPC | S1 | B. Bramas, V. Chabannes, M. Boileau
 | Scientific Computing 1 | 3 (28h equiv. TD) | CI | BASE | S1 | P. Helluy
 | Scientific Computing 2 | 3 (28h equiv. TD) | CI | MSO | S1 | L. Navoret
 | Random Models | 3 (28h equiv. TD) | CI | MSO | S1 | V. Vigon
@@ -234,14 +234,14 @@ Here's a proposed modification to the semester courses of CSMI:
 | Scientific Machine Learning 1 | 3 (28h equiv. TD) | CI | ML / ROM | S2 | L. Navoret
 | Numerical Methods for PDE 1 | 6 (56h equiv. TD) | CI | MSO | S2 | C. Prud'homme
 | Optimization | 6 (56h equiv. TD) | CI | MSO | S2 | L. Navoret
-| High-Performance Computing 2 | 3 (28h equiv. TD) | CI | HPC | S2 | B. Bramas, V. Chabannes
+| High-Performance Computing 2 | 3 (28h equiv. TD) | CI | HPC | S2 | B. Bramas, V. Chabannes, M. Boileau
 | Project 2 | 3 (28h equiv. TD) | CI | BASE | S2 | C. Prud'homme
 | Internship or Thesis | 6 (56h equiv. TD) | Internship | BASE | S2 | Program Coordinator
 | Semester 3 | | | | | 
 | ROM & Data-Driven ROM | 3 (28h equiv. TD) | CI | ML / ROM | S3 | C. Prud'homme
 | Optimal Control | 6 (56h equiv. TD) | CI | MSO | S3 | B. Rao, M. Duprez, C. Prud'homme
 | Numerical Methods for PDE 2 | 3 (28h equiv. TD) | CI | MSO | S3 | P. Helluy
-| High-Performance Computing 3 | 3 (28h equiv. TD) | CI | HPC | S3 | B. Bramas, V. Chabannes
+| High-Performance Computing 3 | 3 (28h equiv. TD) | CI | HPC | S3 | B. Bramas, V. Chabannes, M. Boileau
 | Uncertainties | 3 (28h equiv. TD) | CI | MSO | S3 | E. Birmelé
 | Signal and Image Processing 2 | 3 (28h equiv. TD) | CI | DATA | S3 | V. Vigon
 | Scientific Machine Learning 2 | 3 (28h equiv. TD) | CI | ML / ROM | S3 | E. Franck
