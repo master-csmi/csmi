@@ -299,9 +299,17 @@ MathJax.Hub.Config({
 <li><a href="#_english_courses_versus_courses_in_english">4.2. English courses versus Courses in English</a></li>
 <li><a href="#_introduction_to_scientific_maching_learning">4.3. Introduction to Scientific Maching Learning</a></li>
 <li><a href="#_blurring_the_line_between_model_driven_versus_data_driven_modeling_and_data_assimilation">4.4. Blurring the line between Model driven versus data driven modeling and data assimilation</a></li>
-<li><a href="#_courses">4.5. Courses</a></li>
-<li><a href="#_skills_set_to_be_acquired_by_csmi_students">4.6. Skills set to be acquired by CSMI Students</a></li>
-<li><a href="#_courses_and_skills">4.7. Courses and Skills</a></li>
+<li><a href="#_high_performance_computing_2">4.5. High Performance Computing</a></li>
+<li><a href="#_courses">4.6. Courses</a></li>
+<li><a href="#_skills_set_to_be_acquired_by_csmi_students">4.7. Skills set to be acquired by CSMI Students</a></li>
+<li><a href="#_courses_and_skills">4.8. Courses and Skills</a></li>
+</ul>
+</li>
+<li><a href="#_changelog">5. ChangeLog</a>
+<ul class="sectlevel2">
+<li><a href="#_v1_2">5.1. v1.2</a></li>
+<li><a href="#_v1_1">5.2. v1.1</a></li>
+<li><a href="#_v1_0">5.3. v1.0</a></li>
 </ul>
 </li>
 </ul>
@@ -309,10 +317,19 @@ MathJax.Hub.Config({
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph metadata">
-<p>Christophe Prud&#8217;homme&#8201;&#8212;&#8201;version 1.2, 2023-06-04</p>
+<p>Christophe Prud&#8217;homme&#8201;&#8212;&#8201;version 1.2, 2023-06-06</p>
 </div>
-<div class="paragraph">
-<p>This document is also available in <a href="../_attachments/csmi-2024-2028.pdf" class="xref attachment">&gt; PDF format</a>.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This document is also available in <a href="../_attachments/csmi-2024-2028.pdf" class="xref attachment">&gt; PDF format</a>.
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -433,7 +450,7 @@ The program aims to equip students with the theoretical and practical knowledge 
 <div class="paragraph">
 <p>Starting Fall 2023, the applied mathematics team and Cemosis at UNISTRA will actively participate in two significant initiatives: PEPR Numpex and PEPR AI. These collaborations bring several benefits to CSMI students, enhancing their learning experience and future prospects.</p>
 </div>
-<div class="olist arabic">
+<div id="pepr-numpex" class="olist arabic">
 <ol class="arabic">
 <li>
 <p>PEPR Numpex: As part of the PEPR Numpex initiative, the applied mathematics team and Cemosis will contribute to the methods, algorithms and the development of the software stack for exascale computing. This involves working alongside esteemed partners : CEA, INRIA, Ecole Polytechnique, and Sorbonne Université. The exposure of CSMI students to this project offers them the following benefits:</p>
@@ -1166,7 +1183,52 @@ We plan on showing CSMI students how to use both approaches in their work, and h
 </div>
 </div>
 <div class="sect2">
-<h3 id="_courses"><a class="anchor" href="#_courses"></a>4.5. Courses</h3>
+<h3 id="_high_performance_computing_2"><a class="anchor" href="#_high_performance_computing_2"></a>4.5. High Performance Computing</h3>
+<div class="paragraph">
+<p>High-Performance Computing (HPC) has been an essential tool for scientific research, industry, and technology development for several decades.
+The scale of computational power we can harness has grown rapidly, from gigaflops in the 1990s to petaflops in the 2010s, and we are now on the brink of the exascale era.</p>
+</div>
+<div class="paragraph">
+<p>Programs like <a href="#pepr-numpex">NumPEx</a>, the French initiative for  Exascale computing, reflect this trend and underscore the importance of preparing for the next wave of computational capabilities <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>. NumPEx aims to design and develop the methods, algorithms and software components for future exascale machines and prepare major scientific and industrial application domains to fully exploit the capabilities of these machines.</p>
+</div>
+<div class="paragraph">
+<p>This evolution in computing power necessitates an evolution in the skills and tools we use to harness it. The architectures of modern supercomputers are becoming more complex, with an increasing variety of hardware components that need to be programmed and optimized. The programming models we use to write parallel and distributed applications are also evolving, requiring programmers to understand and mix different programming paradigms, such as MPI, multi-threading, and GPU programming. Runtime execution systems are becoming crucial for managing the execution of programs on complex hardware.</p>
+</div>
+<div class="paragraph">
+<p>To prepare for this future, we offer a sequence of three courses on High-Performance Computing as part of the CSMI Master&#8217;s program. These courses will give students a deep understanding of modern HPC, from the basics of parallel programming and numerical methods to the advanced techniques of hybrid computing and runtime systems. The courses will also introduce students to state-of-the-art HPC tools and frameworks, such as PETSc, that will be essential for tackling the computational challenges of the future.</p>
+</div>
+<div class="paragraph">
+<p>These courses are not just about learning the theory of HPC; they&#8217;re about gaining practical skills that will equip students to contribute to the next wave of breakthroughs in scientific research, technology development, and industry, powered by exascale computing.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Course</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HPC 1: Foundations of High-Performance Computing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This foundational course introduces students to the architectures of modern supercomputers, focusing on CPUs and the interconnect, and the basics of parallel programming with the Message Passing Interface (MPI). We will also introduce numerical methods for scientific computation and the Portable, Extensible Toolkit for Scientific Computation (PETSc <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>) as a general framework for implementing these methods in an HPC context.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HPC 2: Advanced Techniques in High-Performance Computing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Building on HPC 1, this course delves deeper into parallel computing, focusing on multi-threading techniques using OpenMP and GPU programming with CUDA or OpenCL. Students will learn how to leverage the power of multi-core processors and GPUs to accelerate their computations. We will continue our exploration of PETSc on top of Nvidia Cuda and AMD Hip, showing how it can be used to manage complex multi-threaded and GPU-accelerated computations.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HPC 3: High-Performance Computing for the Future</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The final course will cover the concept of hybrid computing, which involves mixing different programming models and hardware in a single program, and runtime execution systems that manage the execution of programs on complex, heterogeneous hardware. Performance analysis, optimization, parallel I/O and data management will also be covered. We will discuss how frameworks like PETSc  can be used in this context to help manage the complexity of hybrid computing and runtime systems.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_courses"><a class="anchor" href="#_courses"></a>4.6. Courses</h3>
 <div class="paragraph">
 <p>Here&#8217;s a proposed modification to the semester courses of CSMI:</p>
 </div>
@@ -1444,7 +1506,7 @@ We plan on showing CSMI students how to use both approaches in their work, and h
 <p>In this modification, we added three courses on high-performance computing, which covers various topics such as multigrid, domain decomposition, MPI, OpenMP, CUDA, and optimization of codes for high-performance computing architectures. We also added two courses on machine learning, one on scientific machine learning. Finally, we included a course on data assimilation and digital twins in the third semester.</p>
 </div>
 <div class="sect3">
-<h4 id="_semester_1"><a class="anchor" href="#_semester_1"></a>4.5.1. Semester 1</h4>
+<h4 id="_semester_1"><a class="anchor" href="#_semester_1"></a>4.6.1. Semester 1</h4>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Operating system</dt>
@@ -1471,9 +1533,13 @@ We plan on showing CSMI students how to use both approaches in their work, and h
 <dd>
 <p>This course provides a comprehensive understanding of C++ programming, including object-oriented programming, templates, and the Standard Template Library. Applied Mathematics students will gain the skills to implement mathematical algorithms efficiently, which is crucial for problem-solving in various mathematical fields.</p>
 </dd>
+</dl>
+</div>
+<div id="HPC1" class="dlist">
+<dl>
 <dt class="hdlist1">High-Performance Computing 1</dt>
 <dd>
-<p>This course provides a deep understanding of high-performance computing, including multigrid, domain decomposition, iterative solvers, parallel algorithms, and optimization of codes for high-performance computing architectures. Applied Mathematics students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.</p>
+<p>This foundational course introduces students to the architectures of modern supercomputers, focusing on CPUs and the interconnect, and the basics of parallel programming with the Message Passing Interface (MPI). We will also introduce numerical methods for scientific computation and the Portable, Extensible Toolkit for Scientific Computation (PETSc) as a general framework for implementing these methods in an HPC context. Students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.</p>
 </dd>
 <dt class="hdlist1">Scientific Computing 1</dt>
 <dd>
@@ -1491,7 +1557,7 @@ We plan on showing CSMI students how to use both approaches in their work, and h
 </div>
 </div>
 <div class="sect3">
-<h4 id="_semester_2"><a class="anchor" href="#_semester_2"></a>4.5.2. Semester 2</h4>
+<h4 id="_semester_2"><a class="anchor" href="#_semester_2"></a>4.6.2. Semester 2</h4>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Signal and Image Processing 1</dt>
@@ -1510,9 +1576,13 @@ We plan on showing CSMI students how to use both approaches in their work, and h
 <dd>
 <p>This course provides a deep understanding of optimization, including convex analysis, solution existence and uniqueness theorems, optimality conditions such as Euler equations and inequalities, Lagrange multipliers, Kuhn-Tucker relations, saddle point and duality theory, and numerical algorithms including gradient, relaxation, Newton and quasi-Newton, penalization, and Uzawa methods. Applied Mathematics students will gain the skills to implement mathematical algorithms efficiently, which is crucial for fields such as operations research, machine learning, and industrial mathematics.</p>
 </dd>
+</dl>
+</div>
+<div id="HPC2" class="dlist">
+<dl>
 <dt class="hdlist1">High-Performance Computing 2</dt>
 <dd>
-<p>This course provides a comprehensive understanding of high-performance computing, including performance modeling, profiling, optimization, GPU computing, and optimization of codes for high-performance computing architectures. Applied Mathematics students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.</p>
+<p>Building on HPC 1, this course delves deeper into parallel computing, focusing on multi-threading techniques using OpenMP and GPU programming with CUDA, HIP or OpenCL. Students will learn how to leverage the power of multi-core processors and GPUs to accelerate their computations. We will continue our exploration of PETSc, showing how it can be used to manage complex multi-threaded and GPU-accelerated computations. Applied Mathematics students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.</p>
 </dd>
 <dt class="hdlist1">Project 2</dt>
 <dd>
@@ -1526,7 +1596,7 @@ We plan on showing CSMI students how to use both approaches in their work, and h
 </div>
 </div>
 <div class="sect3">
-<h4 id="_semester_3"><a class="anchor" href="#_semester_3"></a>4.5.3. Semester 3</h4>
+<h4 id="_semester_3"><a class="anchor" href="#_semester_3"></a>4.6.3. Semester 3</h4>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">ROM &amp; Data driven ROM</dt>
@@ -1541,9 +1611,13 @@ We plan on showing CSMI students how to use both approaches in their work, and h
 <dd>
 <p>This course provides a deep understanding of numerical methods for partial differential equations, particularly the finite volume method and DG methods for hyperbolic systems. Applied Mathematics students will gain the skills to implement mathematical algorithms on computer systems, which is crucial for fields such as computational mathematics, fluid dynamics, and mathematical physics.</p>
 </dd>
+</dl>
+</div>
+<div id="HPC3" class="dlist">
+<dl>
 <dt class="hdlist1">High-Performance Computing 3</dt>
 <dd>
-<p>This course provides a comprehensive understanding of high-performance computing, including performance modeling, profiling, optimization, GPU computing, and optimization of codes for high-performance computing architectures. Applied Mathematics students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.</p>
+<p>The final course will cover the concept of hybrid computing, which involves mixing different programming models and hardware in a single program, and runtime execution systems that manage the execution of programs on complex, heterogeneous hardware. Performance analysis, optimization, parallel I/O and data management will also be covered. We will discuss how PETSc can be used in this context to help manage the complexity of hybrid computing and runtime systems. Applied Mathematics students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.</p>
 </dd>
 <dt class="hdlist1">Uncertainties</dt>
 <dd>
@@ -1573,7 +1647,7 @@ We plan on showing CSMI students how to use both approaches in their work, and h
 </div>
 </div>
 <div class="sect3">
-<h4 id="_semester_4"><a class="anchor" href="#_semester_4"></a>4.5.4. Semester 4</h4>
+<h4 id="_semester_4"><a class="anchor" href="#_semester_4"></a>4.6.4. Semester 4</h4>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Internship</dt>
@@ -1585,7 +1659,7 @@ We plan on showing CSMI students how to use both approaches in their work, and h
 </div>
 </div>
 <div class="sect2">
-<h3 id="_skills_set_to_be_acquired_by_csmi_students"><a class="anchor" href="#_skills_set_to_be_acquired_by_csmi_students"></a>4.6. Skills set to be acquired by CSMI Students</h3>
+<h3 id="_skills_set_to_be_acquired_by_csmi_students"><a class="anchor" href="#_skills_set_to_be_acquired_by_csmi_students"></a>4.7. Skills set to be acquired by CSMI Students</h3>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Problem-Solving Skills</dt>
@@ -1644,7 +1718,7 @@ We plan on showing CSMI students how to use both approaches in their work, and h
 </div>
 </div>
 <div class="sect2">
-<h3 id="_courses_and_skills"><a class="anchor" href="#_courses_and_skills"></a>4.7. Courses and Skills</h3>
+<h3 id="_courses_and_skills"><a class="anchor" href="#_courses_and_skills"></a>4.8. Courses and Skills</h3>
 <div class="paragraph">
 <p>The following is present the courses with the skills acquired by the students in the CSMI program:</p>
 </div>
@@ -1914,7 +1988,7 @@ We plan on showing CSMI students how to use both approaches in their work, and h
 <p>We now break down the macro skills into micro skills in the following tables</p>
 </div>
 <div class="sect3">
-<h4 id="_micro_skills_breakdown"><a class="anchor" href="#_micro_skills_breakdown"></a>4.7.1. Micro skills breakdown</h4>
+<h4 id="_micro_skills_breakdown"><a class="anchor" href="#_micro_skills_breakdown"></a>4.8.1. Micro skills breakdown</h4>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 5. Semester 1</caption>
 <colgroup>
@@ -2521,6 +2595,59 @@ a</p></td>
 </table>
 </div>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_changelog"><a class="anchor" href="#_changelog"></a>5. ChangeLog</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_v1_2"><a class="anchor" href="#_v1_2"></a>5.1. v1.2</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added a Changelog section</p>
+</li>
+<li>
+<p>Added the section on <a href="#_high_performance_computing">High Performance Computing</a> and updated the HPC course descriptions <a href="#HPC1">[HPC1]</a> <a href="#HPC2">[HPC2]</a> and <a href="#HPC3">[HPC3]</a> accordingly.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_v1_1"><a class="anchor" href="#_v1_1"></a>5.2. v1.1</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Updated section on <a href="#_courses_and_skills">Courses and Skills</a> to include the <a href="#_micro_skills_breakdown">skills breakdown</a> for each course. This section will need to be updated as the course descriptions are finalized.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_v1_0"><a class="anchor" href="#_v1_0"></a>5.3. v1.0</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Initial version</p>
+</li>
+<li>
+<p>PDF version using asciidoctor-pdf</p>
+</li>
+<li>
+<p>HTML version using antora 3</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. <a href="https://numpex.fr/" class="bare">numpex.fr/</a>
+</div>
+<div class="footnote" id="_footnotedef_2">
+<a href="#_footnoteref_2">2</a>. <a href="https://petsc.org/release/" class="bare">petsc.org/release/</a>
 </div>
 </div>
 </article>
