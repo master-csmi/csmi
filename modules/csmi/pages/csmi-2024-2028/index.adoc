@@ -705,16 +705,16 @@ a|
 
 == ChangeLog
 
-=== v1.2
+=== v1.2 - 2023-06-06
 
 * Added a Changelog section
 * Added the section on <<_high_performance_computing,High Performance Computing>> and updated the HPC course descriptions <<HPC1>> <<HPC2>> and <<HPC3>> accordingly.
 
-=== v1.1
+=== v1.1 - 2023-06-05
 
-* Updated section on <<_courses_and_skills,Courses and Skills>> to include the <<_micro_skills_breakdown,skills breakdown>> for each course. This section will need to be updated as the course descriptions are finalized.
+* Updated section on <<_courses_and_skills,Courses and Skills>> to include the <<_micro_skills_breakdown,micro skills breakdown>> for each course. This section will need to be updated as the course descriptions are finalized.
 
-=== v1.0
+=== v1.0 - 2023-06-01
 
 * Initial version
 * PDF version using asciidoctor-pdf 
