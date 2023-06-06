@@ -1,6 +1,6 @@
 = Master CSMI: Proposition de maquette pour 2024-2028
 Christophe Prud'homme 
-v1.2, 2023-06-04
+v1.2, 2023-06-06
 :doctype: book
 :title-page:
 :title-page-background-image: image:media/digital-background.png[]
@@ -14,7 +14,16 @@ v1.2, 2023-06-04
 [.metadata]
 {author} -- version {revnumber}, {revdate}
 
-This document is also available in xref:attachment$csmi-2024-2028.pdf[> PDF format].
+ifeval::["{backend}" != "pdf"]
+NOTE: This document is also available in xref:attachment$csmi-2024-2028.pdf[> PDF format].
+endif::[]
+
+ifeval::["{backend}" == "pdf"]
+NOTE: This document is also available in link:https://csmi.cemosis.fr/csmi/csmi/csmi-2024-2028[> HTML format]. 
+endif::[]
+
+
+
 
 == Introduction 
 
@@ -78,6 +87,7 @@ Overall, Cemosis and its involvement in the EDIH network further enhance the loc
 
 Starting Fall 2023, the applied mathematics team and Cemosis at UNISTRA will actively participate in two significant initiatives: PEPR Numpex and PEPR AI. These collaborations bring several benefits to CSMI students, enhancing their learning experience and future prospects.
 
+[[pepr-numpex]]
 1. PEPR Numpex: As part of the PEPR Numpex initiative, the applied mathematics team and Cemosis will contribute to the methods, algorithms and the development of the software stack for exascale computing. This involves working alongside esteemed partners : CEA, INRIA, Ecole Polytechnique, and Sorbonne Université. The exposure of CSMI students to this project offers them the following benefits:
 
    - Cutting-edge Research: Students will engage in cutting-edge research and development efforts, gaining exposure to the latest advancements in exascale computing. This hands-on experience will deepen their understanding of advanced methods and algorithms in this field.
@@ -209,6 +219,33 @@ Ensemble Kalman Filter:: This is an extension of the Kalman filter which is used
 
 In the context of master-level courses, data assimilation can be a valuable topic to cover, as it provides students with practical techniques for integrating model-driven and data-driven approaches. It also provides exposure to important concepts such as uncertainty quantification and state estimation. Coursework could include practical exercises involving the implementation and application of data assimilation methods, and could cover advanced topics such as the design of optimal observation systems.
 
+=== High Performance Computing
+
+High-Performance Computing (HPC) has been an essential tool for scientific research, industry, and technology development for several decades. 
+The scale of computational power we can harness has grown rapidly, from gigaflops in the 1990s to petaflops in the 2010s, and we are now on the brink of the exascale era.
+
+Programs like <<pepr-numpex,NumPEx>>, the French initiative for  Exascale computing, reflect this trend and underscore the importance of preparing for the next wave of computational capabilities footnote:[https://numpex.fr/]. NumPEx aims to design and develop the methods, algorithms and software components for future exascale machines and prepare major scientific and industrial application domains to fully exploit the capabilities of these machines.
+
+This evolution in computing power necessitates an evolution in the skills and tools we use to harness it. The architectures of modern supercomputers are becoming more complex, with an increasing variety of hardware components that need to be programmed and optimized. The programming models we use to write parallel and distributed applications are also evolving, requiring programmers to understand and mix different programming paradigms, such as MPI, multi-threading, and GPU programming. Runtime execution systems are becoming crucial for managing the execution of programs on complex hardware.
+
+To prepare for this future, we offer a sequence of three courses on High-Performance Computing as part of the CSMI Master's program. These courses will give students a deep understanding of modern HPC, from the basics of parallel programming and numerical methods to the advanced techniques of hybrid computing and runtime systems. The courses will also introduce students to state-of-the-art HPC tools and frameworks, such as PETSc, that will be essential for tackling the computational challenges of the future.
+
+These courses are not just about learning the theory of HPC; they're about gaining practical skills that will equip students to contribute to the next wave of breakthroughs in scientific research, technology development, and industry, powered by exascale computing.
+
+|===
+|Course |Description
+
+|HPC 1: Foundations of High-Performance Computing
+|This foundational course introduces students to the architectures of modern supercomputers, focusing on CPUs and the interconnect, and the basics of parallel programming with the Message Passing Interface (MPI). We will also introduce numerical methods for scientific computation and the Portable, Extensible Toolkit for Scientific Computation (PETSc footnote:[https://petsc.org/release/]) as a general framework for implementing these methods in an HPC context.
+
+|HPC 2: Advanced Techniques in High-Performance Computing
+|Building on HPC 1, this course delves deeper into parallel computing, focusing on multi-threading techniques using OpenMP and GPU programming with CUDA or OpenCL. Students will learn how to leverage the power of multi-core processors and GPUs to accelerate their computations. We will continue our exploration of PETSc on top of Nvidia Cuda and AMD Hip, showing how it can be used to manage complex multi-threaded and GPU-accelerated computations.
+
+|HPC 3: High-Performance Computing for the Future
+|The final course will cover the concept of hybrid computing, which involves mixing different programming models and hardware in a single program, and runtime execution systems that manage the execution of programs on complex, heterogeneous hardware. Performance analysis, optimization, parallel I/O and data management will also be covered. We will discuss how frameworks like PETSc  can be used in this context to help manage the complexity of hybrid computing and runtime systems.
+|===
+
+
 
 
 === Courses
@@ -267,7 +304,10 @@ Database:: This course delves into the principles of database design and impleme
 
 C++:: This course provides a comprehensive understanding of C++ programming, including object-oriented programming, templates, and the Standard Template Library. Applied Mathematics students will gain the skills to implement mathematical algorithms efficiently, which is crucial for problem-solving in various mathematical fields.
 
-High-Performance Computing 1:: This course provides a deep understanding of high-performance computing, including multigrid, domain decomposition, iterative solvers, parallel algorithms, and optimization of codes for high-performance computing architectures. Applied Mathematics students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.
+[[HPC1]]
+High-Performance Computing 1:: This foundational course introduces students to the architectures of modern supercomputers, focusing on CPUs and the interconnect, and the basics of parallel programming with the Message Passing Interface (MPI). We will also introduce numerical methods for scientific computation and the Portable, Extensible Toolkit for Scientific Computation (PETSc) as a general framework for implementing these methods in an HPC context. Students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.
+
+
 
 Scientific Computing 1:: This course provides a comprehensive understanding of scientific computing, including the finite difference method. Applied Mathematics students will gain the skills to implement mathematical algorithms on computer systems, which is crucial for fields such as computational mathematics, data science, and machine learning.
 
@@ -285,7 +325,9 @@ Numerical Methods for PDE:: This course provides a comprehensive understanding o
 
 Optimization:: This course provides a deep understanding of optimization, including convex analysis, solution existence and uniqueness theorems, optimality conditions such as Euler equations and inequalities, Lagrange multipliers, Kuhn-Tucker relations, saddle point and duality theory, and numerical algorithms including gradient, relaxation, Newton and quasi-Newton, penalization, and Uzawa methods. Applied Mathematics students will gain the skills to implement mathematical algorithms efficiently, which is crucial for fields such as operations research, machine learning, and industrial mathematics.
 
-High-Performance Computing 2:: This course provides a comprehensive understanding of high-performance computing, including performance modeling, profiling, optimization, GPU computing, and optimization of codes for high-performance computing architectures. Applied Mathematics students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.
+[[HPC2]]
+High-Performance Computing 2:: Building on HPC 1, this course delves deeper into parallel computing, focusing on multi-threading techniques using OpenMP and GPU programming with CUDA, HIP or OpenCL. Students will learn how to leverage the power of multi-core processors and GPUs to accelerate their computations. We will continue our exploration of PETSc, showing how it can be used to manage complex multi-threaded and GPU-accelerated computations. Applied Mathematics students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.
+
 
 Project 2:: This course involves collaborative projects with  academia or enterprises, providing students with hands-on experience in applying their theoretical  knowledge and skills in research-oriented and real-world industry settings. This experience is invaluable for Applied Mathematics students as it provides a practical context for their theoretical knowledge.
 
@@ -299,7 +341,9 @@ Optimal Control:: This course provides a comprehensive understanding of optimal 
 
 Numerical Methods for PDE 2:: This course provides a deep understanding of numerical methods for partial differential equations, particularly the finite volume method and DG methods for hyperbolic systems. Applied Mathematics students will gain the skills to implement mathematical algorithms on computer systems, which is crucial for fields such as computational mathematics, fluid dynamics, and mathematical physics.
 
-High-Performance Computing 3:: This course provides a comprehensive understanding of high-performance computing, including performance modeling, profiling, optimization, GPU computing, and optimization of codes for high-performance computing architectures. Applied Mathematics students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.
+[[HPC3]]
+High-Performance Computing 3:: The final course will cover the concept of hybrid computing, which involves mixing different programming models and hardware in a single program, and runtime execution systems that manage the execution of programs on complex, heterogeneous hardware. Performance analysis, optimization, parallel I/O and data management will also be covered. We will discuss how PETSc can be used in this context to help manage the complexity of hybrid computing and runtime systems. Applied Mathematics students will gain the skills to implement mathematical algorithms on high-performance computing systems, which is crucial for fields such as computational mathematics, data science, and machine learning.
+
 
 Uncertainties:: This course provides a deep understanding of uncertainties, including stochastic modeling, uncertainty quantification, and sensitivity analysis. Applied Mathematics students will gain the skills to model stochastic processes efficiently, which is crucial for fields such as industrial mathematics, risk analysis, and machine learning.
 
@@ -630,12 +674,13 @@ a| - Generate geometry and meshes
 - Adapt meshes
 - Visualize scientific data
 - Perform data analysis tasks in scientific computing
+
 | Networks
 | High-Performance Computing, Problem-Solving Skills
 a| - Understand network architectures
-
 - Implement network protocols
 - Perform network-related algorithms
+
 | Project 3
 | Project Management, Collaboration Skills
 a| - Collaborate in projects with academia or enterprises
@@ -657,3 +702,20 @@ a|
  *  Solve problems in a practical context
 
 |===
+
+== ChangeLog
+
+=== v1.2
+
+* Added a Changelog section
+* Added the section on <<_high_performance_computing,High Performance Computing>> and updated the HPC course descriptions <<HPC1>> <<HPC2>> and <<HPC3>> accordingly.
+
+=== v1.1
+
+* Updated section on <<_courses_and_skills,Courses and Skills>> to include the <<_micro_skills_breakdown,skills breakdown>> for each course. This section will need to be updated as the course descriptions are finalized.
+
+=== v1.0
+
+* Initial version
+* PDF version using asciidoctor-pdf 
+* HTML version using antora 3
