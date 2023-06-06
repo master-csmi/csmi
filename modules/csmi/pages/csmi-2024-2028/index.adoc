@@ -219,6 +219,7 @@ Ensemble Kalman Filter:: This is an extension of the Kalman filter which is used
 
 In the context of master-level courses, data assimilation can be a valuable topic to cover, as it provides students with practical techniques for integrating model-driven and data-driven approaches. It also provides exposure to important concepts such as uncertainty quantification and state estimation. Coursework could include practical exercises involving the implementation and application of data assimilation methods, and could cover advanced topics such as the design of optimal observation systems.
 
+[[_hpc]]
 === High Performance Computing
 
 High-Performance Computing (HPC) has been an essential tool for scientific research, industry, and technology development for several decades. 
@@ -708,7 +709,7 @@ a|
 === v1.2 - 2023-06-06
 
 * Added a Changelog section
-* Added the section on <<_high_performance_computing,High Performance Computing>> and updated the HPC course descriptions <<HPC1>> <<HPC2>> and <<HPC3>> accordingly.
+* Added the section on <<_hpc,High Performance Computing>> and updated the HPC course descriptions <<HPC1>> <<HPC2>> and <<HPC3>> accordingly.
 
 === v1.1 - 2023-06-05
 
