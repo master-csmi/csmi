@@ -1,6 +1,6 @@
 = Master CSMI: Proposition de maquette pour 2024-2028
 Christophe Prud'homme 
-v1.2, 2023-06-06
+v1.3, 2023-06-07
 :doctype: book
 :title-page:
 :title-page-background-image: image:media/digital-background.png[]
@@ -149,11 +149,54 @@ NOTE: As the person responsible for the Master CSMI my preference goes to the fi
 
 === English courses versus Courses in English
 
-Due to feedback from students, the Master CSMI program has made changes to the curriculum regarding English language courses. The two 3 ECTS English courses, which were previously offered in Semester 1 and Semester 3 to improve English skills, have been removed. These courses were not well received by the students.
+In response to student feedback, the Master CSMI program has implemented changes to the curriculum regarding English language courses. The previous offering of two 3 ECTS English courses in Semester 1 and Semester 3, aimed at enhancing English skills, has been eliminated due to poor reception among students.
 
-Instead, the program now includes 2 or 3 standard courses per semester taught in English, along with the projects where the students have to write reports and make presentations in english. This modification aims to provide students with more flexibility in their course selection while still incorporating English language instruction. By integrating English language learning within regular courses, students can develop their English skills in a more practical and contextual manner.
+Instead, the program now includes at least 2 or 3 standard courses per semester taught in English, along with projects that require students to write reports and deliver presentations in English. This modification aims to provide students with more flexibility in their course selection while still incorporating English language instruction. By integrating English language learning within regular courses, students can develop their English skills in a more practical and contextual manner in applied mathematics and applications.
 
-The adjustments in the curriculum aim to ensure that students receive a well-rounded education that meets their needs and preferences.
+Mixing languages in a master track can offer several benefits:
+
+Language Proficiency:: Students have the opportunity to improve their proficiency in both French and English, which are valuable skills in today's globalized world. Developing competency in multiple languages can enhance students' communication abilities and open up international career prospects.
+
+Cultural Competence:: Exposure to different languages and cultures enriches students' understanding and appreciation of diverse perspectives. It fosters a multicultural learning environment, promoting intercultural competence and broadening students' horizons.
+
+Career Opportunities:: Proficiency in both French and English is often sought after by employers, particularly in international or multinational organizations. Having a mastery of both languages can provide graduates with a competitive edge in the job market.
+
+Multilingual Communication Skills:: By requiring reports and oral presentations in English, students develop the ability to effectively communicate complex concepts in a second language. This skillset is highly valuable in professional settings where multilingual communication is required.
+
+However, it's important to ensure that 
+
+1. the language requirements and expectations are clearly communicated to students beforehand, so they can adequately prepare and manage their language learning. 
+2. we provide some support, such as language resources or language assistance programs, can also be beneficial to help students succeed in a multilingual environment.
+
+Overall, a master track that combines French and English courses, along with opportunities for report writing and oral presentations in English, can offer a unique and attractive learning experience, preparing students for international collaboration and global career opportunities.
+
+Furthermore, the Master CSMI program recognizes the potential to attract students from various European countries and beyond, taking advantage of its geographical proximity to Germany and Luxembourg. While the program previously had limited exposure to English-language courses, the curriculum changes in this document present an opportunity to appeal to a broader international student base.
+
+By offering a combination of French and English courses, along with opportunities for report writing and oral presentations in English, the program can now cater to the needs of students from different linguistic backgrounds. 
+
+To ensure clear communication of language requirements and expectations to students:
+
+* Clearly outline language requirements in program documentation.
+* Include language-related information in course descriptions.
+* Organize orientation sessions to provide detailed information on language expectations.
+* Maintain ongoing communication with students about language requirements and updates.
+* Include explicit language expectations in course syllabi.
+* Ensure faculty are aware of language requirements and provide guidance.
+* Establish student support services for language assistance and practice through the use of modern technologies (not yet clear for example if we can use the language center of the university even though we don't use the course facilities).
+
+These measures help students prepare and manage their language learning effectively.
+
+A short survey of the current Master track CSMI teachers (13 answers) shows that 46% are willing to teach in English, 38% may be willing to do it and only 10% are not willing to teach in English. This is a good sign for the future of the program since we would like to have both courses in french and english.
+
+.Inquiry: Would you be willing to teach in English in the future?
+image::inquiry-english-courses.png[width=600px]
+
+The next figure show that courses may be taught in English in various ways in about the same proportion: courses taught in english completely, course taught in french but the course notes are in english, exercices in english, oral presentations and written reports can be in english. We can leverage this to implement the plan above.
+
+.Inquiry: How would you teach in english?
+image::inquiry-english-how.png[width=600px]
+
+In the <<_courses,courses section>> we propose a list of courses that can be taught in english. We can see that the list is quite long and that we can easily have half of the courses per semester taught in english.
 
 === Introduction to Scientific Maching Learning
 
@@ -253,41 +296,42 @@ These courses are not just about learning the theory of HPC; they're about gaini
 
 Here's a proposed modification to the semester courses of CSMI:
 
-[cols="2,1,1,1,1,1", options="header"]
+[cols="2,1,1,1,1,1,1", options="header"]
 |===
-| Course | ECTS | Type | Topics | Semester | Teacher
-| Semester 1 | | | | | 
-| Operating System | 3 (28h equiv. TD) | CI | BASE | S1 | P. David
-| Algorithmics & Graphs | 3 (28h equiv. TD) | CI | BASE | S1 | To be determined
-| Project 1 | 3 (28h equiv. TD) | CI | BASE | S1 | C. Prud'homme
-| Data Processing and Mining | 3 (28h equiv. TD) | CI | BASE | S1 | V. Vigon
-| Database | 3 (28h equiv. TD) | CI | HPC | S1 | Guest Lecturer
-| C++ | 3 (28h equiv. TD) | CI | HPC | S1 | V. Chabannes
-| High-Performance Computing 1 | 3 (28h equiv. TD) | CI | HPC | S1 | B. Bramas, V. Chabannes, M. Boileau
-| Scientific Computing 1 | 3 (28h equiv. TD) | CI | BASE | S1 | P. Helluy
-| Scientific Computing 2 | 3 (28h equiv. TD) | CI | MSO | S1 | L. Navoret
-| Random Models | 3 (28h equiv. TD) | CI | MSO | S1 | V. Vigon
-| Semester 2 | | | | | 
-| Signal and Image Processing 1 | 3 (28h equiv. TD) | CI | DATA | S2 | V. Vigon
-| Scientific Machine Learning 1 | 3 (28h equiv. TD) | CI | ML / ROM | S2 | L. Navoret
-| Numerical Methods for PDE 1 | 6 (56h equiv. TD) | CI | MSO | S2 | C. Prud'homme
-| Optimization | 6 (56h equiv. TD) | CI | MSO | S2 | L. Navoret
-| High-Performance Computing 2 | 3 (28h equiv. TD) | CI | HPC | S2 | B. Bramas, V. Chabannes, M. Boileau
-| Project 2 | 3 (28h equiv. TD) | CI | BASE | S2 | C. Prud'homme
-| Internship or Thesis | 6 (56h equiv. TD) | Internship | BASE | S2 | Program Coordinator
-| Semester 3 | | | | | 
-| ROM & Data-Driven ROM | 3 (28h equiv. TD) | CI | ML / ROM | S3 | C. Prud'homme
-| Optimal Control | 6 (56h equiv. TD) | CI | MSO | S3 | B. Rao, M. Duprez, C. Prud'homme
-| Numerical Methods for PDE 2 | 3 (28h equiv. TD) | CI | MSO | S3 | P. Helluy
-| High-Performance Computing 3 | 3 (28h equiv. TD) | CI | HPC | S3 | B. Bramas, V. Chabannes, M. Boileau
-| Uncertainties | 3 (28h equiv. TD) | CI | MSO | S3 | E. Birmelé
-| Signal and Image Processing 2 | 3 (28h equiv. TD) | CI | DATA | S3 | V. Vigon
-| Scientific Machine Learning 2 | 3 (28h equiv. TD) | CI | ML / ROM | S3 | E. Franck
-| Networks OR Pre and Post-Processing in Scientific Computing | 3 (28h equiv. TD) | CI | MSO | S3 | P. David OR Trophime / Sarton
-| Project 3 | 3 (28h equiv. TD) | CI | BASE | S3 | C. Prud'homme
-| Semester 4 | | | | | 
-| Internship or Thesis | 30 | Internship | BASE | S4 | Program Coordinator
+| Course | ECTS | Type | Topics | Semester | Teacher | Language
+| Semester 1 | | | | | | 
+| Operating System | 3 (28h equiv. TD) | CI | BASE | S1 | P. David | Fr
+| Algorithmics & Graphs | 3 (28h equiv. TD) | CI | BASE | S1 | To be determined | En, Fr
+| Project 1 | 3 (28h equiv. TD) | CI | BASE | S1 | C. Prud'homme, J. Aghili | En, Fr
+| Data Processing and Mining | 3 (28h equiv. TD) | CI | BASE | S1 | V. Vigon | En, Fr
+| Database | 3 (28h equiv. TD) | CI | HPC | S1 | Guest Lecturer | En, Fr
+| C++ | 3 (28h equiv. TD) | CI | HPC | S1 | V. Chabannes | Fr
+| High-Performance Computing 1 | 3 (28h equiv. TD) | CI | HPC | S1 | B. Bramas, V. Chabannes, M. Boileau | En, Fr
+| Scientific Computing 1 | 3 (28h equiv. TD) | CI | BASE | S1 | P. Helluy | En, Fr
+| Scientific Computing 2 | 3 (28h equiv. TD) | CI | MSO | S1 | L. Navoret | En, Fr
+| Random Models | 3 (28h equiv. TD) | CI | MSO | S1 | V. Vigon | Fr
+| Semester 2 | | | | | | 
+| Signal and Image Processing 1 | 3 (28h equiv. TD) | CI | DATA | S2 | V. Vigon | Fr
+| Scientific Machine Learning 1 | 3 (28h equiv. TD) | CI | ML / ROM | S2 | L. Navoret | En, Fr
+| Numerical Methods for PDE 1 | 6 (56h equiv. TD) | CI | MSO | S2 | C. Prud'homme, J. Aghili | En, Fr
+| Optimization | 6 (56h equiv. TD) | CI | MSO | S2 | L. Navoret | En, Fr
+| High-Performance Computing 2 | 3 (28h equiv. TD) | CI | HPC | S2 | B. Bramas, V. Chabannes, M. Boileau | En, Fr
+| Project 2 | 3 (28h equiv. TD) | CI | BASE | S2 | C. Prud'homme | En, Fr
+| Internship or Thesis | 6 (56h equiv. TD) | Internship | BASE | S2 | Program Coordinator | En, Fr
+| Semester 3 | | | | | | 
+| ROM & Data-Driven ROM | 3 (28h equiv. TD) | CI | ML / ROM | S3 | C. Prud'homme | En, Fr
+| Optimal Control | 6 (56h equiv. TD) | CI | MSO | S3 | B. Rao, M. Duprez, C. Prud'homme | En, Fr
+| Numerical Methods for PDE 2 | 3 (28h equiv. TD) | CI | MSO | S3 | P. Helluy | En, Fr
+| High-Performance Computing 3 | 3 (28h equiv. TD) | CI | HPC | S3 | B. Bramas, V. Chabannes, M. Boileau | En, Fr
+| Uncertainties | 3 (28h equiv. TD) | CI | MSO | S3 | E. Birmelé | En, Fr
+| Signal and Image Processing 2 | 3 (28h equiv. TD) | CI | DATA | S3 | V. Vigon | Fr
+| Scientific Machine Learning 2 | 3 (28h equiv. TD) | CI | ML / ROM | S3 | E. Franck | En, Fr
+| Networks OR Pre and Post-Processing in Scientific Computing | 3 (28h equiv. TD) | CI | MSO | S3 | P. David OR Trophime / Sarton | En, Fr
+| Project 3 | 3 (28h equiv. TD) | CI | BASE | S3 | C. Prud'homme, J. Aghili | En, Fr
+| Semester 4 | | | | | | 
+| Internship or Thesis | 30 | Internship | BASE | S4 | Program Coordinator | En, Fr
 |===
+
 
 In this modification, we added three courses on high-performance computing, which covers various topics such as multigrid, domain decomposition, MPI, OpenMP, CUDA, and optimization of codes for high-performance computing architectures. We also added two courses on machine learning, one on scientific machine learning. Finally, we included a course on data assimilation and digital twins in the third semester.
 
@@ -406,7 +450,7 @@ The following is present the courses with the skills acquired by the students in
 |Problem-Solving Skills, Algorithm Design and Analysis
 
 |Project 1
-|Project Management, Programming Skills, Collaboration Skills
+|Project Management, Programming Skills, Collaboration Skills, Problem-Solving Skills 
 
 |Data Processing and Mining
 |Data Analysis Skills, Machine Learning
@@ -446,10 +490,10 @@ The following is present the courses with the skills acquired by the students in
 |High-Performance Computing, Problem-Solving Skills
 
 |Project 2
-|Project Management, Collaboration Skills
+|Potentially all skills but in particular Project Management, Collaboration Skills, Communication Skills, Problem-Solving Skills, Professional Skills
 
 |Internship
-|Project Management, Professional Skills, Collaboration Skills, Problem-Solving Skills
+|Potentially all skills but in particular Project Management, Professional Skills, Collaboration Skills, Problem-Solving Skills, Communication Skills
 
 |Semester 3 |
 |ROM & Data driven ROM
@@ -480,11 +524,11 @@ The following is present the courses with the skills acquired by the students in
 |High-Performance Computing, Problem-Solving Skills
 
 |Project 3
-|Project Management, Collaboration Skills
+|Potentially all skills but in particular Project Management, Collaboration Skills, Communication Skills, Problem-Solving Skills, Professional Skills
 
 |Semester 4 |
 |Internship
-|Project Management, Professional Skills, Collaboration Skills, Problem-Solving Skills
+|Potentially all skills but in particular Project Management, Professional Skills, Collaboration Skills, Problem-Solving Skills, Communication Skills
 |===
 
 We now break down the macro skills into micro skills in the following tables
@@ -706,6 +750,14 @@ a|
 
 == ChangeLog
 
+=== v1.3 - 2023-06-07
+
+* Added a more substantial discussion in section <<_english_courses_versus_courses_in_english,English Courses>>.
+* Updated the <<_courses,courses list>> by adding a language column to indicate the possible languages (english or french) for each course.
+* Added a section on <<_appendix,Discussion on Networks and Pre and Post-Processing in Scientific Computing Courses>> to discuss a proposition to have a course on Network-Integrated Pre and Post Processing in Scientific Computing instead of the two courses on Networks and Pre and Post-Processing in Scientific Computing.
+* Updated the list of macro skills for projects and internships.
+
+
 === v1.2 - 2023-06-06
 
 * Added a Changelog section
@@ -720,3 +772,68 @@ a|
 * Initial version
 * PDF version using asciidoctor-pdf 
 * HTML version using antora 3
+
+
+[[appendix]]
+== Discussion on Networks and Pre and Post-Processing in Scientific Computing Courses
+
+The following is a discussion on the Network and Pre and Post-Processing in Scientific Computing courses, which are proposed as alternatives for the third semester of the CSMI program. Instead of taking either courses, we can provide the 
+course **"Network-Integrated Pre and Post Processing in Scientific Computing"**.
+
+=== Course offer
+
+This course offers a detailed exploration of pre and post-processing techniques in scientific computation, with a particular focus on integrating these processes with network data access. It covers key topics including geometry and mesh creation, mesh modification, data visualization and analysis, and efficient use of network frameworks and APIs for streamlined data transmission. 
+
+The course underscores the practicality of incorporating network connectivity to source data from varied inputs such as sensors, images, and simulation results. It provides students with hands-on experience in managing network-based data acquisition, processing, and storage, enabling them to apply mathematical algorithms and execute data-driven pre and post-processing operations. 
+
+Designed for students in computational mathematics, data science, machine learning, and related disciplines, this course sets the stage for an introduction to High Performance Data Analysis (HPDA). It aims to empower students with the ability to leverage network functionalities for a seamless integration of data into their computational workflows.
+
+Key benefits of the course include:
+
+Practical Knowledge:: Gain hands-on experience with network-based data acquisition, processing, and storage.
+Interdisciplinary Skills:: Learn techniques relevant to computational mathematics, data science, machine learning, and more.
+Real-World Relevance:: Understand how to apply these skills in real-world scenarios, particularly in the context of HPDA.
+Future-Proof Learning:: Acquire skills that are in-demand and applicable to emerging technologies such as the Internet of Things (IoT).
+Enhanced Problem Solving:: Develop a comprehensive understanding of pre and post-processing in scientific computing.
+Efficiency:: Learn how to use network frameworks and APIs for efficient data transmission.
+
+This structure provides a clear overview of the course, its intended audience, its relationship to HPDA, and the benefits students can expect to gain from it.
+
+=== Integration in CSMI
+
+The "Network-Integrated Pre and Post Processing in Scientific Computing" course, as we discussed earlier, is designed to provide a comprehensive understanding of pre and post-processing in scientific computing, while integrating data access through networks. Looking at the course list, there are several ways this course integrates into the master track:
+
+Building on Foundational Courses:: In Semester 1, students learn the basics of operating systems, algorithmics, data processing and mining, and databases. The proposed course builds on these foundational skills, teaching students how to apply these concepts in a networked environment for scientific computing.
+
+Complementing Advanced Courses:: Courses like "High-Performance Computing" and "Scientific Computing" in Semester 1 and 2, focus on advanced computing techniques and algorithms. The proposed course complements these courses by teaching students how to efficiently handle and process data, a critical aspect of high-performance and scientific computing.
+
+Integration with Data-Centric Courses:: The course nicely ties in with data-centric courses like "Data Processing and Mining", "Scientific Machine Learning", and "Signal and Image Processing". The skills learned in these courses can be used in conjunction with the network integration skills taught in the proposed course to manage, analyze, and visualize data more effectively.
+
+Preparation for Practical Applications:: The course provides practical, hands-on experience, which will be useful for students during their projects and internship or thesis work in Semesters 2, 3, and 4.
+
+Introduction to HPDA:: This course introduces students to the concept of High Performance Data Analysis (HPDA), which could be a valuable supplement to the other high-performance computing and machine learning courses in the curriculum.
+
+Overall, the proposed course can be a strong addition to the master track, providing a valuable set of skills that complements and enhances the other courses in the curriculum.
+
+=== Course skills
+
+Certainly, based on the course description, the following skills from your list would apply to the "Pre and Post Processing in Scientific Computing with Network Data Handling" course:
+
+Problem-Solving Skills:: The course includes a focus on implementing mathematical algorithms and performing data-driven pre and post-processing operations.
+Programming Skills:: While the specific languages aren't mentioned in the course description, it's likely that some level of programming proficiency would be necessary for the practical aspects of the course.
+Data Analysis Skills:: The course involves working with data from various sources, including sensors and images, and performing data analysis.
+High-Performance Computing:: The course introduces students to High Performance Data Analysis (HPDA), which involves optimizing computations to run efficiently on high-performance computing systems.
+Communication Skills:: As with most academic courses, the ability to effectively communicate complex concepts, both orally and in writing, would be beneficial.
+Collaboration Skills:: The course involves hands-on experience, which could involve group projects requiring teamwork and collaboration.
+Research Skills:: While not explicitly stated in the course description, research skills could be beneficial in understanding and implementing the latest methods in pre and post-processing, network integration, and HPDA.
+Professional Skills:: The course has a practical emphasis, and the skills learned could be directly applicable in real-world settings, particularly those involving network-based data acquisition and processing.
+
+IMPORTANT: It's important to note that the specific skills required or developed might depend on the specific course content and structure, which could vary based on the instructor's approach and the specific projects or assignments included in the course.
+
+Here are some additional skills that could be relevant to the course:
+
+1. **Implement** mathematical algorithms for pre and post-processing tasks.
+2. **Analyze** data collected from various networked sources to inform decision-making.
+3. **Optimize** computations for efficient execution on high-performance computing systems.
+4. **Collaborate** in team-based projects involving data acquisition, processing, and storage.
+5. **Apply** professional practices in network-based data acquisition and processing in real-world settings.
