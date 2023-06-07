@@ -71,5 +71,5 @@ Sur dossier et après avis de la commission pédagogique pour les titulaires d'u
 [discrete]
 === Calendrier
 
-Le calendrier de l'année {master-year} est disponible ici btn:[https://mathinfo.unistra.fr/websites/math-info/math-info/doc_etudiant/Calendrier_Universitaire/Calendrier_2022-2023/Calendrier_etu_MasterMath_2022-2023_240822.pdf[> PDF]]
+Le calendrier de l'année {master-year} est disponible ici btn:[https://mathinfo.unistra.fr/websites/math-info/math-info/doc_etudiant/Calendrier_Universitaire/Calendrier_2022-2023/Calendrier_etu_MasterMath_2022-2023_021222.pdf[> PDF]]
 
