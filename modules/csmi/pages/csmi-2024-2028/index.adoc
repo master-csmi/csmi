@@ -797,8 +797,6 @@ Future-Proof Learning:: Acquire skills that are in-demand and applicable to emer
 Enhanced Problem Solving:: Develop a comprehensive understanding of pre and post-processing in scientific computing.
 Efficiency:: Learn how to use network frameworks and APIs for efficient data transmission.
 
-This structure provides a clear overview of the course, its intended audience, its relationship to HPDA, and the benefits students can expect to gain from it.
-
 === Integration in CSMI
 
 The "Network-Integrated Pre and Post Processing in Scientific Computing" course, as we discussed earlier, is designed to provide a comprehensive understanding of pre and post-processing in scientific computing, while integrating data access through networks. Looking at the course list, there are several ways this course integrates into the master track:
@@ -817,10 +815,10 @@ Overall, the proposed course can be a strong addition to the master track, provi
 
 === Course skills
 
-Certainly, based on the course description, the following skills from your list would apply to the "Pre and Post Processing in Scientific Computing with Network Data Handling" course:
+The following skills  would apply to the "Network-Integrated Pre and Post Processing in Scientific Computing" course:
 
 Problem-Solving Skills:: The course includes a focus on implementing mathematical algorithms and performing data-driven pre and post-processing operations.
-Programming Skills:: While the specific languages aren't mentioned in the course description, it's likely that some level of programming proficiency would be necessary for the practical aspects of the course.
+Programming Skills:: While the specific languages aren't currently mentioned in the course description, it's likely that some level of programming proficiency would be necessary for the practical aspects of the course.
 Data Analysis Skills:: The course involves working with data from various sources, including sensors and images, and performing data analysis.
 High-Performance Computing:: The course introduces students to High Performance Data Analysis (HPDA), which involves optimizing computations to run efficiently on high-performance computing systems.
 Communication Skills:: As with most academic courses, the ability to effectively communicate complex concepts, both orally and in writing, would be beneficial.
@@ -828,9 +826,9 @@ Collaboration Skills:: The course involves hands-on experience, which could invo
 Research Skills:: While not explicitly stated in the course description, research skills could be beneficial in understanding and implementing the latest methods in pre and post-processing, network integration, and HPDA.
 Professional Skills:: The course has a practical emphasis, and the skills learned could be directly applicable in real-world settings, particularly those involving network-based data acquisition and processing.
 
-IMPORTANT: It's important to note that the specific skills required or developed might depend on the specific course content and structure, which could vary based on the instructor's approach and the specific projects or assignments included in the course.
+IMPORTANT: It's important to note that the specific skills required or developed might depend on the specific course content and structure, which could vary based on the instructor's approach and the specific projects or assignments included in the course. This course will be taught by several colleagues as it involves various expertises.
 
-Here are some additional skills that could be relevant to the course:
+Here are some additional skills that could be dirrectly associated to the course:
 
 1. **Implement** mathematical algorithms for pre and post-processing tasks.
 2. **Analyze** data collected from various networked sources to inform decision-making.
