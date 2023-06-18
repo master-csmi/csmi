@@ -1,6 +1,6 @@
 = Master CSMI: Proposition de maquette pour 2024-2028
 Christophe Prud'homme 
-v1.3, 2023-06-07
+v1.4, 2023-06-07
 :doctype: book
 :title-page:
 :title-page-background-image: image:media/digital-background.png[]
@@ -301,12 +301,12 @@ Here's a proposed modification to the semester courses of CSMI:
 | Course | ECTS | Type | Topics | Semester | Teacher | Language
 | Semester 1 | | | | | | 
 | Operating System | 3 (28h equiv. TD) | CI | BASE | S1 | P. David | Fr
-| Algorithmics & Graphs | 3 (28h equiv. TD) | CI | BASE | S1 | To be determined | En, Fr
+| Algorithmics & Graphs | 3 (28h equiv. TD) | CI | BASE | S1 | Y Bugeaud | En, Fr
 | Project 1 | 3 (28h equiv. TD) | CI | BASE | S1 | C. Prud'homme, J. Aghili | En, Fr
 | Data Processing and Mining | 3 (28h equiv. TD) | CI | BASE | S1 | V. Vigon | En, Fr
-| Database | 3 (28h equiv. TD) | CI | HPC | S1 | Guest Lecturer | En, Fr
+| Database | 3 (28h equiv. TD) | CI | HPC | S1 | Ext. Guest Lecturer | En, Fr
 | C++ | 3 (28h equiv. TD) | CI | HPC | S1 | V. Chabannes | Fr
-| High-Performance Computing 1 | 3 (28h equiv. TD) | CI | HPC | S1 | B. Bramas, V. Chabannes, M. Boileau | En, Fr
+| High-Performance Computing 1 | 3 (28h equiv. TD) | CI | HPC | S1 | Ext. B. Bramas, V. Chabannes, M. Boileau | En, Fr
 | Scientific Computing 1 | 3 (28h equiv. TD) | CI | BASE | S1 | P. Helluy | En, Fr
 | Scientific Computing 2 | 3 (28h equiv. TD) | CI | MSO | S1 | L. Navoret | En, Fr
 | Random Models | 3 (28h equiv. TD) | CI | MSO | S1 | V. Vigon | Fr
@@ -315,18 +315,18 @@ Here's a proposed modification to the semester courses of CSMI:
 | Scientific Machine Learning 1 | 3 (28h equiv. TD) | CI | ML / ROM | S2 | L. Navoret | En, Fr
 | Numerical Methods for PDE 1 | 6 (56h equiv. TD) | CI | MSO | S2 | C. Prud'homme, J. Aghili | En, Fr
 | Optimization | 6 (56h equiv. TD) | CI | MSO | S2 | L. Navoret | En, Fr
-| High-Performance Computing 2 | 3 (28h equiv. TD) | CI | HPC | S2 | B. Bramas, V. Chabannes, M. Boileau | En, Fr
+| High-Performance Computing 2 | 3 (28h equiv. TD) | CI | HPC | S2 | Ext. B. Bramas, V. Chabannes, M. Boileau | En, Fr
 | Project 2 | 3 (28h equiv. TD) | CI | BASE | S2 | C. Prud'homme | En, Fr
 | Internship or Thesis | 6 (56h equiv. TD) | Internship | BASE | S2 | Program Coordinator | En, Fr
 | Semester 3 | | | | | | 
 | ROM & Data-Driven ROM | 3 (28h equiv. TD) | CI | ML / ROM | S3 | C. Prud'homme | En, Fr
-| Optimal Control | 6 (56h equiv. TD) | CI | MSO | S3 | B. Rao, M. Duprez, C. Prud'homme | En, Fr
+| Optimal Control | 6 (56h equiv. TD) | CI | MSO | S3 | B. Rao, Ext. M. Duprez, C. Prud'homme | En, Fr
 | Numerical Methods for PDE 2 | 3 (28h equiv. TD) | CI | MSO | S3 | P. Helluy | En, Fr
-| High-Performance Computing 3 | 3 (28h equiv. TD) | CI | HPC | S3 | B. Bramas, V. Chabannes, M. Boileau | En, Fr
+| High-Performance Computing 3 | 3 (28h equiv. TD) | CI | HPC | S3 | Ext. B. Bramas, V. Chabannes, M. Boileau | En, Fr
 | Uncertainties | 3 (28h equiv. TD) | CI | MSO | S3 | E. Birmelé | En, Fr
 | Signal and Image Processing 2 | 3 (28h equiv. TD) | CI | DATA | S3 | V. Vigon | Fr
 | Scientific Machine Learning 2 | 3 (28h equiv. TD) | CI | ML / ROM | S3 | E. Franck | En, Fr
-| Networks OR Pre and Post-Processing in Scientific Computing | 3 (28h equiv. TD) | CI | MSO | S3 | P. David OR Trophime / Sarton | En, Fr
+| Network-Integrated Pre and Post-Processing in Scientific Computing | 3 (28h equiv. TD) | CI | MSO | S3 | Ext. C. Trophime, J. Sarton | En, Fr
 | Project 3 | 3 (28h equiv. TD) | CI | BASE | S3 | C. Prud'homme, J. Aghili | En, Fr
 | Semester 4 | | | | | | 
 | Internship or Thesis | 30 | Internship | BASE | S4 | Program Coordinator | En, Fr
@@ -396,9 +396,9 @@ Signal and Image Processing 2:: This course provides a comprehensive understandi
 
 Scientific Machine Learning 2:: This course provides a deep understanding of scientific machine learning, including supervised and unsupervised learning, deep learning, and generative models. Applied Mathematics students will gain the skills to analyze large datasets efficiently, which is crucial for fields such as data science, machine learning, and statistical analysis.
 
-Pre and PostProcessing in Scientific Computing:: This course provides a comprehensive understanding of pre and post processing in scientific computing, including geometry and mesh generation, mesh adaptation, visualization, and data analysis. Applied Mathematics students will gain the skills to implement mathematical algorithms on computer systems, which is crucial for fields such as computational mathematics, data science,and machine learning.
+Network-Integrated Pre and PostProcessing in Scientific Computing:: This course provides a comprehensive understanding of pre and post processing in scientific computing, including geometry and mesh generation, mesh adaptation, visualization, and data analysis. Applied Mathematics students will gain the skills to implement mathematical algorithms on computer systems, which is crucial for fields such as computational mathematics, data science,and machine learning. There will be an emphasis on the integration of these processes with network data access. Students gain practical knowledge and interdisciplinary skills to effectively manage network-based data acquisition, processing, and storage, while developing problem-solving, programming, data analysis, and collaboration skills for efficient and professional application in real-world scenarios. More details <<prepostvis,here>>.
 
-Networks:: This course provides a deep understanding of networks including Network architectures, OSI and network Protocols. Applied Mathematics students will gain the skills to implement mathematical algorithms on computer systems, which is crucial for fields such as data science, machine learning, and telecommunications.
+//Networks:: This course provides a deep understanding of networks including Network architectures, OSI and network Protocols. Applied Mathematics students will gain the skills to implement mathematical algorithms on computer systems, which is crucial for fields such as data science, machine learning, and telecommunications.
 
 Project 3:: This course involves collaborative projects with  academia or enterprises, providing students with hands-on experience in applying their theoretical knowledge and skills in research-oriented and real-world industry settings. This experience is invaluable for Applied Mathematics students as it provides a practical context for their theoretical knowledge.
 
@@ -750,6 +750,12 @@ a|
 
 == ChangeLog
 
+=== v1.4 - 2023-06-19
+
+* adopted the course "Network-Integrated Pre and Post Processing in Scientific Computing" instead of the two courses on "Networks" and "Pre and Post-Processing in Scientific Computing
+* Y. Bugeaud will teach the course "Algorithmics and Graphs"
+* Indicated colleagues external to the UFR by prefixing with *Ext.* their names.
+
 === v1.3 - 2023-06-07
 
 * Added a more substantial discussion in section <<_english_courses_versus_courses_in_english,English Courses>>.
@@ -774,7 +780,8 @@ a|
 * HTML version using antora 3
 
 
-[[appendix]]
+[[prepostvis]]
+[appendix]
 == Discussion on Networks and Pre and Post-Processing in Scientific Computing Courses
 
 The following is a discussion on the Network and Pre and Post-Processing in Scientific Computing courses, which are proposed as alternatives for the third semester of the CSMI program. Instead of taking either courses, we can provide the 
@@ -828,7 +835,7 @@ Professional Skills:: The course has a practical emphasis, and the skills learne
 
 IMPORTANT: It's important to note that the specific skills required or developed might depend on the specific course content and structure, which could vary based on the instructor's approach and the specific projects or assignments included in the course. This course will be taught by several colleagues as it involves various expertises.
 
-Here are some additional skills that could be dirrectly associated to the course:
+Here are some additional skills that could be directly associated to the course:
 
 1. **Implement** mathematical algorithms for pre and post-processing tasks.
 2. **Analyze** data collected from various networked sources to inform decision-making.
