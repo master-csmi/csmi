@@ -5,7 +5,6 @@
 :stem: latexmath
 :eqnums: all
 
-
 == Modalités
 
 Les stages de M2 durent au minimum 4 mois et au maximum 6 mois entre les mois de février et septembre.
@@ -22,6 +21,7 @@ CAUTION: Au delà de 2 mois, le stage doit être rémunéré.
 
 == Années précédentes
 
+- xref:csmi-stages-2023:ROOT:index.adoc[Stages 2023]
 - xref:csmi-stages-2022:ROOT:index.adoc[Stages 2022]
 - xref:csmi-stages-2021:ROOT:index.adoc[Stages 2021]
 - xref:csmi-stages-2021:ROOT:index.adoc[Stages 2020]
@@ -150,8 +150,6 @@ Numérotez tout ce qui peut l'être.
 
 TIP: Laissez à Latex le soin de numéroter automatiquement, il le fera mieux que vous _manuellement_. 
 
-[TIP]
-====
 Pour les utilisateurs d'Antora, voici un template pour les équations qui utilisent un compteur:
 [source,asciidoc]
 ----
@@ -162,18 +160,15 @@ Pour les utilisateurs d'Antora, voici un template pour les équations qui utilis
 ----
 
 .Exemple complet avec numérotation d'équations 
-[#ex-eqnum]
-[source,asciidoc]
---
+[source#ex-eqnum,asciidoc]
+----
 include::example$eqnum.adoc[]
---
+----
 
 .View result of <<ex-eqnum>>
 [%collapsible]
-======
+====
 include::example$eqnum.adoc[]
-======
-
 ====
 
 TIP: Utilisez des références si vous devez mettre en relation plusieurs éléments de votre discours en Latex (`\ref`, `\pageref` et `\label`).
