@@ -68,8 +68,3 @@ Sur dossier et après avis de la commission pédagogique pour les titulaires d'u
 [.emblem]#Doctorat#::
 - Les étudiants de la filière les plus motivés par la recherche appliquée pourront également poursuivre en doctorat, en laboratoire ou en entreprise.
 
-[discrete]
-=== Calendrier
-
-Le calendrier de l'année {master-year} est disponible ici btn:[https://mathinfo.unistra.fr/websites/math-info/math-info/doc_etudiant/Calendrier_Universitaire/Calendrier_2022-2023/Calendrier_etu_MasterMath_2022-2023_240822.pdf[> PDF]]
-
