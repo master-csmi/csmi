@@ -2,7 +2,9 @@ site:
   title: Master CSMI
   url: https://master-csmi.github.io/csmi
   start_page: csmi::index.adoc
-  robots: allow
+   User-agent: *
+   robots: |
+    Disallow: /csmi-stages-*/
 content:
   sources:
   - url: .
