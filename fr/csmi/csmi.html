@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Master CSMI :: CSMI::Master Calcul Scientifique et Mathématiques de l&#x27;Innovation</title>
+    <link rel="canonical" href="https://master-csmi.github.io/csmi/fr/csmi/csmi.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+<script>!function(l,p){if(l.protocol!==p&&l.host=="docs.antora.org"){l.protocol=p}else if(/\.gitlab\.io$/.test(l.host)){l.replace(p+"//docs.antora.org"+l.pathname.substr(l.pathname.indexOf("/",1))+l.search+l.hash)}}(location,"https:")</script>
+
+<script src="../../_/js/vendor/tabs-block-extension.js"></script>
+<script src="../../_/js/vendor/tabs-block-behavior.js"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\\[','\\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+
+  TeX: {
+      Macros: {
+      bold: ["{\\bf #1}",1],
+      calTh: "{\\mathcal{T}_h}",
+      card: ["{\\operatorname{card}(#1)}",1],
+      card: ["{\\operatorname{card}(#1)}",1],
+      Ck: ["{\\mathcal{C}^{#1}}",1],
+      deformt: ["{\\mathbf{\\varepsilon(#1)}}",1],
+      diam: "{\\operatorname{diam}}",
+      dim: ["{\\operatorname{dim}(#1)}",1],
+      disp: ["{\\mathbf{#1}}",1],
+      domain: "{\\Omega}",
+      ds: "",
+      essinf: "{\\operatorname{ess}\\, \\operatorname{inf}}",
+      F:"{\\mathcal{F}}",
+      geo: "{\\mathrm{geo}}",
+      Ich: ["{\\mathcal{I}^{#1}_{c,h}#2}",2],
+      Id: "{\\mathcal{I}}",
+      Ilag: ["{\\mathcal{I}^{\\mathrm{lag}}_{#1}}",1],
+      jump: ["{[\\![ #1 ]\\!]}",1],
+      n:"{\\mathbf{n}}",
+      Ne: "{N_{\\mathrm{e}}}",
+      Next: "{\\mathrm{n}}",
+      nf: "{n_f}",
+      ngeo: "{n_{\\mathrm{geo}}}",
+      Nma: "{N_{\\mathrm{ma}}}",
+      NN: "{\\mathbb N}",
+      Nno: "{N_{\\mathrm{no}}}",
+      Nso: "{N_{\\mathrm{so}}}",
+      opdim: "{\\operatorname{dim}}",
+      p: "{\\mathrm{p}}",
+      P:"{\\mathcal{P}}",
+      Pch: ["{P^{#1}_{c,h}}",1],
+      Pcho: ["{P^{#1}_{c,h,0}}",1],
+      Pk: ["{\\mathcal{P}^{#1}}",1],
+      poly: ["{\\mathbb{#1}",1],
+      poly: ["{\\mathbb{#1}}",1],
+      prect: ["{\\left\\(#1\\right\\)}",1],
+      q:"{\\mathbf{q}}",
+      Qch: ["{Q^{#1}_{c,h}}",1],
+      Qk: ["{\\mathcal{Q}^{#1}}",1],
+      R: ["{\\mathbb{R}^{#1}}",1],
+      RR: "{\\mathbb R}",
+      set: ["{\\left\\{#1\\right\\}}",1],
+      stresst: ["{\\mathbf{\\sigma(#1)}}",1],
+      T:"{\\mathcal{T}}",
+      tr: "{\\operatorname{tr}}",
+      v:"{\\mathbf{v}}",
+      vertiii: ["\\left\\vert\\kern-0.25ex\\left\\vert\\kern-0.25ex\\left\\vert #1 \\right\\vert\\kern-0.25ex\\right\\vert\\kern-0.25ex\\right\\vert",1]
+  },
+  extensions: ["mhchem.js"] 
+  }
+});
+</script>
+<!--<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML"></script>-->
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML'></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.0/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>-->
+
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H3PWJ83ZVS"></script>
+<script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-H3PWJ83ZVS')</script>
+<script>var uiRootPath = '../../_'</script>
+
+<!-- google verification -->
+<meta name="google-site-verification" content="le0KhZwWwgk5moT8pmqeYReUQDL--SjMMEoFvyoKo20" />  </head>
+  <body class="article">
+<header class="header">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-template-project"
+        style="border-top: 4px solid #9E9E9E">
+        <div class="navbar-brand">
+            <div class="navbar-item feelpp-logo">
+                <a href="https://master-csmi.github.io/csmi">CSMI::Master Calcul Scientifique et Mathématiques de l&#x27;Innovation</a>
+            </div>
+            <button class="navbar-burger" data-target="topbar-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div id="topbar-nav" class="navbar-menu">
+            <div class="navbar-end">
+                <!-- <div class="navbar-item">
+                    <a href="../../_/../cours-tan/python/index.html">Documentation Reference</a>
+                </div> -->
+                <div class="navbar-item has-dropdown is-hoverable download-item">
+                    <div class="navbar-item"><a href="https://mathinfo.unistra.fr/admission/admission"
+                            class="download-btn">Admissions</a></div>
+                </div> 
+                <div class="navbar-item">
+                    <a class="navbar-brand" href="https://www.cemosis.fr">
+                        <img class="cemosis-logo" src="../../_/img/cemosis-logo.svg" alt="Cemosis logo" />
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-brand" href="https://mathinfo.unistra.fr/">
+                        <img class="cemosis-logo" src="../../_/img/logo-ufr-mathinfo-unistra.webp" alt="UFR Math Info logo" />
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-brand" href="https://www.unistra.fr">
+                        <img class="cemosis-logo" src="../../_/img/logo-unistra.png"
+                            alt="Unistra logo" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header><div class="body">
+<a href="#" class="menu-expand-toggle"></a>
+<div class="nav-container" data-component="fr" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Master CSMI (fr)</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Master CSMI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/master-csmi/csmi/discussions">Actualités</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="emplois.html">Emplois</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="team.html">Equipe pédagogique</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="stages.html">Stages</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="outils.html">Outils</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="csmi-2024-2028/index.html">CSMI 2024-2028</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="csmi-2024-2028/summary.html">Summary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Master CSMI (fr)</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+      <li class="component">
+        <a class="title" href="../../en/csmi/index.html">Master CSMI (en)</a>
+          <ul class="versions">
+              <li class="version is-latest">
+                <a href="../../en/csmi/index.html">master</a>
+              </li>
+          </ul>
+      </li>
+      <li class="component is-current">
+        <a class="title" href="index.html">Master CSMI (fr)</a>
+      </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+  <button class="nav-toggle"></button>
+    <a href="../../en/csmi/index.html" class="home-link"></a>
+  <nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Master CSMI (fr)</a></li>
+    <li><a href="csmi.html">Master CSMI</a></li>
+  </ul>
+</nav>
+
+  
+    <div class="edit-this-page"><a href="https://github.com/master-csmi/csmi/edit/main/fr_FR/modules/csmi/pages/csmi.adoc">Edit this Page</a></div>
+  
+  <div class="page-downloads">
+  <span class="label">Download as</span>
+  <ul class="download-options">
+    <li>
+      <a onclick="print(this)" href="#" data-toggle="tooltip" data-placement="left" title="Print to PDF"
+         class="pdf-download">
+        <img class="pdf-file-icon icon" src="../../_/img/pdf.svg"/> .pdf
+      </a>
+    </li>
+  </ul>
+</div>
+</div>
+
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Master CSMI</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image unresolved"><img src="extracted-media/media/image4.png" alt="scientific-computing-1.png" width="645" height="645"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_description"><a class="anchor" href="#_1_description"></a>1. 1 Description</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_1_1_introduction"><a class="anchor" href="#_1_1_introduction"></a>1.1. 1.1 Introduction</h3>
+<div class="paragraph">
+<p>Les modèles, les données et les algorithmes sont au cœur de la révolution numérique actuelle. Pourquoi ? Parce qu’ils ont la capacité de transformer l’expérience des utilisateurs et des clients tout en optimisant la productivité des entreprises. Ils sont à présent au cœur des disciplines de la recherche aussi bien dans les lettres, les sciences économiques et sociales que les sciences fondamentales, de la vie et environnementales. Être acteur de la révolution numérique requiert des compétences croisées en mathématiques et en informatique mais aussi une bonne maîtrise des différents domaines d&#8217;applications : santé, environnement, économie, micro-technologie, etc.</p>
+</div>
+<div class="paragraph">
+<p>Google, AirBnB, Uber, Amazon, Netflix, Criteo, Climate Corporation et tant d’autres appuient leur formidable croissance sur la puissance de leurs algorithmes et sur la maîtrise des Big Data. Les laboratoires de recherche, les départements R&amp;D, et de nombreuses start-up, utilisent la modélisation, la simulation numérique et le calcul à haute performance pour relever les défis technologiques du futur.</p>
+</div>
+<div class="paragraph">
+<p>Derrière les réussites les plus radicales du numérique se cachent des algorithmes mathématiques puissants, capables de révolutionner l’expérience client et d’optimiser la productivité de l’entreprise.</p>
+</div>
+<div class="paragraph">
+<p>A l’inverse, la majorité des PME françaises n’a pas pris conscience de cette évolution <span class="Source: <a href="http://pme-bigdata.org">[.underline">Livre blanc : "Modèles Data et Algorithmes: les nouvelles frontières du numérique"</span></a>, Aremus et associés, BPIFrance, AMIES et Genci, Nov 2015], leur éveil aux technologies de l’information est nécessaire et, espérons-le, imminent.</p>
+</div>
+<div class="paragraph">
+<p>Pour accompagner la révolution numérique, l&#8217;État a mis en place des structures (Clusters de compétitivité), des labels (French Tech) et des lois (Lois sur le numérique, Macron 2). Mais l’offre de formation reste largement insuffisante, alors que les besoins de compétences explosent <span class="Source: <a href="http://www.bls.gov/ooh/math/mathematicians.htm">[.underline">http://www.bls.gov/ooh/math/mathematicians.htm</span></a> 23% de croissance aux États Unis entre 2012 et 2022, croissance beaucoup plus rapide que la moyenne générale] .</p>
+</div>
+<div class="sect3">
+<h4 id="_1_1_1_le_rapport_eisem"><a class="anchor" href="#_1_1_1_le_rapport_eisem"></a>1.1.1. 1.1.1 Le rapport EISEM</h4>
+<div class="paragraph">
+<p>AMIES en partenariat avec les Labex de mathématiques dont IRMIA, les fondations parisiennes a commandé un rapport au cabinet de consulting CMI intitulé Etude sur l&#8217;Impact Socio-Économique des Mathématiques. Ce rapport met en avant 5 champs de compétences stratégiques embarquant à la fois des mathématiques appliquées et fondamentales (liste sans valeur hiérarchique).</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Traitement du signal et analyse d’images ;</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Data Mining (statistiques, analyse de données et apprentissage) ;</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>MSO (Modélisation - Simulation - Optimisation) ;</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>HPC (« High Performance Computing » ou calcul haute performance) ;</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Sécurité des systèmes d’information et Cryptographie.</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>La maîtrise de ces champs de compétences, par les entreprises, est vue comme essentielle pour leur permettre de relever les défis industriels actuels et futurs, spécifiques ou non à leur secteur d’activité, et rester compétitives.</p>
+</div>
+<div class="paragraph">
+<p>[Source: <a href="http://www.agence-maths-entreprises.fr/a/?q=fr/eisem"><span class="underline">http://www.agence-maths-entreprises.fr/a/?q=fr/eisem</span></a> ]</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_1_1_2_données_traitement_de_données_big_data"><a class="anchor" href="#_1_1_2_données_traitement_de_données_big_data"></a>1.1.2. 1.1.2 Données, Traitement de données &amp; Big Data</h4>
+<div class="paragraph">
+<p>La croissance des volumes d’informations numériques est telle que les bases de données traditionnelles qui les gèrent ne suffisent plus. Il faut imaginer de nouvelles architectures (logicielles et matérielles) de nouvelles technologies hardware s&#8217;appuyant sur des algorithmes et représentations/structures mathématiques adaptés, pour générer, stocker, traiter et transporter ces masses considérables de données.</p>
+</div>
+<div class="paragraph">
+<p>Pour donner une idée de ces volumes, il suffit de savoir que chaque jour, l&#8217;humanité produit environ 9000 nouveaux articles sur Wikipédia, environ 400 millions de tweets, 540 millions de SMS et 145 milliards de mails sont envoyés au niveau mondial ; 104 000 heures de vidéos sont mises en ligne sur YouTube, 4,5 milliards de recherches sont lancées sur Google, 552 millions d&#8217;utilisateurs sont connectés à Facebook <span class="Source: <a href="http://www.cnrs.fr/fr/pdf/jdc/JDC269.pdf">[.underline">le journal du CNRS&#44; N° 269</span></a>, Novembre-Décembre 2012]. Cette masse de données numériques ne cesse d’augmenter.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_1_1_3_modélisation_simulation_optimisation_calcul_haute_performance"><a class="anchor" href="#_1_1_3_modélisation_simulation_optimisation_calcul_haute_performance"></a>1.1.3. 1.1.3 Modélisation Simulation Optimisation &amp; Calcul Haute Performance</h4>
+<div class="paragraph">
+<p>Modélisation, Simulation et Optimisation (MSO) a été appelée le troisième pilier pour le progrès scientifique et l&#8217;innovation, aux côtés de l&#8217;expérience et de la théorie. Alors que les entreprises technologiques se développent avec des cycles de complexité croissante et des cycles d&#8217;innovation plus courts, le développement efficace et rapide de technologies industrielles dépend à présent de méthodes précises pour MSO. Cela est d&#8217;autant plus prononcé dans le contexte de l&#8217;importance croissante du calcul haute performance (HPC) et des technologies et entreprises associées aux Big Data. Le développement industriel compétitif a de plus en plus besoin d&#8217;un “produit virtuel”, qui accompagne le produit réel et permet, pour un coût beaucoup moins cher et plus rapide, la vérification du produit, l&#8217;analyse des risques et une optimisation plus efficace.</p>
+</div>
+<div class="paragraph">
+<p>[Source: rapport de la DG Connect de la commission Européenne, participation de C. Prud&#8217;homme et AMIES]</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_1_1_4_et_le_master_csmi"><a class="anchor" href="#_1_1_4_et_le_master_csmi"></a>1.1.4. 1.1.4 Et le Master CSMI ?</h4>
+<div class="paragraph">
+<p>Le master CSMI a l&#8217;unique opportunité d&#8217;évoluer à la confluence de ces différents champs. À l&#8217;évidence nous ne pouvons couvrir cet ensemble de manière exhaustive. Nous pouvons cependant extraire un sous-ensemble cohérent et inter-connecté de cours permettant de former des étudiants de Master experts dans les domaines du traitement d&#8217;image, de la modélisation, la simulation et l&#8217;optimisation ainsi que du calcul haute performance. Ces étudiants auront la capacité et les clés de s&#8217;adapter aux exigences et évolutions rapides de la révolution du numérique ce qui nécessite d&#8217;augmenter quelque peu l&#8217;offre de cours en informatique dans le master.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_2_historique_du_master_csmi"><a class="anchor" href="#_1_2_historique_du_master_csmi"></a>1.2. 1.2 Historique du Master CSMI</h3>
+<div class="paragraph">
+<p>Le master CSMI (resp P. Helluy puis C. Prud&#8217;homme) est issu de l&#8217;évolution du Master CSSI (Calcul Scientifique et Sécurité Informatique, resp. P. Helluy/M. Mignotte) qui lui-même était issu des masters de mathématique discrète (MD, resp. M. Mignotte) et calcul scientifique et visualisation (CSV, resp. E. Sonnendrucker). En 2008, les masters MD et CSV avaient des effectifs insuffisants, bien que le placement des étudiants soit excellent. Il a donc été décidé de fusionner ces deux masters dans le master CSSI offrant une double compétence en calcul scientifique et mathématiques discrètes. La maquette CSSI a été en vigueur entre 2009 et 2012. En 2013, elle a été simplifiée (moins d’options) ce qui a donné naissance au master CSMI.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_3_principes_du_master_csmi"><a class="anchor" href="#_1_3_principes_du_master_csmi"></a>1.3. 1.3 Principes du Master CSMI</h3>
+<div class="sect3">
+<h4 id="_1_3_1_lien_avec_la_licence"><a class="anchor" href="#_1_3_1_lien_avec_la_licence"></a>1.3.1. 1.3.1 Lien avec la licence</h4>
+<div class="paragraph">
+<p>L&#8217;étudiant du Master CSMI sera bien préparé au Master en suivant le parcours de L3 de Mathématiques Appliquées. La maquette de Licence actuelle a été pensée pour amener les étudiants en Master avec les bagages mathématiques et informatiques requis.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_1_3_2_évolution_et_contexte_local"><a class="anchor" href="#_1_3_2_évolution_et_contexte_local"></a>1.3.2. 1.3.2 Évolution et contexte local</h4>
+<div class="paragraph">
+<p>L&#8217;introduction précédente nous donne le contexte général extrêmement favorable pour une formation comme CSMI.</p>
+</div>
+<div class="paragraph">
+<p>Par ailleurs, le contexte local pour CSMI est le suivant</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>L&#8217;évolution de l&#8217;équipe pédagogique permet une nouvelle offre de cours;</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Mathématiques et Informatique sont réunies au sein de la même UFR et CSMI avait une large part d&#8217;informatique. Ces liens ont été amplifiés coté recherche, via le Labex IRMIA entre IRMA/MOCO<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> - ICUBE/ICPS<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>. Il s&#8217;agit de s&#8217;appuyer sur cet axe fort de recherche/collaboration pour donner un nouvel élan à la formation;</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>En mathématiques, nous pouvons profiter des compétences locales en EDP, Calcul&amp;HPC, Statistique/Probabilités, Graphes, et Images;</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>En Informatique, nous pouvons profiter des compétences locales en Langages de programmation, Bases de données, HPC ou encore pour le traitement et le stockage de données large-échelle.</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Ces différents points sur le contexte local nous permettent de formuler une nouvelle maquette attractive en phase avec le contexte général (national et international).</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_4_renforcement_de_lattractivité"><a class="anchor" href="#_1_4_renforcement_de_lattractivité"></a>1.4. 1.4 Renforcement de l&#8217;attractivité</h3>
+<div class="paragraph">
+<p>Outre le changement de maquette qui permettra certainement d&#8217;augmenter l&#8217;attractivité de CSMI, il a été entrepris plusieurs actions depuis quelques mois afin d&#8217;augmenter la visibilité et l&#8217;attractivité du Master.</p>
+</div>
+<div class="paragraph">
+<p>En particulier</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>La création d&#8217;un site web <a href="http://csmi.eu"><span class="underline">http://csmi.eu</span></a> , <a href="http://www.cemosis.fr"><span class="underline">http://www.cemosis.fr</span></a>. Depuis sa création en juillet 2015, on arrive à plus de 7000 vues de pages du site. Avec entre 20 et 50 sessions par semaine environ. Ceci sans faire de publicité particulière hormis vers les Licences de mathématiques de l&#8217;Université de Strasbourg. Les connexions viennent essentiellement de France, mais également de l&#8217;étranger. Le site comprend des témoignages d&#8217;étudiants et d&#8217;entreprises, la description de la formation ainsi que des informations sur les débouchés de la formation. Il se décline sur l&#8217;ensemble des supports: téléphones, tablettes et ordinateurs. La Figure 1 ci-dessous présente la page principale du site.<span class="image unresolved"><img src="extracted-media/media/image1.png" alt="extracted-media/media/image1" width="259" height="152"></span><span class="image unresolved"><img src="extracted-media/media/image6.png" alt="Screen Shot 2015-11-03 at 10.41.08.png" width="216" height="131"></span></p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="extracted-media/media/image7.png" alt="Screen Shot 2015-11-03 at 04.35.39.png" width="396" height="220"></span></p>
+</div>
+<div class="paragraph">
+<p>Figure 1 : page principale du site web de CSMI - <a href="http://csmi.eu"><span class="underline">http://csmi.eu</span></a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>La création d&#8217;une plaquette attractive pour CSMI</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Le lien entre la formation CSMI et Cemosis est naturel en particulier pour établir les relations avec les entreprises, fournir des stages ainsi que des projets en lien avec les entreprises. Ce lien devrait être formalisé d&#8217;une façon ou d&#8217;une autre à l&#8217;avenir.</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_5_mutualisation"><a class="anchor" href="#_1_5_mutualisation"></a>1.5. 1.5 Mutualisation</h3>
+<div class="paragraph">
+<p>Les cours déjà mutualisés avec le M1MF (Mathématiques Fondamentales) et M1MAG (Magistère) en particulier au S1 et S2 sont :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Calcul Scientifique (3 ECTS)</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Optimisation (6 ECTS)</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Certains cours non mutualisés pourraient le devenir si certains aspects intéressent le master de statistique, la formation d&#8217;actuaires, les Mathématiques Fondamentales (MF) ou le Magistère (Mag).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_6_projets_intégrateurs"><a class="anchor" href="#_1_6_projets_intégrateurs"></a>1.6. 1.6 Projets Intégrateurs</h3>
+<div class="paragraph">
+<p>2 unités d&#8217;enseignement (UE) sont dédiées à des projets en S2 et S3. Ces UE sont définies en collaboration avec des entreprises généralement en lien avec <a href="http://www.cemosis.fr"><span class="underline">Cemosis</span></a>.</p>
+</div>
+<div class="paragraph">
+<p>En S2 et S3, une soutenance orale en anglais (éventuellement en collaboration avec le CRL), ainsi qu&#8217;en français sont prévues respectivement en mai et en décembre pour les projets. Il est proposé également que le rapport de projet soit fait en anglais.</p>
+</div>
+<div class="paragraph">
+<p>Enfin, depuis 2013, une collaboration avec l&#8217;Université Pierre et Marie Curie et le master de calcul scientifique du Laboratoire Jacques Louis Lions a été mise en place pour les projets du S3. Un groupe d&#8217;étudiants de Strasbourg et un de Paris travaillent ensemble à distance sur un même projet d&#8217;entreprise. Des réunions régulières grâce à la salle de visioconférence de l&#8217;IRMA sont faites et des outils collaboratifs modernes sont mis en place pour le développement et suivi de projet. Cela permet entre autres aux étudiants d&#8217;apprécier la collaboration à distance et de faire des efforts de communication et présentation afin que les projets avancent.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_7_stages"><a class="anchor" href="#_1_7_stages"></a>1.7. 1.7 Stages</h3>
+<div class="paragraph">
+<p>Les stages sont présents en S2 et S4 pour le master CSMI. Il s&#8217;agit pour l&#8217;étudiant d&#8217;effectuer un stage en entreprise, ou dans un centre de recherche ou éventuellement dans un laboratoire de recherche. Les étudiants sont encouragés à suivre les stages en entreprises.</p>
+</div>
+<div class="paragraph">
+<p>En vue de la préparation à la recherche de stage, CSMI s&#8217;appuie sur l&#8217;Espace Avenir pour proposer 2 séances 1h30 chacune en S1 pour :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>la préparation du CV et lettre de motivation,</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>la présentation orale et l&#8217;entretien.</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Afin d&#8217;être le plus profitables, ces 2 séances sont à effectuer avant "Prêt pour l&#8217;Emploi"<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup>. À noter que l&#8217;équipe de l’Espace Avenir est disponible toute l&#8217;année pour aider les étudiants.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_8_forum_emploi"><a class="anchor" href="#_1_8_forum_emploi"></a>1.8. 1.8 Forum Emploi</h3>
+<div class="paragraph">
+<p>AMIES, l&#8217;agence des mathématiques en interaction avec les entreprises et la société, dont Cemosis est une branche régionale propose un forum emploi math à Paris auquel nous tâchons d&#8217;envoyer nos étudiants selon les moyens.</p>
+</div>
+<div class="paragraph">
+<p>Par ailleurs, il nous apparaît important de soutenir une initiative locale d&#8217;organisation d&#8217;un forum emploi certes plus modeste mais qui serait organisé par les étudiants. Les étudiants d&#8217;informatique de l’UFR en organisent déjà un. Nous proposons de rejoindre cette initiative ou d&#8217;en créer un si cela est plus opportun. AMIES pourrait soutenir cet évènement.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_9_innovations_pédagogiques"><a class="anchor" href="#_1_9_innovations_pédagogiques"></a>1.9. 1.9 Innovations pédagogiques</h3>
+<div class="paragraph">
+<p>Le Master CSMI met en place quelques innovations pédagogiques qui ont été présentées pour la plupart précédemment et que nous regroupons dans cette section. Tout d&#8217;abord, le fait que le Master CSMI soit couplé fortement à l&#8217;équipe MOCO et à Cemosis joue un rôle prépondérant dans la formation des étudiants au monde de l&#8217;entreprise ainsi vers celui de la recherche.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>2 UE projets en collaboration avec Cemosis et les entreprises en S2 et S3 en préparation des stages ainsi que la collaboration à distance sur certains projets avec l&#8217;UPMC et son master de mathématiques appliquées;</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Organisation par les étudiants d&#8217;un Forum Emploi;</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Nœud ECMI<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup> et possibilité d&#8217;échanges avec de nombreuses universités en Europe et participation d&#8217;étudiants de CSMI aux semaines de modélisation (modeling week) organisées par ECMI;</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Utilisation des dernières technologies en matière de développement logiciel et de collaboration tels que GitLab (plateforme proposée par l&#8217;IRMA) et GitHuB et accès aux ressources de calcul parallèle de l&#8217;IRMA ainsi que du mésocentre de Strasbourg;</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>==</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id=""><a class="anchor" href="#"></a>2. +</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_overview_de_la_formation"><a class="anchor" href="#_2_overview_de_la_formation"></a>3. 2 Overview de la formation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La figure ci-dessous présente une vision globale des cours CSMI.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.lucidchart.com/documents/edit/ef30fc80-982a-4dad-81d2-6f6d7c17864c/0?callback=close&amp;name=docs&amp;callback_type=back&amp;v=15294&amp;s=612"><span class="image unresolved"><img src="extracted-media/media/image5.png" alt="extracted-media/media/image5" width="672" height="465"></span></a></p>
+</div>
+<div class="paragraph">
+<p>===</p>
+</div>
+<div class="paragraph">
+<p>Certains cours sont simplement renommés par rapport à la maquette CSMI précédente, ainsi le cours «systèmes hyperboliques» devient EDP3. Par ailleurs nous avons regroupé certains cours par thématiques afin de montrer la cohérence de la formation et le poids sur ces thématiques. Par exemple EDP 1 2 et 3, Traitement du signal 1 et 2, Graphes 1 et 2, Calcul scientifique 1, 2 et 3. Cela peut indiquer aussi une montée en complexité dans le contenu du cours.</p>
+</div>
+<div class="paragraph">
+<p>L&#8217;évolution de l&#8217;équipe pédagogique et de la maquette propose un nouveau cours d’informatique(système d’exploitation) et mathématique (traitement de données). les systèmes d&#8217;exploitation constituent le chaînon manquant dans la proposition actuelle de maquette du master CSMI.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Comment savoir comment sont stockées les bases de données sans connaître l&#8217;organisation d&#8217;un système de fichiers ? Comment appréhender le stockage de données à large échelle sans connaître les limites de l&#8217;utilisation de la mémoire virtuelle et avoir quelques notions de systèmes de fichiers distribués ?</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Les systèmes de calcul parallèle en environnement à mémoire partagée comme OpenMP reposent sur des mécanismes comme les threads et le partage de mémoire virtuelle;</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>La programmation système (nécessitant la connaissance de C/C++) constitue un prérequis pour l&#8217;UE de Réseaux. Ce prérequis a fait défaut depuis la disparition en 2012 de l&#8217;UE de Système du Master CSSI.</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Les systèmes d&#8217;exploitation constituent le lien manquant entre la vision « de près », très proche du matériel, correspondant à l&#8217;utilisation optimale des ressources (UE « calcul parallèle », « calcul scientifique », « langages », « compilation ») et la vision « avec recul » nécessaire pour la mise en œuvre de systèmes complexes tels que vus dans les UE «python», «réseaux», «traitement et stockage de données large échelle». Pour faire simple, les systèmes d&#8217;exploitation constituent un des liens entre le calcul à haute performance et les Big Data.</p>
+</div>
+<div class="paragraph">
+<p>L&#8217;UE abordera l&#8217;organisation classique des systèmes d&#8217;exploitation, la décomposition en grands concepts (système de fichiers, processus et threads, mécanismes de communication, mémoire virtuelle, virtualisation) et la mise en œuvre par la programmation système. Loin de former des spécialistes des systèmes d&#8217;exploitation, l&#8217;idée est de donner la culture générale nécessaire pour faire le lien entre les notions abordées dans les UE citées ci-dessus, mais également pour maîtriser les notions abordées par les interlocuteurs informaticiens des futurs diplômés. L&#8217;accent sera mis sur des points intéressant le calcul à haute performance ou les grands volumes de données, comme par exemple l&#8217;impact de l&#8217;organisation des données sur les performances (mémoire virtuelle), ou les mécanismes de synchronisation (verrous, sémaphores) permettant le découplage des traitements sur plusieurs processeurs.</p>
+</div>
+<div class="paragraph">
+<p>Si le S1 apporte des nouvelles compétences en informatique, le S2 change de rythme : peu de compétences nouvelles en informatique sont apportées (seule l&#8217;UE Python), la plupart des UE utilisent et mettent en oeuvre les acquis du S1. Pour pallier ce déséquilibre, il est proposé de mettre l&#8217;UE de systèmes d&#8217;exploitation au S2, de façon à utiliser les acquis au S1 de :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Langages Objet (C++),</p>
+</li>
+<li>
+<p>Calcul parallèle,</p>
+</li>
+<li>
+<p>Graphes.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>et avant le S3 et plus particulièrement :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Compilation,</p>
+</li>
+<li>
+<p>Traitement et stockage de données large échelle,</p>
+</li>
+<li>
+<p>Réseaux.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>À noter enfin que l&#8217;informatique étant de plus en plus l&#8217;enjeu de problèmes de sécurité,</p>
+</div>
+<div class="paragraph">
+<p>ces notions seront abordées dans les UE :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Langages - C++, Python, Compilation (programmation défensive, débordement de tampon),</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Systèmes d&#8217;exploitation (identité, privilèges),</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Réseaux (sécurisation des protocoles).</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_2_1_métiers_et_compétences"><a class="anchor" href="#_2_1_métiers_et_compétences"></a>3.1. 2.1 Métiers et Compétences</h3>
+<div class="paragraph">
+<p>Principaux métiers, ou activités/fonctions professionnelles visés</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Ingénieur de recherche et développement</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Ingénieur calcul</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Data scientist</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Consultant</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Chargé d&#8217;affaire</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Métiers de la recherche</p>
+</div>
+</blockquote>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Chercheur</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Enseignant-Chercheur.</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Principales compétences acquises à l&#8217;issue de la formation</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Être capable d&#8217;utiliser et de mettre en oeuvre des outils mathématiques et informatiques dans les domaines suivants</p>
+</div>
+</blockquote>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Modélisation Simulation Optimisation</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Signal et Image</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Traitement et fouille de données</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Calcul à haute performance</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p></p>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Savoir gérer des projets, rédiger des rapports et travailler en collaboration.</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_2_calendrier_de_mise_en_place"><a class="anchor" href="#_2_2_calendrier_de_mise_en_place"></a>3.2. 2.2 Calendrier de mise en place</h3>
+<div class="paragraph">
+<p>Afin de tenir compte de l&#8217;évolution de l&#8217;équipe pédagogique, cette nouvelle maquette du master CSMI sera mise en place à la rentrée 2018-2019.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_3_nombre_dheures_et_organisation_des_cours"><a class="anchor" href="#_2_3_nombre_dheures_et_organisation_des_cours"></a>3.3. 2.3 Nombre d&#8217;heures et organisation des cours</h3>
+<div class="paragraph">
+<p>Concernant le nombre d&#8217;heures de cours en CSMI, 3 ECTS<sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup> correspondent généralement à 26 heures de cours intégré (cours et TD/TP). 6 ECTS correspondent à 52 heures.</p>
+</div>
+<div class="paragraph">
+<p>Les cours peuvent avoir lieu en salle de cours classiques à l&#8217;UFR ou bien en salle avec des PC ou des terminaux.</p>
+</div>
+<div class="paragraph">
+<p>L&#8217;agenda typique en CSMI est disponible en ligne <a href="https://docs.google.com/spreadsheets/d/1U3ao7s_dG7JAO_hRPJzTW_uk-cl8QM-n_Bu0iNUmLmA/edit?usp=sharing"><span class="underline">ici</span></a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_4_répartition_des_étudiants"><a class="anchor" href="#_2_4_répartition_des_étudiants"></a>3.4. 2.4 Répartition des étudiants</h3>
+<div class="paragraph">
+<p>La capacité maximum du master CSMI est de 20 étudiants par année. Nous attendons en général une quinzaine d&#8217;étudiants. La table ci-dessous donne la répartition des étudiants</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Semestre</strong></th>
+<th class="tableblock halign-left valign-top"><strong>UNISTRA</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Extérieurs</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Maximum</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5-15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0-10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Étudiants en provenance du M1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_2_5_master_s1"><a class="anchor" href="#_2_5_master_s1"></a>3.5. 2.5 Master S1</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 26%;">
+<col style="width: 35%;">
+<col style="width: 16%;">
+<col style="width: 10%;">
+<col style="width: 13%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Cours</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Enseignant</strong></th>
+<th class="tableblock halign-left valign-top"><strong>ECTS</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Algorithmique</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Complexité algorithmique; Tri; Table de Hashage; Structure de données d&#8217;arbre:</p>
+</div>
+<div class="paragraph">
+<p>recherche de type dictionnaire (eg. red/black tree), recherche/localisation dans R^d (eg région-tree ou kd-tree); recherche dans chaîne de caractères;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rutger Noot</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lien avec LO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bases de données</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Introduction à la théorie et aux systèmes de bases de données.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catherine Guth</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Passage de S3 à S1; base pour</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An. fonctionnelle</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="mark">Eléments d&#8217;analyse fonctionnelle utiles pour le calcul scientifique et les mathématiques pour l&#8217;ingénieur:</span></p>
+</div>
+<div class="paragraph">
+<p><span class="mark">rappels de théorie de la mesure et d&#8217;analyse convexe, espaces de Hilbert de dimension infinie;</span></p>
+</div>
+<div class="paragraph">
+<p><span class="mark">convergences faibles;</span></p>
+</div>
+<div class="paragraph">
+<p><span class="mark">distributions.</span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="mark">Rao</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fondements théoriques pour les EDP</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C++</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Introduction pratique à la programmation en C (C14).</p>
+</div>
+<div class="paragraph">
+<p>Classes, héritage, patrons; STL; programmation générique, fonctionnelle, objet et meta-programmation</p>
+</div>
+<div class="paragraph">
+<p>Applications au calcul scientifique.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Vincent</p>
+</div>
+<div class="paragraph">
+<p>Chabannes</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Lien avec Algorithmique; utilisation de la STL pour illustrer algorithmique</p>
+</div>
+<div class="paragraph">
+<p>Passage S2&#8594;S1</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Calcul parallèle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="mark">Architecture d&#8217;ordinateurs parallèle. Algorithmes parallèles: décomposition de domaine, réductions parallèles, tris. Exemple d&#8217;applications en calcul scientifique.</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boileau/Chabannes/ Drui</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Graphe</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="mark">Graphes : définitions, généralités. Graphes connexes. Arbres et forêts. Graphes eulériens. Graphes hamiltoniens. Graphes planaires. Nombre chromatique. Théorème des 5 couleurs. Index chromatique. Matrices d’adjacence.</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bugeaud</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Langues</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cours d&#8217;Anglais ; soutenance en anglais de l&#8217;UE Projet;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CRL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Calcul scientifique 1</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>meth. num eq. diff</p>
+</div>
+<div class="paragraph">
+<p>meth num diff finies pour edp</p>
+</div>
+<div class="paragraph">
+<p>mise en oeuvre python</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Helluy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mutualisé M1Mf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Calcul scientifique 2</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>résolution de syst linéaire creux</p>
+</div>
+<div class="paragraph">
+<p>résolution de syst valeurs propres creux</p>
+</div>
+<div class="paragraph">
+<p>meth num element fini pour edp en 1D</p>
+</div>
+<div class="paragraph">
+<p>python avancé (interfacage)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navoret</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modèles aléatoires</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loi des grands nombres, théorème central limite, méthode de Monte Carlo, méthode de rejet. Invariance d’échelle, isotropie et homogénéité stochastique. Marche aléatoire, mouvement Brownien, diffusion et calcul différentiel stochastique. Chaine de Markov, MCMC, système particulaire et recuit simulé.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vigon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_2_6_master_s2"><a class="anchor" href="#_2_6_master_s2"></a>3.6. 2.6 Master S2</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 26%;">
+<col style="width: 29%;">
+<col style="width: 23%;">
+<col style="width: 9%;">
+<col style="width: 13%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Cours</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Enseignant</strong></th>
+<th class="tableblock halign-left valign-top"><strong>ECTS</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Traitement du signal 1</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Signal 1D (son) et 2D (image). Échantillonnage, Série de Fourier, filtrage par FFT, analyse temps-fréquence et phénomènes d’aliasing. Espaces chromatique et quantification. Détection de contours, ..</p>
+</div>
+<div class="paragraph">
+<p>débruitage, segmentation, compression JPEG, calage d’image</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vigon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Projet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Introduction à la gestion de projets et aux outils ; projets provenant de Cemosis éventuellement en préparation à un stage en entreprise; soutenance en anglais;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prud&#8217;homme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LO de S2 à S1;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Méth. num. EDP</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="mark">Approximation par éléments finis des EDP elliptiques linéaires: espaces de Sobolev, théorèmes de compacité, théorèmes de trace, théorème de Lax Milgram. Formulation variationnelle, Approximations de</span></p>
+</div>
+<div class="paragraph">
+<p><span class="mark">Galerkin.</span></p>
+</div>
+<div class="paragraph">
+<p>Mise en oeuvre de la méthode des éléments finis;</p>
+</div>
+<div class="paragraph">
+<p>EDP paraboliques;</p>
+</div>
+<div class="paragraph">
+<p>Méthodes de stabilisation</p>
+</div>
+<div class="paragraph">
+<p>Extensions aux problèmes mixtes;</p>
+</div>
+<div class="paragraph">
+<p>Applications</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Rao</p>
+</div>
+<div class="paragraph">
+<p>Prud&#8217;homme</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optimisation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Analyse convexe. Théorèmes d&#8217;existence et d&#8217;unicité de solution. Conditions d&#8217;optimalité : équations et inéquations d&#8217;Euler, multiplicateurs de Lagrange, relations de Kuhn-Tucker, point-selle et théorie de la dualité. Algorithmes numériques : méthodes de gradient, de relaxation, de Newton et quasi-Newton, de pénalisation et d’Uzawa.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Y Privat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mutualisé</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Graphes 2</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Aspects informatiques des Graphes Applications: Fouille de données;</p>
+</div>
+<div class="paragraph">
+<p>Réseau;</p>
+</div>
+<div class="paragraph">
+<p>Grande dimension;</p>
+</div>
+<div class="paragraph">
+<p>Google PageRank et autres algorithmes célèbres utilisant une représentation de type graphe</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Helluy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Système d&#8217;exploitation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Composants d&#8217;un système d&#8217;exploitation: Système de fichiers Processus, threads, concurrence et synchronisation; Gestion de la mémoire, mémoire virtuelle. Virtualisation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">David</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stages</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 mois de stage en entreprises, centre de recherche ou laboratoire</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prud&#8217;homme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Éventuellement en lien avec projet S2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_2_7_master_s3"><a class="anchor" href="#_2_7_master_s3"></a>3.7. 2.7 Master S3</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33%;">
+<col style="width: 29%;">
+<col style="width: 18%;">
+<col style="width: 9%;">
+<col style="width: 11%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Cours</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Enseignant</strong></th>
+<th class="tableblock halign-left valign-top"><strong>ECTS</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Traitement du signal 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">classification, segmentation, génération d’image, de son et de texte avec l’apprentissage profond.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vigon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contrôle optimal</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="mark">Notion d&#8217;état adjoint. Application à quelques EDP de la physique: Poisson, chaleur, ondes.</span></p>
+</div>
+<div class="paragraph">
+<p><span class="mark">Mise en oeuvre dans un logiciel d&#8217;éléments finis.</span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Y Privat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Calcul scientifique 3</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Outils de CAO, Génération de maillage, Lien avec la simulation</p>
+</div>
+<div class="paragraph">
+<p>Résolution de grands systèmes linéaires et non linéaires issus de la discrétisation d&#8217;EDP;</p>
+</div>
+<div class="paragraph">
+<p>méthodes de décomposition de domaine et multigrilles; utilisation de grandes librairies de calcul comme PETSc</p>
+</div>
+<div class="paragraph">
+<p>Introduction aux méthodes des bases réduites certifiées pour des problèmes elliptiques.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prud&#8217;homme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Traitement et fouille de données</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Statistiques descriptives.</p>
+</div>
+<div class="paragraph">
+<p>Nettoyage des données, normalisation, traitement des valeurs extrêmes</p>
+</div>
+<div class="paragraph">
+<p>Analyse en composantes principales.</p>
+</div>
+<div class="paragraph">
+<p>Modèles linéaires généralisés</p>
+</div>
+<div class="paragraph">
+<p>Pénalisation.Sur-apprentissage.</p>
+</div>
+<div class="paragraph">
+<p>Interaction avec les bases de données</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vigon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Metho num EDP 2</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>EDP hyperboliques;</p>
+</div>
+<div class="paragraph">
+<p>Meth. volumes fini;</p>
+</div>
+<div class="paragraph">
+<p>Meth. Galerkin discontinu;</p>
+</div>
+<div class="paragraph">
+<p>Application: Onde, Maxwell&#8230;&#8203;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Helluy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">renommage</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compilation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Programmation avancée des processeurs; Optimisation des codes; Traitement des boucles; Génération de codes; Profiling et optimisation de codes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ketterlin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Projet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Projet mettant en oeuvre un ensemble de connaissance proposé par une entreprise en lien avec Cemosis</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prud&#8217;homme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Réseaux</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Architectures réseau;</p>
+</div>
+<div class="paragraph">
+<p>OSI;</p>
+</div>
+<div class="paragraph">
+<p>Protocoles</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">David</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Incertitudes</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Introduction à la quantification d&#8217;incertitudes dans les simulations numériques;</p>
+</div>
+<div class="paragraph">
+<p>Analyse de sensibilités;</p>
+</div>
+<div class="paragraph">
+<p>Estimation de quantiles;</p>
+</div>
+<div class="paragraph">
+<p>Estimation de probabilité de défaillance;</p>
+</div>
+<div class="paragraph">
+<p>Réduction de modèles</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bertrand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_2_8_master_s4"><a class="anchor" href="#_2_8_master_s4"></a>3.8. 2.8 Master S4</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 19%;">
+<col style="width: 13%;">
+<col style="width: 42%;">
+<col style="width: 26%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>UE</strong></th>
+<th class="tableblock halign-left valign-top"><strong>ECTS</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Proposition Enseignant</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Langues</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Les cours ont lieu au S3.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CRL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">De 4 à 6 mois de stage en entreprises, centre de recherche ou laboratoire. Les projets en S1 et S3 leur ont permis d&#8217;avoir été en contact avec des entreprises</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prud&#8217;homme et tutorat</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_répartition_des_cours"><a class="anchor" href="#_répartition_des_cours"></a>4. Répartition des cours</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Les cours de CSMI sont répartis entre mathématique, informatique, projets, stages et anglais selon les proportions du graphe ci-dessous.<span class="image unresolved"><img src="extracted-media/media/image2.png" alt="csmi-piechart.png" width="394" height="262"></span></p>
+</div>
+<div class="paragraph">
+<p>Nous présentons un graphe connectant les différents cours (bleu informatique, vert mathématique, rose thématique). Ce graphe présente les connections et dépendances entre les cours.</p>
+</div>
+<div class="paragraph">
+<p><span class="image unresolved"><img src="extracted-media/media/image3.png" alt="csmi-graph.png" width="788" height="304"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_présentation_du_master_csmi"><a class="anchor" href="#_3_présentation_du_master_csmi"></a>5. 3 Présentation du Master CSMI</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Site web: <a href="http://csmi.eu"><span class="underline">http://csmi.eu</span></a></p>
+</div>
+<div class="paragraph">
+<p>Twitter: <a href="https://twitter.com/master_csmi"><span class="underline">https://twitter.com/master_csmi</span></a></p>
+</div>
+<div class="paragraph">
+<p>LinkedIn:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Page CSMI <a href="https://www.linkedin.com/company/master-csmi"><span class="underline">https://www.linkedin.com/company/master-csmi</span></a></p>
+</li>
+<li>
+<p>Forum Anciens Étudiants : <a href="https://www.linkedin.com/groups/3923807"><span class="underline">https://www.linkedin.com/groups/3923807</span></a></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Facebook:</p>
+</div>
+<div class="sect2">
+<h3 id="_3_1_objectifs"><a class="anchor" href="#_3_1_objectifs"></a>5.1. 3.1 Objectifs</h3>
+<div class="paragraph">
+<p>Le Master CSMI s&#8217;adresse aux titulaires d&#8217;une licence de mathématiques qui souhaitent s&#8217;orienter vers une carrière d&#8217;ingénieur ou vers une thèse dans un domaine des mathématiques appliquées. L&#8217;objectif de cette formation est de donner une double compétence en calcul scientifique et en mathématique de l&#8217;information.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2"><a class="anchor" href="#_2"></a>5.2. +</h3>
+<div class="paragraph">
+<p>Accès et pré-requis</p>
+</div>
+<div class="paragraph">
+<p>Accès en première année (M1) :<br>
+1) De plein droit pour les titulaires d&#8217;une licence de Mathématiques délivrée par l&#8217;UFR de Mathématique et d&#8217;Informatique de l&#8217;Université de Strasbourg.<br>
+2) Sur dossier et après avis favorable de la commission pédagogique pour les titulaires d&#8217;un diplôme en Mathématiques ou Mathématiques appliquées, de niveau licence au minimum, délivré par une université étrangère et française.<br>
+3) Sur dossier et après avis favorable de la commission pédagogique pour les titulaires d&#8217;une licence de physique ou d&#8217;informatique.<br>
+<br>
+Accès en deuxième année (M2):<br>
+Uniquement sur dossier et après avis favorable de la commission pédagogique pour les titulaires du M1 ou équivalent.<br>
+<br>
+Pré-requis: Bonnes bases en analyse, en algèbre et en informatique. Goût pour la programmation, l&#8217;algorithmique et les applications des mathématiques.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3"><a class="anchor" href="#_3"></a>5.3. +</h3>
+<div class="paragraph">
+<p>Savoir-faire et compétences<br></p>
+</div>
+<div class="paragraph">
+<p>Les étudiants issus du master CSMI ont une bonne connaissance théorique et pratique de la simulation numérique et des applications informatiques de l&#8217;algèbre. Ils ont des notions de modélisation. Plusieurs projets leurs ont permis d&#8217;appliquer les connaissances acquises à des problèmes issus d&#8217;autres domaines des sciences (physique, informatique, etc.). Une bonne maîtrise de l&#8217;outil informatique leur est indispensable. La formation insiste donc particulièrement sur ce point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4"><a class="anchor" href="#_4"></a>5.4. +</h3>
+<div class="paragraph">
+<p>Débouchés et insertion professionnelle</p>
+</div>
+<div class="paragraph">
+<p>Les débouchés naturels sont les services de recherche et développement des grandes entreprises, les SSII spécialisées, les postes d&#8217;ingénieur dans les universités et les organismes de recherche publics ou privés.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5"><a class="anchor" href="#_5"></a>5.5. +</h3>
+<div class="paragraph">
+<p>Poursuites d&#8217;études<br></p>
+</div>
+<div class="paragraph">
+<p>Les étudiants de la filière les plus motivés par la recherche appliquée pourront également poursuivre en thèse.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_6"><a class="anchor" href="#_6"></a>5.6. +</h3>
+<div class="paragraph">
+<p>Contrôle des connaissances<br></p>
+</div>
+<div class="paragraph">
+<p>Les règles générales des modalités de contrôles des connaissances sont définies au niveau de l&#8217;université et s&#8217;appliquent à tous les diplômes.<br>
+Ces règles générales fixent les modalités de capitalisation, compensation, conservation de notes d&#8217;une année à l&#8217;autre et report de notes entre les deux sessions d&#8217;examen.<br>
+Elles définissent les aménagements d&#8217;études accordés aux étudiants selon leurs situations particulières.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. L&#8217;IRMA est l&#8217;Institut de Recherche Mathématique Avancée, le laboratoire de recherche en mathématique associé à l&#8217;UFR Math-Info. MOCO est l&#8217;équipe de l&#8217;IRMA en charge du master CSMI. MOCO signifie Modélisation et Contrôle.
+</div>
+<div class="footnote" id="_footnotedef_2">
+<a href="#_footnoteref_2">2</a>. ICUBE est le laboratoire des sciences de l&#8217;ingénieur, de l&#8217;informatique et de l&#8217;imagerie dont un certain nombre de membres enseignent dans le master CSMI les cours d&#8217;informatique dont l&#8217;équipe ICPS - Image Calcul Parallèle et Scientifique.
+</div>
+<div class="footnote" id="_footnotedef_3">
+<a href="#_footnoteref_3">3</a>. <a href="http://www.unistra.fr/index.php?id=19773&amp;no_cache=1&amp;tx_ttnews%5Btt_news%5D=11095&amp;cHash=5639c95abf067c5f0b0ba04c74954632"><span class="underline">Lien Prêt pour l&#8217;Emploi</span></a>
+</div>
+<div class="footnote" id="_footnotedef_4">
+<a href="#_footnoteref_4">4</a>. ECMI est le Consortium Européen de Mathématiques pour l&#8217;Industrie. Il regroupe à la fois des universités dans toute l&#8217;Europe mais également des entreprises. L&#8217;Université de Strasbourg participe au comité éducatif d&#8217;ECMI ainsi qu&#8217;aux initiatives telles que les semaines de modélisation en partenariat avec AMIES - L&#8217;Agence française des Mathématiques en Interaction avec les Entreprises et la Société.
+</div>
+<div class="footnote" id="_footnotedef_5">
+<a href="#_footnoteref_5">5</a>. <a href="https://fr.wikipedia.org/wiki/Système_européen_de_transfert_et_d%27accumulation_de_crédits" class="bare">fr.wikipedia.org/wiki/Système_européen_de_transfert_et_d%27accumulation_de_crédits</a>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer"
+    style="border-top: 2px solid #e9e9e9; background-color: #fafafa; padding-bottom: 2em; padding-top: 2em;">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 0.5em;">
+        <div>
+            <a href="https://www.cemosis.fr">
+                <img src="../../_/img/cemosis-logo.svg" alt="Cemosis logo" height="50">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.unistra.fr">
+                <img src="../../_/img/logo-unistra.png" alt="Unistra logo" height="50">
+            </a>
+        </div>
+        <span style="font-size: 0.8rem; color: #9e9e9e">© 2023 <a href="https://www.cemosis.fr"
+                style="text-decoration: underline;">Cemosis</a>, Université de Strasbourg</span>
+    </div>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+
+
+<script async src="../../_/js/vendor/fontawesome-icon-defs.js"></script>
+<script async src="../../_/js/vendor/fontawesome.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+
+
+<script type="text/javascript">
+function toggleFullScreen() {
+   var doc = window.document;
+   var docEl = doc.documentElement;
+
+   var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+   var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+   if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+       requestFullScreen.call(docEl);
+   }
+   else {
+       cancelFullScreen.call(doc);
+   }
+}
+</script>
+  </body>
+</html>

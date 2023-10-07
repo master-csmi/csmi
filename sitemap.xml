@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://master-csmi.github.io/csmi/csmi/csmi/csmi-2024-2028/csmi-prev.html</loc>
-<lastmod>2023-10-07T13:20:00.712Z</lastmod>
-</url>
-<url>
-<loc>https://master-csmi.github.io/csmi/csmi/csmi/csmi-2024-2028/index.html</loc>
-<lastmod>2023-10-07T13:20:00.712Z</lastmod>
-</url>
-<url>
-<loc>https://master-csmi.github.io/csmi/csmi/csmi/csmi-2024-2028/summary.html</loc>
-<lastmod>2023-10-07T13:20:00.712Z</lastmod>
-</url>
-<url>
-<loc>https://master-csmi.github.io/csmi/csmi/csmi/emplois.html</loc>
-<lastmod>2023-10-07T13:20:00.712Z</lastmod>
-</url>
-<url>
-<loc>https://master-csmi.github.io/csmi/csmi/csmi/index.html</loc>
-<lastmod>2023-10-07T13:20:00.712Z</lastmod>
-</url>
-<url>
-<loc>https://master-csmi.github.io/csmi/csmi/csmi/news.html</loc>
-<lastmod>2023-10-07T13:20:00.712Z</lastmod>
-</url>
-<url>
-<loc>https://master-csmi.github.io/csmi/csmi/csmi/outils.html</loc>
-<lastmod>2023-10-07T13:20:00.712Z</lastmod>
-</url>
-<url>
-<loc>https://master-csmi.github.io/csmi/csmi/csmi/stages.html</loc>
-<lastmod>2023-10-07T13:20:00.712Z</lastmod>
-</url>
-<url>
-<loc>https://master-csmi.github.io/csmi/csmi/csmi/team.html</loc>
-<lastmod>2023-10-07T13:20:00.712Z</lastmod>
-</url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemap>
+<loc>https://master-csmi.github.io/csmi/sitemap-en.xml</loc>
+</sitemap>
+<sitemap>
+<loc>https://master-csmi.github.io/csmi/sitemap-fr.xml</loc>
+</sitemap>
+</sitemapindex>
