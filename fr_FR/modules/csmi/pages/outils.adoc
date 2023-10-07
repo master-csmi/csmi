@@ -56,7 +56,7 @@ image:en:csmi:img-macos.svg[width=100px]
 Nous utiliserons les outils suivants dans plusieurs cours
 
 [.grid.has-emblems]
-[emblem]#Langues de programmation#::
+[emblem]#Langages de programmation#::
 +
 image:en:csmi:img-cpp.svg[width=100px] image:en:csmi:img-python.svg[width=100px] 
 // image:en:csmi:img-rust.svg[width=100px] image:en:csmi:img-julia.svg[width=100px]
