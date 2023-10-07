@@ -1,0 +1,21 @@
+= My Report
+:sectnums:
+:stem: latexmath
+:eqnums: all
+
+== Theory
+
+[stem#eq-ode,reftext=Equation ({counter:eqs})]
+++++
+\mathbf{M}(t)\mathbf{\ddot{q}}(t) + \mathbf{C}(t)\mathbf{\dot{q}}(t) + \mathbf{K}(t)\mathbf{q}(t)
+= \mathbf{F}(\mathbf{q}, \mathbf{\dot{q}}, t)
+++++
+
+See <<eq-ode>> for definition.
+
+[stem#eq-emc,reftext=Equation ({counter:eqs})]
+++++
+E = mc^2
+++++
+
+<<eq-emc>> is another equation.

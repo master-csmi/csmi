@@ -1,0 +1,234 @@
+= Stages
+:sectnums:
+:experimental:
+:collapsible:
+:stem: latexmath
+:eqnums: all
+
+== Modalités
+
+Les stages de M2 durent au minimum 4 mois et au maximum 6 mois entre les mois de février et septembre.
+
+Les stages de M1 durent en 6 semaines et 2 mois entre les mois de juin et août.
+
+Les soutenances ont lieu fin août.
+
+1. L'étudiant contacte le responsable de la formation afin de valider le sujet de stage avec une description suffisante 
+2. L'étudiant devra remplir ensuite une demande de convention de stage sur l'ENT 
+3. Ensuite la convention sera à signer par les différentes parties: étudiant, entreprise, direction de l'UFR,  responsable de stage, responsable de formation.
+
+CAUTION: Au delà de 2 mois, le stage doit être rémunéré. 
+
+== Années précédentes
+
+- xref:csmi-stages-2023:ROOT:index.adoc[Stages 2023]
+- xref:csmi-stages-2022:ROOT:index.adoc[Stages 2022]
+- xref:csmi-stages-2021:ROOT:index.adoc[Stages 2021]
+- xref:csmi-stages-2021:ROOT:index.adoc[Stages 2020]
+//- xref:csmi-stages-2021:ROOT:index.adoc[Stages 2019]
+
+== Rapport de stages
+
+Les indications ci-dessous sont tirés intégralement des https://gitlab.com/pdagog/ens[conseils pour faire un bon mémoire de stage de Pierre David] qui est enseignant de le Master CSMI et qui dirige le Master en Informatique SIRIS.
+
+=== Introduction 
+
+Le mémoire est un élément essentiel de votre stage : il a pour but de
+de présenter, aussi fidèlement que possible, à la fois la portée du stage (organisationnelle et/ou
+(organisationnel et/ou technique) et votre contribution.
+
+Votre mémoire sera lu par un _rapporteur_, c'est-à-dire un
+enseignant de l'équipe pédagogique (donc une personne ayant des compétences dans votre discipline), dont la mission est d'évaluer votre thèse pour comprendre :
+- le contexte dans lequel vous avez évolué,
+- votre apport (réalisation technique, travail scientifique) sa pertinence par rapport aux cours du Master.
+
+CAUTION: Il vous est rappelé que le plagiat est puni par la loi, par l'université par l'université et par vos examinateurs : si de courtes citations sont autorisées, vous devez en indiquer la source.
+
+
+=== Plan
+
+L'exercice consiste à présenter une description de votre contexte
+organisationnel : votre rapporteur ne connaît à priori pas
+l'organisme d'accueil, donc vous devez le présenter à travers sa
+branche d'activité, ses chiffres caractéristiques. 
+De plus, vous devez présenter votre place dans l'organisme : vous devez suivre une description en _entonnoir_, c'est-à-dire partir de l'organisme dans son ensemble pour arriver jusqu'à votre place en tant que stagiaire. Un organigramme peut aider à comprendre votre place dans l'organisme ou le service concerné.
+
+TIP: Évitez de recopier le site web de l'entreprise, cela risque de mal passer auprès du rapporteur.
+
+NOTE: la présentation de la structure d'accueil est obligatoire,
+même si vous savez que cette structure est bien connue de votre
+rapporteur (par exemple pour un stage réalisé dans le laboratoire
+IRMA/Cemosis). L'exercice imposé est de présenter cette structure, et tous les stagiaires sont évalués sur ce critère, sans exception.
+
+
+==== Missions & Objectifs
+
+
+En tant que stagiaire, vous avez une ou plusieurs _missions_ définies
+correspondant à la durée de votre stage. 
+Le rapporteur ne les connaît vraisemblablement pas. 
+Décrivez-les, de préférence assez tôt dans le mémoire, en les mettant en perspective par rapport aux besoins de l'organisme. 
+De plus, donnez les contraintes particulières (financières, technique ou autres) ainsi que les _objectifs_ à atteindre, qui permettront d'*évaluer la réussite du projet.*
+
+
+==== Contexte
+
+Le contexte technique ou organisationnel doit être présenté.
+
+NOTE: Rappelez-vous que votre rapporteur a une bonne maîtrise des concepts techniques, mais qu'il n'a pas connaissance des contraintes particulières liées à votre organisme d'accueil ou à son métier.
+
+CAUTION: N'abusez pas du contexte : vous devez présenter le minimum pour permettre au rapporteur de comprendre les contraintes spécifiques de votre stage et votre contribution. 
+
+
+==== Contributions
+
+C'est la principale partie de votre mémoire.
+V ous devez présenter votre contribution (modélisation, méthodologie, mathématique, présentation des données et des traitements initiaux, réalisation logicielle, état de l'art, méthode, algorithme, évaluation, etc.) de façon synthétique,
+sans sombrer dans les détails techniques mais en n'éludant pas les
+points concrets qui permettent au rapporteur d'avoir la vision la plus
+exacte possible de ce que vous avez mis en œuvre. 
+
+CAUTION: Ne cachez pas les difficultés que vous avez eues sous le tapis. Essayez, au contraire de les présenter et d'expliquer où se trouve les points durs.
+
+
+NOTE: *Soyez précis et factuel*: technologies, algorithmes ou méthodes
+employés, éléments quantitatifs permettant d'apprécier l'envergure
+du projet, comparatifs réalisés, etc. Si vous avez travaillé en
+coopération avec d'autres personnes (votre maître de stage, d'autres
+personnes ou stagiaires), indiquez avec précision votre rôle et vos
+réalisations.
+
+
+La _méthodologie_ avec laquelle vous procédez est l'un des principaux
+critères d'évaluation de votre travail : les problèmes doivent
+être analysés, les choix effectués (ou auxquels vous avez pris part)
+doivent être explicités et justifiés.
+
+IMPORTANT: Il arrive souvent que, comme stagiaire, les choix vous soient imposés : vous vous insérez dans un contexte qui existait avant votre arrivée, certains choix sont faits en amont ou implicitement. Vous devez
+les expliciter, et montrer que vous en maîtrisez les tenants et les
+aboutissants : en d'autres termes, vous devez justifier certains choix,
+même si ce ne sont pas les vôtres, pour montrer votre compréhension
+des enjeux.
+
+
+==== Bilan
+
+Le stage complète votre formation : vous devez prendre du recul pour
+mettre en rapport votre stage avec les compétences acquises pendant votre formation, et présenter les compétences complémentaires (techniques, personnelles, comportementales, etc.) que vous avez acquises durant le stage.
+
+Le _bilan_ doit montrer votre recul par rapport au stage : vous pouvez alors revenir sur le déroulement de votre stage, votre comportement, votre démarche, vos choix, vos réalisations ou encore l'organisme d'accueil.
+
+
+=== La Forme
+
+
+==== Typographie
+
+La rédaction de textes obéit à des règles précises en
+Français : cela s'appelle la _typographie_, voir <<<JAndre, les petites leçons de typographie de Jacques André>>>. 
+
+TIP: Il est intéressant de s'en imprégner pour donner à votre document un aspect de qualité et éviter des erreurs grossières.
+
+
+==== Orthographe et Grammaire
+
+L'orthographe et la grammaire sont des prérequis indispensables pour
+la rédaction du mémoire. Si vous n'êtes pas sûr de vous, faites-vous
+relire par un tiers. C'est dommage de perdre des points sur ce critère.
+
+==== Numérotation
+
+Numérotez tout ce qui peut l'être.
+
+- pages, 
+- chapitres, 
+- sections, 
+- figures,
+- tables, 
+- équations,
+- bibliographie. 
+
+TIP: Laissez à Latex le soin de numéroter automatiquement, il le fera mieux que vous _manuellement_. 
+
+Pour les utilisateurs d'Antora, voici un template pour les équations qui utilisent un compteur:
+[source,asciidoc]
+----
+[stem#eq-<some label>,reftext=Equation ({counter:eqs})]
+++++
+<Equation here>
+++++
+----
+
+.Exemple complet avec numérotation d'équations 
+[source#ex-eqnum,asciidoc]
+----
+include::example$eqnum.adoc[]
+----
+
+.View result of <<ex-eqnum>>
+[%collapsible]
+====
+include::example$eqnum.adoc[]
+====
+
+TIP: Utilisez des références si vous devez mettre en relation plusieurs éléments de votre discours en Latex (`\ref`, `\pageref` et `\label`).
+
+
+==== Bibliographie
+
+La bibliographie constitue une partie importante de votre mémoire.
+Elle constitue un critère de qualité du travail (avez-vous trouvé les
+bonnes sources ? les documents sur lesquels vous vous appuyez sont-ils
+sérieux ?). Vous devez indiquer les documents :
+
+- de référence que vous avez consultés dans votre recherche, pour vous familiariser avec votre sujet ou pour apprendre des techniques particulières ;
+
+- que vous avez consultés pour effectuer vos choix ou mettre en œuvre un dispositif logiciel ou autre ;
+
+- qui permettent au lecteur d'en savoir plus sur tel ou tel point de votre mémoire que vous ne pouvez davantage développer.
+
+
+La bibliographie, voir <<<SavoirsCDI, le document sur citer ses sources et présenter une bibliographie par Savoirs CDI>>> vient en annexe, elle doit donner tous les renseignements nécessaires pour permettre au lecteur de retrouver les documents concernés : auteur, titre du document ou de l'ouvrage, éditeur, année de publication, URL si nécessaire, date de consultation pour un site Web, etc.
+
+Chaque document dans la bibliographie comporte une référence (un numéro, une abréviation ou autre), que vous devez citer dans le texte : un document non cité ne devrait pas apparaître dans la bibliographie.
+
+
+=== Soutenance
+
+Les soutenances ont lieu fin août, elles permettent à l'étudiant de présenter son travail de manière concise devant un jury de 3 personnes qui assistent à l'ensemble des présentations.
+
+Les présentations durent 30 minutes dont 20 minutes de présentations et 10 minutes de questions.
+
+
+- Ne reproduisez pas le mémoire dans votre présentation : vous n'avez ni la place, ni le temps. Détachez-vous du mémoire et repartez de zéro pour construire un nouveau discours tenant compte de la contrainte de temps.
+
+- Travaillez sur les idées et les messages que vous voulez faire passer. Comptez une idée par diapo. Explicitez les idées, ne vous contentez pas de les suggérer.
+
+- Ne surchargez pas le texte de votre présentation : ne faites pas de phrases, insistez plutôt sur quelques mots pour exposer vos idées.
+
+- Si vous pouvez prendre des libertés avec la grammaire et ne pas mettre de phrases, vous n'êtes pas dispensé de respecter l'orthographe.
+
+- Adoptez un fond sobre pour ne pas perturber votre message. Numérotez vos diapos.
+
+- Faites des illustrations (schémas, figures, courbes) qui puissent être lues à plusieurs mètres de distance. N'hésitez pas à prendre des libertés avec votre style de présentation pour faire une figure en pleine page.
+
+- Attention aux contrastes : votre présentation projetée dans une salle éclairée aura un contraste beaucoup moins bon que l'écran de votre portable. Évitez donc les couleurs pâles sur fond clair, ou les couleurs peu foncées sur fond sombre.
+
+- Une de vos missions est de maintenir l'attention de votre
+auditoire. Pensez que les membres du jury ont déjà peut-être une dizaine de présentations à leur actif, ainsi qu'un bon repas... Vous devez les motiver pour vous écouter.
+
+- Ne lisez surtout pas les diapos que vous présentez ou, pire encore, un texte que vous auriez préparé. Regardez l'assistance et non vos diapos.
+
+- Respectez la durée de votre présentation. Ne terminez pas trop en avance (vous n'avez donc rien à dire ?), ne terminez pas trop en retard (vous ne savez pas synthétiser et tenir compte d'une contrainte ?).
+
+- Répétez. Répétez. Répétez. Répétez. Répétez. Répétez. Répétez. Répétez. Répétez. Répétez. Répétez. Répétez.
+
+- Lors de la séance des questions, laissez les membres du jury aller jusqu'au bout de leurs questions, sans les interrompre. N'hésitez pas à prendre quelques secondes pour vous permettre de réfléchir à chaque question, voire de la reformuler pour vérifier que vous l'avez bien comprise.
+
+
+[bibliography]
+== Références
+
+- [[[JAndre]]] J. André. Petites leçons de typographie. Technical report, IRISA, 1990. btn:[http://jacques-andre.fr/faqtypo/lessons.pdf[> Site Web]].
+- [[[SavoirsCDI]]] Savoirs CDI. Citer ses sources et présenter une bibliographie, 2016. btn:[https://www.reseau-canope.fr/savoirscdi/centre-de-ressources/fonds-documentaire-acquisition-traitement/le-traitement-documentaire/citer-ses-sources-et-presenter-une-bibliographie-lycee.html[> Site Web]]
+.

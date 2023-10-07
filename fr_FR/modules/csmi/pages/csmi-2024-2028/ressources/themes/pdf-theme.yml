@@ -1,0 +1,47 @@
+extends: default
+header:
+  height: 0.55in
+  line-height: 1
+  border_color: dddddd
+  border_width: 0.25
+  background-image: image:../../media/logo-csmi.png[fit=scale-down,position=right]
+  recto:
+    center:
+      content: 'Master CSMI, Université de Strasbourg -- v{revnumber}, {docdate}'
+  verso:
+    center:
+      content: $header-recto-center-content
+footer:
+#  background-image: image:../../media/logo-csmi.png[width=0.5in] image:../../media/logo-unistra.png[width=0.5in]
+  background-image: image:../../media/logo-unistra.png[fit=scale-down,position=right]
+  height: 0.65in
+  line-height: 1
+  recto:
+    left:
+      content: '{section-or-chapter-title} | {page-number} of {page-count}'
+  verso:
+    left:
+      content: '{page-number} of {page-count} | *{chapter-title}*'
+  
+font:
+  catalog:
+    merge: true
+    UnistraA:
+      normal: UnistraA-Regular.ttf
+      bold: UnistraA-Bold.ttf
+      italic: UnistraA-Italic.ttf
+      bold_italic: UnistraA-BoldItalic.ttf    
+    UnistraB:
+      normal: UnistraB-Regular.ttf
+      bold: UnistraB-Bold.ttf
+      italic: UnistraB-Italic.ttf
+      bold_italic: UnistraB-BoldItalic.ttf
+
+heading:
+  font-family: UnistraB
+  font-style: bold
+#base:
+#  font-family: UnistraB
+#  font-style: normal
+h2:
+  font-color: '#da3131'

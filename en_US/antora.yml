@@ -1,0 +1,15 @@
+name: en
+title: Master CSMI (en)
+version: master
+start_page: csmi:index.adoc
+lang: en_US
+asciidoc: 
+  attributes: 
+    hide-uri-scheme: '' 
+    year: 2023
+    master-year: 2023-2024
+    pp: ++
+    manager: Christophe Prud'homme <prudhomme@unistra.fr>
+nav:
+- modules/csmi/nav.adoc
+

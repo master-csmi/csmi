@@ -1,0 +1,8 @@
+* xref:index.adoc[Master CSMI]
+* https://github.com/master-csmi/csmi/discussions[Actualités] 
+* xref:emplois.adoc[Emplois] 
+* xref:team.adoc[Equipe pédagogique]
+* xref:stages.adoc[Stages]
+* xref:outils.adoc[Outils]
+* xref:csmi-2024-2028/index.adoc[CSMI 2024-2028]
+** xref:csmi-2024-2028/summary.adoc[Summary]

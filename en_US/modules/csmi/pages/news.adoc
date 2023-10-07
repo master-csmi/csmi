@@ -1,0 +1,62 @@
+= News
+
+== 2022/07/28 Soutenances de stages
+
+Les soutenances de stages auront lieu les 25 et 26 Août.
+
+== 2022/07/28 Forum Emploi Math 2022
+
+
+image:fem-logo.jpeg[width=25%] Le 10ème Forum Emploi Maths, c'est le 11 octobre et c'est en ligne ! Stands entreprises et formations, tables rondes thématiques, Ateliers ... 
+Tenez-vous prêts !
+
+https://2022.forum-emploi-maths.com/
+
+== 2021/09/07 Forum Emploi Math
+
+
+image:fem-logo.jpeg[width=25%] Le 10ème Forum Emploi Maths, c'est le 12 octobre et c'est en ligne ! Stands entreprises et formations, tables rondes thématiques, Ateliers ... 
+Tenez-vous prêts !
+
+https://2021.forum-emploi-maths.com/
+
+
+== 2021/09/06 Réunion de rentrée
+
+La réunion de rentrée aura lieu de 10h à 12h en salle C15
+
+- link:{attachmentsdir}/info-rentree-2021-2022.pptx[Présentation administrative]
+
+Lors de la réunion, 
+
+- des informations administratives et sur le déroulement du master seront données.
+- les contrats pédagogiques seront distribués
+
+=== À faire
+
+- [x] remplir votre contrat pédagogique et le rendre à Mme Vos avant le 15 september. Vous aurez à choisir votre langue 2, a priori c'est Anglais sauf pour les étudiants étrangers anglophones et dans ce cas Francais.
+
+==== Uniquement les M1
+
+- [x] https://forms.gle/PebPGo47Y87Wm1Yj6[remplir ce formulaire]
+- [x] https://github.com/signup[créer un compte Github]
+- [x] https://join.slack.com/t/feelpp/shared_invite/zt-2qe0q9hw-4pVbhohCXUE6Po9Ma8dbiQ[créer un compte sur Slack et rejoindre #csmi-2022] 
+
+
+=== Calendrier
+
+==== M1
+
+- link:{attachmentsdir}/calendar-m1.ics[Calendrier M1 format ICalendar (Outlook/Mozilla/Google Calendar/ICal)]
+
+image::calendar-m1.png[]
+
+==== M2
+
+- link:{attachmentsdir}/calendar-m2.ics[Calendrier M2 format ICalendar (Outlook/Mozilla/Google Calendar/ICal)]
+
+image::calendar-m2.png[]
+
+=== Remise de diplôme
+
+La cérémonie de remise de diplôme se tient au mois de mai de l'année suivant votre diplôme au Palais Universitaire.

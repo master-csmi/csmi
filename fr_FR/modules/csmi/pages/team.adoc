@@ -1,0 +1,59 @@
+= Equipe pédagogique : {master-year}
+
+Responsable: {manager}
+
+== Master 1
+
+=== Semestre 1
+
+|===
+| Cours | Enseignant(s) | Type
+| Algorithmique | Yann BUGEAUD | 28h CI
+| Base de données | | 28h CI 
+| C{pp} |  Vincent CHABANNES  | 28 CI 1 35,00 
+| Calcul scientifique 1 (mutualisé MF) | Philippe HELLUY | 12h CI 
+| Calcul scientifique 1 | Philippe HELLUY  | 14h TP
+| Calcul scientifique 2 | Laurent NAVORET | 28h CI 
+| Calcul parallèle |  Matthieu BOILEAU (10h) & Vincent CHABANNES (18h) | 28h CI 
+| Graphes 1 | Guo-Niu HAN | 28h CI
+| Modèles aléatoires | Vincent VIGON | 28h CI
+| Analyse fonctionnelle | Bopeng RAO | 28h CI 
+|===
+
+=== Semestre 2
+
+|===
+| Cours | Enseignant(s) | Type
+| Traitement du signal 1 | Vincent VIGON |  28h CI 
+| Projet | Christophe PRUD'HOMME & Joubine AGHILI  | 28h CI 
+| Optimisation (mutualisé MF et Mag) |  Laurent NAVORET |56h CI
+| Graphes 2  | Vincent VIGON | 28h CI
+| Méthode Num. EDP | Bopeng RAO & Christophe PRUD'HOMME | 56h CI 
+| Système d'exploitation |  Pierre DAVID | 28h CI 
+| Stages | Christophe Prud'homme | 6 semaines / 2 mois
+|=== 
+
+
+== Master 2
+
+
+=== Semestre 3
+
+|===
+| Cours | Enseignant(s) | Type
+| Traitement du signal 2 | Vincent VIGON  | 28h CI
+| Traitement et fouille de données  |  Vincent VIGON  | 28h CI
+| Méthodes numériques EDP 2  |  Philippe HELLUY  | 28h CI
+| Contrôle optimal | Yannick PRIVAT | 56h CI
+| Calcul scientifique 3  |  Christophe PRUD'HOMME (16h) & Christophe TROPHIME (12h) | 28h CI
+| Réseaux  |  Pierre DAVID  | 28h CI
+| Compilation  |  Bérenger BRAMAS  | 28h CI
+| Incertitudes |   Michel DUPREZ  & Frédéric  BERTRAND | 28h CI
+| Projet  |  Christophe PRUD'HOMME & Joubine Aghili | 28h CI
+|=== 
+
+=== Semestre 4
+
+|===
+| Stages | Christophe Prud'homme |  6 mois 
+|===

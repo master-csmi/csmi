@@ -1,0 +1,47 @@
+= Tools 
+:page-role: home
+
+== Communication
+
+CSMI uses link:https://slack.com/intl/fr-fr/[Slack] to communicate with promotions and on projects.
+You can install slack and create your account with your email `@etu.unistra.fr` once you have it.
+You'll receive an invitation at the start of the school year.
+
+== Operating system
+- Linux, eg link:https://ubuntu.com/download/desktop/thank-you?version=22.04.1&architecture=amd64[Ubuntu 22.04 LTS] or later
+- Windows 10 with link:https://docs.microsoft.com/fr-fr/windows/wsl/install[WSL support] then link:https://apps.microsoft.com/store/detail/ubuntu-22041-lts/9PN20MSR04DW?hl=fr-fr&gl=FR[Ubuntu 22.04]
+- Mac with link:https://brew.sh/index_fr[Homebrew]
+
+== Programming
+
+We'll be using the following tools in several courses
+
+- https://code.visualstudio.com/[Visual Studio Code] a very powerful open-source editor, especially for 
+   ** connect to remote machines
+   ** work on one or more projects at a time
+   ** use git
+- https://github.com[Github]
+
+We'll be using https://github.com/features/issues[Github management tools] to keep track of projects and assignments.
+
+== Github
+
+You need to create an account on Github, a form will be sent at the beginning of the M1 year and your account will follow you during the 2 years.
+It will be used
+
+- for projects in S2 and S3
+- during internships, to submit your reports and presentations
+- during internships for some of you, for follow-up purposes 
+- during EDP (S2) and CS3 courses, via the https://classroom.github.com[github classroom] platform, to hand in your assignments. 
+
+A reference: https://lab.github.com/ but there are plenty of others.
+
+== Languages 
+
+Here are the programming languages you'll be using:
+
+- C 
+- C{pp} 
+- Python3
+- Rust
+

@@ -1,0 +1,100 @@
+= Master CSMI: Current Track 2016-2023
+
+== Description
+
+The CSMI Master's program is at the heart of the digital revolution, focusing on models, data, and algorithms. It aims to train students to be key players in the digital revolution, equipping them with cross-disciplinary skills in mathematics and computer science and a strong grasp of various application domains such as health, environment, economy, and micro-technology.
+
+The program is designed to prepare students for the rapid technological changes and challenges in the digital world by providing them with the knowledge and skills needed in the areas of image processing, modeling, simulation, optimization, and high performance computing.
+
+== Main Components
+
+=== Data and Machine Learning
+
+This component covers the fundamentals of data analysis and machine learning. Students will learn about statistical methods, data analysis techniques, and machine learning algorithms. They will gain the ability to analyze and interpret complex datasets, and develop algorithms to learn from and make predictions or decisions based on data.
+
+=== Modeling Simulation Optimisation
+
+Modeling, Simulation, and Optimisation (MSO) is considered the third pillar of scientific progress and innovation, alongside experimentation and theory. In this component, students will learn about mathematical modeling, simulation techniques, and optimization methods. They will gain the ability to develop precise methods for MSO, which is increasingly important in the context of the growing importance of high-performance computing and Big Data technologies.
+
+=== High Performance Computing
+
+High Performance Computing (HPC) involves the use of supercomputers and parallel processing techniques for solving complex computational problems. In this component, students will learn about the architecture of high-performance computers, parallel programming techniques, and the design and optimization of high-performance algorithms.
+
+=== Signal and Image Processing
+
+Signal and image processing involves the analysis, interpretation, and manipulation of signals and images. In this component, students will learn about various methods and techniques for signal and image processing, including filtering, pattern recognition, and image enhancement. They will gain the ability to develop algorithms for processing and analyzing signals and images.
+
+== Course Summary and List
+
+This table provides an overview of the lecture hours for each course in the first semester of the CSMI Master's program.
+
+.First Semester Courses
+[options="header"]
+|===
+|Course | ECTS | CM | CI | TD | TP | TE
+|Algorithmique | 3 | - | 28h | - | - | -
+|Base de données | 3 | - | 28h | - | - | -
+|Analyse fonctionnelle | 3 | - | 28h | - | - | -
+|C++ | 3 | - | 28h | - | - | -
+|Calcul parallèle | 3 | - | 28h | - | - | -
+|Calcul scientifique 1 | 3 | - | 28h | - | - | -
+|Graphe 1 | 3 | - | 28h | - | - | -
+|Modèles aléatoires | 3 | - | 28h | - | - | -
+|Calcul scientifique 2 | 3 | - | 28h | - | - | -
+|Langue | 3 | - | - | 16h | - | 60h
+|Anglais - S1 Master | - | - | - | 16h | - | 60h
+|===
+
+
+This table provides an overview of the lecture hours for each course in the second semester of the CSMI Master's program.
+
+.Second Semester Courses
+[options="header"]
+|===
+|Course | ECTS | CM | CI | TD | TP | TE
+|Traitement du signal 1 | 3 | - | 28h | - | - | -
+|Projet | 3 | - | 28h | - | - | -
+|Méthodes numériques EDP | 6 | - | 56h | - | - | -
+|Optimisation | 6 | - | 56h | - | - | -
+|Système d'exploitation | 3 | - | 28h | - | - | -
+|Traitement et fouille de données | 3 | - | 28h | - | - | -
+|Stage ou mémoire | 6 | - | - | - | - | -
+|===
+
+
+This table provides an overview of the lecture hours for each course in the third semester of the CSMI Master's program.
+
+.Third Semester Courses
+[options="header"]
+|===
+|Course | ECTS | CM | CI | TD | TP | TE
+|Traitement du signal 2 | 3 | - | 28h | - | - | -
+|Contrôle optimal | 6 | - | 56h | - | - | -
+|Calcul scientifique 3 | 3 | - | 28h | - | - | -
+|Méthodes numérique pour les EDP | 3 | - | 28h | - | - | -
+|Compilation | 3 | - | 28h | - | - | -
+|Projet | 3 | - | 28h | - | - | -
+|Réseaux | 3 | - | 28h | - | - | -
+|Incertitudes | 3 | - | 28h | - | - | -
+|Graphe 2 | 3 | - | - | - | - | -
+|===
+
+
+This table provides an overview of the lecture hours for each course in the fourth semester of the CSMI Master's program.
+
+.Fourth Semester Courses
+[options="header"]
+|===
+|Course | ECTS | CM | CI | TD | TP | TE
+|Stage | 27 | - | - | - | - | -
+|Langue S4 | 3 | - | - | 16h | - | 60h
+|Anglais - S3 Master | - | - | - | 16h | - | 60h
+|===
+
+NOTE: The english courses are taken during the third semester.
+
+=== Evaluation
+
+The evaluation of the CSMI Master's program is based on a combination of continuous assessment and final exams. The continuous assessment is based on homework, projects, and/or presentations. The final exams are written exams.
+
+ 

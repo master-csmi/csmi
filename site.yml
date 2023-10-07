@@ -1,7 +1,7 @@
 site:
   title: CSMI::Master Calcul Scientifique et Mathématiques de l'Innovation
   url: https://master-csmi.github.io/csmi
-  start_page: csmi::index.adoc
+  start_page: en::index.adoc
   keys:
     google_analytics: 'G-H3PWJ83ZVS'
   robots: |
@@ -12,6 +12,10 @@ content:
   sources:
   - url: .
     branches: main
+    start_path: fr_FR
+  - url: .
+    branches: main
+    start_path: en_US
 #  - url: https://github.com/master-csmi/csmi-stages-2020
 #    branches: main    
 #  - url: https://github.com/master-csmi/csmi-stages-2021
