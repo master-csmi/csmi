@@ -1,47 +1,96 @@
-= Outils 
-:page-role: home
+= Outils informatiques
+:page-role : home
 
-== Communication
+.Communication
+[.def#communication]
+****
 
+[.left]
+image:en:csmi:slack-icon.svg[width=100px]
+--
 CSMI utilise link:https://slack.com/intl/fr-fr/[Slack] pour communiquer avec les promotions et sur les projets.
+
 Vous pouvez installer slack et créer votre compte avec votre email `@etu.unistra.fr` une fois que vous l'avez.
-Vous recevrez une invitation au moment de la rentrée.
+Vous recevrez une invitation à la rentrée.
+--
+****
 
-== Système d'exploitation
-- Linux, eg link:https://ubuntu.com/download/desktop/thank-you?version=22.04.1&architecture=amd64[Ubuntu 22.04 LTS] ou plus récente
-- Windows 10 avec link:https://docs.microsoft.com/fr-fr/windows/wsl/install[support WSL] puis link:https://apps.microsoft.com/store/detail/ubuntu-22041-lts/9PN20MSR04DW?hl=fr-fr&gl=FR[Ubuntu 22.04]
-- Mac avec link:https://brew.sh/index_fr[Homebrew]
+.Systèmes d'exploitation
+[.def#systeme]
+****
+[.grid.has-emblems]
+[emblem]#Linux#:: link:https://ubuntu.com/download/desktop/thank-you?version=22.04.1&architecture=amd64[Ubuntu 22.04 LTS] ou version ultérieure, ou Debian 11 ou version ultérieure
++
+image:en:csmi:img-ubuntu.svg[width=100px] image:en:csmi:img-debian.svg[width=100px]
+[emblem]#Windows 1x#:: Installez link:https://docs.microsoft.com/fr-fr/windows/wsl/install[Support WSL] puis utilisez le link:https://apps.microsoft.com/store/detail/ubuntu-22041-lts/9PN20MSR04DW?hl=fr-fr&gl=FR[Ubuntu 22.04] ou Debian 11 ou plus tard
++
+image:en:csmi:img-win.svg[width=100px]
+[emblem]#MacOs#:: Installez le link:https://brew.sh/index_fr[Homebrew] qui propose de nombreux paquets sur les processeurs Intel ou ARM
++
+image:en:csmi:img-macos.svg[width=100px]
+****
 
-== Programmation
 
-Nous allons utiliser les outils suivants dans plusieurs cours
+.Environnement de programmation
+[.def#programmation]
+****
+Nous utiliserons les outils suivants dans plusieurs cours
 
-- https://code.visualstudio.com/[Visual Studio Code] un éditeur open-source très puissant, en particulier pour 
-   ** se connecter sur des machines à distance
-   ** travailler sur un ou plusieurs projets à la fois
-   ** utiliser git
-- https://github.com[Github]
+[.grid.has-emblems]
+[emblem]#Langues de programmation#::
++
+image:en:csmi:img-cpp.svg[width=100px] image:en:csmi:img-python.svg[width=100px] 
+// image:en:csmi:img-rust.svg[width=100px] image:en:csmi:img-julia.svg[width=100px]
++
+Voici les langages de programmation que vous utiliserez :
++
+* - C 
+* - C{pp} 
+* - Python3
++
+et d'autres que vous pouvez utiliser dans vos projets
++
+* - Rust
+* - Julia
++
+et utilisez un environnement de programmation avancé basé sur
++
+* - CMake
 
-Nous utiliserons les https://github.com/features/issues[outils de management de Github] pour le suivi des projets et des devoirs.
+[emblème]#https://code.visualstudio.com/[Visual Studio Code]#:: 
++
+image:en:csmi:img-vscode.svg[width=100px]
++
+* - se connecter à des machines distantes
+* - travailler sur un ou plusieurs projets à la fois
+* - utiliser git
++
+De puissantes extensions sont disponibles pour la plupart des langages de programmation, en particulier
++
+* - C/C{pp} https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools[extension]
+* - Python https://marketplace.visualstudio.com/items?itemName=ms-python.python[extension]
+* - CMake https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools[extension]
+* - Rust https://marketplace.visualstudio.com/items?itemName=rust-lang.rust[extension]
+* - Julia https://marketplace.visualstudio.com/items?itemName=julialang.language-julia[extension]
+* - LaTeX https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop[extension]
+* - Asciidoc https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode[extension]
 
-== Github
 
-Il faut créer un compte sur Github, un formulaire sera envoyé en début d'année de M1 et votre compte vous suivra pendant les 2 années.
-Il servira
+[emblem]#https://github.com[Github]#:: 
++
+image:en:csmi:img-github.svg[width=100px]
++
+La plateforme numéro un pour les projets open-source utilisant git comme système de contrôle de version, la plateforme offre également de nombreux outils pour la gestion de projet. +
+Nous utiliserons https://github.com/features/issues[Outils de gestion Github] pour assurer le suivi des projets et des tâches. +
+Vous devez créer un compte sur Github, un formulaire vous sera envoyé au début de l'année de M1 et votre compte vous suivra pendant les 2 années. Il sera utilisé
++
+* pour les projets en S2 et S3
+* - pendant les stages, pour soumettre vos rapports et présentations
+* - pendant les stages pour certains d'entre vous, à des fins de suivi 
+* - pendant les cours EDP (S2) et CS3, via la plateforme https://classroom.github.com[github classroom], pour rendre vos travaux. 
++
+Une référence : https://lab.github.com/ mais il y en a plein d'autres.
 
-- lors des projets en S2 et S3
-- lors des stages pour déposer vos rapports et présentations
-- lors des stages pour certains d'entre vous pour le suivi 
-- lors des cours EDP (S2) et CS3 via la plateforme https://classroom.github.com[github classroom] pour rendre vos devoirs 
+****
 
-Une référence: https://lab.github.com/ mais il y en a plein d'autres.
-
-== Langages 
-
-voici les langages de programmation  que vous serez amenés à utiliser:
-
-- C 
-- C{pp} 
-- Python3
-- Rust
 

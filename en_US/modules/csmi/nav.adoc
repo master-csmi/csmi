@@ -5,6 +5,6 @@
 * xref:team.adoc[Team]
 * xref:internships/index.adoc[Internships]
 ** xref:internships/guide.adoc[Guide to internships reports] 
-* xref:outils.adoc[Tools]
+* xref:outils.adoc[IT Tools]
 * xref:csmi-2024-2028/index.adoc[CSMI 2024-2028]
 ** xref:csmi-2024-2028/summary.adoc[Summary]
