@@ -1,10 +1,11 @@
 site:
-  title: Master CSMI
+  title: CSMI::Master Calcul Scientifique et Mathématiques de l'Innovation
   url: https://master-csmi.github.io/csmi
   start_page: csmi::index.adoc
   robots: |
     User-agent: *
     Disallow: /csmi-stages-*/
+    Sitemap: https://master-csmi.github.io/csmi/sitemap.xml
 content:
   sources:
   - url: .

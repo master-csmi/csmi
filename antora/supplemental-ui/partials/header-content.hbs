@@ -1,7 +1,8 @@
 <header class="header">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-template-project" style="border-top: 4px solid #9E9E9E">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-template-project"
+        style="border-top: 4px solid #9E9E9E">
         <div class="navbar-brand">
-            <div class="navbar-item">
+            <div class="navbar-item feelpp-logo">
                 <a href="{{{site.url}}}">{{site.title}}</a>
             </div>
             <button class="navbar-burger" data-target="topbar-nav">
@@ -13,14 +14,27 @@
 
         <div id="topbar-nav" class="navbar-menu">
             <div class="navbar-end">
+                <!-- <div class="navbar-item">
+                    <a href="{{{uiRootPath}}}/../cours-tan/python/index.html">Documentation Reference</a>
+                </div> -->
+                <div class="navbar-item has-dropdown is-hoverable download-item">
+                    <div class="navbar-item"><a href="https://mathinfo.unistra.fr/admission/admission"
+                            class="download-btn">Admissions</a></div>
+                </div> 
                 <div class="navbar-item">
-                    <a class="navbar-brand" href="https://csmi.cemosis.fr">
-                        <img class="cemosis-logo" src="{{{uiRootPath}}}/img/logo-csmi.png" alt="CSMI logo" />
+                    <a class="navbar-brand" href="https://www.cemosis.fr">
+                        <img class="cemosis-logo" src="{{{uiRootPath}}}/img/cemosis-logo.svg" alt="Cemosis logo" />
                     </a>
                 </div>
                 <div class="navbar-item">
-                    <a class="navbar-brand"  href="https://www.cemosis.fr">
-                        <img class="cemosis-logo"  src="{{{uiRootPath}}}/img/cemosis-logo.svg" alt="Cemosis logo"/>
+                    <a class="navbar-brand" href="https://mathinfo.unistra.fr/">
+                        <img class="cemosis-logo" src="{{{uiRootPath}}}/img/logo-ufr-mathinfo-unistra.webp" alt="UFR Math Info logo" />
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-brand" href="https://www.unistra.fr">
+                        <img class="cemosis-logo" src="{{{uiRootPath}}}/img/logo-unistra.png"
+                            alt="Unistra logo" />
                     </a>
                 </div>
             </div>
