@@ -2,6 +2,8 @@ site:
   title: CSMI::Master Calcul Scientifique et Mathématiques de l'Innovation
   url: https://master-csmi.github.io/csmi
   start_page: csmi::index.adoc
+  keys:
+    - googleAnalytics: 'UA-39841210-3'
   robots: |
     User-agent: *
     Disallow: /csmi-stages-*/
