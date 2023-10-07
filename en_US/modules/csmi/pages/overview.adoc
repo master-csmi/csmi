@@ -1,0 +1,95 @@
+
+= Overview
+
+.Contact
+[.thm#contact:1]
+****
+[.grid.has-emblems]
+[.emblem]#Training manager#::
+Christophe Prud'homme <prudhomme@unistra.fr>
+
+[.emblem]#Administrative manager#::
+Marie-Line Vos <marieline.vos@unistra.fr>
+****
+
+.Social Media
+[.thm#media]
+****
+[.grid.has-emblems]
+[.emblem]#Discussions#::
+https://github.com/master-csmi/csmi/discussions
+
+[.emblem]#Twitter#::
+https://twitter.com/master_csmi
+
+[.emblem]#LinkedIn#::
+https://www.linkedin.com/company/master-csmi
+****
+
+
+.Our Objectives
+[.thm#objectives:1]
+****
+[.grid.has-emblems]
+[.emblem]#Double competency#::
+The *Scientific and Mathematical Computing for Innovation* -- **CSMI** -- specialization aims to train high-level mathematicians with *double competence in mathematics and computer science.* 
+
+[.emblem]#Theory and Applications#::
+Theoretical and applied aspects are addressed jointly throughout the course. 
+
+[.emblem]#Research and Entreprises#::
+Students are exposed to industrial and research issues through projects with companies and researchers, followed by M1 and M2 internships.
+****
+
+.CSMI: Training for Excellence in AI, HPC, Modeling, Simulation and Data Processing**.
+[.prop#master-csmi:1]
+****
+[discrete]
+--
+[.grid.has-emblems]
+[.emblem]#Impacting mathematics#::
+The CSMI Master's program is a tailored response to the critical needs of today's socio-economic world. Based on cutting-edge analyses such as the 2015 EISEM report and the 2022 CNRS study on the impact of mathematics, our path aims for excellence in artificial intelligence (AI), high-performance computing (HPC), modeling, simulation, optimization, as well as image and signal processing.
+
+[.emblem]#Knowledge and Skills#::
+Our students benefit from in-depth training in the theoretical and applied fields of algorithms, scientific computing, partial differential equations, statistics, probability, algebra and geometry. In addition, the vital importance of computer science in these fields is strongly emphasized, preparing our students to master a variety of programming languages, software and digital platforms.
+
+[.emblem]#Situational experience: Projects and internships#::
+Beyond the acquisition of knowledge, our program guarantees concrete application through collaborative projects with partner companies. As a result, our graduates are not only equipped with the skills they're looking for, but also ready to apply them in a dynamic professional environment.
+--
+****
+
+
+.Admission
+[.prob#admission]
+****
+[discrete]
+--
+[.grid.has-emblems]
+[.emblem]#Admission to M1#::
+Upon application and approval by the pedagogical committee for holders of a Bachelor's degree in Mathematics or equivalent.
+
+[.emblem]#Admission to M2#::
+- Automatically for holders of the M1 CSMI.  
+- Holders of an equivalent M1 degree are admitted on the basis of their academic record and the recommendation of the pedagogical committee.
+--
+++++
+<div class="navbar-item has-dropdown is-hoverable download-item" style="display: flex; justify-content: center; align-items: center;">
+    <div class="navbar-item"><a href="https://mathinfo.unistra.fr/admission/admission"
+            class="download-btn">Admissions</a></div>
+</div> 
+++++
+****
+
+.Openings
+[.def#debouches]
+****
+[discrete]
+--
+[.grid.has-emblems]
+[.emblem]#R&D departments#::
+- The majority of graduates go on to work in corporate R&D departments (from start-ups to major corporations), in service companies and specialized consulting firms, or in engineering positions in universities and public or private research organizations.
+
+[.emblem]#Doctorate#::
+- Students in the program who are most motivated by applied research can also pursue a doctorate in a laboratory or company.
+--
+****

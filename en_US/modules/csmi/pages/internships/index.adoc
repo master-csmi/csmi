@@ -1,0 +1,39 @@
+= Internships
+:sectnums:
+:experimental:
+:collapsible:
+:stem: latexmath
+:eqnums: all
+
+.Terms
+[.def#terms]
+****
+
+[.grid.has-emblems]
+[emblem]#M2 internships#:: they last a minimum of 4 months and a maximum of 6 months between February and September. They yield 30 ECTS credits.
++
+IMPORTANT: it is strongly advised that a 6 month internship be carried out in order to have a better experience and  have a better chance of finding a job at the end of the internship.
++
+CAUTION: Over 2 months, the internship must be paid. 
+
+[emblem]#M1 internships#:: they last a minimum of 6 weeks and a maximum of 2 months between June and August. They yield 6 ECTS credits.
+****
+
+.Defense
+[.prob#exam]
+****
+Examinations take place at the end of August.
+
+1. The student contacts the training manager to validate the internship subject with a sufficient description. 
+2. The student then fills in an application form for an internship agreement on ENT. 
+3. The agreement must then be signed by the various parties: student, company, UFR management, internship supervisor, training supervisor.
+****
+
+
+// == Previous years
+// 
+// - xref:csmi-stages-2023:ROOT:index.adoc[Stages 2023]
+// - xref:csmi-stages-2022:ROOT:index.adoc[Stages 2022]
+// - xref:csmi-stages-2021:ROOT:index.adoc[Stages 2021]
+// - xref:csmi-stages-2021:ROOT:index.adoc[Stages 2020]
+// //- xref:csmi-stages-2021:ROOT:index.adoc[Stages 2019]

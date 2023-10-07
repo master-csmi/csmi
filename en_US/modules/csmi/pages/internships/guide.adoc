@@ -1,0 +1,210 @@
+= Guide for Internship Reports
+:sectnums:
+:experimental:
+:collapsible:
+:stem: latexmath
+:eqnums: all
+
+NOTE: The following information is taken in full from https://gitlab.com/pdagog/ens[tips for writing a good internship report by Pierre David], who teaches in the CSMI Master's program and heads the SIRIS Master's program in Computer Science.
+
+== Introduction 
+
+The dissertation is an essential part of your internship: its aim is to
+present, as faithfully as possible, both the scope of the internship (organizational and/or
+(organizational and/or technical) and your contribution.
+
+Your thesis will be read by a _rapporteur_, i.e. a member
+teacher from the teaching team (i.e. someone with expertise in your discipline), whose job it is to evaluate your thesis to understand :
+- the context in which you have evolved,
+- your contribution (technical achievement, scientific work) its relevance to the Master's courses.
+
+CAUTION: You are reminded that plagiarism is punishable by law, by the university and by your examiners: if short quotations are authorized, you must indicate the source.
+
+
+== Outline
+
+The exercise consists in presenting a description of your organizational context.
+organizational context: your referee is not likely to know your
+the host organization, so you need to present it in terms of its line of business
+industry and its key figures. 
+In addition, you'll need to describe your place in the organization: you'll need to follow a "funnel" description, i.e. start with the organization as a whole and work your way down to your place as a trainee. An organization chart can help you understand your place in the organization or department concerned.
+
+TIP: Avoid copying the company's website, as this may not go down well with the reporter.
+
+NOTE: presentation of the host organization is compulsory,
+even if you know that the structure is well known to your rapporteur
+(e.g. for an internship at the IRMA/Cemosis laboratory).
+IRMA/Cemosis laboratory). All interns are assessed on this criterion, without exception.
+
+
+=== Missions & Objectives
+
+
+As an intern, you will have one or more defined _missions_ corresponding
+corresponding to the duration of your internship. 
+These are unlikely to be known to the reporter. 
+Describe them, preferably early on in the brief, putting them into perspective in relation to the organization's needs. 
+In addition, describe any particular constraints (financial, technical or other) and the _objectives_ to be achieved, which will help to *assess the success of the project.*.
+
+
+=== Context
+
+The technical or organizational context must be presented.
+
+NOTE: Remember that your rapporteur has a good grasp of technical concepts, but is not familiar with the particular constraints of your host organization or its business.
+
+CAUTION: Don't overdo the context: you need to present the minimum to enable the reporter to understand the specific constraints of your internship and your contribution. 
+
+
+=== Contributions
+
+This is the main part of your dissertation.
+You must present your contribution (modeling, methodology, mathematics, presentation of data and initial processing, software realization, state of the art, method, algorithm, evaluation, etc.) in a synthetic manner,
+without getting bogged down in technical details, but without glossing over the
+concrete points that will give the rapporteur the most accurate
+vision of what you've implemented. 
+
+CAUTION: Don't sweep any difficulties under the carpet. On the contrary, try to present them and explain where the hard points lie.
+
+
+NOTE: *Be precise and factual*: technologies, algorithms or methods used
+algorithms or methods used, quantitative data to assess the
+comparisons made, etc. If you have worked
+cooperation with others (your supervisor, other people or trainees), please
+trainees), please give details of your role and achievements.
+achievements.
+
+
+The _methodology_ with which you proceed is one of the main criteria for
+criteria for evaluating your work: problems must be analysed
+must be analyzed, and the choices you make (or take part in) must be
+must be explained and justified.
+
+IMPORTANT: It often happens that, as a trainee, choices are imposed on you: you're inserting yourself into a context that existed before your arrival, and certain choices are made upstream or implicitly. You need to
+make them explicit, and show that you have mastered the ins and outs
+in other words, you have to justify certain choices,
+even if they're not your own, to demonstrate your understanding
+of what's at stake.
+
+
+=== Assessment
+
+The internship completes your training: you need to take a step back to
+relate your internship to the skills you acquired during your training, and present the additional skills (technical, personal, behavioral, etc.) you acquired during the internship.
+
+The _bilan_ should show how you stand back from your internship: you can then look back on the course of your internship, your behavior, your approach, your choices, your achievements and your host organization.
+
+
+== Form
+
+
+=== Typography
+
+Writing texts obeys precise rules in
+French: this is called _typographie_, see <<<JAndre, les petites leçons de typographie de Jacques André>>>. 
+
+TIP: It's worth getting to grips with it to give your document a quality look and avoid gross errors.
+
+
+=== Spelling and grammar
+
+Spelling and grammar are essential prerequisites for
+writing a dissertation. If you're not sure of your spelling and grammar
+proofread by a third party. It's a shame to lose points on this criterion.
+
+=== Numbering
+
+Number everything that can be numbered.
+
+- pages, 
+- chapters, 
+- sections, 
+- figures,
+- tables, 
+- equations,
+- bibliography. 
+
+TIP: Leave the automatic numbering to Latex, which will do it better than you _manually_. 
+
+For Antora users, here's a template for equations that use a counter:
+[source,asciidoc]
+----
+[stem#eq-<some label>,reftext=Equation ({counter:eqs})]
+++++
+<Equation here>
+++++
+----
+
+Complete example with equation numbering 
+[source#ex-eqnum,asciidoc]
+----
+include::example$eqnum.adoc[]
+----
+
+View result of <<ex-eqnum>>
+[%collapsible]
+===
+include::example$eqnum.adoc[]
+===
+
+TIP: Use references if you need to relate several elements of your speech in Latex (`ref`, `pageref` and `label`).
+
+
+=== Bibliography
+
+The bibliography is an important part of your dissertation.
+It is a criterion of the quality of your work (have you found the right
+are the documents on which you rely reliable?
+serious?) You must indicate which documents :
+
+- reference documents you consulted in your research, to familiarize yourself with your subject or to learn specific techniques ;
+
+- that you consulted to make your choices or to implement a software or other device;
+
+- that allow the reader to find out more about a particular point in your brief that you can't develop further.
+
+
+The bibliography, see <<<SavoirsCDI, le document sur citer ses sources et présenter une bibliographie par Savoirs CDI>>> comes as an appendix, and should give all the information necessary to enable the reader to find the documents concerned: author, title of the document or work, publisher, year of publication, URL if necessary, date of consultation for a website, etc.
+
+Each document in the bibliography has a reference (number, abbreviation, etc.), which you must cite in the text: a document that is not cited should not appear in the bibliography.
+
+
+== Defense
+
+Presentations take place at the end of August, and enable students to present their work concisely to a panel of 3 people who attend all presentations.
+
+Presentations last 30 minutes, including 20 minutes of presentations and 10 minutes of questions.
+
+
+- Don't reproduce the brief in your presentation: you don't have the space or the time. Detach yourself from the brief and start from scratch to build a new speech that takes into account the time constraint.
+
+- Work on the ideas and messages you want to get across. Count on one idea per slide. Explain the ideas, don't just suggest them.
+
+- Don't overload the text of your presentation: don't make sentences, but rather insist on a few words to set out your ideas.
+
+- While you can take liberties with grammar and leave sentences out, you're not exempt from respecting spelling.
+
+- Use a sober background so as not to disrupt your message. Number your slides.
+
+- Use illustrations (diagrams, figures, curves) that can be read from several meters away. Don't hesitate to take liberties with your presentation style to create a full-page figure.
+
+- Beware of contrasts: your presentation projected in a brightly lit room will have much poorer contrast than your laptop screen. So avoid light colors on a light background, or light colors on a dark background.
+
+- One of your missions is to keep your audience's attention.
+audience. Remember that the members of the jury may already have a dozen presentations under their belts, as well as a good meal... You need to motivate them to listen to you.
+
+- Above all, don't read the slides you're presenting or, even worse, a text you've prepared. Look at the audience, not at your slides.
+
+- Keep to the length of your presentation. Don't finish too early (so you have nothing to say?), don't finish too late (so you can't synthesize and take into account a constraint?).
+
+- Rehearse. Rehearse. Rehearse. Repeat. Repeat. Repeat. Repeat. Repeat. Repeat. Repeat. Repeat. Repeat.
+
+- During the question session, let the members of the jury get to the end of their questions, without interrupting them. Don't hesitate to take a few seconds to reflect on each question, or even to rephrase it to make sure you've understood it correctly.
+
+
+[bibliography]
+= References
+
+- J. André. J. André. Petites leçons de typographie. Technical report, IRISA, 1990. btn:[http://jacques-andre.fr/faqtypo/lessons.pdf[> Website]].
+- [[[SavoirsCDI]]] Savoirs CDI. Citing sources and presenting a bibliography, 2016. btn:[https://www.reseau-canope.fr/savoirscdi/centre-de-ressources/fonds-documentaire-acquisition-traitement/le-traitement-documentaire/citer-ses-sources-et-presenter-une-bibliographie-lycee.html[> Website]]
+.

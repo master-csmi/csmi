@@ -1,6 +1,6 @@
 name: en
 title: Master CSMI (en)
-version: master
+version: ~
 start_page: csmi:index.adoc
 lang: en_US
 asciidoc: 

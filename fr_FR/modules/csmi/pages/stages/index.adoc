@@ -1,0 +1,39 @@
+= Stages
+:sectnums:
+:experimental:
+:collapsible:
+:stem: latexmath
+:eqnums: all
+
+.Modalités
+[.def#terms]
+****
+[.grid.has-emblems]
+[emblem]#Les stages de M2#:: ils durent au minimum 4 mois et au maximum 6 mois entre les mois de février et septembre. Ils donnent accès à 30 crédits ECTS.
++
+IMPORTANT: il est fortement conseillé d'effectuer un stage de 6 mois afin d'avoir une meilleure expérience et de meilleures chances de trouver un emploi à la fin du stage.
++
+CAUTION: Au delà de 2 mois, le stage doit être rémunéré. 
+
+[emblem]#Les stages de M1#:: ils durent en 6 semaines et 2 mois entre les mois de juin et août. Ils donnent accès à 6 crédits ECTS.
+****
+
+.Défense
+[.prob#defence]
+****
+Les soutenances ont lieu fin août.
+
+1. L'étudiant contacte le responsable de la formation afin de valider le sujet de stage avec une description suffisante 
+2. L'étudiant devra remplir ensuite une demande de convention de stage sur l'ENT 
+3. Ensuite la convention sera à signer par les différentes parties: étudiant, entreprise, direction de l'UFR,  responsable de stage, responsable de formation.
+****
+
+
+
+// == Années précédentes
+// 
+// - xref:csmi-stages-2023:ROOT:index.adoc[Stages 2023]
+// - xref:csmi-stages-2022:ROOT:index.adoc[Stages 2022]
+// - xref:csmi-stages-2021:ROOT:index.adoc[Stages 2021]
+// - xref:csmi-stages-2021:ROOT:index.adoc[Stages 2020]
+// //- xref:csmi-stages-2021:ROOT:index.adoc[Stages 2019]

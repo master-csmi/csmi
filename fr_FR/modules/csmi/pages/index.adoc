@@ -1,129 +1,56 @@
-:stem: latexmath
-:imagesprefix:
-:experimental:
-ifdef::env-github,env-browser,env-vscode[:imagesprefix:]
+:stem : latexmath
+:imagesprefix :
+:experimental :
+ifdef::env-github,env-browser,env-vscode[:imagesprefix :]
 
-= Master CSMI : Calcul Scientifique et Mathématiques de L'Innovation   {master-year}
-:navtitle: Home
-:page-role: home
+= Master CSMI : Calcul Scientifique et Mathématiques de l'Innovation {master-year}
+:navtitle : Home
+:page-role : home
+:page-layout : home
 
-[.grid.has-emblems]
-[.emblem]#Responsable de la formation#::
-Christophe Prud'homme <prudhomme@unistra.fr>
 
-[.emblem]#Responsable administrative#::
-Marie-Line Vos <marieline.vos@unistra.fr>
-
-[.grid.has-emblems]
-[.emblem]#Discussions#::
-https://github.com/master-csmi/csmi/discussions
-
-[.emblem]#Twitter#::
-https://twitter.com/master_csmi
-
-[.emblem]#LinkedIn#::
-https://www.linkedin.com/company/master-csmi
-
-.Le Master CSMI en bref
+Le Master CSMI en bref
 [.def#master-csmi:1]
 ****
 [.lead]
-Le Master CSMI est une formation d'excellence en mathématiques appliquées et en informatique de l'Université de Strasbourg. 
+Le Master CSMI est une formation de haut niveau en mathématiques appliquées et en informatique de l'Université de Strasbourg. 
 
-[discrete]
+[discret]
 --
 [.grid.has-emblems]
-[.emblem]#Intelligence artificielle (IA)#::
+[.emblem]#Intelligence artificielle (IA)#:: Embarquez pour un voyage transformateur avec notre parcours de master en mathématiques appliquées et en informatique, où des cours d'IA de pointe tels que l'apprentissage scientifique de la machine (SciML) vous dotent des compétences indispensables pour relever les défis du monde réel.
 +
-image::img-ia.jpeg[height=150]
+image::en:csmi:img-ia.jpeg[width=100%,align="center"]
 
-[.emblem]#Modélisation, Simulation, Optimisation (MSO)#::
+[.emblem]#Modélisation, Simulation, Optimisation (MSO)#:: Explorez le domaine de la modélisation, de la simulation et de l'optimisation avec notre filière de master, où des cours tels que les méthodes numériques pour les équations différentielles partielles et le contrôle de l'optimisation fournissent une base académique solide, vous équipant de compétences informatiques pour relever les défis du monde réel.
 +
 [.center.related thumb]
-image::img-mso.jpeg[height=150]
+image::en:csmi:img-mso.jpeg[width=100%,align="center"]
 --
 
-[discrete]
+[discret]
 --
 [.grid.has-emblems]
-[.emblem]#Traitement et fouille de données#::
+[.emblem]#Fondé sur un projet#:: Embarquez pour un voyage d'apprentissage pratique avec notre master, où certains cours basés sur des projets, y compris des collaborations avec l'industrie et la recherche universitaire, fournissent un programme d'études pratique, vous dotant de compétences de résolution de problèmes du monde réel, et vous préparant à la réussite académique et professionnelle dans un environnement d'apprentissage collaboratif et appliqué.
 +
-image::img-dataproc.jpeg[height=150]
+image::en:csmi:img-project.jpeg[width=100%,align="center"]
 
-[.emblem]#Calcul haute performance (HPC)#::
+[.emblem]#Informatique de haute performance (HPC)#:: Embarquez pour un voyage de découverte dans notre filière de master en calcul de haute performance, où les cours sur MPI, OpenMP, GPU Computing, et Hybrid Computing vous donnent l'expertise nécessaire pour exploiter les ressources de calcul, conduisant à des percées dans les domaines à forte intensité de calcul et de données.
++
+image::en:csmi:img-hpc.jpeg[width=100%,align="center"]
+--
+
+[discret]
+--
+[.grid.has-emblems]
+[.emblem]#Traitement des données et exploitation minière#:: Embarquez pour un voyage enrichissant avec notre master en traitement et exploitation des données, où les cours d'analyse avancée et d'apprentissage automatique constituent une base académique solide, vous permettant d'acquérir les compétences nécessaires pour extraire des informations significatives à partir de vastes ensembles de données.
 +
 [.center]
-image::img-hpc.jpeg[height=150]
+image::en:csmi:img-dataproc.jpeg[width=100%,align="center"]
 
-[.emblem]#Traitement de l'image et du signal#::
+
+[.emblem]#Image et traitement du signal#:: Embarquez pour un voyage d'apprentissage avec notre filière de master en traitement des images et des signaux, où des cours sur mesure vous initient à l'analyse des données visuelles et auditives, vous permettant d'acquérir les compétences nécessaires pour transformer des données brutes en informations significatives.
 +
-image::img-imgproc.jpeg[height=150]
---
-****
-
-.Nos Objectifs
-[.thm#objectifs:1]
-****
-[.grid.has-emblems]
-[.emblem]#Double compétence#::
-La spécialité *Calcul Scientifique et Mathématique de l'Innovation* -- **CSMI** --  a pour objectif de former des mathématiciens de haut niveau avec une *double compétence en mathématiques et en informatique.* 
-
-[.emblem]#Théorie et Applications#::
-Les aspects théoriques et appliqués sont abordés conjointement tout au long du parcours. 
-
-[.emblem]#Recherche et Entreprises#::
-L'étudiant est confronté à des problématiques industrielles et de recherche au travers de projets avec des entreprises et des chercheurs puis en stages M1 et M2.
-****
-
-.**CSMI: Une Formation d'Excellence en IA, HPC, Modélisation, Simulation et Traitement des Données**
-[.prop#master-csmi:1]
-****
-[discrete]
---
-[.grid.has-emblems]
-[.emblem]#Mathématiques impactantes#::
-Le programme du Master CSMI est une réponse adaptée aux besoins critiques du monde socio-économique actuel. Basé sur des analyses de pointe comme le rapport EISEM de 2015 et l'étude du CNRS de 2022 sur l'impact des mathématiques, notre parcours vise l'excellence en matière d'intelligence artificielle (IA), de calcul haute performance (HPC), de modélisation, de simulation, d'optimisation, ainsi que de traitement de l'image et du signal.
-
-[.emblem]#Connaissances et Compétences#::
-Nos étudiants bénéficient d'une formation approfondie touchant aussi bien les domaines théoriques qu'appliqués de l'algorithmique, du calcul scientifique, des équations aux dérivées partielles, des statistiques, des probabilités, de l'algèbre et de la géométrie. De plus, l'importance capitale de l'informatique dans ces domaines est fortement soulignée, préparant nos étudiants à maîtriser divers langages de programmation, logiciels et plateformes numériques.
-
-[.emblem]#Mise en situation: Projets et Stages#::
-Au-delà de l'acquisition de connaissances, notre programme garantit une mise en application concrète grâce à des projets collaboratifs avec des entreprises partenaires. Ainsi, nos diplômés sont non seulement équipés des compétences recherchées mais également prêts à les mettre en œuvre dans un environnement professionnel dynamique.
---
-****
-
-
-.Admission
-[.prob#admission]
-****
-[discrete]
---
-[.grid.has-emblems]
-[.emblem]#Admission en M1#::
-Sur dossier et après avis de la commission pédagogique pour les titulaires d'une licence de Mathématiques ou équivalent.
-
-[.emblem]#Admission en M2#::
-- De plein droit pour les titulaires du M1 CSMI.  
-- Sur dossier et après avis de la commission pédagogique pour les titulaires d'un M1 équivalent.
---
-++++
-<div class="navbar-item has-dropdown is-hoverable download-item" style="display: flex; justify-content: center; align-items: center;">
-    <div class="navbar-item"><a href="https://mathinfo.unistra.fr/admission/admission"
-            class="download-btn">Admissions</a></div>
-</div> 
-++++
-****
-
-.Débouchés
-[.def#debouches]
-****
-[discrete]
---
-[.grid.has-emblems]
-[.emblem]#Services de R&D#::
-- La majorité des diplômés s'orientent vers les services de recherche et développement des entreprises (des start-ups aux grands groupes), les sociétés de services et les entreprises de consulting spécialisées ou les postes d'ingénieur dans les universités et les organismes de recherche publics ou privés.
-
-[.emblem]#Doctorat#::
-- Les étudiants de la filière les plus motivés par la recherche appliquée pourront également poursuivre en doctorat, en laboratoire ou en entreprise.
+image::en:csmi:img-imgproc.jpeg[width=100%,align="center"]
 --
 ****
