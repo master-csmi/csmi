@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Guide for Internship Reports :: CSMI::Master Calcul Scientifique et Mathématiques de l&#x27;Innovation</title>
+    <link rel="canonical" href="https://master-csmi.github.io/csmi/en/csmi/internships/guide.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+<script>!function(l,p){if(l.protocol!==p&&l.host=="docs.antora.org"){l.protocol=p}else if(/\.gitlab\.io$/.test(l.host)){l.replace(p+"//docs.antora.org"+l.pathname.substr(l.pathname.indexOf("/",1))+l.search+l.hash)}}(location,"https:")</script>
+
+<script src="../../../_/js/vendor/tabs-block-extension.js"></script>
+<script src="../../../_/js/vendor/tabs-block-behavior.js"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\\[','\\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+
+  TeX: {
+      Macros: {
+      bold: ["{\\bf #1}",1],
+      calTh: "{\\mathcal{T}_h}",
+      card: ["{\\operatorname{card}(#1)}",1],
+      card: ["{\\operatorname{card}(#1)}",1],
+      Ck: ["{\\mathcal{C}^{#1}}",1],
+      deformt: ["{\\mathbf{\\varepsilon(#1)}}",1],
+      diam: "{\\operatorname{diam}}",
+      dim: ["{\\operatorname{dim}(#1)}",1],
+      disp: ["{\\mathbf{#1}}",1],
+      domain: "{\\Omega}",
+      ds: "",
+      essinf: "{\\operatorname{ess}\\, \\operatorname{inf}}",
+      F:"{\\mathcal{F}}",
+      geo: "{\\mathrm{geo}}",
+      Ich: ["{\\mathcal{I}^{#1}_{c,h}#2}",2],
+      Id: "{\\mathcal{I}}",
+      Ilag: ["{\\mathcal{I}^{\\mathrm{lag}}_{#1}}",1],
+      jump: ["{[\\![ #1 ]\\!]}",1],
+      n:"{\\mathbf{n}}",
+      Ne: "{N_{\\mathrm{e}}}",
+      Next: "{\\mathrm{n}}",
+      nf: "{n_f}",
+      ngeo: "{n_{\\mathrm{geo}}}",
+      Nma: "{N_{\\mathrm{ma}}}",
+      NN: "{\\mathbb N}",
+      Nno: "{N_{\\mathrm{no}}}",
+      Nso: "{N_{\\mathrm{so}}}",
+      opdim: "{\\operatorname{dim}}",
+      p: "{\\mathrm{p}}",
+      P:"{\\mathcal{P}}",
+      Pch: ["{P^{#1}_{c,h}}",1],
+      Pcho: ["{P^{#1}_{c,h,0}}",1],
+      Pk: ["{\\mathcal{P}^{#1}}",1],
+      poly: ["{\\mathbb{#1}",1],
+      poly: ["{\\mathbb{#1}}",1],
+      prect: ["{\\left\\(#1\\right\\)}",1],
+      q:"{\\mathbf{q}}",
+      Qch: ["{Q^{#1}_{c,h}}",1],
+      Qk: ["{\\mathcal{Q}^{#1}}",1],
+      R: ["{\\mathbb{R}^{#1}}",1],
+      RR: "{\\mathbb R}",
+      set: ["{\\left\\{#1\\right\\}}",1],
+      stresst: ["{\\mathbf{\\sigma(#1)}}",1],
+      T:"{\\mathcal{T}}",
+      tr: "{\\operatorname{tr}}",
+      v:"{\\mathbf{v}}",
+      vertiii: ["\\left\\vert\\kern-0.25ex\\left\\vert\\kern-0.25ex\\left\\vert #1 \\right\\vert\\kern-0.25ex\\right\\vert\\kern-0.25ex\\right\\vert",1]
+  },
+  extensions: ["mhchem.js"] 
+  }
+});
+</script>
+<!--<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML"></script>-->
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML'></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.0/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>-->
+
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H3PWJ83ZVS"></script>
+<script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-H3PWJ83ZVS')</script>
+<script>var uiRootPath = '../../../_'</script>
+
+<!-- google verification -->
+<meta name="google-site-verification" content="le0KhZwWwgk5moT8pmqeYReUQDL--SjMMEoFvyoKo20" />  </head>
+  <body class="article">
+<header class="header">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-template-project"
+        style="border-top: 4px solid #9E9E9E">
+        <div class="navbar-brand">
+            <div class="navbar-item feelpp-logo">
+                <a href="https://master-csmi.github.io/csmi">CSMI::Master Calcul Scientifique et Mathématiques de l&#x27;Innovation</a>
+            </div>
+            <button class="navbar-burger" data-target="topbar-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+            <div class="navbar-link" data-title="Language">
+                <span class="icon"><img src="../../../_/img/location-24.svg"></span>
+            </div>
+            <div class="navbar-dropdown">
+                <a class="navbar-item" href="https://csmi.cemosis.fr/en/csmi">EN</a>
+                <a class="navbar-item" href="https://csmi.cemosis.fr/en/csmi">FR</a>
+            </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+            <div class="navbar-link" data-title="Support">
+                <span class="icon"><img src="../../../_/img/octicons-24.svg#view-comment-discussion"></span>
+            </div>
+            <div class="navbar-dropdown is-right">
+                <a class="navbar-item has-icon"
+                    href="https://join.slack.com/t/feelpp/shared_invite/zt-2qe0q9hw-4pVbhohCXUE6Po9Ma8dbiQ" target="_blank"
+                    rel="noopener">
+                    <span class="icon"><img src="../../../_/img/slack-icon.svg"></span>
+                    <span>Chat</span>
+                </a>
+                <a class="navbar-item has-icon" href="https://github.com/orgs/master-csmi/discussions" target="_blank"
+                    rel="noopener">
+                    <span class="icon"><img src="../../../_/img/octicons-16.svg#view-discussion-closed"></span>
+                    <span>Discussions</span>
+                </a>
+                <a class="navbar-item has-icon" href="https://twitter.com/master_csmi" target="_blank" rel="noopener">
+                    <span class="icon"><img src="../../../_/img/octicons-16.svg#view-hash"></span>
+                    <span>Tweets</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="topbar-nav" class="navbar-menu">
+            <div class="navbar-end">
+                <!-- <div class="navbar-item">
+                    <a href="../../../_/../cours-tan/python/index.html">Documentation Reference</a>
+                </div> -->
+                <div class="navbar-item has-dropdown is-hoverable download-item">
+                    <div class="navbar-item"><a href="https://mathinfo.unistra.fr/admission/admission"
+                            class="download-btn">Admissions</a></div>
+                </div> 
+                <div class="navbar-item">
+                    <a class="navbar-brand" href="https://www.cemosis.fr">
+                        <img class="cemosis-logo" src="../../../_/img/cemosis-logo.svg" alt="Cemosis logo" />
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-brand" href="https://mathinfo.unistra.fr/">
+                        <img class="cemosis-logo" src="../../../_/img/logo-ufr-mathinfo-unistra.webp" alt="UFR Math Info logo" />
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-brand" href="https://www.unistra.fr">
+                        <img class="cemosis-logo" src="../../../_/img/logo-unistra.png"
+                            alt="Unistra logo" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header><div class="body">
+<a href="#" class="menu-expand-toggle"></a>
+<div class="nav-container" data-component="en" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Master CSMI (en)</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Master CSMI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/master-csmi/csmi/discussions">News</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../emplois.html">Jobs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../team.html">Team</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Internships</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="guide.html">Guide to internships reports</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../outils.html">Tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../csmi-2024-2028/index.html">CSMI 2024-2028</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../csmi-2024-2028/summary.html">Summary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Master CSMI (en)</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+      <li class="component is-current">
+        <a class="title" href="../index.html">Master CSMI (en)</a>
+      </li>
+      <li class="component">
+        <a class="title" href="../../../fr/csmi/index.html">Master CSMI (fr)</a>
+      </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+  <button class="nav-toggle"></button>
+    <a href="../index.html" class="home-link"></a>
+  <nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Master CSMI (en)</a></li>
+    <li><a href="index.html">Internships</a></li>
+    <li><a href="guide.html">Guide to internships reports</a></li>
+  </ul>
+</nav>
+
+  
+    <div class="edit-this-page"><a href="https://github.com/master-csmi/csmi/edit/main/en_US/modules/csmi/pages/internships/guide.adoc">Edit this Page</a></div>
+  
+  <div class="page-downloads">
+  <span class="label">Download as</span>
+  <ul class="download-options">
+    <li>
+      <a onclick="print(this)" href="#" data-toggle="tooltip" data-placement="left" title="Print to PDF"
+         class="pdf-download">
+        <img class="pdf-file-icon icon" src="../../../_/img/pdf.svg"/> .pdf
+      </a>
+    </li>
+  </ul>
+</div>
+</div>
+
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Guide for Internship Reports</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The following information is taken in full from <a href="https://gitlab.com/pdagog/ens">tips for writing a good internship report by Pierre David</a>, who teaches in the CSMI Master&#8217;s program and heads the SIRIS Master&#8217;s program in Computer Science.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The dissertation is an essential part of your internship: its aim is to
+present, as faithfully as possible, both the scope of the internship (organizational and/or
+(organizational and/or technical) and your contribution.</p>
+</div>
+<div class="paragraph">
+<p>Your thesis will be read by a <em>rapporteur</em>, i.e. a member
+teacher from the teaching team (i.e. someone with expertise in your discipline), whose job it is to evaluate your thesis to understand :
+- the context in which you have evolved,
+- your contribution (technical achievement, scientific work) its relevance to the Master&#8217;s courses.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+You are reminded that plagiarism is punishable by law, by the university and by your examiners: if short quotations are authorized, you must indicate the source.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_outline"><a class="anchor" href="#_outline"></a>2. Outline</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The exercise consists in presenting a description of your organizational context.
+organizational context: your referee is not likely to know your
+the host organization, so you need to present it in terms of its line of business
+industry and its key figures.
+In addition, you&#8217;ll need to describe your place in the organization: you&#8217;ll need to follow a "funnel" description, i.e. start with the organization as a whole and work your way down to your place as a trainee. An organization chart can help you understand your place in the organization or department concerned.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Avoid copying the company&#8217;s website, as this may not go down well with the reporter.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+presentation of the host organization is compulsory,
+even if you know that the structure is well known to your rapporteur
+(e.g. for an internship at the IRMA/Cemosis laboratory).
+IRMA/Cemosis laboratory). All interns are assessed on this criterion, without exception.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_missions_objectives"><a class="anchor" href="#_missions_objectives"></a>2.1. Missions &amp; Objectives</h3>
+<div class="paragraph">
+<p>As an intern, you will have one or more defined <em>missions</em> corresponding
+corresponding to the duration of your internship.
+These are unlikely to be known to the reporter.
+Describe them, preferably early on in the brief, putting them into perspective in relation to the organization&#8217;s needs.
+In addition, describe any particular constraints (financial, technical or other) and the <em>objectives</em> to be achieved, which will help to <strong>assess the success of the project.</strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_context"><a class="anchor" href="#_context"></a>2.2. Context</h3>
+<div class="paragraph">
+<p>The technical or organizational context must be presented.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Remember that your rapporteur has a good grasp of technical concepts, but is not familiar with the particular constraints of your host organization or its business.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+Don&#8217;t overdo the context: you need to present the minimum to enable the reporter to understand the specific constraints of your internship and your contribution.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_contributions"><a class="anchor" href="#_contributions"></a>2.3. Contributions</h3>
+<div class="paragraph">
+<p>This is the main part of your dissertation.
+You must present your contribution (modeling, methodology, mathematics, presentation of data and initial processing, software realization, state of the art, method, algorithm, evaluation, etc.) in a synthetic manner,
+without getting bogged down in technical details, but without glossing over the
+concrete points that will give the rapporteur the most accurate
+vision of what you&#8217;ve implemented.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+Don&#8217;t sweep any difficulties under the carpet. On the contrary, try to present them and explain where the hard points lie.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<strong>Be precise and factual</strong>: technologies, algorithms or methods used
+algorithms or methods used, quantitative data to assess the
+comparisons made, etc. If you have worked
+cooperation with others (your supervisor, other people or trainees), please
+trainees), please give details of your role and achievements.
+achievements.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The <em>methodology</em> with which you proceed is one of the main criteria for
+criteria for evaluating your work: problems must be analysed
+must be analyzed, and the choices you make (or take part in) must be
+must be explained and justified.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+It often happens that, as a trainee, choices are imposed on you: you&#8217;re inserting yourself into a context that existed before your arrival, and certain choices are made upstream or implicitly. You need to
+make them explicit, and show that you have mastered the ins and outs
+in other words, you have to justify certain choices,
+even if they&#8217;re not your own, to demonstrate your understanding
+of what&#8217;s at stake.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_assessment"><a class="anchor" href="#_assessment"></a>2.4. Assessment</h3>
+<div class="paragraph">
+<p>The internship completes your training: you need to take a step back to
+relate your internship to the skills you acquired during your training, and present the additional skills (technical, personal, behavioral, etc.) you acquired during the internship.</p>
+</div>
+<div class="paragraph">
+<p>The <em>bilan</em> should show how you stand back from your internship: you can then look back on the course of your internship, your behavior, your approach, your choices, your achievements and your host organization.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_form"><a class="anchor" href="#_form"></a>3. Form</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_typography"><a class="anchor" href="#_typography"></a>3.1. Typography</h3>
+<div class="paragraph">
+<p>Writing texts obeys precise rules in
+French: this is called <em>typographie</em>, see &lt;<a href="#JAndre">les petites leçons de typographie de Jacques André</a>&gt;.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+It&#8217;s worth getting to grips with it to give your document a quality look and avoid gross errors.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_spelling_and_grammar"><a class="anchor" href="#_spelling_and_grammar"></a>3.2. Spelling and grammar</h3>
+<div class="paragraph">
+<p>Spelling and grammar are essential prerequisites for
+writing a dissertation. If you&#8217;re not sure of your spelling and grammar
+proofread by a third party. It&#8217;s a shame to lose points on this criterion.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_numbering"><a class="anchor" href="#_numbering"></a>3.3. Numbering</h3>
+<div class="paragraph">
+<p>Number everything that can be numbered.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>pages,</p>
+</li>
+<li>
+<p>chapters,</p>
+</li>
+<li>
+<p>sections,</p>
+</li>
+<li>
+<p>figures,</p>
+</li>
+<li>
+<p>tables,</p>
+</li>
+<li>
+<p>equations,</p>
+</li>
+<li>
+<p>bibliography.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Leave the automatic numbering to Latex, which will do it better than you <em>manually</em>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For Antora users, here&#8217;s a template for equations that use a counter:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">[stem#eq-&lt;some label&gt;,reftext=Equation ({counter:eqs})]
+++++
+&lt;Equation here&gt;
+++++</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Complete example with equation numbering</p>
+</div>
+<div id="ex-eqnum" class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">= My Report
+:sectnums:
+:stem: latexmath
+:eqnums: all
+
+== Theory
+
+[stem#eq-ode,reftext=Equation ({counter:eqs})]
+++++
+\mathbf{M}(t)\mathbf{\ddot{q}}(t) + \mathbf{C}(t)\mathbf{\dot{q}}(t) + \mathbf{K}(t)\mathbf{q}(t)
+= \mathbf{F}(\mathbf{q}, \mathbf{\dot{q}}, t)
+++++
+
+See &lt;&lt;eq-ode&gt;&gt; for definition.
+
+[stem#eq-emc,reftext=Equation ({counter:eqs})]
+++++
+E = mc^2
+++++
+
+&lt;&lt;eq-emc&gt;&gt; is another equation.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>View result of <a href="#ex-eqnum">[ex-eqnum]</a></p>
+</div>
+<div class="paragraph">
+<p>===
+= My Report
+:sectnums:
+:stem: latexmath
+:eqnums: all</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_theory"><a class="anchor" href="#_theory"></a>4. Theory</h2>
+<div class="sectionbody">
+<div id="eq-ode" class="stemblock">
+<div class="content">
+\[\mathbf{M}(t)\mathbf{\ddot{q}}(t) + \mathbf{C}(t)\mathbf{\dot{q}}(t) + \mathbf{K}(t)\mathbf{q}(t)
+= \mathbf{F}(\mathbf{q}, \mathbf{\dot{q}}, t)\]
+</div>
+</div>
+<div class="paragraph">
+<p>See <a href="#eq-ode">Equation (1)</a> for definition.</p>
+</div>
+<div id="eq-emc" class="stemblock">
+<div class="content">
+\[E = mc^2\]
+</div>
+</div>
+<div class="paragraph">
+<p><a href="#eq-emc">Equation (2)</a> is another equation.
+===</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Use references if you need to relate several elements of your speech in Latex (<code>ref</code>, <code>pageref</code> and <code>label</code>).
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_bibliography"><a class="anchor" href="#_bibliography"></a>4.1. Bibliography</h3>
+<div class="paragraph">
+<p>The bibliography is an important part of your dissertation.
+It is a criterion of the quality of your work (have you found the right
+are the documents on which you rely reliable?
+serious?) You must indicate which documents :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>reference documents you consulted in your research, to familiarize yourself with your subject or to learn specific techniques ;</p>
+</li>
+<li>
+<p>that you consulted to make your choices or to implement a software or other device;</p>
+</li>
+<li>
+<p>that allow the reader to find out more about a particular point in your brief that you can&#8217;t develop further.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The bibliography, see &lt;<a href="#SavoirsCDI">le document sur citer ses sources et présenter une bibliographie par Savoirs CDI</a>&gt; comes as an appendix, and should give all the information necessary to enable the reader to find the documents concerned: author, title of the document or work, publisher, year of publication, URL if necessary, date of consultation for a website, etc.</p>
+</div>
+<div class="paragraph">
+<p>Each document in the bibliography has a reference (number, abbreviation, etc.), which you must cite in the text: a document that is not cited should not appear in the bibliography.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_defense"><a class="anchor" href="#_defense"></a>5. Defense</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Presentations take place at the end of August, and enable students to present their work concisely to a panel of 3 people who attend all presentations.</p>
+</div>
+<div class="paragraph">
+<p>Presentations last 30 minutes, including 20 minutes of presentations and 10 minutes of questions.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Don&#8217;t reproduce the brief in your presentation: you don&#8217;t have the space or the time. Detach yourself from the brief and start from scratch to build a new speech that takes into account the time constraint.</p>
+</li>
+<li>
+<p>Work on the ideas and messages you want to get across. Count on one idea per slide. Explain the ideas, don&#8217;t just suggest them.</p>
+</li>
+<li>
+<p>Don&#8217;t overload the text of your presentation: don&#8217;t make sentences, but rather insist on a few words to set out your ideas.</p>
+</li>
+<li>
+<p>While you can take liberties with grammar and leave sentences out, you&#8217;re not exempt from respecting spelling.</p>
+</li>
+<li>
+<p>Use a sober background so as not to disrupt your message. Number your slides.</p>
+</li>
+<li>
+<p>Use illustrations (diagrams, figures, curves) that can be read from several meters away. Don&#8217;t hesitate to take liberties with your presentation style to create a full-page figure.</p>
+</li>
+<li>
+<p>Beware of contrasts: your presentation projected in a brightly lit room will have much poorer contrast than your laptop screen. So avoid light colors on a light background, or light colors on a dark background.</p>
+</li>
+<li>
+<p>One of your missions is to keep your audience&#8217;s attention.
+audience. Remember that the members of the jury may already have a dozen presentations under their belts, as well as a good meal&#8230;&#8203; You need to motivate them to listen to you.</p>
+</li>
+<li>
+<p>Above all, don&#8217;t read the slides you&#8217;re presenting or, even worse, a text you&#8217;ve prepared. Look at the audience, not at your slides.</p>
+</li>
+<li>
+<p>Keep to the length of your presentation. Don&#8217;t finish too early (so you have nothing to say?), don&#8217;t finish too late (so you can&#8217;t synthesize and take into account a constraint?).</p>
+</li>
+<li>
+<p>Rehearse. Rehearse. Rehearse. Repeat. Repeat. Repeat. Repeat. Repeat. Repeat. Repeat. Repeat. Repeat.</p>
+</li>
+<li>
+<p>During the question session, let the members of the jury get to the end of their questions, without interrupting them. Don&#8217;t hesitate to take a few seconds to reflect on each question, or even to rephrase it to make sure you&#8217;ve understood it correctly.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references"><a class="anchor" href="#_references"></a>References</h2>
+<div class="sectionbody">
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p>J. André. J. André. Petites leçons de typographie. Technical report, IRISA, 1990. <b class="button"><a href="http://jacques-andre.fr/faqtypo/lessons.pdf">&gt; Website</b></a>.</p>
+</li>
+<li>
+<p><a id="SavoirsCDI"></a>[SavoirsCDI] Savoirs CDI. Citing sources and presenting a bibliography, 2016. <b class="button"><a href="https://www.reseau-canope.fr/savoirscdi/centre-de-ressources/fonds-documentaire-acquisition-traitement/le-traitement-documentaire/citer-ses-sources-et-presenter-une-bibliographie-lycee.html">&gt; Website</b></a>
+.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer"
+    style="border-top: 2px solid #e9e9e9; background-color: #fafafa; padding-bottom: 2em; padding-top: 2em;">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 0.5em;">
+        <div>
+            <a href="https://www.cemosis.fr">
+                <img src="../../../_/img/cemosis-logo.svg" alt="Cemosis logo" height="50">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://mathinfo.unistra.fr/">
+                <img src="../../../_/img/logo-ufr-mathinfo-unistra.webp" alt="UFR Math Info Unistra logo" height="50">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.unistra.fr">
+                <img src="../../../_/img/logo-unistra.png" alt="Unistra logo" height="50">
+            </a>
+        </div>
+        <span style="font-size: 0.8rem; color: #9e9e9e">© 2023 <a href="https://www.cemosis.fr"
+                style="text-decoration: underline;">Cemosis</a>, Université de Strasbourg</span>
+    </div>
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+
+
+<script async src="../../../_/js/vendor/fontawesome-icon-defs.js"></script>
+<script async src="../../../_/js/vendor/fontawesome.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+
+
+<script type="text/javascript">
+function toggleFullScreen() {
+   var doc = window.document;
+   var docEl = doc.documentElement;
+
+   var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+   var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+   if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+       requestFullScreen.call(docEl);
+   }
+   else {
+       cancelFullScreen.call(doc);
+   }
+}
+</script>
+  </body>
+</html>

@@ -111,6 +111,37 @@ MathJax.Hub.Config({
                 <span></span>
             </button>
         </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+            <div class="navbar-link" data-title="Language">
+                <span class="icon"><img src="../../../_/img/location-24.svg"></span>
+            </div>
+            <div class="navbar-dropdown">
+                <a class="navbar-item" href="https://csmi.cemosis.fr/en/csmi">EN</a>
+                <a class="navbar-item" href="https://csmi.cemosis.fr/en/csmi">FR</a>
+            </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+            <div class="navbar-link" data-title="Support">
+                <span class="icon"><img src="../../../_/img/octicons-24.svg#view-comment-discussion"></span>
+            </div>
+            <div class="navbar-dropdown is-right">
+                <a class="navbar-item has-icon"
+                    href="https://join.slack.com/t/feelpp/shared_invite/zt-2qe0q9hw-4pVbhohCXUE6Po9Ma8dbiQ" target="_blank"
+                    rel="noopener">
+                    <span class="icon"><img src="../../../_/img/slack-icon.svg"></span>
+                    <span>Chat</span>
+                </a>
+                <a class="navbar-item has-icon" href="https://github.com/orgs/master-csmi/discussions" target="_blank"
+                    rel="noopener">
+                    <span class="icon"><img src="../../../_/img/octicons-16.svg#view-discussion-closed"></span>
+                    <span>Discussions</span>
+                </a>
+                <a class="navbar-item has-icon" href="https://twitter.com/master_csmi" target="_blank" rel="noopener">
+                    <span class="icon"><img src="../../../_/img/octicons-16.svg#view-hash"></span>
+                    <span>Tweets</span>
+                </a>
+            </div>
+        </div>
 
         <div id="topbar-nav" class="navbar-menu">
             <div class="navbar-end">
@@ -155,6 +186,9 @@ MathJax.Hub.Config({
     <a class="nav-link" href="../index.html">Master CSMI</a>
   </li>
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../overview.html">Vue d&#8217;ensemble</a>
+  </li>
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="https://github.com/master-csmi/csmi/discussions">Actualités</a>
   </li>
   <li class="nav-item" data-depth="1">
@@ -164,7 +198,13 @@ MathJax.Hub.Config({
     <a class="nav-link" href="../team.html">Equipe pédagogique</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../stages.html">Stages</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../stages/index.html">Stages</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../stages/guide.html">Guide du rapport de stage</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../outils.html">Outils</a>
@@ -191,11 +231,6 @@ MathJax.Hub.Config({
   <ul class="components">
       <li class="component">
         <a class="title" href="../../../en/csmi/index.html">Master CSMI (en)</a>
-          <ul class="versions">
-              <li class="version is-latest">
-                <a href="../../../en/csmi/index.html">master</a>
-              </li>
-          </ul>
       </li>
       <li class="component is-current">
         <a class="title" href="../index.html">Master CSMI (fr)</a>
@@ -2955,6 +2990,10 @@ It&#8217;s important to note that the specific skills required or developed migh
         <div>
             <a href="https://www.cemosis.fr">
                 <img src="../../../_/img/cemosis-logo.svg" alt="Cemosis logo" height="50">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://mathinfo.unistra.fr/">
+                <img src="../../../_/img/logo-ufr-mathinfo-unistra.webp" alt="UFR Math Info Unistra logo" height="50">
             </a>
             &nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://www.unistra.fr">
