@@ -13,6 +13,23 @@ CSMI uses link:https://slack.com/intl/fr-fr/[Slack] to communicate with promotio
 
 You can install slack and create your account with your email `@etu.unistra.fr` once you have it.
 You'll receive an invitation at the start of the school year.
+
+The Slack workspace used is that of {feelpp}, the numerical simulation software developed by Cemosis. The channels used are
+
+`#csmi-202x`:: for 202x promotions
+`#csmi`:: for questions about the CSMI Master's program
+
+++++
+<div class="content">
+        <div class="actions">
+            <a href="https://join.slack.com/t/feelpp/shared_invite/zt-2qe0q9hw-4pVbhohCXUE6Po9Ma8dbiQ"
+                class="button join-chat" style="display: flex; justify-content: center; align-items: center;">
+                <span class="icon"><img src="/_/img/slack-icon.svg"></span>
+                 <span> Join CSMI Slack Channels</span>
+                </a>
+        </div>
+</div>
+++++
 --
 ****
 
