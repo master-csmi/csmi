@@ -3,7 +3,7 @@ site:
   url: https://master-csmi.github.io/csmi
   start_page: csmi::index.adoc
   keys:
-    googleAnalytics: 'UA-39841210-3'
+    google_analytics: 'UA-39841210-3'
   robots: |
     User-agent: *
     Disallow: /csmi-stages-*/
