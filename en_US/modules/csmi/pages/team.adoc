@@ -2,28 +2,34 @@
 
 Manager: {manager}
 
-== Master 1
-
-=== Semester 1
-
+.Master 1
+[.def#master1]
+****
+[.grid.has-emblems]
+[emblem]#Semester 1#::
++
+[frame=ends]
 |===
 | Course | Teacher(s) | Type
+
 | Algorithmics | Yann BUGEAUD | 28h CI
-| Database | 28h CI 
-| Vincent CHABANNES | 28 CI 1 35,00 
-| Scientific computing 1 (shared MF) | Philippe HELLUY | 12h CI 
-| Scientific computing 1 | Philippe HELLUY | 14h TP
+| Database| | 28h CI 
+| {cpp} | Vincent CHABANNES | 28 CI 1 35,00 
+| Scientific computing 1 (shared MF) | Joubine Aghili | 12h CI 
+| Scientific computing 1 | Joubine Aghili | 14h TP
 | Scientific computing 2 | Laurent NAVORET | 28h CI 
-| Matthieu BOILEAU (10h) & Vincent CHABANNES (18h) | 28h CI 
+| Parallel computing | Matthieu BOILEAU (10h) & Vincent CHABANNES (18h) | 28h CI 
 | Graphes 1 | Guo-Niu HAN | 28h CI
 | Random Models | Vincent VIGON | 28h CI
 | Functional Analysis | Bopeng RAO | 28h CI 
 |===
 
-=== Semester 2
-
+[emblem]#Semester 2#::
++
+[frame=ends]
 |===
 | Course | Teacher(s) | Type
+
 | Signal Processing 1 | Vincent VIGON | 28h CI 
 | Project | Christophe PRUD'HOMME & Joubine AGHILI | 28h CI 
 | Optimization (shared MF and Mag) | Laurent NAVORET |56h CI
@@ -32,19 +38,22 @@ Manager: {manager}
 | Operating System | Pierre DAVID | 28h CI 
 | Internships | Christophe Prud'homme | 6 weeks / 2 months
 |=== 
+****
 
-
-== Master 2
-
-
-=== Semester 3
-
+.Master 2
+[.prob#master2]
+****
+[.grid.has-emblems]
+[emblem]#Semester 3#::
++
+[frame=ends]
 |===
 | Course | Teacher(s) | Type
+
 | Signal Processing 2 | Vincent VIGON | 28h CI
 | Data Processing and Mining | Vincent VIGON | 28h CI
 | EDP Numerical Methods 2 | Philippe HELLUY | 28h CI
-| Optimal control | Yannick PRIVAT | 56h CI
+| Optimal control | Bopeng Rao & Michel Duprez | 56h CI
 | Scientific Computation 3 | Christophe PRUD'HOMME (16h) & Christophe TROPHIME (12h) | 28h CI
 | Networks | Pierre DAVID | 28h CI
 | Compilation | Bérenger BRAMAS | 28h CI
@@ -52,8 +61,12 @@ Manager: {manager}
 | Christophe PRUD'HOMME & Joubine Aghili | 28h CI
 |=== 
 
-=== Semester 4
-
+[emblem]#Semester 4#::
++
+[frame=ends]
 |===
+| Course | Teacher(s) | Type
+
 | Internship | Christophe Prud'homme | 6 months 
 |===
+****

@@ -8,9 +8,9 @@
 - Create an account on LinkedIn and other job networking platforms.
 ====
 
-[discrete]
-== Job Forums 
-
+.Jobs Forum
+[.thm#jobfair]
+****
 [.grid.has-emblems]
 [.emblem]#Forum Emploi Math#::
 France's largest gathering of students, graduates and companies in Mathematics. It will take place on October 11, 2022 at La Villette, Paris.
@@ -28,11 +28,11 @@ btn:[https://www.linkedin.com/company/forum-alsace-tech-unistra/about/[> LinkedI
 La brochure sur les métiers des Mathématiques, de la Statistique et de l'Informatique, 2021.
 btn:[https://www.onisep.fr/Decouvrir-les-metiers/Des-metiers-qui-recrutent/La-collection-Zoom-sur-les-metiers/Les-metiers-des-mathematiques-de-la-statistique-et-de-l-informatique[> Onisep]]
 btn:[https://www.onisep.fr/content/download/769765/14361027/version=3/file/ZOOM-MATHS_partenaires.pdf[> PDF]]
+****
 
-
-[discrete]
-== Job portals
-
+.Job Portals
+[.thm#jobportal]
+****
 [.grid.has-emblems]
 [.emblem]#Internships & Jobs#::
 btn:[https://github.com/master-csmi/csmi/discussions/categories/stages-et-emplois/[> CSMI]]
@@ -44,3 +44,4 @@ btn:[https://jobs.eu-maths-in.eu/jobs[> Portal]]
 [.emblem]#LinkedIn#::
 You need to create your profile on LinkedIn, it's a professional network. 
 btn:[https://www.linkedin.com/[> LinkedIn]]
+****

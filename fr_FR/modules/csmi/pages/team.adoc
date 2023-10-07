@@ -2,17 +2,21 @@
 
 Responsable: {manager}
 
-== Master 1
-
-=== Semestre 1
-
+.Master 1
+[.def#master1]
+****
+[.grid.has-emblems]
+[emblem]#Semester 1#::
++
+[frame=ends]
 |===
 | Cours | Enseignant(s) | Type
+
 | Algorithmique | Yann BUGEAUD | 28h CI
 | Base de données | | 28h CI 
 | C{pp} |  Vincent CHABANNES  | 28 CI 1 35,00 
-| Calcul scientifique 1 (mutualisé MF) | Philippe HELLUY | 12h CI 
-| Calcul scientifique 1 | Philippe HELLUY  | 14h TP
+| Calcul scientifique 1 (mutualisé MF) | Joubine Aghili  | 12h CI 
+| Calcul scientifique 1 | Joubine Aghili  | 14h TP
 | Calcul scientifique 2 | Laurent NAVORET | 28h CI 
 | Calcul parallèle |  Matthieu BOILEAU (10h) & Vincent CHABANNES (18h) | 28h CI 
 | Graphes 1 | Guo-Niu HAN | 28h CI
@@ -20,10 +24,12 @@ Responsable: {manager}
 | Analyse fonctionnelle | Bopeng RAO | 28h CI 
 |===
 
-=== Semestre 2
-
+[emblem]#Semestre 2#::
++
+[frame=ends]
 |===
 | Cours | Enseignant(s) | Type
+
 | Traitement du signal 1 | Vincent VIGON |  28h CI 
 | Projet | Christophe PRUD'HOMME & Joubine AGHILI  | 28h CI 
 | Optimisation (mutualisé MF et Mag) |  Laurent NAVORET |56h CI
@@ -32,19 +38,22 @@ Responsable: {manager}
 | Système d'exploitation |  Pierre DAVID | 28h CI 
 | Stages | Christophe Prud'homme | 6 semaines / 2 mois
 |=== 
+****
 
-
-== Master 2
-
-
-=== Semestre 3
-
+.Master 2
+[.def#master2]
+****
+[.grid.has-emblems]
+[emblem]#Semester 3#::
++
+[frame=ends]
 |===
 | Cours | Enseignant(s) | Type
+
 | Traitement du signal 2 | Vincent VIGON  | 28h CI
 | Traitement et fouille de données  |  Vincent VIGON  | 28h CI
 | Méthodes numériques EDP 2  |  Philippe HELLUY  | 28h CI
-| Contrôle optimal | Yannick PRIVAT | 56h CI
+| Contrôle optimal | Bopeng Rao | 56h CI
 | Calcul scientifique 3  |  Christophe PRUD'HOMME (16h) & Christophe TROPHIME (12h) | 28h CI
 | Réseaux  |  Pierre DAVID  | 28h CI
 | Compilation  |  Bérenger BRAMAS  | 28h CI
@@ -52,8 +61,12 @@ Responsable: {manager}
 | Projet  |  Christophe PRUD'HOMME & Joubine Aghili | 28h CI
 |=== 
 
-=== Semestre 4
-
+[emblem]#Semestre 4#::
++
+[frame=ends]
 |===
+| Cours | Enseignant(s) | Type
+
 | Stages | Christophe Prud'homme |  6 mois 
 |===
+****
