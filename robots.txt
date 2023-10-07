@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /csmi-stages-*/
+Sitemap: https://master-csmi.github.io/csmi/sitemap.xml
