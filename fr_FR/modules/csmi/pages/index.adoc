@@ -31,11 +31,11 @@ image::en:csmi:img-mso.jpeg[width=100%,align="center"]
 [discret]
 --
 [.grid.has-emblems]
-[.emblem]#Fondé sur un projet#:: Embarquez pour un voyage d'apprentissage pratique avec notre master, où certains cours basés sur des projets, y compris des collaborations avec l'industrie et la recherche universitaire, fournissent un programme d'études pratique, vous dotant de compétences de résolution de problèmes du monde réel, et vous préparant à la réussite académique et professionnelle dans un environnement d'apprentissage collaboratif et appliqué.
+[.emblem]#Apprentissage par projets#:: Embarquez pour un voyage d'apprentissage pratique avec notre master, où certains cours basés sur des projets, y compris des collaborations avec l'industrie et la recherche universitaire, fournissent un programme d'études pratique, vous dotant de compétences de résolution de problèmes du monde réel, et vous préparant à la réussite académique et professionnelle dans un environnement d'apprentissage collaboratif et appliqué.
 +
 image::en:csmi:img-project.jpeg[width=100%,align="center"]
 
-[.emblem]#Informatique de haute performance (HPC)#:: Embarquez pour un voyage de découverte dans notre filière de master en calcul de haute performance, où les cours sur MPI, OpenMP, GPU Computing, et Hybrid Computing vous donnent l'expertise nécessaire pour exploiter les ressources de calcul, conduisant à des percées dans les domaines à forte intensité de calcul et de données.
+[.emblem]#Calcul haute performance (HPC)#:: Embarquez pour un voyage de découverte dans notre filière de master en calcul de haute performance, où les cours sur MPI, OpenMP, GPU Computing, et Hybrid Computing vous donnent l'expertise nécessaire pour exploiter les ressources de calcul, conduisant à des percées dans les domaines à forte intensité de calcul et de données.
 +
 image::en:csmi:img-hpc.jpeg[width=100%,align="center"]
 --
@@ -43,13 +43,13 @@ image::en:csmi:img-hpc.jpeg[width=100%,align="center"]
 [discret]
 --
 [.grid.has-emblems]
-[.emblem]#Traitement des données et exploitation minière#:: Embarquez pour un voyage enrichissant avec notre master en traitement et exploitation des données, où les cours d'analyse avancée et d'apprentissage automatique constituent une base académique solide, vous permettant d'acquérir les compétences nécessaires pour extraire des informations significatives à partir de vastes ensembles de données.
+[.emblem]#Traitement et fouille de données#:: Embarquez pour un voyage enrichissant avec notre master en traitement et exploitation des données, où les cours d'analyse avancée et d'apprentissage automatique constituent une base académique solide, vous permettant d'acquérir les compétences nécessaires pour extraire des informations significatives à partir de vastes ensembles de données.
 +
 [.center]
 image::en:csmi:img-dataproc.jpeg[width=100%,align="center"]
 
 
-[.emblem]#Image et traitement du signal#:: Embarquez pour un voyage d'apprentissage avec notre filière de master en traitement des images et des signaux, où des cours sur mesure vous initient à l'analyse des données visuelles et auditives, vous permettant d'acquérir les compétences nécessaires pour transformer des données brutes en informations significatives.
+[.emblem]#Traitement du signal et des images#:: Embarquez pour un voyage d'apprentissage avec notre filière de master en traitement des images et des signaux, où des cours sur mesure vous initient à l'analyse des données visuelles et auditives, vous permettant d'acquérir les compétences nécessaires pour transformer des données brutes en informations significatives.
 +
 image::en:csmi:img-imgproc.jpeg[width=100%,align="center"]
 --
