@@ -18,7 +18,7 @@ The Master CSMI is a top-ranking program in applied mathematics and computer sci
 [discrete]
 --
 [.grid.has-emblems]
-[.emblem]#Artificial intelligence (AI)#:: Embark on a transformative journey with our master's track in Applied Mathematics and Computer Science, where cutting-edge AI courses like Scientific Machine Learning (SciML) equip you with the indispensable skills to tackle real-world challenges.
+[.emblem]#Artificial intelligence (AI)#:: Embark on a journey with our master's track in Applied Mathematics and Computer Science, where cutting-edge AI courses like Scientific Machine Learning (SciML) equip you with the indispensable skills to tackle real-world challenges.
 +
 image::img-ia.jpeg[width=100%,align="center"]
 
@@ -35,7 +35,7 @@ image::img-mso.jpeg[width=100%,align="center"]
 +
 image::img-project.jpeg[width=100%,align="center"]
 
-[.emblem]#High performance computing (HPC)#:: Embark on a voyage of discovery in our master's track in High Performance Computing, where courses on MPI, OpenMP, GPU Computing, and Hybrid Computing equip you with the expertise to harness computational resources, driving breakthroughs in compute and data -intensive fields.
+[.emblem]#High performance computing (HPC)#:: Discover in our master's track  High Performance Computing, where courses on MPI, OpenMP, GPU Computing, and Hybrid Computing equip you with the expertise to harness computational resources, driving breakthroughs in compute and data -intensive fields.
 +
 image::img-hpc.jpeg[width=100%,align="center"]
 --
@@ -43,13 +43,13 @@ image::img-hpc.jpeg[width=100%,align="center"]
 [discrete]
 --
 [.grid.has-emblems]
-[.emblem]#Data processing and mining#:: Embark on an enriching journey with our master's track in Data Processing and Mining, where courses in advanced analytics and machine learning form a solid academic foundation, empowering you with the skills to extract meaningful insights from vast data sets.
+[.emblem]#Data processing and mining#:: Embark on a journey with our master's track in Data Processing and Mining, where courses in advanced analytics and machine learning form a solid academic foundation, empowering you with the skills to extract meaningful insights from vast data sets.
 +
 [.center]
 image::img-dataproc.jpeg[width=100%,align="center"]
 
 
-[.emblem]#Image and signal processing#:: Embark on a learning journey with our master's track in Image and Signal Processing, where tailored courses introduce you to visual and auditory data analysis, providing you with the skills to transform raw data into meaningful insights.
+[.emblem]#Image and signal processing#:: Discover with our master's track  Image and Signal Processing, where tailored courses introduce you to visual and auditory data analysis, providing you with the skills to transform raw data into meaningful insights.
 +
 image::img-imgproc.jpeg[width=100%,align="center"]
 --

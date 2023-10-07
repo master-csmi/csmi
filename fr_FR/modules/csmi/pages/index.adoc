@@ -18,7 +18,7 @@ Le Master CSMI est une formation de haut niveau en mathématiques appliquées et
 [discret]
 --
 [.grid.has-emblems]
-[.emblem]#Intelligence artificielle (IA)#:: Embarquez pour un voyage transformateur avec notre parcours de master en mathématiques appliquées et en informatique, où des cours d'IA de pointe tels que l'apprentissage scientifique de la machine (SciML) vous dotent des compétences indispensables pour relever les défis du monde réel.
+[.emblem]#Intelligence artificielle (IA)#:: Embarquez pour un voyage  avec notre parcours de master en mathématiques appliquées et en informatique, où des cours d'IA de pointe tels que l'apprentissage scientifique de la machine (SciML) vous dotent des compétences indispensables pour relever les défis du monde réel.
 +
 image::en:csmi:img-ia.jpeg[width=100%,align="center"]
 
@@ -35,7 +35,7 @@ image::en:csmi:img-mso.jpeg[width=100%,align="center"]
 +
 image::en:csmi:img-project.jpeg[width=100%,align="center"]
 
-[.emblem]#Calcul haute performance (HPC)#:: Embarquez pour un voyage de découverte dans notre filière de master en calcul de haute performance, où les cours sur MPI, OpenMP, GPU Computing, et Hybrid Computing vous donnent l'expertise nécessaire pour exploiter les ressources de calcul, conduisant à des percées dans les domaines à forte intensité de calcul et de données.
+[.emblem]#Calcul haute performance (HPC)#:: Découvrez dans notre filière de master le calcul de haute performance, où les cours sur MPI, OpenMP, GPU Computing, et Hybrid Computing vous donnent l'expertise nécessaire pour exploiter les ressources de calcul, conduisant à des percées dans les domaines à forte intensité de calcul et de données.
 +
 image::en:csmi:img-hpc.jpeg[width=100%,align="center"]
 --
@@ -43,7 +43,7 @@ image::en:csmi:img-hpc.jpeg[width=100%,align="center"]
 [discret]
 --
 [.grid.has-emblems]
-[.emblem]#Traitement et fouille de données#:: Embarquez pour un voyage enrichissant avec notre master en traitement et exploitation des données, où les cours d'analyse avancée et d'apprentissage automatique constituent une base académique solide, vous permettant d'acquérir les compétences nécessaires pour extraire des informations significatives à partir de vastes ensembles de données.
+[.emblem]#Traitement et fouille de données#:: Embarquez avec notre master pour découvrir le traitement, l'exploitation et la visualisation des données, où les cours d'analyse avancée et d'apprentissage automatique constituent une base académique solide, vous permettant d'acquérir les compétences nécessaires pour extraire des informations significatives à partir de vastes ensembles de données.
 +
 [.center]
 image::en:csmi:img-dataproc.jpeg[width=100%,align="center"]
