@@ -28,9 +28,6 @@ L'espace de travail Slack utilisé est celui de {feelpp} le logiciel de simulati
         </div>
 </div>
 ++++
-++++
-
-++++
 --
 ****
 
@@ -109,7 +106,6 @@ Vous devez créer un compte sur Github, un formulaire vous sera envoyé au débu
 * - pendant les cours EDP (S2) et CS3, via la plateforme https://classroom.github.com[github classroom], pour rendre vos travaux. 
 +
 Une référence : https://lab.github.com/ mais il y en a plein d'autres.
-
 ****
 
 
