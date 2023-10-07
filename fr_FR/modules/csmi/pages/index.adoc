@@ -9,7 +9,7 @@ ifdef::env-github,env-browser,env-vscode[:imagesprefix :]
 :page-layout : home
 
 
-Le Master CSMI en bref
+.Le Master CSMI en bref
 [.def#master-csmi:1]
 ****
 [.lead]
