@@ -15,9 +15,9 @@ Manager: {manager}
 | Algorithmics | Yann BUGEAUD | 28h CI
 | Database| | 28h CI 
 | {cpp} | Vincent CHABANNES | 28 CI 1 35,00 
-| Scientific computing 1 (shared MF) | Joubine Aghili | 12h CI 
-| Scientific computing 1 | Joubine Aghili | 14h TP
-| Scientific computing 2 | Laurent NAVORET | 28h CI 
+| Scientific computing 1 (shared MF) | Léopold Trémant | 12h CI 
+| Scientific computing 1 | Victor Michel-Dansc | 14h TP
+| Scientific computing 2 | Joubine AGHILI | 28h CI 
 | Parallel computing | Matthieu BOILEAU (10h) & Vincent CHABANNES (18h) | 28h CI 
 | Graphes 1 | Guo-Niu HAN | 28h CI
 | Random Models | Vincent VIGON | 28h CI
