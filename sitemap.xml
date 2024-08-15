@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <sitemap>
+<loc>https://master-csmi.github.io/csmi/sitemap-csmi-stages-2020.xml</loc>
+</sitemap>
+<sitemap>
+<loc>https://master-csmi.github.io/csmi/sitemap-csmi-stages-2021.xml</loc>
+</sitemap>
+<sitemap>
+<loc>https://master-csmi.github.io/csmi/sitemap-csmi-stages-2022.xml</loc>
+</sitemap>
+<sitemap>
+<loc>https://master-csmi.github.io/csmi/sitemap-csmi-stages-2023.xml</loc>
+</sitemap>
+<sitemap>
 <loc>https://master-csmi.github.io/csmi/sitemap-en.xml</loc>
 </sitemap>
 <sitemap>
