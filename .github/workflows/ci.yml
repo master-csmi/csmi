@@ -10,7 +10,7 @@ on:
 jobs:
 
   activate:
-    runs-on: self-ubuntu-22.04
+    runs-on: ubuntu-latest
     if: |
       github.repository == 'master-csmi/csmi' &&
       !startsWith(github.event.head_commit.message, 'Release ') &&
@@ -21,12 +21,12 @@ jobs:
   docs:
     if: "!contains(github.event.head_commit.message, 'doc skip')"
     needs: activate
-    runs-on: self-ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.3.1
-    - uses: actions/setup-node@v2
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
       with:
-        node-version: '14'
+        node-version: '20'
     - run: npm install
     - name: Install credentials
       run: echo https://$GITHUB_OAUTH:@github.com > $HOME/.git-credentials
@@ -35,10 +35,10 @@ jobs:
     - name: Build
       run: npm run antora
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@4.1.1
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: public # The folder the action should deploy.
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages # The branch the action should deploy to.
+          folder: public # The folder the action should deploy.
 
  
