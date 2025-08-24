@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-labelledby="title" role="img">
+  <title>Mistral (generic)</title>
+  <rect x="5" y="5" width="90" height="90" rx="14" ry="14" fill="none" stroke="currentColor" stroke-width="5"/>
+  <g stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M18 68V32l16 18l16-18v36"/>
+    <path d="M56 40h22c6 0 10-4 10-8"/>
+    <path d="M50 54h30c8 0 12 6 12 12"/>
+    
+  </g>
+</svg>

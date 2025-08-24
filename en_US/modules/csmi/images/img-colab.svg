@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-labelledby="title" role="img">
+  <title>Google Colab (generic)</title>
+  <rect x="5" y="5" width="90" height="90" rx="14" ry="14" fill="none" stroke="currentColor" stroke-width="3"/>
+
+  <g stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M25 55c0-8 6-15 14-15c9 0 18 15 27 15c8 0 14-7 14-15"/>
+    <path d="M25 55c0 8 6 15 14 15c9 0 18-15 27-15c8 0 14 7 14 15"/>
+  </g>
+</svg>

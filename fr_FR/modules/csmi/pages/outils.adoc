@@ -1,111 +1,198 @@
 = Outils informatiques
-:page-role : home
+:page-role: home
 
 .Communication
 [.def#communication]
 ****
-
 [.left]
-image:en:csmi:slack-icon.svg[width=100px]
+image::slack-icon.svg[width=100px]
+
 --
-CSMI utilise link:https://slack.com/intl/fr-fr/[Slack] pour communiquer avec les promotions et sur les projets.
+Le Master CSMI utilise link:https://slack.com/intl/fr-fr/[Slack] pour la communication (promotions, projets, etc.).
 
-Vous pouvez installer slack et créer votre compte avec votre email `@etu.unistra.fr` une fois que vous l'avez.
-Vous recevrez une invitation à la rentrée.
+Créez votre compte Slack avec votre email `@etu.unistra.fr` dès que vous le recevez.
+Vous recevrez une invitation au début de l’année.
 
-L'espace de travail Slack utilisé est celui de {feelpp} le logiciel de simulation numérique développé par Cemosis. Les canaux utilisés sont
+L’espace de travail Slack utilisé est celui de {feelpp}, le logiciel de simulation numérique développé par Cemosis.
+Les canaux utilisés sont :
 
-`#csmi-202x`:: pour les promotions 202x
+`#csmi-202x`:: pour la promotion 202x  
 `#csmi`:: pour les questions concernant le Master CSMI
+
 ++++
 <div class="content">
-        <div class="actions">
-            <a href="https://join.slack.com/t/feelpp/shared_invite/zt-2qe0q9hw-4pVbhohCXUE6Po9Ma8dbiQ"
-                class="button join-chat" style="display: flex; justify-content: center; align-items: center;">
-                <span class="icon"><img src="/_/img/slack-icon.svg"></span>
-                 <span> Rejoindre les canaux Slack</span>
-                </a>
-        </div>
+  <div class="actions">
+    <a href="https://join.slack.com/t/feelpp/shared_invite/zt-2qe0q9hw-4pVbhohCXUE6Po9Ma8dbiQ"
+       class="button join-chat" style="display: flex; justify-content: center; align-items: center;">
+      <span class="icon"><img src="/_/img/slack-icon.svg"></span>
+      <span> Rejoindre les canaux Slack CSMI</span>
+    </a>
+  </div>
 </div>
 ++++
 --
 ****
 
-.Systèmes d'exploitation
+.Systèmes d’exploitation
 [.def#systeme]
 ****
 [.grid.has-emblems]
-[emblem]#Linux#:: link:https://ubuntu.com/download/desktop/thank-you?version=22.04.1&architecture=amd64[Ubuntu 22.04 LTS] ou version ultérieure, ou Debian 11 ou version ultérieure
+[emblem]#Linux#::  
 +
 image:en:csmi:img-ubuntu.svg[width=100px] image:en:csmi:img-debian.svg[width=100px]
-[emblem]#Windows 1x#:: Installez link:https://docs.microsoft.com/fr-fr/windows/wsl/install[Support WSL] puis utilisez le link:https://apps.microsoft.com/store/detail/ubuntu-22041-lts/9PN20MSR04DW?hl=fr-fr&gl=FR[Ubuntu 22.04] ou Debian 11 ou plus tard
++ télécharger link:https://ubuntu.com/download/...[Ubuntu 22.04 LTS] ou Debian 11 ou version ultérieure
+[emblem]#Windows#::  
 +
 image:en:csmi:img-win.svg[width=100px]
-[emblem]#MacOs#:: Installez le link:https://brew.sh/index_fr[Homebrew] qui propose de nombreux paquets sur les processeurs Intel ou ARM
++ installez link:https://docs.microsoft.com/fr-fr/windows/wsl/install[WSL], puis Ubuntu ou Debian depuis le Microsoft Store
+[emblem]#Mac OS#::  
 +
 image:en:csmi:img-macos.svg[width=100px]
++ installez link:https://brew.sh/index_fr[Homebrew], compatible Intel et ARM
 ****
-
 
 .Environnement de programmation
-[.def#programmation]
+[.def#programming]
 ****
-Nous utiliserons les outils suivants dans plusieurs cours
-
 [.grid.has-emblems]
 [emblem]#Langages de programmation#::
 +
-image:en:csmi:img-cpp.svg[width=100px] image:en:csmi:img-python.svg[width=100px] 
-// image:en:csmi:img-rust.svg[width=100px] image:en:csmi:img-julia.svg[width=100px]
+image:en:csmi:img-cpp.svg[width=100px] image:en:csmi:img-python.svg[width=100px]
 +
-Voici les langages de programmation que vous utiliserez :
-+
-* - C 
-* - C{pp} 
-* - Python3
-+
-et d'autres que vous pouvez utiliser dans vos projets
-+
-* - Rust
-* - Julia
-+
-et utilisez un environnement de programmation avancé basé sur
-+
-* - CMake
+Langages principaux :
+* C
+* C{pp}
+* Python 3
+Possibles compléments :
+* Rust
+* Julia
+Outils :
+* CMake
 
-[emblème]#https://code.visualstudio.com/[Visual Studio Code]#:: 
+[emblem]#Visual Studio Code#::
 +
 image:en:csmi:img-vscode.svg[width=100px]
 +
-* - se connecter à des machines distantes
-* - travailler sur un ou plusieurs projets à la fois
-* - utiliser git
-+
-De puissantes extensions sont disponibles pour la plupart des langages de programmation, en particulier
-+
-* - C/C{pp} https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools[extension]
-* - Python https://marketplace.visualstudio.com/items?itemName=ms-python.python[extension]
-* - CMake https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools[extension]
-* - Rust https://marketplace.visualstudio.com/items?itemName=rust-lang.rust[extension]
-* - Julia https://marketplace.visualstudio.com/items?itemName=julialang.language-julia[extension]
-* - LaTeX https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop[extension]
-* - Asciidoc https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode[extension]
+* connexion à des machines distantes
+* gestion de projets multiples
+* Git intégré  
+Extensions puissantes :
+* C/C{pp}, Python, CMake, Rust, Julia, LaTeX, Asciidoc — disponibles sur le Marketplace
 
-
-[emblem]#https://github.com[Github]#:: 
+[emblem]#GitHub#::
 +
 image:en:csmi:img-github.svg[width=100px]
 +
-La plateforme numéro un pour les projets open-source utilisant git comme système de contrôle de version, la plateforme offre également de nombreux outils pour la gestion de projet. +
-Nous utiliserons https://github.com/features/issues[Outils de gestion Github] pour assurer le suivi des projets et des tâches. +
-Vous devez créer un compte sur Github, un formulaire vous sera envoyé au début de l'année de M1 et votre compte vous suivra pendant les 2 années. Il sera utilisé
+* gestion de version avec Git
+* gestion de projets (Issues, Classroom, etc.)
+* sera utilisé pour les projets S2, S3, stages, etc.  
+Obtenez le GitHub Student Developer Pack via https://education.github.com/pack
+
+[emblem]#JetBrains#::  
 +
-* pour les projets en S2 et S3
-* - pendant les stages, pour soumettre vos rapports et présentations
-* - pendant les stages pour certains d'entre vous, à des fins de suivi 
-* - pendant les cours EDP (S2) et CS3, via la plateforme https://classroom.github.com[github classroom], pour rendre vos travaux. 
+image:en:csmi:img-jetbrains.svg[width=100px]
 +
-Une référence : https://lab.github.com/ mais il y en a plein d'autres.
+* IDE : link:https://www.jetbrains.com/clion/[CLion], link:https://www.jetbrains.com/pycharm/[PyCharm], link:https://www.jetbrains.com/idea/[IntelliJ IDEA], link:https://www.jetbrains.com/webstorm/[WebStorm]
+* très utilisés dans les cours HPC / génie logiciel
+* licence étudiante gratuite via le programme JetBrains Student Program (https://www.jetbrains.com/community/education/#students)
 ****
 
+.Gestion de projets et collaboration
+[.def#project-tools]
+****
+[.grid.has-emblems]
+[emblem]#Overleaf#::  
++
+image:en:csmi:img-overleaf.svg[width=100px]
++
+* link:https://www.overleaf.com/[Overleaf] : plateforme collaborative LaTeX
+* coédition en temps réel, historique des versions
 
+[emblem]#GitHub Projects#::  
++
+image:en:csmi:img-github-projects.svg[width=100px]
++
+* link:https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects[GitHub Projects] : tableaux kanban avec Issues, PR et milestones  
+* idéal pour les projets de cours, intégré à Classroom et Actions
+****
+
+.Accès cloud et HPC
+[.def#cloud-hpc]
+****
+[.grid.has-emblems]
+[emblem]#JupyterLab / JupyterHub#::  
++
+image:en:csmi:img-jupyter.svg[width=100px]
++
+* link:https://jupyter.org/[JupyterLab] : notebooks Python pour données / ML
+* utilisable localement ou sur serveur
+* Extension VS Code : link:https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter[Jupyter] pour exécuter et éditer vos notebooks directement dans Visual Studio Code
+
+[emblem]#Google Colab#::  
++
+image:en:csmi:img-colab.svg[width=100px]
++
+* link:https://colab.research.google.com/[Google Colab] : accès facile à GPU / TPU
+* pratique pour les petits projets IA
+****
+
+.Outils IA et productivité
+[.def#ai-tools]
+****
+L’Intelligence Artificielle (IA) est désormais un assistant courant pour la programmation, la documentation et la recherche. Utilisez-la avec responsabilité (voir section suivante).
+
+[.grid.has-emblems]
+[emblem]#ChatGPT (OpenAI)#::
++
+image:en:csmi:img-chatgpt.svg[width=100px]
++
+* génération, refactorisation, débogage de code
+* aide rédactionnelle (LaTeX, AsciiDoc, résumés, plans)
+* explications d’algorithmes, concepts HPC  
+link:https://chat.openai.com[ChatGPT]
+
+[emblem]#Claude (Anthropic)#::
++
+image:en:csmi:img-claude.svg[width=100px]
++
+* traitement de longs documents, raisonnement approfondi
+* utile pour révision de texte ou rédaction de brouillons  
+link:https://claude.ai[Claude]
+
+[emblem]#Mistral AI#::
++
+image:en:csmi:img-mistral.svg[width=100px]
++
+* modèles open-source (Codestral, Mixtral), bons en code
+* accessibles via link:https://lechat.mistral.ai/[LeChat] ou link:https://mistral.ai/[Mistral AI]
+
+[emblem]#GitHub Copilot#::
++
+image:en:csmi:img-copilot.svg[width=100px]
++
+* assistant dans l’IDE (VS Code / JetBrains)
+* complétion, explication contextuelle, génération de tests
+* gratuit/discount via GitHub Student Developer Pack
+
+[emblem]#Zotero#::
++
+image:en:csmi:img-zotero.svg[width=100px]
++
+* link:https://www.zotero.org/[Zotero] : gestionnaire de références, import web
+* export vers BibTeX compatible LaTeX
+****
+
+.Intégrité académique & confidentialité (à lire)
+[.def#academic-integrity]
+****
+* **Citez toute assistance IA** (ex. : “Assistance IA : prompt + outil + date/version”).
+* **N’introduisez jamais** de contenus confidentiels dans des outils externes (examens, clés, données personnelles).
+* **Vérifiez les résultats** (calculs, code, références) : vous êtes responsable de la validité.
+* Maintenez une **traçabilité** : conservez un dossier `ai-notes/` avec prompts, versions, code généré.
+****
+
+.AI Assistance et Références
+[.def#ai-assistance]
+****
+include::partial$ai-assistance.adoc[]
+****

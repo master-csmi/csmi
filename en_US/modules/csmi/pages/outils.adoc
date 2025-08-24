@@ -4,7 +4,6 @@
 .Communication
 [.def#communication]
 ****
-
 [.left]
 image::slack-icon.svg[width=100px]
 
@@ -21,13 +20,13 @@ The Slack workspace used is that of {feelpp}, the numerical simulation software 
 
 ++++
 <div class="content">
-        <div class="actions">
-            <a href="https://join.slack.com/t/feelpp/shared_invite/zt-2qe0q9hw-4pVbhohCXUE6Po9Ma8dbiQ"
-                class="button join-chat" style="display: flex; justify-content: center; align-items: center;">
-                <span class="icon"><img src="/_/img/slack-icon.svg"></span>
-                 <span> Join CSMI Slack Channels</span>
-                </a>
-        </div>
+  <div class="actions">
+    <a href="https://join.slack.com/t/feelpp/shared_invite/zt-2qe0q9hw-4pVbhohCXUE6Po9Ma8dbiQ"
+       class="button join-chat" style="display: flex; justify-content: center; align-items: center;">
+      <span class="icon"><img src="/_/img/slack-icon.svg"></span>
+      <span> Join CSMI Slack Channels</span>
+    </a>
+  </div>
 </div>
 ++++
 --
@@ -48,7 +47,6 @@ image:en:csmi:img-win.svg[width=100px]
 image:en:csmi:img-macos.svg[width=100px]
 ****
 
-
 .programming environment
 [.def#programming]
 ****
@@ -57,13 +55,13 @@ We'll be using the following tools in several courses
 [.grid.has-emblems]
 [emblem]#Programming languages#::
 +
-image:en:csmi:img-cpp.svg[width=100px] image:en:csmi:img-python.svg[width=100px] 
+image:en:csmi:img-cpp.svg[width=100px] image:en:csmi:img-python.svg[width=100px]
 // image:en:csmi:img-rust.svg[width=100px] image:en:csmi:img-julia.svg[width=100px]
 +
 Here are the programming languages you'll be using:
 +
-* - C 
-* - C{pp} 
+* - C
+* - C{pp}
 * - Python3
 +
 and others you may use in your projects
@@ -75,7 +73,7 @@ and use advanced programming environment based on
 +
 * - CMake
 
-[emblem]#https://code.visualstudio.com/[Visual Studio Code]#:: 
+[emblem]#https://code.visualstudio.com/[Visual Studio Code]#::
 +
 image:en:csmi:img-vscode.svg[width=100px]
 +
@@ -93,8 +91,7 @@ Powerful extensions are available for most programming languages, in particular
 * - LaTeX https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop[extension]
 * - Asciidoc https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode[extension]
 
-
-[emblem]#https://github.com[Github]#:: 
+[emblem]#https://github.com[Github]#::
 +
 image:en:csmi:img-github.svg[width=100px]
 +
@@ -104,11 +101,120 @@ You need to create an account on Github, a form will be sent at the beginning of
 +
 * - for projects in S2 and S3
 * - during internships, to submit your reports and presentations
-* - during internships for some of you, for follow-up purposes 
-* - during EDP (S2) and CS3 courses, via the https://classroom.github.com[github classroom] platform, to hand in your assignments. 
+* - during internships for some of you, for follow-up purposes
+* - during EDP (S2) and CS3 courses, via the https://classroom.github.com[github classroom] platform, to hand in your assignments.
 +
 One reference: https://lab.github.com/ but there are plenty of others.
++
+TIP: Apply for the https://education.github.com/pack[GitHub Student Developer Pack] — free access to GitHub Copilot, cloud credits, and many developer tools.
++
 
+[emblem]#JetBrains IDEs#::
++
+image:en:csmi:img-jetbrains.svg[width=100px]
++
+* - link:https://www.jetbrains.com/clion/[CLion] (C/C++), link:https://www.jetbrains.com/pycharm/[PyCharm] (Python), link:https://www.jetbrains.com/idea/[IntelliJ IDEA] (Java/Kotlin), link:https://www.jetbrains.com/webstorm/[WebStorm] (web)
+* - Popular in HPC/software engineering courses
+* - Free with a student license via https://www.jetbrains.com/community/education/#students[JetBrains Student Program]
 ****
 
+.Project management and collaboration
+[.def#project-tools]
+****
+[.grid.has-emblems]
+[emblem]#Overleaf#::
++
+image:en:csmi:img-overleaf.svg[width=100px]
++
+* - link:https://www.overleaf.com/[Overleaf]: collaborative LaTeX (reports, theses)
+* - Real-time co-editing and version history
 
+[emblem]#GitHub Projects#::
++
+image:en:csmi:img-github-projects.svg[width=100px]
++
+* - link:https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects[GitHub Projects]: kanban boards inside GitHub (Issues, PRs, milestones)
+* - Ideal for course projects; integrates with Classroom and Actions
+****
+
+.Cloud and HPC access
+[.def#cloud-hpc]
+****
+[.grid.has-emblems]
+[emblem]#JupyterLab / JupyterHub#::
++
+image:en:csmi:img-jupyter.svg[width=100px]
++
+* - link:https://jupyter.org/[JupyterLab]: Python notebooks for data analysis and ML
+* - Works locally or on remote servers
+* VS Code extension: link:https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter[Jupyter] to run and edit your notebooks directly in Visual Studio Code
+
+
+[emblem]#Google Colab#::
++
+image:en:csmi:img-colab.svg[width=100px]
++
+* - link:https://colab.research.google.com/[Google Colab]: quick access to GPUs/TPUs in notebooks
+* - Practical for small ML experiments
+****
+
+.AI and productivity tools
+[.def#ai-tools]
+****
+Artificial Intelligence (AI) is now an everyday assistant for coding, documentation, and research. Use it to accelerate — but keep traceability and academic integrity (see note below).
+
+[.grid.has-emblems]
+[emblem]#ChatGPT (OpenAI)#::
++
+image:en:csmi:img-chatgpt.svg[width=100px]
++
+* - Code generation, refactoring, and debugging
+* - Writing support for LaTeX/AsciiDoc (summaries, outlines)
+* - Explaining algorithms and HPC concepts
+link:https://chat.openai.com[ChatGPT]
+
+[emblem]#Claude (Anthropic)#::
++
+image:en:csmi:img-claude.svg[width=100px]
++
+* - Strong with long documents and reasoning
+* - Good for reviewing scientific text and creating drafts
+link:https://claude.ai[Claude]
+
+[emblem]#Mistral AI#::
++
+image:en:csmi:img-mistral.svg[width=100px]
++
+* - Open models (Codestral, Mixtral); works well for coding
+* - Available via link:https://lechat.mistral.ai/[LeChat] or link:https://mistral.ai/[Mistral AI]
+
+[emblem]#GitHub Copilot#::
++
+image:en:csmi:img-copilot.svg[width=100px]
++
+* - In-editor AI pair-programmer (VS Code / JetBrains)
+* - Code completion, inline explanations, tests generation
+* - Free or discounted via link:https://education.github.com/pack[GitHub Student Developer Pack]
+
+[emblem]#Zotero#::
++
+image:en:csmi:img-zotero.svg[width=100px]
++
+* - link:https://www.zotero.org/[Zotero]: reference manager with web importer
+* - Exports to BibTeX for LaTeX
+****
+ 
+.Academic integrity & privacy (please read)
+[.def#academic-integrity]
+****
+* - **Cite AI assistance** when it meaningfully contributes to your work (e.g., “Assisted by AI: prompt + tool name/version/date”).
+* - **Do not paste** confidential material (exam statements, private repos, API keys, personal data) into online tools.
+* - **Verify outputs** (numerics, code, references). You are responsible for correctness and reproducibility.
+* - Keep a **reproducible workflow**: keep prompts, versions, and generated code in your repo (e.g., `ai-notes/`).
+****
+
+.AI Assistance and References
+[.def#ai-assistance]
+****
+include::partial$ai-assistance.adoc[]
+****

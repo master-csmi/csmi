@@ -1,0 +1,84 @@
+Les étudiants peuvent utiliser des outils d’Intelligence Artificielle (IA) pour la rédaction, la programmation ou la recherche.
+Dans ce cas, ils doivent **clairement les mentionner et les citer**.
+
+[NOTE]
+====
+*Les outils IA sont des assistants, pas des auteurs.* Leurs contenus doivent être vérifiés, adaptés et corrigés par l’étudiant.
+Celui-ci reste **entièrement responsable** de la validité et de l’originalité du travail.
+====
+
+Vous pouvez ajouter une section dédiée dans vos rendus :
+
+[source,asciidoc]
+----
+== Déclaration d’assistance IA
+
+Certaines parties de ce travail ont été préparées avec l’aide d’outils d’Intelligence Artificielle (IA).
+Les outils utilisés sont les suivants :
+
+* ChatGPT (OpenAI, GPT-5, consulté le 24 août 2025) pour la rédaction et les explications.
+* GitHub Copilot (Microsoft, 2025) pour les suggestions de code en C++/Python.
+* Claude (Anthropic, 2025) pour la synthèse de textes.
+* Codestral (Mistral AI, 2025) pour la génération et le refactoring de code.
+
+Tous les éléments générés ont été vérifiés et adaptés par les auteurs, qui en assument l’entière responsabilité.
+----
+
+Ou au format LaTeX :
+
+[source,latex]
+----
+\section*{Déclaration d’assistance IA}
+
+Certaines parties de ce travail ont été préparées avec l’aide d’outils d’Intelligence Artificielle (IA).
+Parmi ceux-ci :
+
+\begin{itemize}
+  \item ChatGPT (OpenAI, GPT-5, consulté le 24 août 2025) pour la rédaction et les explications.
+  \item GitHub Copilot (Microsoft, 2025) pour les suggestions de code en C++/Python.
+  \item Claude (Anthropic, 2025) pour la synthèse de textes.
+  \item Codestral (Mistral AI, 2025) pour la génération et le refactoring de code.
+\end{itemize}
+
+Tous les contenus générés ont été vérifiés et adaptés par les auteurs, qui en assument l’entière responsabilité.
+----
+
+Pour citer correctement les outils IA, importez le fichier BibTeX (`ai-tools.bib`) fourni dans vos sources / gestionnaire de références (Zotero, Overleaf), puis citez-les comme n’importe quel `@software`.
+[source,bibtex]
+----
+@software{openai_chatgpt_2025,
+  author       = {OpenAI},
+  title        = {ChatGPT},
+  year         = {2025},
+  version      = {Version du 24 août},
+  url          = {https://chat.openai.com},
+  note         = {Modèle de langage; consulté 2025-08-24}
+}
+
+@software{anthropic_claude_2025,
+  author       = {Anthropic},
+  title        = {Claude 3.5},
+  year         = {2025},
+  version      = {août 2025},
+  url          = {https://claude.ai},
+  note         = {Modèle de langage}
+}
+
+@software{mistral_codestral_2025,
+  author       = {Mistral AI},
+  title        = {Codestral},
+  year         = {2025},
+  version      = {0.3},
+  url          = {https://mistral.ai},
+  note         = {Modèle open-weight}
+}
+
+@software{github_copilot_2025,
+  author       = {GitHub},
+  title        = {GitHub Copilot},
+  year         = {2025},
+  version      = {Extension VS Code v1.185},
+  url          = {https://copilot.github.com},
+  note         = {Outil de complétion IA}
+}
+----

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-labelledby="title" role="img">
+  <title>Claude (generic)</title>
+  <rect x="5" y="5" width="90" height="90" rx="14" ry="14" fill="none" stroke="currentColor" stroke-width="5"/>
+  <g stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M62 30a20 20 0 1 0 0 40"/>
+    <path d="M64 54l20 20l9-9l-20-20z"/>
+    <circle cx="76" cy="66" r="2" fill="currentColor" stroke="none"/>
+    
+  </g>
+</svg>

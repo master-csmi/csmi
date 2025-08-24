@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-labelledby="title" role="img">
+  <title>ChatGPT (generic)</title>
+  <rect x="5" y="5" width="90" height="90" rx="14" ry="14" fill="none" stroke="currentColor" stroke-width="5"/>
+  <g stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    
+    <rect x="28" y="28" width="44" height="44" rx="8" ry="8"/>
+    <circle cx="42" cy="46" r="4"/>
+    <circle cx="58" cy="46" r="4"/>
+    <path d="M40 60c4 4 16 4 20 0"/>
+    <path d="M28 40h-8M28 60h-8M80 40h8M80 60h8"/>
+    
+  </g>
+</svg>
