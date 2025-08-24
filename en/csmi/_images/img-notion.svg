@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-labelledby="title" role="img">
+  <title>Notion (generic)</title>
+  <rect x="5" y="5" width="90" height="90" rx="14" ry="14" fill="none" stroke="currentColor" stroke-width="3"/>
+
+  <g stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="22" y="22" width="56" height="56" rx="8" ry="8"/>
+    <path d="M34 66V34l32 32V34"/>
+  </g>
+</svg>

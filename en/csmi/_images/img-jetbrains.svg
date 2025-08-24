@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-labelledby="title" role="img">
+  <title>JetBrains (generic)</title>
+  <rect x="5" y="5" width="90" height="90" rx="14" ry="14" fill="none" stroke="currentColor" stroke-width="6"/>
+  <g stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    
+    <polygon points="50,18 82,34 82,66 50,82 18,66 18,34" fill="none"/>
+    <rect x="32" y="40" width="10" height="20"/>
+    <rect x="48" y="40" width="20" height="6"/>
+    <rect x="48" y="54" width="20" height="6"/>
+    
+  </g>
+</svg>
