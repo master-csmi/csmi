@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CSMI AI Policy :: Master CSMI</title>
+    <link rel="canonical" href="https://master-csmi.github.io/csmi/en/csmi/ai-policy.html">
+    <meta name="generator" content="Antora 3.1.12">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+<script>!function(l,p){if(l.protocol!==p&&l.host=="docs.antora.org"){l.protocol=p}else if(/\.gitlab\.io$/.test(l.host)){l.replace(p+"//docs.antora.org"+l.pathname.substr(l.pathname.indexOf("/",1))+l.search+l.hash)}}(location,"https:")</script>
+
+<script src="../../_/js/vendor/tabs-block-extension.js"></script>
+<script src="../../_/js/vendor/tabs-block-behavior.js"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\\[','\\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+
+  TeX: {
+      Macros: {
+      bold: ["{\\bf #1}",1],
+      calTh: "{\\mathcal{T}_h}",
+      card: ["{\\operatorname{card}(#1)}",1],
+      card: ["{\\operatorname{card}(#1)}",1],
+      Ck: ["{\\mathcal{C}^{#1}}",1],
+      deformt: ["{\\mathbf{\\varepsilon(#1)}}",1],
+      diam: "{\\operatorname{diam}}",
+      dim: ["{\\operatorname{dim}(#1)}",1],
+      disp: ["{\\mathbf{#1}}",1],
+      domain: "{\\Omega}",
+      ds: "",
+      essinf: "{\\operatorname{ess}\\, \\operatorname{inf}}",
+      F:"{\\mathcal{F}}",
+      geo: "{\\mathrm{geo}}",
+      Ich: ["{\\mathcal{I}^{#1}_{c,h}#2}",2],
+      Id: "{\\mathcal{I}}",
+      Ilag: ["{\\mathcal{I}^{\\mathrm{lag}}_{#1}}",1],
+      jump: ["{[\\![ #1 ]\\!]}",1],
+      n:"{\\mathbf{n}}",
+      Ne: "{N_{\\mathrm{e}}}",
+      Next: "{\\mathrm{n}}",
+      nf: "{n_f}",
+      ngeo: "{n_{\\mathrm{geo}}}",
+      Nma: "{N_{\\mathrm{ma}}}",
+      NN: "{\\mathbb N}",
+      Nno: "{N_{\\mathrm{no}}}",
+      Nso: "{N_{\\mathrm{so}}}",
+      opdim: "{\\operatorname{dim}}",
+      p: "{\\mathrm{p}}",
+      P:"{\\mathcal{P}}",
+      Pch: ["{P^{#1}_{c,h}}",1],
+      Pcho: ["{P^{#1}_{c,h,0}}",1],
+      Pk: ["{\\mathcal{P}^{#1}}",1],
+      poly: ["{\\mathbb{#1}",1],
+      poly: ["{\\mathbb{#1}}",1],
+      prect: ["{\\left\\(#1\\right\\)}",1],
+      q:"{\\mathbf{q}}",
+      Qch: ["{Q^{#1}_{c,h}}",1],
+      Qk: ["{\\mathcal{Q}^{#1}}",1],
+      R: ["{\\mathbb{R}^{#1}}",1],
+      RR: "{\\mathbb R}",
+      set: ["{\\left\\{#1\\right\\}}",1],
+      stresst: ["{\\mathbf{\\sigma(#1)}}",1],
+      T:"{\\mathcal{T}}",
+      tr: "{\\operatorname{tr}}",
+      v:"{\\mathbf{v}}",
+      vertiii: ["\\left\\vert\\kern-0.25ex\\left\\vert\\kern-0.25ex\\left\\vert #1 \\right\\vert\\kern-0.25ex\\right\\vert\\kern-0.25ex\\right\\vert",1]
+  },
+  extensions: ["mhchem.js"] 
+  }
+});
+</script>
+<!--<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML"></script>-->
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML'></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.0/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>-->
+
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H3PWJ83ZVS"></script>
+<script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','G-H3PWJ83ZVS')</script>
+<script>var uiRootPath = '../../_'</script>
+
+<!-- google verification -->
+<meta name="google-site-verification" content="le0KhZwWwgk5moT8pmqeYReUQDL--SjMMEoFvyoKo20" />
+
+<link rel="stylesheet" href="../../_/css/custom.css" /></head>
+<body class="article docs-versioned ai-policy">
+  <header class="header">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-template-project"
+        style="border-top: 4px solid #9E9E9E">
+        <div class="navbar-brand">
+            <div class="navbar-item feelpp-logo">
+                <a href="https://master-csmi.github.io/csmi">Master CSMI</a>
+            </div>
+            <button class="navbar-burger" data-target="topbar-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div id="topbar-nav" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-link" data-title="Language">
+                        <span class="icon"><img src="../../_/img/location-24.svg"></span>
+                    </div>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="https://csmi.cemosis.fr/en/csmi">EN</a>
+                        <a class="navbar-item" href="https://csmi.cemosis.fr/fr/csmi">FR</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-link" data-title="Support">
+                        <span class="icon"><img src="../../_/img/octicons-24.svg#view-comment-discussion"></span>
+                    </div>
+                    <div class="navbar-dropdown is-right">
+                        <a class="navbar-item has-icon"
+                            href="https://join.slack.com/t/feelpp/shared_invite/zt-2qe0q9hw-4pVbhohCXUE6Po9Ma8dbiQ" target="_blank"
+                            rel="noopener">
+                            <span class="icon"><img src="../../_/img/slack-icon.svg"></span>
+                            <span>Chat</span>
+                        </a>
+                        <a class="navbar-item has-icon" href="https://github.com/orgs/master-csmi/discussions" target="_blank"
+                            rel="noopener">
+                            <span class="icon"><img src="../../_/img/octicons-16.svg#view-discussion-closed"></span>
+                            <span>Discussions</span>
+                        </a>
+                        <a class="navbar-item has-icon" href="https://twitter.com/master_csmi" target="_blank" rel="noopener">
+                            <span class="icon"><img src="../../_/img/octicons-16.svg#view-hash"></span>
+                            <span>Tweets</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="navbar-item">
+                    <a href="../../_/../cours-tan/python/index.html">Documentation Reference</a>
+                </div> -->
+                <div class="navbar-item has-dropdown is-hoverable download-item">
+                    <div class="navbar-item"><a href="https://mathinfo.unistra.fr/admission/admission"
+                            class="download-btn">Admissions</a></div>
+                </div> 
+                <div class="navbar-item">
+                    <a class="navbar-brand" href="https://www.cemosis.fr">
+                        <img class="cemosis-logo" src="../../_/img/cemosis-logo.svg" alt="Cemosis logo" />
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-brand" href="https://mathinfo.unistra.fr/">
+                        <img class="cemosis-logo" src="../../_/img/logo-ufr-mathinfo-unistra.webp" alt="UFR Math Info logo" />
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="navbar-brand" href="https://www.unistra.fr">
+                        <img class="cemosis-logo" src="../../_/img/logo-unistra.png"
+                            alt="Unistra logo" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>  <div class="body">
+    <a href="#" class="menu-expand-toggle"></a>
+<div class="nav-container" data-component="en" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Master CSMI (en)</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Master CSMI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://github.com/master-csmi/csmi/discussions">News</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="emplois.html">Jobs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="team.html">Team</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="internships/index.html">Internships</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="internships/guide.html">Guide to internships reports</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="outils.html">IT Tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">AI &amp; Responsibility</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="ai-policy.html">AI Usage Policy</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ai-agreement.html">AI Usage Agreement</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="csmi-2024-2028/index.html">CSMI 2024-2028</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="csmi-2024-2028/summary.html">Summary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Master CSMI (en)</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+      <li class="component is-current">
+        <a class="title" href="index.html">Master CSMI (en)</a>
+      </li>
+      <li class="component">
+        <a class="title" href="../../fr/csmi/index.html">Master CSMI (fr)</a>
+      </li>
+      <li class="component">
+        <a class="title" href="../../csmi-stages-2025/index.html">Master CSMI 2025</a>
+      </li>
+      <li class="component">
+        <a class="title" href="../../csmi-stages-2020/index.html">Master CSMI Stages/Internships 2020</a>
+      </li>
+      <li class="component">
+        <a class="title" href="../../csmi-stages-2021/index.html">Master CSMI Stages/Internships 2021</a>
+      </li>
+      <li class="component">
+        <a class="title" href="../../csmi-stages-2022/index.html">Master CSMI Stages/Internships 2022</a>
+      </li>
+      <li class="component">
+        <a class="title" href="../../csmi-stages-2023/index.html">Master CSMI Stages/Internships 2023</a>
+      </li>
+      <li class="component">
+        <a class="title" href="../../csmi-stages-2024/index.html">Master CSMI Stages/Internships 2024</a>
+      </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+    <main class="article">
+      <div class="toolbar" role="navigation">
+        <div class="toolbar-wrapper">
+          <button class="nav-toggle"></button>
+        </div>
+      </div>
+      <header class="article-header">
+        <h1 class="page-title">CSMI AI Policy</h1>
+        <div class="doc-meta">
+        </div>
+      </header>
+      <div class="content">
+        <article class="doc">
+<h1 class="page">CSMI AI Policy</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_ai_assistance_and_references">1. AI Assistance and References</a></li>
+<li><a href="#_enforcement_consequences">2. Enforcement &amp; Consequences</a>
+<ul class="sectlevel2">
+<li><a href="#_1_undisclosed_ai_assistance_detection_without_disclosure">1. Undisclosed AI Assistance (Detection Without Disclosure)</a></li>
+<li><a href="#_2_repeat_or_aggravated_violations">2. Repeat or Aggravated Violations</a></li>
+<li><a href="#_3_severe_misconduct">3. Severe Misconduct</a></li>
+<li><a href="#_4_good_faith_errors">4. Good-Faith Errors</a></li>
+<li><a href="#_5_appeals">5. Appeals</a></li>
+<li><a href="#_6_instructor_responsibilities">6. Instructor Responsibilities</a></li>
+<li><a href="#_7_recommended_student_practices_to_avoid_issues">7. Recommended Student Practices to Avoid Issues</a></li>
+</ul>
+</li>
+<li><a href="#_references">References</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Students may use Artificial Intelligence (AI) tools to support writing, coding, literature triage, or exploratory analysis.
+In all cases, usage MUST be explicitly disclosed and properly cited (see below).</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>AI tools are assistants, not authors.</p>
+</div>
+<div class="paragraph">
+<p>You MUST:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Verify every AI‑generated statement, equation, code fragment, figure description, and citation.</p>
+</li>
+<li>
+<p>Cite the original scholarly / technical sources (AI output is never a primary source).</p>
+</li>
+<li>
+<p>Keep a reproducibility log (tool, model/version, date, purpose, prompt summary).</p>
+</li>
+<li>
+<p>Ensure the final wording, structure, and scientific claims are your own work.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You MUST NOT:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Submit undisclosed AI‑generated content.</p>
+</li>
+<li>
+<p>Paste confidential, personal, embargoed, or exam material into external AI services.</p>
+</li>
+<li>
+<p>Treat AI suggestions as authoritative without independent validation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Responsibility remains entirely with the student/authors for correctness, originality, licensing, and academic integrity.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ai_assistance_and_references"><a class="anchor" href="#_ai_assistance_and_references"></a>1. AI Assistance and References</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You may add a dedicated section in your reports (recommended for any non-trivial use):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">== AI Assistance Statement
+
+Some parts of this work were prepared with the assistance of Artificial Intelligence (AI) tools.
+The following tools were used (all outputs reviewed, validated, and adapted by the authors):
+
+* ChatGPT (OpenAI, GPT‑4 family) – preliminary drafting and clarification of wording.
+* GitHub Copilot (GitHub/Microsoft, 2025) – inline code completion for C++ and Python (non-original boilerplate acceleration only).
+* Claude 3.5 Sonnet (Anthropic) – summarisation of background materials.
+* Codestral 0.3 (Mistral AI) – code refactoring suggestions and templated scaffolding.
+* Gemini 1.5 Pro (Google) – multimodal reasoning (text + figure interpretation assistance).
+
+All AI-assisted content was independently checked for factual correctness, re-written where necessary, and integrated with original analysis. The authors take full responsibility for accuracy, originality, and proper attribution.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Or in LaTeX:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-latex hljs" data-lang="latex">\section*{AI Assistance Statement}
+
+Some parts of this work were prepared with the assistance of Artificial Intelligence (AI) tools. The following were used (all outputs verified, revised, and integrated responsibly by the authors):
+
+\begin{itemize}
+  \item ChatGPT (OpenAI, GPT-4/5 family) – linguistic refinement and short explanatory drafts.
+  \item GitHub Copilot (GitHub/Microsoft, 2025) – inline code suggestions (non-novel boilerplate only) for C++/Python.
+  \item Claude 3.5/4 Sonnet (Anthropic) – condensation of background notes.
+  \item Codestral 0.3 (Mistral AI) – refactoring and structural code hints.
+  \item Gemini 1.5 Pro (Google) – multimodal reasoning support.
+\end{itemize}
+
+All AI outputs were \textbf{verified, adapted, and corrected by the authors}. The authors accept full responsibility for the correctness, originality, and scholarly integrity of this work.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To cite AI tools properly, import the BibTeX file in the source tree (<code>ai-tools.bib</code>) into your reference manager (Zotero, JabRef, Overleaf, etc.) and cite them like any other <code>@software</code> entry. Always record an <strong>access date</strong> for hosted models.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Maintain a simple log (CSV / Markdown) with columns: <strong>date</strong>, <strong>tool</strong>, <strong>model/version</strong>, <strong>purpose</strong>, <strong>prompt summary / file scope</strong>. This supports reproducibility and clarifies authorship.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bibtex hljs" data-lang="bibtex">@software{openai_chatgpt_2025,
+  author    = {OpenAI},
+  title     = {ChatGPT},
+  year      = {2025},
+  version   = {GPT-4 family},
+  url       = {https://chat.openai.com},
+  urldate   = {2025-09-07},
+  note      = {Conversational large language model assistant}
+}
+
+@software{anthropic_claude_2025,
+  author    = {Anthropic},
+  title     = {Claude 3.5 Sonnet},
+  year      = {2025},
+  version   = {Release August 2025},
+  url       = {https://claude.ai},
+  urldate   = {2025-09-07},
+  note      = {Large language model assistant}
+}
+
+@software{mistral_codestral_2025,
+  author    = {Mistral AI},
+  title     = {Codestral},
+  year      = {2025},
+  version   = {0.3},
+  url       = {https://mistral.ai},
+  urldate   = {2025-09-07},
+  note      = {Code-focused large language model}
+}
+
+@software{github_copilot_2025,
+  author    = {GitHub},
+  title     = {GitHub Copilot},
+  year      = {2025},
+  url       = {https://copilot.github.com},
+  urldate   = {2025-09-07},
+  note      = {AI pair-programming assistant}
+}
+
+@software{google_gemini_2025,
+  author    = {Google},
+  title     = {Gemini 1.5 Pro},
+  year      = {2025},
+  version   = {1.5 Pro},
+  url       = {https://gemini.google.com},
+  urldate   = {2025-09-07},
+  note      = {Multimodal large language model}
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Do not cite AI tools as evidence for scientific results. Always trace claims back to peer‑reviewed literature, standards, or authoritative datasets.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_enforcement_consequences"><a class="anchor" href="#_enforcement_consequences"></a>2. Enforcement &amp; Consequences</h2>
+<div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Undisclosed or improper AI use is treated as an academic integrity issue.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_1_undisclosed_ai_assistance_detection_without_disclosure"><a class="anchor" href="#_1_undisclosed_ai_assistance_detection_without_disclosure"></a>1. Undisclosed AI Assistance (Detection Without Disclosure)</h3>
+<div class="paragraph">
+<p>If a teacher or reviewer determines that AI was used and not disclosed:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Grade adjustment at instructor discretion, up to assigning a <strong>0</strong> for the affected work.</p>
+</li>
+<li>
+<p>Mandatory meeting with the student to review this policy and usage expectations.</p>
+</li>
+<li>
+<p>Written note (internal) may be placed in academic record for repeat monitoring (not a formal disciplinary mark on first occurrence unless severe).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_repeat_or_aggravated_violations"><a class="anchor" href="#_2_repeat_or_aggravated_violations"></a>2. Repeat or Aggravated Violations</h3>
+<div class="paragraph">
+<p>Triggered by: repeated undisclosed use, falsified disclosure logs, or AI use after explicit prohibition in an assignment.</p>
+</div>
+<div class="paragraph">
+<p>Possible additional actions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Formal academic integrity report.</p>
+</li>
+<li>
+<p>Grade penalty on course component (e.g., project / exam weight reduction).</p>
+</li>
+<li>
+<p>Loss of eligibility for certain project topics or internship recommendations.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_severe_misconduct"><a class="anchor" href="#_3_severe_misconduct"></a>3. Severe Misconduct</h3>
+<div class="paragraph">
+<p>Examples: submitting predominantly AI-generated work as original, generating or fabricating data/results, impersonation, or sharing confidential data with external AI systems.</p>
+</div>
+<div class="paragraph">
+<p>Escalation may include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Formal disciplinary procedure under university academic integrity code.</p>
+</li>
+<li>
+<p>Course failure recommendation.</p>
+</li>
+<li>
+<p>Internship host notification (if breach involves host material).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_good_faith_errors"><a class="anchor" href="#_4_good_faith_errors"></a>4. Good-Faith Errors</h3>
+<div class="paragraph">
+<p>If the student disclosed AI use but the extent was unclear or formatting/log was incomplete:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Correction requested (revise disclosure / add missing log details).</p>
+</li>
+<li>
+<p>No grade penalty if promptly corrected and no intent to mislead is evident.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_appeals"><a class="anchor" href="#_5_appeals"></a>5. Appeals</h3>
+<div class="paragraph">
+<p>Students may contest a determination by:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Requesting clarification from the instructor.</p>
+</li>
+<li>
+<p>Providing their reproducibility / prompt log.</p>
+</li>
+<li>
+<p>Demonstrating authorship by explaining or re-deriving questionable sections live.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_6_instructor_responsibilities"><a class="anchor" href="#_6_instructor_responsibilities"></a>6. Instructor Responsibilities</h3>
+<div class="paragraph">
+<p>Instructors applying sanctions should:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Document rationale (what indicators suggested AI use: linguistic uniformity, improbable error patterns, code stylometry, etc.).</p>
+</li>
+<li>
+<p>Offer the student an opportunity to respond.</p>
+</li>
+<li>
+<p>Apply proportional sanctions consistent with this section.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_7_recommended_student_practices_to_avoid_issues"><a class="anchor" href="#_7_recommended_student_practices_to_avoid_issues"></a>7. Recommended Student Practices to Avoid Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Keep an incremental prompt/response log (date, tool, purpose summary).</p>
+</li>
+<li>
+<p>Use AI for transformation and clarification, not for final drafting.</p>
+</li>
+<li>
+<p>Regularly paraphrase and annotate AI suggestions while learning.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references"><a class="anchor" href="#_references"></a>References</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>UNESCO - Guide to Generative AI in Education and Research (EN): <a href="https://unesdoc.unesco.org/ark:/48223/pf0000386693/PDF/386693eng.pdf.multi">&gt; PDF english version</a></p>
+</li>
+<li>
+<p>CNIL - (FR): <a href="https://www.cnil.fr/fr/enseignant-usage-systeme-ia">&gt; Guide for educators on AI usage</a> (in French)</p>
+</li>
+<li>
+<p>Ministry of Education (FR): <a href="https://www.education.gouv.fr/cadre-d-usage-de-l-ia-en-education-450647">&gt; Framework for the use of AI in education</a> (in French)</p>
+</li>
+<li>
+<p>Ministry of Higher Education and Research (FR): <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-07/rapport-intelligence-artificielle-et-enseignement-sup-rieur-formation-structuration-et-appropriation-par-la-soci-t&#8212;&#8203;37540.pdf">&gt; Rapport complet(PDF, in French)</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+      </div>
+    </main>
+  </div>
+  <footer class="footer"
+    style="border-top: 2px solid #e9e9e9; background-color: #fafafa; padding-bottom: 2em; padding-top: 2em;">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 0.5em;">
+        <div>
+            <a href="https://www.cemosis.fr">
+                <img src="../../_/img/cemosis-logo.svg" alt="Cemosis logo" height="50">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://mathinfo.unistra.fr/">
+                <img src="../../_/img/logo-ufr-mathinfo-unistra.webp" alt="UFR Math Info Unistra logo" height="50">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.unistra.fr">
+                <img src="../../_/img/logo-unistra.png" alt="Unistra logo" height="50">
+            </a>
+        </div>
+        <span style="font-size: 0.8rem; color: #9e9e9e">© 2025 <a href="https://www.cemosis.fr"
+                style="text-decoration: underline;">Cemosis</a>, Université de Strasbourg</span>
+    </div>
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+
+
+<script async src="../../_/js/vendor/fontawesome-icon-defs.js"></script>
+<script async src="../../_/js/vendor/fontawesome.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+
+
+<script type="text/javascript">
+function toggleFullScreen() {
+   var doc = window.document;
+   var docEl = doc.documentElement;
+
+   var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+   var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+   if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+       requestFullScreen.call(docEl);
+   }
+   else {
+       cancelFullScreen.call(doc);
+   }
+}
+</script>
+</body>
+</html>
