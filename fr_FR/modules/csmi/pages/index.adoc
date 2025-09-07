@@ -19,11 +19,11 @@ Le Master CSMI est une formation de haut niveau en mathématiques appliquées et
 [discret]
 --
 [.grid.has-emblems]
-[.emblem]#Intelligence artificielle (IA)#:: Embarquez pour un voyage  avec notre parcours de master en mathématiques appliquées et en informatique, où des cours d'IA de pointe tels que l'apprentissage scientifique de la machine (SciML) vous dotent des compétences indispensables pour relever les défis du monde réel.
+[.emblem]#Intelligence artificielle (IA)#:: Le parcours propose des enseignements avancés en apprentissage automatique, *Scientific Machine Learning (SciML)*, optimisation, modèles génératifs et fiabilité des modèles. L'objectif est de doter l'étudiant(e) de bases théoriques solides et de compétences méthodologiques directement mobilisables en innovation et recherche appliquée.
 +
 image::en:csmi:img-ia.jpeg[width=100%,align="center"]
 
-[.emblem]#Modélisation, Simulation, Optimisation (MSO)#:: Explorez le domaine de la modélisation, de la simulation et de l'optimisation avec notre filière de master, où des cours tels que les méthodes numériques pour les équations différentielles partielles et le contrôle de l'optimisation fournissent une base académique solide, vous équipant de compétences informatiques pour relever les défis du monde réel.
+[.emblem]#Modélisation, Simulation, Optimisation (MSO)#:: Le parcours MSO couvre l'analyse numérique des EDP, la modélisation mathématique, la simulation scientifique haute performance et l'optimisation (contrôle optimal, optimisation numérique). Il fournit une base rigoureuse pour l'ingénierie computationnelle et les applications industrielles complexes.
 +
 [.center.related thumb]
 image::en:csmi:img-mso.jpeg[width=100%,align="center"]
@@ -32,11 +32,11 @@ image::en:csmi:img-mso.jpeg[width=100%,align="center"]
 [discret]
 --
 [.grid.has-emblems]
-[.emblem]#Apprentissage par projets#:: Embarquez pour un voyage d'apprentissage pratique avec notre master, où certains cours basés sur des projets, y compris des collaborations avec l'industrie et la recherche universitaire, fournissent un programme d'études pratique, vous dotant de compétences de résolution de problèmes du monde réel, et vous préparant à la réussite académique et professionnelle dans un environnement d'apprentissage collaboratif et appliqué.
+[.emblem]#Apprentissage par projets#:: Plusieurs unités d'enseignement sont structurées autour de projets encadrés (académiques ou partenariats externes) favorisant gestion de projet, intégration d'outils numériques, collaboration interdisciplinaire et transfert vers des cas d'usage réels.
 +
 image::en:csmi:img-project.jpeg[width=100%,align="center"]
 
-[.emblem]#Calcul haute performance (HPC)#:: Découvrez dans notre filière de master le calcul de haute performance, où les cours sur MPI, OpenMP, GPU Computing, et Hybrid Computing vous donnent l'expertise nécessaire pour exploiter les ressources de calcul, conduisant à des percées dans les domaines à forte intensité de calcul et de données.
+[.emblem]#Calcul haute performance (HPC)#:: Enseignements sur architectures parallèles, MPI, OpenMP, calcul GPU, modèles hybrides, optimisation de performance et analyse de scalabilité pour concevoir et adapter des applications efficaces sur infrastructures modernes.
 +
 image::en:csmi:img-hpc.jpeg[width=100%,align="center"]
 --
@@ -44,13 +44,13 @@ image::en:csmi:img-hpc.jpeg[width=100%,align="center"]
 [discret]
 --
 [.grid.has-emblems]
-[.emblem]#Traitement et fouille de données#:: Embarquez avec notre master pour découvrir le traitement, l'exploitation et la visualisation des données, où les cours d'analyse avancée et d'apprentissage automatique constituent une base académique solide, vous permettant d'acquérir les compétences nécessaires pour extraire des informations significatives à partir de vastes ensembles de données.
+[.emblem]#Traitement et fouille de données#:: Couvre préparation et qualité des données, statistiques avancées, apprentissage supervisé et non supervisé, fouille de motifs, interprétabilité et visualisation pour extraire, structurer et communiquer l'information pertinente.
 +
 [.center]
 image::en:csmi:img-dataproc.jpeg[width=100%,align="center"]
 
 
-[.emblem]#Traitement du signal et des images#:: Embarquez pour un voyage d'apprentissage avec notre filière de master en traitement des images et des signaux, où des cours sur mesure vous initient à l'analyse des données visuelles et auditives, vous permettant d'acquérir les compétences nécessaires pour transformer des données brutes en informations significatives.
+[.emblem]#Traitement du signal et des images#:: Aborde filtrage, analyse temps‑fréquence, segmentation, détection de formes, reconstruction, apprentissage profond pour signaux et images, avec applications en instrumentation, vision, imagerie scientifique et biomédicale.
 +
 image::en:csmi:img-imgproc.jpeg[width=100%,align="center"]
 --

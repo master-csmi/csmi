@@ -19,11 +19,11 @@ The Master CSMI is a top-ranking program in applied mathematics and computer sci
 [discrete]
 --
 [.grid.has-emblems]
-[.emblem]#Artificial intelligence (AI)#:: Embark on a journey with our master's track in Applied Mathematics and Computer Science, where cutting-edge AI courses like Scientific Machine Learning (SciML) equip you with the indispensable skills to tackle real-world challenges.
+[.emblem]#Artificial Intelligence (AI)#:: Advanced instruction in machine learning, *Scientific Machine Learning (SciML)*, optimization, generative models, and model reliability. Provides a solid theoretical core and methodological skills directly applicable to innovation and applied research.
 +
 image::img-ia.jpeg[width=100%,align="center"]
 
-[.emblem]#Modeling, Simulation, Optimization (MSO)#:: Explore the field of Modeling, Simulation, and Optimization with our master's track, where courses like Numerical Methods for Partial Differential Equations and Optimization Control provide a solid academic foundation, equipping you with computational skills to address real-world challenges.
+[.emblem]#Modeling, Simulation, Optimization (MSO)#:: Focus on numerical analysis of PDEs, mathematical modeling, scientific simulation, and optimization (optimal control & numerical optimization). Builds a rigorous foundation for computational engineering and complex industrial applications.
 +
 [.center.related thumb]
 image::img-mso.jpeg[width=100%,align="center"]
@@ -32,11 +32,11 @@ image::img-mso.jpeg[width=100%,align="center"]
 [discrete]
 --
 [.grid.has-emblems]
-[.emblem]#Project Based#:: Embark on a practical learning journey with our master's track, where some project-based courses, including collaborations with industry and academia, provide a hands-on curriculum, equipping you with real-world problem-solving skills, and preparing you for academic and professional success in a collaborative and applied learning environment.
+[.emblem]#Project-Based Learning#:: Several course units are structured around supervised projects (academic or external partnerships) fostering project management, integration of computational tools, interdisciplinary collaboration, and translation to real use cases.
 +
 image::img-project.jpeg[width=100%,align="center"]
 
-[.emblem]#High performance computing (HPC)#:: Discover in our master's track  High Performance Computing, where courses on MPI, OpenMP, GPU Computing, and Hybrid Computing equip you with the expertise to harness computational resources, driving breakthroughs in compute and data -intensive fields.
+[.emblem]#High Performance Computing (HPC)#:: Parallel architectures, MPI, OpenMP, GPU programming, hybrid models, performance optimisation and scalability analysis for designing efficient applications on modern platforms.
 +
 image::img-hpc.jpeg[width=100%,align="center"]
 --
@@ -44,13 +44,13 @@ image::img-hpc.jpeg[width=100%,align="center"]
 [discrete]
 --
 [.grid.has-emblems]
-[.emblem]#Data processing and mining#:: Embark on a journey with our master's track in Data Processing and Mining, where courses in advanced analytics and machine learning form a solid academic foundation, empowering you with the skills to extract meaningful insights from vast data sets.
+[.emblem]#Data Processing and Mining#:: Data preparation & quality, advanced statistics, supervised / unsupervised learning, pattern mining, interpretability and visual analytics to extract, structure, and communicate relevant information.
 +
 [.center]
 image::img-dataproc.jpeg[width=100%,align="center"]
 
 
-[.emblem]#Image and signal processing#:: Discover with our master's track  Image and Signal Processing, where tailored courses introduce you to visual and auditory data analysis, providing you with the skills to transform raw data into meaningful insights.
+[.emblem]#Image and Signal Processing#:: Filtering, time–frequency analysis, segmentation, pattern detection, reconstruction, deep learning for signals and images with applications in instrumentation, vision, scientific and biomedical imaging.
 +
 image::img-imgproc.jpeg[width=100%,align="center"]
 --
