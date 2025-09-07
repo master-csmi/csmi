@@ -5,15 +5,16 @@ ifdef::env-github,env-browser,env-vscode[:imagesprefix :]
 
 = Master CSMI : Calcul Scientifique et Mathématiques de l'Innovation {master-year}
 :navtitle : Home
-:page-role : home
+:page-role : ai-policy
 :page-layout : home
 
+[.lead.lead-75]
+Le Master CSMI est une formation de haut niveau en mathématiques appliquées et en informatique de l'Université de Strasbourg. 
 
 .Le Master CSMI en bref
 [.def#master-csmi:1]
 ****
-[.lead]
-Le Master CSMI est une formation de haut niveau en mathématiques appliquées et en informatique de l'Université de Strasbourg. 
+
 
 [discret]
 --

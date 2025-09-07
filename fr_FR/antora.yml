@@ -6,8 +6,8 @@ lang: fr_FR
 asciidoc: 
   attributes: 
     hide-uri-scheme: '' 
-    year: 2023
-    master-year: 2023-2024
+    year: 2025
+    master-year: 2025-2026
     pp: ++
     manager: Christophe Prud'homme <prudhomme@unistra.fr>
 nav:

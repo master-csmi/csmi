@@ -1,7 +1,7 @@
 site:
   title: Master CSMI
   url: https://master-csmi.github.io/csmi
-  start_page: en::index.adoc
+  start_page: fr::index.adoc
   keys:
     google_analytics: 'G-H3PWJ83ZVS'
   robots: |
