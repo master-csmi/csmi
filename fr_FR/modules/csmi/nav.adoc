@@ -6,5 +6,8 @@
 * xref:stages/index.adoc[Stages]
 ** xref:stages/guide.adoc[Guide du rapport de stage]
 * xref:outils.adoc[Outils Informatiques]
+* IA & Responsabilité
+** xref:ai-policy.adoc[Politique d'utilisation de l'IA]
+** xref:ai-agreement.adoc[Accord d'utilisation de l'IA]
 * xref:csmi-2024-2028/index.adoc[CSMI 2024-2028]
-** xref:csmi-2024-2028/summary.adoc[Summary]
+** xref:csmi-2024-2028/summary.adoc[Résumé]

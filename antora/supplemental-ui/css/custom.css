@@ -1,0 +1,110 @@
+/* Custom CSMI supplemental UI styles */
+
+.lead {
+  font-size: 1.18rem;
+  font-weight: 550;
+  line-height: 1.45;
+  background: linear-gradient(135deg,#fffdf5,#fff7d6);
+  border: 2px solid #f2c94c;
+  border-left:6px solid #f2b90c;
+  padding: 0.9rem 1.1rem 1rem;
+  margin: 1.1rem 0 1.4rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* Wider variant: spans full content width (removes inner side padding of article) */
+.lead.lead-wide {
+  margin-left: -1.25rem; /* matches default Antora content side padding */
+  margin-right: -1.25rem;
+  border-radius: 0;
+  padding-left: calc(1.25rem + 1rem);
+  padding-right: calc(1.25rem + 1rem);
+}
+
+/* Full-bleed variant: stretches to viewport edges for a hero banner effect */
+.lead.full-bleed {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  border-radius: 0;
+  padding-left: clamp(1rem,4vw,3rem);
+  padding-right: clamp(1rem,4vw,3rem);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Optional compact variant if used directly under a heading */
+.lead.compact { margin-top: .4rem; }
+
+/* Centered narrower variants */
+/* 75% width of content area, centered (falls back to full width on narrow screens) */
+.lead.lead-75 { max-width:75%; margin-left:auto; margin-right:auto; }
+@media (max-width: 900px) { .lead.lead-75 { max-width:100%; } }
+
+/* Reading width variant (approx line length 60ch) */
+.lead.reading-width { max-width:60ch; margin-left:auto; margin-right:auto; }
+@media (max-width: 900px) { .lead.reading-width { max-width:100%; } }
+
+/* Auto-apply 75% width to lead paragraph on AI policy & agreement pages using page role */
+body.article.docs-versioned.ai-policy #preamble .lead,
+body.article.docs-versioned.ai-agreement #preamble .lead {
+  max-width:75%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  /* Keep readability: light text on darker ochre panel */
+  .lead { background: linear-gradient(135deg,#3a3215,#4a3e19); border-color:#cfa421; border-left-color:#e0b52a; box-shadow:0 1px 4px rgba(0,0,0,0.5); color:#f7eac0; }
+  .lead a { color:#ffd866; text-decoration:underline; }
+  .lead a:hover { color:#ffe89a; }
+  .lead.full-bleed, .lead.lead-wide { box-shadow:0 2px 8px rgba(0,0,0,0.55); }
+  .hero-block, .hero-message { background: linear-gradient(135deg,#0c2333,#0f2d42); }
+  .standout { background: linear-gradient(90deg,#614f00,#876900); color:#f8f1cf; }
+  .ai-critical { background:#522; border-color:#d55; }
+  .doc-version { background:#20324a; }
+}
+
+.hero-block, .hero-message {
+  background: linear-gradient(135deg,#f5faff,#eef6ff);
+  border: 2px solid #1d70b8;
+  border-radius: 8px;
+  padding: 1.1rem 1.25rem;
+  margin: 1.25rem 0 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+.hero-block { border-left:6px solid #1d70b8; }
+.hero-message { border-left:6px solid #3e8ed0; }
+
+/* Inline standout highlight */
+.standout {
+  background: linear-gradient(90deg,#ffef9f,#ffe070);
+  padding: 0 .4em;
+  border-radius: 4px;
+  box-decoration-break: clone;
+}
+
+/* Emphasis for AI policy critical callouts */
+.ai-critical {
+  background:#ffe8e6;
+  border:2px solid #ff6b57;
+  border-radius:6px;
+  padding:0.9rem 1rem;
+  font-weight:500;
+}
+
+/* Tighten admonition spacing inside hero blocks */
+.hero-block .admonitionblock, .hero-message .admonitionblock {margin:0.75rem 0;}
+
+/* Badge-like version indicator (optional if inserted in header) */
+.doc-version {background:#eef3ff; padding:.15rem .55rem; border-radius:1rem; font-size:.75rem; letter-spacing:.5px; text-transform:uppercase;}
+
+/* Utility alignment helpers (optional future use) */
+.text-center { text-align:center; }
+.mt-0 { margin-top:0 !important; }
+.mb-0 { margin-bottom:0 !important; }
+

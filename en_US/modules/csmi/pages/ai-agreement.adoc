@@ -1,0 +1,112 @@
+= CSMI AI Usage Agreement - Student Acknowledgment Form
+:page-layout: versioned
+:page-role: ai-agreement
+:version: 2025-09-07
+:toc: left
+
+[.lead]
+This agreement confirms that the student understands and accepts the responsibilities, disclosure duties, and potential sanctions described in the CSMI AI Policy.
+
+== Student Information
+
+Name:: ________________________  
+Student ID:: ________________________  
+Academic Year:: 2025-2026  
+Program:: Master CSMI  
+
+== Agreement Statement
+
+I, the undersigned student, acknowledge that I have:
+
+:sectnums!:
+
+=== 1. Policy Understanding
+
+* [ ] **Read and understood** the complete CSMI AI Policy (current version listed above)  
+* [ ] **Reviewed** permitted / prohibited AI usage examples  
+* [ ] **Understood** mandatory disclosure requirements (AI Assistance Statement)
+
+=== 2. Commitment to Compliance
+* [ ] **Agree to follow** all guidelines in the AI Policy  
+* [ ] **Commit to disclosing** all AI assistance (tool, purpose, scope)  
+* [ ] **Maintain** a reproducibility / prompt log for substantial work  
+* [ ] **Accept responsibility** for accuracy, originality, licensing, and traceability
+
+=== 3. Confidentiality and Ethics
+* [ ] **Will not input** confidential, personal, embargoed, or proprietary data into external AI systems without authorization  
+* [ ] **Acknowledge** possible institutional / legal consequences of data misuse  
+* [ ] **Use** only tools whose data handling I understand (retention, training use)
+
+=== 4. Academic Integrity
+* [ ] **Acknowledge** that undisclosed or deceptive AI use = academic integrity violation  
+* [ ] **Understand** instructor may assign a **grade reduction up to 0** for undisclosed AI  
+* [ ] **Accept** that a **mandatory meeting** may be scheduled after detection  
+* [ ] **Will report** suspected serious misuse that compromises fairness
+
+=== 5. Ongoing Responsibility
+* [ ] **Track updates** to the AI Policy and adapt practice accordingly  
+* [ ] **Participate** in required AI literacy / integrity training  
+* [ ] **Apply** the most restrictive rule when course and program policies differ
+
+=== 6. Logging & Reproducibility
+* [ ] **Maintain** a structured prompt/interaction log (date • tool • model/version • purpose • scope) for major reports, theses, or large code contributions  
+* [ ] **Retain** log until final grading / defense is complete  
+* [ ] **Provide** log to instructor upon request as authorship evidence
+
+=== 7. Use Boundaries
+* [ ] **Use AI** for assistance (clarification, refactoring, exploratory drafts) not for final unedited production  
+* [ ] **Independently verify** every technical, mathematical, and bibliographic claim  
+* [ ] **Avoid** relying on AI-generated citations without checking primary sources
+
+=== 8. Consequences Acknowledgment
+* [ ] **Understand** first undisclosed use may trigger: grade lowered (possibly to 0) + mandatory policy review meeting  
+* [ ] **Recognize** repeat / aggravated cases may escalate to formal integrity processes  
+* [ ] **Accept** severe misconduct (fabrication, large undisclosed AI drafting, confidential data leakage) may lead to course failure recommendations / disciplinary referral
+
+=== 9. Appeal & Clarification
+* [ ] **Aware** I may request clarification and present my log to contest an AI misuse determination  
+* [ ] **Prepared** to explain code passages, derivations, or text sections orally if questioned
+
+=== 10. Instructor Interaction
+* [ ] **Will cooperate** promptly with any inquiry about AI usage  
+* [ ] **Will update** disclosure if omissions are identified in good faith
+
+== Specific Course Acknowledgments
+
+I understand that individual courses may have additional or more restrictive AI policies, and I agree to:
+
+* [ ] **Review** course-specific AI guidelines at the beginning of each semester  
+* [ ] **Ask for clarification** when AI usage guidelines are unclear  
+* [ ] **Follow** the most restrictive policy when there are conflicts
+
+== Digital Signature
+
+Student Signature:: ________________________  
+Date:: ________________________  
+Electronic Acknowledgment:: +
+* [ ] I confirm this agreement electronically
+
+== For University Records
+
+Faculty Witness:: ________________________  
+Date Received:: ________________________  
+Academic Integrity Office:: ________________________  
+
+---
+
+NOTE: This agreement is valid for the 2025-2026 academic year (version: 2025-09-07) and must be renewed if the policy materially changes.
+
+== Instructions for Submission
+
+1. **Complete all sections** of this form
+2. **Submit electronically** via the university LMS or academic integrity portal
+3. **Keep a copy** for your records
+4. **Contact Student Services** if you have questions about any part of this agreement
+
+== Policy Reference
+
+The complete AI Usage Policy is available at:
+
+* **English**: xref:ai-policy.adoc[CSMI AI Usage Policy]
+* **Français**: link:../fr_FR/ai-policy.adoc[Politique d'utilisation de l'IA CSMI]
+

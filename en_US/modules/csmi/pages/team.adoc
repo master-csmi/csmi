@@ -58,7 +58,7 @@ Manager: {manager}
 | Networks | Pierre DAVID | 28h CI
 | Compilation | Bérenger BRAMAS | 28h CI
 | Incertitudes | Michel DUPREZ & Frédéric BERTRAND | 28h CI
-| Christophe PRUD'HOMME & Joubine Aghili | 28h CI
+| Project (S3) | Christophe PRUD'HOMME & Joubine Aghili | 28h CI
 |=== 
 
 [emblem]#Semester 4#::

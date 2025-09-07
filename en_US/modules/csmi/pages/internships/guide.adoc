@@ -203,7 +203,7 @@ audience. Remember that the members of the jury may already have a dozen present
 
 
 [bibliography]
-= References
+== References
 
 - J. André. J. André. Petites leçons de typographie. Technical report, IRISA, 1990. btn:[http://jacques-andre.fr/faqtypo/lessons.pdf[> Website]].
 - [[[SavoirsCDI]]] Savoirs CDI. Citing sources and presenting a bibliography, 2016. btn:[https://www.reseau-canope.fr/savoirscdi/centre-de-ressources/fonds-documentaire-acquisition-traitement/le-traitement-documentaire/citer-ses-sources-et-presenter-une-bibliographie-lycee.html[> Website]]

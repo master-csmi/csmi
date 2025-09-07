@@ -1,0 +1,199 @@
+= Politique d'utilisation de l'IA CSMI
+:page-layout: versioned
+:page-role: ai-policy
+:version: 2025-09-07
+:toc: left
+
+[.lead]
+Les étudiant(e)s peuvent utiliser des outils d'Intelligence Artificielle (IA) pour assister l'écriture, le code, le tri bibliographique ou l'analyse exploratoire.
+Dans tous les cas, l'usage DOIT être explicitement divulgué et correctement cité (voir ci‑dessous).
+
+[IMPORTANT]
+====
+Les outils IA sont des assistants, pas des auteur(e)s.
+
+Vous DEVEZ :
+
+* Vérifier chaque énoncé, équation, fragment de code, description de figure et citation généré par IA.
+* Citer les sources scientifiques / techniques originales (la sortie IA n'est jamais une source primaire).
+* Tenir un journal de reproductibilité (outil, modèle/version, date, objectif, résumé du prompt).
+* Garantir que la formulation finale, la structure et les affirmations scientifiques sont votre propre travail.
+
+Vous NE DEVEZ PAS :
+
+* Soumettre du contenu généré par IA sans divulgation.
+* Coller des données confidentielles, personnelles, sous embargo ou d'examen dans des services IA externes.
+* Considérer les suggestions IA comme autorité sans validation indépendante.
+
+La responsabilité reste entièrement à la charge de l'étudiant / des auteurs pour la justesse, l'originalité, les licences et l'intégrité académique.
+====
+
+== Assistance IA et Références
+
+Vous pouvez ajouter une section dédiée dans vos rapports (recommandé pour tout usage non trivial) :
+
+[source,asciidoc]
+----
+== Déclaration d'assistance IA
+
+Certaines parties de ce travail ont été préparées avec l'assistance d'outils d'Intelligence Artificielle (IA).
+Les outils suivants ont été utilisés (toutes les sorties ont été relues, validées et adaptées par les auteurs) :
+
+* ChatGPT (OpenAI, famille GPT‑4) – rédaction préliminaire et clarification de formulation.
+* GitHub Copilot (GitHub/Microsoft, 2025) – complétion de code inline pour C++ et Python (accélération de boilerplate non original uniquement).
+* Claude 3.5 Sonnet (Anthropic) – synthèse de documents de contexte.
+* Codestral 0.3 (Mistral AI) – suggestions de refactorisation de code et structuration.
+* Gemini 1.5 Pro (Google) – raisonnement multimodal (texte + interprétation de figures).
+
+Tout contenu assisté par IA a été vérifié indépendamment pour sa justesse factuelle, réécrit si nécessaire et intégré à l'analyse originale. Les auteurs assument l'entière responsabilité de l'exactitude, de l'originalité et de l'attribution correcte.
+----
+
+Ou en LaTeX :
+
+[source,latex]
+----
+\section*{Déclaration d'assistance IA}
+
+Certaines parties de ce travail ont été préparées avec l'assistance d'outils d'Intelligence Artificielle (IA). Les outils suivants ont été utilisés (toutes les sorties vérifiées, révisées et intégrées de manière responsable par les auteurs) :
+
+\begin{itemize}
+  \item ChatGPT (OpenAI, familles GPT-4/5) – affinage linguistique et courts brouillons explicatifs.
+  \item GitHub Copilot (GitHub/Microsoft, 2025) – suggestions de code inline (seulement boilerplate non novateur) pour C++/Python.
+  \item Claude 3.5/4 Sonnet (Anthropic) – condensation de notes de contexte.
+  \item Codestral 0.3 (Mistral AI) – refactorisation et indices structurels de code.
+  \item Gemini 1.5 Pro (Google) – support de raisonnement multimodal.
+\end{itemize}
+
+Toutes les sorties IA ont été \textbf{vérifiées, adaptées et corrigées par les auteurs}. Les auteurs acceptent la pleine responsabilité de la justesse, de l'originalité et de l'intégrité scientifique de ce travail.
+----
+
+Pour citer correctement des outils IA, importez le fichier BibTeX du dépôt (`ai-tools.bib`) dans votre gestionnaire de références (Zotero, JabRef, Overleaf, etc.) et citez-les comme toute entrée `@software`. Enregistrez toujours une *date d'accès* pour les modèles hébergés.
+
+[TIP]
+====
+Maintenez un simple journal (CSV / Markdown) avec les colonnes : *date*, *outil*, *modèle/version*, *but*, *résumé du prompt / portée fichier*. Cela renforce la reproductibilité et clarifie l'attribution.
+====
+
+[source,bibtex]
+----
+@software{openai_chatgpt_2025,
+  author    = {OpenAI},
+  title     = {ChatGPT},
+  year      = {2025},
+  version   = {GPT-4 family},
+  url       = {https://chat.openai.com},
+  urldate   = {2025-09-07},
+  note      = {Conversational large language model assistant}
+}
+
+@software{anthropic_claude_2025,
+  author    = {Anthropic},
+  title     = {Claude 3.5 Sonnet},
+  year      = {2025},
+  version   = {Release August 2025},
+  url       = {https://claude.ai},
+  urldate   = {2025-09-07},
+  note      = {Large language model assistant}
+}
+
+@software{mistral_codestral_2025,
+  author    = {Mistral AI},
+  title     = {Codestral},
+  year      = {2025},
+  version   = {0.3},
+  url       = {https://mistral.ai},
+  urldate   = {2025-09-07},
+  note      = {Code-focused large language model}
+}
+
+@software{github_copilot_2025,
+  author    = {GitHub},
+  title     = {GitHub Copilot},
+  year      = {2025},
+  url       = {https://copilot.github.com},
+  urldate   = {2025-09-07},
+  note      = {AI pair-programming assistant}
+}
+
+@software{google_gemini_2025,
+  author    = {Google},
+  title     = {Gemini 1.5 Pro},
+  year      = {2025},
+  version   = {1.5 Pro},
+  url       = {https://gemini.google.com},
+  urldate   = {2025-09-07},
+  note      = {Multimodal large language model}
+}
+----
+
+[WARNING]
+====
+Ne citez pas des outils IA comme preuves de résultats scientifiques. Revenez toujours aux publications évaluées par les pairs, normes ou jeux de données autoritatifs.
+====
+
+== Application & Conséquences
+
+[IMPORTANT]
+====
+Un usage non divulgué ou inapproprié de l'IA est traité comme un problème d'intégrité académique.
+====
+
+:sectnums!:
+
+=== 1. Assistance IA non divulguée (Détection sans divulgation)
+Si un enseignant ou évaluateur détermine que l'IA a été utilisée sans divulgation :
+
+* Ajustement de la note à la discrétion de l'enseignant, jusqu'à **0** pour le travail concerné.
+* Réunion obligatoire avec l'étudiant pour revoir cette politique et les attentes.
+* Note écrite interne pouvant être ajoutée au dossier pour surveillance (pas une sanction disciplinaire formelle à la première occurrence sauf gravité).
+
+=== 2. Violations répétées ou aggravées
+Déclenchées par : usage non divulgué répété, journaux falsifiés, ou usage après interdiction explicite dans un devoir.
+
+Actions supplémentaires possibles :
+
+* Rapport formel d'intégrité académique.
+* Pénalité de note sur un composant du cours (ex : réduction pondération projet / examen).
+* Perte d'éligibilité à certains sujets de projet ou recommandations de stage.
+
+=== 3. Fautes graves
+Exemples : soumission d'un travail majoritairement généré par IA comme original, génération ou fabrication de données/résultats, usurpation, ou partage de données confidentielles avec des systèmes IA externes.
+
+Escalade possible :
+
+* Procédure disciplinaire formelle selon le code d'intégrité académique.
+* Recommandation d'échec au cours.
+* Information de l'organisme d'accueil de stage (si la violation implique du matériel de stage).
+
+=== 4. Erreurs de bonne foi
+Si l'étudiant a divulgué l'usage IA mais que l'étendue est floue ou que le format/journal est incomplet :
+
+* Correction demandée (réviser la divulgation / ajouter détails manquants).
+* Pas de pénalité de note si correction rapide et absence d'intention de tromper.
+
+=== 5. Appels
+L'étudiant peut contester une détermination en :
+
+1. Demandant des clarifications à l'enseignant.
+2. Fournissant son journal de reproductibilité / prompts.
+3. Démontrant l'attribution en expliquant ou re‑dérivant les sections en question en direct.
+
+=== 6. Responsabilités des enseignant(e)s
+Les enseignant(e)s appliquant des sanctions doivent :
+
+* Documenter la justification (indicateurs : uniformité linguistique, schémas d'erreurs improbables, stylométrie de code, etc.).
+* Offrir à l'étudiant une possibilité de réponse.
+* Appliquer des sanctions proportionnées et cohérentes avec cette section.
+
+=== 7. Pratiques recommandées pour les étudiants
+
+* Tenir un journal incrémental prompt/réponse (date, outil, résumé objectif).
+* Utiliser l'IA pour la transformation et la clarification, pas la rédaction finale.
+* Paraphraser et annoter régulièrement les suggestions IA pendant l'apprentissage.
+
+== Références
+
+* UNESCO – Guide sur l'IA générative dans l'éducation et la recherche (EN) : https://unesdoc.unesco.org/ark:/48223/pf0000386693/PDF/386693eng.pdf.multi[> PDF version anglaise]
+* CNIL – Guide pour les enseignants sur l'usage de l'IA (FR) : https://www.cnil.fr/fr/enseignant-usage-systeme-ia[> Guide IA enseignants]
+* Ministère de l'Éducation (FR) : https://www.education.gouv.fr/cadre-d-usage-de-l-ia-en-education-450647[> Cadre d'usage de l'IA en éducation]
+* Ministère de l'Enseignement supérieur et de la Recherche (FR) : https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-07/rapport-intelligence-artificielle-et-enseignement-sup-rieur-formation-structuration-et-appropriation-par-la-soci-t--37540.pdf[> Rapport complet (PDF)]

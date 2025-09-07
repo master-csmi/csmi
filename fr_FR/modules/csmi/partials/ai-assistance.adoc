@@ -1,3 +1,6 @@
+= AI policy excerpt 
+version: 2025-09-07
+
 Les étudiants peuvent utiliser des outils d’Intelligence Artificielle (IA) pour la rédaction, la programmation ou la recherche.
 Dans ce cas, ils doivent **clairement les mentionner et les citer**.
 
@@ -16,10 +19,11 @@ Vous pouvez ajouter une section dédiée dans vos rendus :
 Certaines parties de ce travail ont été préparées avec l’aide d’outils d’Intelligence Artificielle (IA).
 Les outils utilisés sont les suivants :
 
-* ChatGPT (OpenAI, GPT-5, consulté le 24 août 2025) pour la rédaction et les explications.
+* ChatGPT (OpenAI, GPT-4, 2025) pour la rédaction et les explications.
 * GitHub Copilot (Microsoft, 2025) pour les suggestions de code en C++/Python.
 * Claude (Anthropic, 2025) pour la synthèse de textes.
 * Codestral (Mistral AI, 2025) pour la génération et le refactoring de code.
+* Google Gemini (Google, 2025) pour l'analyse multimodale et le raisonnement.
 
 Tous les éléments générés ont été vérifiés et adaptés par les auteurs, qui en assument l’entière responsabilité.
 ----
@@ -34,10 +38,11 @@ Certaines parties de ce travail ont été préparées avec l’aide d’outils d
 Parmi ceux-ci :
 
 \begin{itemize}
-  \item ChatGPT (OpenAI, GPT-5, consulté le 24 août 2025) pour la rédaction et les explications.
+  \item ChatGPT (OpenAI, GPT-4, 2025) pour la rédaction et les explications.
   \item GitHub Copilot (Microsoft, 2025) pour les suggestions de code en C++/Python.
   \item Claude (Anthropic, 2025) pour la synthèse de textes.
   \item Codestral (Mistral AI, 2025) pour la génération et le refactoring de code.
+  \item Google Gemini (Google, 2025) pour l'analyse multimodale et le raisonnement.
 \end{itemize}
 
 Tous les contenus générés ont été vérifiés et adaptés par les auteurs, qui en assument l’entière responsabilité.
@@ -50,14 +55,14 @@ Pour citer correctement les outils IA, importez le fichier BibTeX (`ai-tools.bib
   author       = {OpenAI},
   title        = {ChatGPT},
   year         = {2025},
-  version      = {Version du 24 août},
+  version      = {GPT-4 et GPT-5},
   url          = {https://chat.openai.com},
-  note         = {Modèle de langage; consulté 2025-08-24}
+  note         = {Modèle de langage}
 }
 
 @software{anthropic_claude_2025,
   author       = {Anthropic},
-  title        = {Claude 3.5},
+  title        = {Claude 3.5 Sonnet},
   year         = {2025},
   version      = {août 2025},
   url          = {https://claude.ai},
@@ -70,15 +75,23 @@ Pour citer correctement les outils IA, importez le fichier BibTeX (`ai-tools.bib
   year         = {2025},
   version      = {0.3},
   url          = {https://mistral.ai},
-  note         = {Modèle open-weight}
+  note         = {Modèle open-weight pour le code}
 }
 
 @software{github_copilot_2025,
   author       = {GitHub},
   title        = {GitHub Copilot},
   year         = {2025},
-  version      = {Extension VS Code v1.185},
   url          = {https://copilot.github.com},
   note         = {Outil de complétion IA}
+}
+
+@software{google_gemini_2025,
+  author       = {Google},
+  title        = {Gemini},
+  year         = {2025},
+  version      = {Gemini 1.5 Pro},
+  url          = {https://gemini.google.com},
+  note         = {Modèle de langage avec capacités multimodales}
 }
 ----

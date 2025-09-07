@@ -198,7 +198,7 @@ auditoire. Pensez que les membres du jury ont déjà peut-être une dizaine de p
 
 
 [bibliography]
-= Références
+== Références
 
 - [[[JAndre]]] J. André. Petites leçons de typographie. Technical report, IRISA, 1990. btn:[http://jacques-andre.fr/faqtypo/lessons.pdf[> Site Web]].
 - [[[SavoirsCDI]]] Savoirs CDI. Citer ses sources et présenter une bibliographie, 2016. btn:[https://www.reseau-canope.fr/savoirscdi/centre-de-ressources/fonds-documentaire-acquisition-traitement/le-traitement-documentaire/citer-ses-sources-et-presenter-une-bibliographie-lycee.html[> Site Web]]

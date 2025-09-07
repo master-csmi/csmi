@@ -2,7 +2,8 @@
 Christophe Prud'homme (resp. CSMI) - 2015-11-03
 :toc: macro
 
-image:extracted-media/media/image4.png[scientific-computing-1.png,width=645,height=645]
+// image4.png missing; reuse image1 as placeholder
+image:extracted-media/media/image1.png[scientific-computing,width=645,height=645]
 
 
 == 1 Description 

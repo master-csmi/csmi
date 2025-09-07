@@ -1,0 +1,111 @@
+:page-layout: versioned
+= Accord d'utilisation de l'IA CSMI - Formulaire de reconnaissance étudiant
+:page-role: ai-agreement
+:version: 2025-09-07
+:toc: left
+
+[.lead]
+Ce formulaire confirme que l'étudiant(e) comprend et accepte les responsabilités, obligations de divulgation et sanctions potentielles décrites dans la Politique IA CSMI.
+
+== Informations étudiant
+
+Nom:: ________________________  
+Numéro étudiant:: ________________________  
+Année académique:: 2025-2026  
+Programme:: Master CSMI  
+
+== Déclaration d'accord
+
+Moi, étudiant(e) soussigné(e), reconnais que j'ai :
+
+:sectnums!:
+
+=== 1. Compréhension de la politique
+
+* [ ] **Lu et compris** la Politique IA CSMI complète (version ci‑dessus)  
+* [ ] **Consulté** les exemples d'usages autorisés / interdits  
+* [ ] **Compris** les exigences de divulgation obligatoires (Déclaration d'assistance IA)
+
+=== 2. Engagement de conformité
+* [ ] **Accepte de suivre** toutes les directives de la Politique IA  
+* [ ] **M'engage à divulguer** toute assistance IA (outil, but, portée)  
+* [ ] **Tiendrai** un journal de reproductibilité / prompts pour les travaux substantiels  
+* [ ] **Assume** la responsabilité de l'exactitude, de l'originalité, des licences et de la traçabilité
+
+=== 3. Confidentialité & éthique
+* [ ] **N'entrerai pas** de données confidentielles, personnelles, sous embargo ou propriétaires dans des systèmes IA externes sans autorisation  
+* [ ] **Reconnais** les conséquences institutionnelles / légales d'un mauvais usage des données  
+* [ ] **Utilise** uniquement des outils dont je comprends le traitement (rétention, usage entraînement)
+
+=== 4. Intégrité académique
+* [ ] **Reconnais** que l'usage non divulgué ou trompeur = violation d'intégrité académique  
+* [ ] **Comprends** qu'une **réduction de note jusqu'à 0** peut être appliquée  
+* [ ] **Accepte** qu'une **réunion obligatoire** puisse être programmée après détection  
+* [ ] **Signalerai** les usages graves compromettant l'équité
+
+=== 5. Responsabilité continue
+* [ ] **Suivrai** les mises à jour de la Politique IA et adapterai mes pratiques  
+* [ ] **Participerai** aux formations exigées (littératie IA / intégrité)  
+* [ ] **Appliquerai** la règle la plus restrictive en cas de divergence cours / programme
+
+=== 6. Journalisation & Reproductibilité
+* [ ] **Maintiendrai** un journal structuré (date • outil • modèle/version • but • portée) pour rapports majeurs / mémoires / contributions code importantes  
+* [ ] **Conserverai** le journal jusqu'à la notation finale / soutenance  
+* [ ] **Fournirai** le journal à la demande comme preuve d'attribution
+
+=== 7. Limites d'usage
+* [ ] **Utiliserai l'IA** pour l'assistance (clarification, refactorisation, brouillons exploratoires) sans déléguer la production finale non relue  
+* [ ] **Vérifierai indépendamment** chaque affirmation technique, mathématique, bibliographique  
+* [ ] **Éviterai** d'utiliser des citations générées sans vérifier la source primaire
+
+=== 8. Reconnaissance des conséquences
+* [ ] **Comprends** qu'un premier usage non divulgué peut entraîner : note abaissée (jusqu'à 0) + réunion obligatoire  
+* [ ] **Prends acte** que les cas répétés / aggravés peuvent escalader vers des procédures formelles  
+* [ ] **Accepte** que faute grave (fabrication, rédaction massive non divulguée, fuite données confidentielles) puisse mener à recommandation d'échec / procédure disciplinaire
+
+=== 9. Appel & clarification
+* [ ] **Suis informé(e)** que je peux demander des clarifications et présenter mon journal pour contester  
+* [ ] **Préparé(e)** à expliquer oralement des passages de code, dérivations, ou sections de texte
+
+=== 10. Interaction avec l'enseignant
+* [ ] **Coopérerai** rapidement à toute enquête sur l'usage IA  
+* [ ] **Mettrai à jour** la divulgation si des omissions de bonne foi sont identifiées
+
+== Engagements spécifiques aux cours
+
+Je comprends que chaque cours peut ajouter des politiques IA supplémentaires ou plus restrictives, et j'accepte de :
+
+* [ ] **Examiner** les directives IA propres au cours en début de semestre  
+* [ ] **Demander clarification** quand les règles sont ambiguës  
+* [ ] **Suivre** la politique la plus restrictive en cas de conflit
+
+== Signature numérique
+
+Signature étudiant:: ________________________  
+Date:: ________________________  
+Accusé électronique:: +
+* [ ] Je confirme cet accord électroniquement
+
+== Pour les archives universitaires
+
+Témoin enseignant:: ________________________  
+Date de réception:: ________________________  
+Bureau intégrité académique:: ________________________  
+
+---
+
+NOTE: Cet accord est valable pour l'année académique 2025-2026 (version : 2025-09-07) et doit être renouvelé en cas de modification substantielle de la politique.
+
+== Instructions de soumission
+
+1. **Remplir toutes les sections** du formulaire
+2. **Soumettre électroniquement** via le LMS ou le portail d'intégrité académique
+3. **Conserver une copie** pour vos dossiers
+4. **Contacter les Services étudiants** pour toute question
+
+== Référence de la politique
+
+La Politique complète est disponible :
+
+* **Français** : xref:ai-policy.adoc[Politique d'utilisation de l'IA CSMI]
+* **Anglais** : link:../en_US/ai-policy.adoc[CSMI AI Usage Policy]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head defaultPageTitle='Untitled'}}
+</head>
+<body class="article docs-versioned{{#with (or page.attributes.role page.role)}} {{{this}}}{{/with}}">
+  {{> header}}
+  <div class="body">
+    {{> nav componentOrder=page.attributes.component-order}}
+    <main class="article">
+      <div class="toolbar" role="navigation">
+        <div class="toolbar-wrapper">
+          {{> nav-toggle}}
+        </div>
+      </div>
+      <header class="article-header">
+        <h1 class="page-title">{{{page.title}}}</h1>
+        <div class="doc-meta">
+          {{#if page.attributes.version}}
+            <span class="doc-version" title="Document version">Version: {{page.attributes.version}}</span>
+          {{else if page.component.version}}
+            <span class="doc-version" title="Component version">Version: {{page.component.version}}</span>
+          {{/if}}
+          {{#if page.attributes.revision}}
+            <span class="doc-revision">Rev: {{page.attributes.revision}}</span>
+          {{/if}}
+          {{#if page.attributes.last_updated}}
+            <span class="doc-updated">Updated: {{page.attributes.last_updated}}</span>
+          {{/if}}
+        </div>
+        {{#if page.attributes.page_description}}
+        <p class="page-description">{{page.attributes.page_description}}</p>
+        {{/if}}
+      </header>
+      <div class="content">
+        {{> article}}
+      </div>
+    </main>
+  </div>
+  {{> footer}}
+</body>
+</html>

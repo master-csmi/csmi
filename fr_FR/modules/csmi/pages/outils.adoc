@@ -8,7 +8,14 @@
 image::slack-icon.svg[width=100px]
 
 --
-Le Master CSMI utilise link:https://slack.com/intl/fr-fr/[Slack] pour la communication (promotions, projets, etc.).
+Le Master CSMI utilise link:https://slack.com/i[emblem]#GitHub Copilot#::
++
+image:en:csmi:img-copilot.svg[width=100px]
++
+* assistant dans l'IDE (VS Code / JetBrains)
+* complétion, explication contextuelle, génération de tests
+* gratuit/discount via GitHub Student Developer Pack
+****k] pour la communication (promotions, projets, etc.).
 
 Créez votre compte Slack avec votre email `@etu.unistra.fr` dès que vous le recevez.
 Vous recevrez une invitation au début de l’année.
@@ -40,15 +47,20 @@ Les canaux utilisés sont :
 [emblem]#Linux#::  
 +
 image:en:csmi:img-ubuntu.svg[width=100px] image:en:csmi:img-debian.svg[width=100px]
-+ télécharger link:https://ubuntu.com/download/...[Ubuntu 22.04 LTS] ou Debian 11 ou version ultérieure
++
+* télécharger link:https://ubuntu.com/download/desktop/thank-you?version=24.04.1&architecture=amd64[Ubuntu 24.04 LTS] ou Debian 13 ou version ultérieure
++
 [emblem]#Windows#::  
 +
 image:en:csmi:img-win.svg[width=100px]
-+ installez link:https://docs.microsoft.com/fr-fr/windows/wsl/install[WSL], puis Ubuntu ou Debian depuis le Microsoft Store
++
+* installez link:https://docs.microsoft.com/fr-fr/windows/wsl/install[WSL], puis Ubuntu ou Debian depuis le Microsoft Store
++
 [emblem]#Mac OS#::  
 +
 image:en:csmi:img-macos.svg[width=100px]
-+ installez link:https://brew.sh/index_fr[Homebrew], compatible Intel et ARM
++
+* installez link:https://brew.sh/index_fr[Homebrew], compatible Intel et ARM
 ****
 
 .Environnement de programmation
@@ -114,6 +126,14 @@ image:en:csmi:img-github-projects.svg[width=100px]
 +
 * link:https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects[GitHub Projects] : tableaux kanban avec Issues, PR et milestones  
 * idéal pour les projets de cours, intégré à Classroom et Actions
+
+[emblem]#Zotero#::
++
+image:en:csmi:img-zotero.svg[width=100px]
++
+* link:https://www.zotero.org/[Zotero] : gestionnaire de références, import web
+* export vers BibTeX compatible LaTeX
+* intégration avec Word, LibreOffice, et éditeurs LaTeX
 ****
 
 .Accès cloud et HPC
@@ -165,6 +185,14 @@ image:en:csmi:img-mistral.svg[width=100px]
 +
 * modèles open-source (Codestral, Mixtral), bons en code
 * accessibles via link:https://lechat.mistral.ai/[LeChat] ou link:https://mistral.ai/[Mistral AI]
+
+[emblem]#Google Gemini#::
++
+image:en:csmi:img-gemini.svg[width=100px]
++
+* link:https://gemini.google.com/[Google Gemini] : modèle multimodal (texte, images, code)
+* intégré à l'écosystème Google (Drive, Docs, Gmail)
+* capacités avancées de raisonnement et d'analyse
 
 [emblem]#GitHub Copilot#::
 +

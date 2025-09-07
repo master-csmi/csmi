@@ -1,3 +1,10 @@
+= CSMI AI Policy
+:page-layout: versioned
+:page-role: ai-policy
+:version: 2025-09-07
+:toc: left
+
+[.lead]
 Students may use Artificial Intelligence (AI) tools to support writing, coding, literature triage, or exploratory analysis.
 In all cases, usage MUST be explicitly disclosed and properly cited (see below).
 
@@ -21,6 +28,8 @@ You MUST NOT:
 Responsibility remains entirely with the student/authors for correctness, originality, licensing, and academic integrity.
 ====
 
+== AI Assistance and References
+
 You may add a dedicated section in your reports (recommended for any non-trivial use):
 
 [source,asciidoc]
@@ -30,11 +39,11 @@ You may add a dedicated section in your reports (recommended for any non-trivial
 Some parts of this work were prepared with the assistance of Artificial Intelligence (AI) tools.
 The following tools were used (all outputs reviewed, validated, and adapted by the authors):
 
-* ChatGPT (OpenAI, GPT‑4 family, accessed 2025-09-07) – preliminary drafting and clarification of wording.
+* ChatGPT (OpenAI, GPT‑4 family) – preliminary drafting and clarification of wording.
 * GitHub Copilot (GitHub/Microsoft, 2025) – inline code completion for C++ and Python (non-original boilerplate acceleration only).
-* Claude 3.5 Sonnet (Anthropic, accessed 2025-09-07) – summarisation of background materials.
-* Codestral 0.3 (Mistral AI, accessed 2025-09-07) – code refactoring suggestions and templated scaffolding.
-* Gemini 1.5 Pro (Google, accessed 2025-09-07) – multimodal reasoning (text + figure interpretation assistance).
+* Claude 3.5 Sonnet (Anthropic) – summarisation of background materials.
+* Codestral 0.3 (Mistral AI) – code refactoring suggestions and templated scaffolding.
+* Gemini 1.5 Pro (Google) – multimodal reasoning (text + figure interpretation assistance).
 
 All AI-assisted content was independently checked for factual correctness, re-written where necessary, and integrated with original analysis. The authors take full responsibility for accuracy, originality, and proper attribution.
 ----
@@ -48,11 +57,11 @@ Or in LaTeX:
 Some parts of this work were prepared with the assistance of Artificial Intelligence (AI) tools. The following were used (all outputs verified, revised, and integrated responsibly by the authors):
 
 \begin{itemize}
-  \item ChatGPT (OpenAI, GPT-4 family, accessed 2025-09-07) – linguistic refinement and short explanatory drafts.
+  \item ChatGPT (OpenAI, GPT-4/5 family) – linguistic refinement and short explanatory drafts.
   \item GitHub Copilot (GitHub/Microsoft, 2025) – inline code suggestions (non-novel boilerplate only) for C++/Python.
-  \item Claude 3.5 Sonnet (Anthropic, accessed 2025-09-07) – condensation of background notes.
-  \item Codestral 0.3 (Mistral AI, accessed 2025-09-07) – refactoring and structural code hints.
-  \item Gemini 1.5 Pro (Google, accessed 2025-09-07) – multimodal reasoning support.
+  \item Claude 3.5/4 Sonnet (Anthropic) – condensation of background notes.
+  \item Codestral 0.3 (Mistral AI) – refactoring and structural code hints.
+  \item Gemini 1.5 Pro (Google) – multimodal reasoning support.
 \end{itemize}
 
 All AI outputs were \textbf{verified, adapted, and corrected by the authors}. The authors accept full responsibility for the correctness, originality, and scholarly integrity of this work.
@@ -122,7 +131,71 @@ Maintain a simple log (CSV / Markdown) with columns: *date*, *tool*, *model/vers
 Do not cite AI tools as evidence for scientific results. Always trace claims back to peer‑reviewed literature, standards, or authoritative datasets.
 ====
 
-[TIP]
+
+== Enforcement & Consequences
+
+[IMPORTANT]
 ====
-If institutional policy changes, keep this partial updated and include a version tag in your reports (e.g. "AI policy excerpt version 2025-09-07").
+Undisclosed or improper AI use is treated as an academic integrity issue.
 ====
+
+:sectnums!:
+
+=== 1. Undisclosed AI Assistance (Detection Without Disclosure)
+If a teacher or reviewer determines that AI was used and not disclosed:
+
+* Grade adjustment at instructor discretion, up to assigning a **0** for the affected work.
+* Mandatory meeting with the student to review this policy and usage expectations.
+* Written note (internal) may be placed in academic record for repeat monitoring (not a formal disciplinary mark on first occurrence unless severe).
+
+=== 2. Repeat or Aggravated Violations
+Triggered by: repeated undisclosed use, falsified disclosure logs, or AI use after explicit prohibition in an assignment.
+
+Possible additional actions:
+
+* Formal academic integrity report.
+* Grade penalty on course component (e.g., project / exam weight reduction).
+* Loss of eligibility for certain project topics or internship recommendations.
+
+=== 3. Severe Misconduct
+Examples: submitting predominantly AI-generated work as original, generating or fabricating data/results, impersonation, or sharing confidential data with external AI systems.
+
+Escalation may include:
+
+* Formal disciplinary procedure under university academic integrity code.
+* Course failure recommendation.
+* Internship host notification (if breach involves host material).
+
+=== 4. Good-Faith Errors
+If the student disclosed AI use but the extent was unclear or formatting/log was incomplete:
+
+* Correction requested (revise disclosure / add missing log details).
+* No grade penalty if promptly corrected and no intent to mislead is evident.
+
+=== 5. Appeals
+Students may contest a determination by:
+
+1. Requesting clarification from the instructor.
+2. Providing their reproducibility / prompt log.
+3. Demonstrating authorship by explaining or re-deriving questionable sections live.
+
+=== 6. Instructor Responsibilities
+Instructors applying sanctions should:
+
+* Document rationale (what indicators suggested AI use: linguistic uniformity, improbable error patterns, code stylometry, etc.).
+* Offer the student an opportunity to respond.
+* Apply proportional sanctions consistent with this section.
+
+=== 7. Recommended Student Practices to Avoid Issues
+
+* Keep an incremental prompt/response log (date, tool, purpose summary).
+* Use AI for transformation and clarification, not for final drafting.
+* Regularly paraphrase and annotate AI suggestions while learning.
+
+
+== References
+
+* UNESCO - Guide to Generative AI in Education and Research (EN): https://unesdoc.unesco.org/ark:/48223/pf0000386693/PDF/386693eng.pdf.multi[> PDF english version]
+* CNIL - (FR): https://www.cnil.fr/fr/enseignant-usage-systeme-ia[> Guide for educators on AI usage] (in French)
+* Ministry of Education (FR): https://www.education.gouv.fr/cadre-d-usage-de-l-ia-en-education-450647[> Framework for the use of AI in education] (in French)
+* Ministry of Higher Education and Research (FR): https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-07/rapport-intelligence-artificielle-et-enseignement-sup-rieur-formation-structuration-et-appropriation-par-la-soci-t--37540.pdf[> Rapport complet(PDF, in French)]
