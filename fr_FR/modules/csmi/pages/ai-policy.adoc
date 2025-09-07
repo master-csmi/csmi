@@ -197,3 +197,4 @@ Les enseignant(e)s appliquant des sanctions doivent :
 * CNIL – Guide pour les enseignants sur l'usage de l'IA (FR) : https://www.cnil.fr/fr/enseignant-usage-systeme-ia[> Guide IA enseignants]
 * Ministère de l'Éducation (FR) : https://www.education.gouv.fr/cadre-d-usage-de-l-ia-en-education-450647[> Cadre d'usage de l'IA en éducation]
 * Ministère de l'Enseignement supérieur et de la Recherche (FR) : https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-07/rapport-intelligence-artificielle-et-enseignement-sup-rieur-formation-structuration-et-appropriation-par-la-soci-t--37540.pdf[> Rapport complet (PDF)]
+* UNISTRA: https://services-numeriques.unistra.fr/fileadmin/upload/Services_numeriques/Documents/Chartes/2025/Lignes_directrices_IA_-_2025.05.pdf[> Charte des bons usages numériques de l'Université (FR)]

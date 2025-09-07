@@ -45,7 +45,7 @@ I, the undersigned student, acknowledge that I have:
 
 === 5. Ongoing Responsibility
 * [ ] **Track updates** to the AI Policy and adapt practice accordingly  
-* [ ] **Participate** in required AI literacy / integrity training  
+* [ ] **Participate** in proposed AI literacy / integrity training  
 * [ ] **Apply** the most restrictive rule when course and program policies differ
 
 === 6. Logging & Reproducibility

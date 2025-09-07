@@ -199,3 +199,4 @@ Instructors applying sanctions should:
 * CNIL - (FR): https://www.cnil.fr/fr/enseignant-usage-systeme-ia[> Guide for educators on AI usage] (in French)
 * Ministry of Education (FR): https://www.education.gouv.fr/cadre-d-usage-de-l-ia-en-education-450647[> Framework for the use of AI in education] (in French)
 * Ministry of Higher Education and Research (FR): https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-07/rapport-intelligence-artificielle-et-enseignement-sup-rieur-formation-structuration-et-appropriation-par-la-soci-t--37540.pdf[> Rapport complet(PDF, in French)]
+* UNISTRA: https://services-numeriques.unistra.fr/fileadmin/upload/Services_numeriques/Documents/Chartes/2025/Lignes_directrices_IA_-_2025.05.pdf[> Charte des bons usages numériques de l'Université (FR)]

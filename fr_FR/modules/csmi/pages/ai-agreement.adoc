@@ -45,7 +45,7 @@ Moi, étudiant(e) soussigné(e), reconnais que j'ai :
 
 === 5. Responsabilité continue
 * [ ] **Suivrai** les mises à jour de la Politique IA et adapterai mes pratiques  
-* [ ] **Participerai** aux formations exigées (littératie IA / intégrité)  
+* [ ] **Participerai** aux formations proposées (littératie IA / intégrité)  
 * [ ] **Appliquerai** la règle la plus restrictive en cas de divergence cours / programme
 
 === 6. Journalisation & Reproductibilité
