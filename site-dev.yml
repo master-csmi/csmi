@@ -14,7 +14,8 @@ content:
     branches: main    
 ui:
   bundle:
-    url: https://gitlab.com/feelpp/antora-ui-default/-/jobs/artifacts/feelpp2/raw/build/ui-bundle.zip?job=bundle-dev
+    url: https://github.com/feelpp/antora-ui/releases/download/v0.45-rc.6/ui-bundle.zip  
+#    url: https://gitlab.com/feelpp/antora-ui-default/-/jobs/artifacts/feelpp2/raw/build/ui-bundle.zip?job=bundle-dev
     snapshot: true
 output:
   clean: true

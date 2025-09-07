@@ -33,7 +33,8 @@ content:
     branches: main    
 ui:
   bundle:
-    url: https://github.com/feelpp/antora-ui/releases/latest/download/ui-bundle.zip
+    url: https://github.com/feelpp/antora-ui/releases/download/v0.45-rc.6/ui-bundle.zip
+#    url: https://github.com/feelpp/antora-ui/releases/latest/download/ui-bundle.zip
     snapshot: true
   supplemental_files: ./antora/supplemental-ui
 output:
