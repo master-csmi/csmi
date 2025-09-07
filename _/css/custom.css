@@ -56,6 +56,16 @@ body.article.docs-versioned.ai-agreement #preamble .lead {
   margin-right:auto;
 }
 
+/* Match AI policy contrast style on home page lead */
+body.article.docs-home .lead {
+  background: linear-gradient(135deg,#3a3215,#4a3e19);
+  border:2px solid #cfa421;
+  border-left:6px solid #e0b52a;
+  color:#f7eac0;
+  box-shadow:0 1px 4px rgba(0,0,0,0.5);
+}
+body.article.docs-home .lead p { color:#f7eac0; }
+
 /* Dark mode adjustments */
 @media (prefers-color-scheme: dark) {
   /* Keep readability: light text on darker ochre panel */
