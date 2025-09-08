@@ -83,7 +83,8 @@ I understand that individual courses may have additional or more restrictive AI 
 
 Student Signature:: ________________________  
 Date:: ________________________  
-Electronic Acknowledgment:: +
+Electronic Acknowledgment:: 
++
 * [ ] I confirm this agreement electronically
 
 == For University Records

@@ -83,7 +83,8 @@ Je comprends que chaque cours peut ajouter des politiques IA supplémentaires ou
 
 Signature étudiant:: ________________________  
 Date:: ________________________  
-Accusé électronique:: +
+Accusé électronique:: 
++
 * [ ] Je confirme cet accord électroniquement
 
 == Pour les archives universitaires
