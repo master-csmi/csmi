@@ -1,4 +1,5 @@
 = Rapport de stages
+:stem: latexmath
 
 NOTE: Les indications ci-dessous sont tirés intégralement des https://gitlab.com/pdagog/ens[conseils pour faire un bon mémoire de stage de Pierre David] qui est enseignant de le Master CSMI et qui dirige le Master en Informatique SIRIS.
 
@@ -48,6 +49,7 @@ Cette section est **requise** pour tout projet manipulant des données.
 ====
 La *vérification* démontre la **justesse technique** (maths/numérique/logiciel) : implémentation correcte, expériences reproductibles, métriques calculées correctement.
 ====
+
 - *Stratégie* : tests unitaires/intégration, oracles simples, cas jouets, conservation d'invariants.
 - *Numérique* : études de convergence, sensibilité aux pas/maillages, stabilité, tolérances.
 - *Reproductibilité* : graine aléatoire, environnement (versions, conteneur), scripts d'expérience.
@@ -55,17 +57,166 @@ La *vérification* démontre la **justesse technique** (maths/numérique/logicie
 - *Comparatifs* : baseline(s) simples, ablations, profils HPC (si pertinent : temps noyau, scaling, IO).
 - *Traçabilité* : tableau récapitulatif des expériences (id, données, paramètres, métriques).
 
+==== Tests de convergence numérique
+[IMPORTANT]
+====
+Les tests de convergence sont **essentiels** pour valider l'implémentation d'algorithmes numériques. Ils démontrent que la méthode implémentée converge théoriquement.
+====
+
+**A. Convergence de maillage (méthodes à base d'éléments finis, différences finies)**
+
+Utiliser une *solution manufacturée* (Method of Manufactured Solutions - MMS) : partir d'une solution analytique connue stem:[u_{exact}(x,y)], calculer le terme source correspondant, puis vérifier que l'erreur numérique décroît selon l'ordre théorique.
+
+.Tableau — Test de convergence (solution manufacturée)
+[cols=">1,>1,>1,>1,>1,>1", options="header"]
+|===
+|h (taille maille) |DOF |stem:[‖u_h - u_{exact}‖_{L²}] |Ordre L² |stem:[‖u_h - u_{exact}‖_{H¹}] |Ordre H¹
+
+|0.1    |1024   |2.34e-3 |—    |1.87e-2 |—
+|0.05   |4096   |5.92e-4 |1.98 |9.45e-3 |0.98
+|0.025  |16384  |1.49e-4 |1.99 |4.73e-3 |1.00
+|0.0125 |65536  |3.74e-5 |1.99 |2.37e-3 |1.00
+|===
+[small]#Ordre = stem:[log(e_i/e_{i+1}) / log(h_i/h_{i+1})]. Éléments P1 ⇒ ordre théorique stem:[L²=2, H¹=1].#
+
+**B. Convergence d'algorithmes itératifs**
+
+Pour les solveurs, optimiseurs, méthodes de point fixe : montrer la décroissance du résidu/erreur.
+
+.Tableau — Convergence résidu (Newton-Raphson, GMRES, etc.)
+[cols=">1,>1,>1,>1", options="header"]
+|===
+|Itération |Résidu stem:[‖r‖] |Erreur stem:[‖e‖] |Taux
+
+|0  |1.0e+0  |—       |—
+|5  |3.2e-2  |8.1e-3  |—
+|10 |1.0e-4  |2.6e-5  |0.031
+|15 |3.2e-7  |8.2e-8  |0.032
+|20 |1.0e-9  |2.6e-10 |0.031
+|===
+[small]#Taux = stem:[‖r_{k+1}‖/‖r_k‖] (convergence linéaire si constant < 1).#
+
+**C. Convergence de loss (apprentissage automatique)**
+
+Montrer la décroissance des fonctions de coût (entraînement + validation) et la stabilisation des métriques.
+
+.Tableau — Évolution loss et métriques
+[cols=">1,>1,>1,>1,>1", options="header"]
+|===
+|Époque |Loss train |Loss val |Acc train |Acc val
+
+|1    |2.31  |2.28  |0.12  |0.15
+|10   |1.85  |1.92  |0.34  |0.31
+|50   |0.97  |1.18  |0.67  |0.59
+|100  |0.52  |0.94  |0.83  |0.71
+|200  |0.31  |0.87  |0.91  |0.74
+|===
+
+[source,python]
+----
+# Exemple : vérification convergence loss
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Charger logs d'entraînement
+epochs = [1, 10, 50, 100, 200]
+train_loss = [2.31, 1.85, 0.97, 0.52, 0.31]
+val_loss = [2.28, 1.92, 1.18, 0.94, 0.87]
+
+plt.figure(figsize=(10, 4))
+plt.subplot(1, 2, 1)
+plt.semilogy(epochs, train_loss, 'b-o', label='Train')
+plt.semilogy(epochs, val_loss, 'r-s', label='Val')
+plt.xlabel('Époque'); plt.ylabel('Loss'); plt.legend()
+plt.title('Convergence de la fonction de coût')
+
+# Vérifier absence d'overfitting
+plt.subplot(1, 2, 2)
+gap = np.array(train_loss) - np.array(val_loss)
+plt.plot(epochs, gap, 'g-^')
+plt.xlabel('Époque'); plt.ylabel('Gap train-val')
+plt.title('Écart train/validation')
+plt.tight_layout()
+----
+
+**D. Ordres de convergence théoriques (référence)**
+
+.Ordres attendus selon la méthode
+[cols="2,1,1,1", options="header"]
+|===
+|Méthode |Ordre spatial |Ordre temporel |Notes
+
+|Diff. finies centrées |p (schéma ordre p) |— |Stable si CFL < C
+|Éléments finis Pk |stem:[k+1] (L²), stem:[k] (H¹) |— |k = degré polynomial
+|Runge-Kutta ordre s |— |s |RK4 ⇒ ordre 4
+|Euler explicite |— |1 |Ordre minimal
+|Newton-Raphson |— |2 (quadratique) |Si stem:[x₀] assez proche
+|Gradient à pas fixe |— |Linéaire |Taux = stem:[1 - μ/L]
+|===
+
+**E. Script type pour test de convergence**
+
+[source,python]
+----
+#!/usr/bin/env python3
+# test_convergence.py
+import numpy as np
+import matplotlib.pyplot as plt
+
+def manufactured_solution(x, y):
+    """Solution exacte u = sin(πx)*sin(πy)"""
+    return np.sin(np.pi * x) * np.sin(np.pi * y)
+
+def source_term(x, y):
+    """Terme source f = -Δu = 2π²sin(πx)sin(πy)"""
+    return 2 * np.pi**2 * np.sin(np.pi * x) * np.sin(np.pi * y)
+
+def solve_poisson(h):
+    """Résout -Δu = f avec maillage de pas h"""
+    # Implémentation du solveur (DF, EF, etc.)
+    # Retourne u_h, erreur_L2, erreur_H1
+    pass
+
+# Test de convergence
+h_values = [0.1, 0.05, 0.025, 0.0125]
+errors_L2 = []
+errors_H1 = []
+
+for h in h_values:
+    u_h, err_L2, err_H1 = solve_poisson(h)
+    errors_L2.append(err_L2)
+    errors_H1.append(err_H1)
+    print(f"h={h:6.3f}, L2={err_L2:.2e}, H1={err_H1:.2e}")
+
+# Calcul des ordres
+orders_L2 = []
+orders_H1 = []
+for i in range(1, len(h_values)):
+    order_L2 = np.log(errors_L2[i-1]/errors_L2[i]) / np.log(h_values[i-1]/h_values[i])
+    order_H1 = np.log(errors_H1[i-1]/errors_H1[i]) / np.log(h_values[i-1]/h_values[i])
+    orders_L2.append(order_L2)
+    orders_H1.append(order_H1)
+    print(f"Ordre L2: {order_L2:.2f}, Ordre H1: {order_H1:.2f}")
+
+# Graphique
+plt.loglog(h_values, errors_L2, 'bo-', label='L² error')
+plt.loglog(h_values, errors_H1, 'rs-', label='H¹ error')
+plt.loglog(h_values, [h**2 for h in h_values], 'k--', label='h²')
+plt.loglog(h_values, h_values, 'k:', label='h')
+plt.xlabel('h'); plt.ylabel('Erreur'); plt.legend()
+plt.title('Test de convergence'); plt.grid(True)
+----
+
 [NOTE]
 ====
-Activez en tête du document : `:stem: latexmath`
 Formules utiles :
 [stem]
 ++++
 S(N) = T(1) / T(N), \quad E(N) = S(N)/N
 ++++
-- **S(N)**: speedup
-- **E(N)**: efficacité parallèle
-- **T(N)**: temps total avec N ressources (nœuds/GPUs)
+- **stem:[S(N)]**: speedup
+- **stem:[E(N)]**: efficacité parallèle
+- **stem:[T(N)]**: temps total avec N ressources (nœuds/GPUs)
 ====
 
 ==== Exemples de tableaux de performance (valeurs fictives)
@@ -77,14 +228,14 @@ Le travail est identique, on augmente les ressources.
 .Tableau A1 — Strong scaling (problème fixe)
 [cols="1,2,>1,>1,>1,>1,>1", options="header"]
 |===
-|Exp ID |Ressources (nœuds × CPU/GPU) |T_total (s) |Speedup S |Eff. E |Débit (it/s) |Mémoire (GB)
+|Exp ID |Ressources (nœuds × CPU/GPU) |stem:[T_{total}] (s) |Speedup S |Eff. E |Débit (it/s) |Mémoire (GB)
 
 |SS-01 |1×(32/0) |1200 |1.00 |1.00 |85  |56
 |SS-02 |2×(32/0) | 640 |1.88 |0.94 |160 |60
 |SS-03 |4×(32/0) | 340 |3.53 |0.88 |300 |68
 |SS-04 |8×(32/0) | 190 |6.32 |0.79 |520 |76
 |===
-[small]#S = T(1)/T(N), E = S/N. Indiquez aussi la version du code, le hash Git et l'image du conteneur.#
+[small]#stem:[S = T(1)/T(N), E = S/N]. Indiquez aussi la version du code, le hash Git et l'image du conteneur.#
 
 **B. Faible scalabilité (weak scaling) — charge par ressource constante**
 
@@ -93,14 +244,14 @@ On double ressources et taille du problème pour conserver la charge par unité.
 .Tableau B1 — Weak scaling (charge/device constante)
 [cols="1,2,>1,>1,>1,>1", options="header"]
 |===
-|Exp ID |Ressources |T_total (s) |Eff. faible E_w |Débit (unités/s) |Note
+|Exp ID |Ressources |stem:[T_{total}] (s) |Eff. faible stem:[E_w] |Débit (unités/s) |Note
 
 |WS-01 |1×(32/0) |300 |1.00 |3.2 |Baseline
 |WS-02 |2×(32/0) |310 |0.97 |6.3 |I/O commence à dominer
 |WS-03 |4×(32/0) |325 |0.92 |12.3|Synchro MPI plus coûteuse
 |WS-04 |8×(32/0) |360 |0.83 |24.8|Bande passante réseau limite
 |===
-[small]#E_w peut s'estimer via T(1)/T(N) (problème proportionnel).#
+[small]#stem:[E_w] peut s'estimer via stem:[T(1)/T(N)] (problème proportionnel).#
 
 **C. Scalabilité par taille de données**
 
@@ -109,7 +260,7 @@ Impact du volume de données sur temps, débit et métriques du modèle.
 .Tableau C1 — Data scaling (taille dataset ↑)
 [cols="1,>1,>1,>1,>1,>1", options="header"]
 |===
-|Taille données |T_total (min) |Débit (échant./s) |Acc./RMSE |Mémoire (GB) |Commentaire
+|Taille données |stem:[T_{total}] (min) |Débit (échant./s) |Acc./RMSE |Mémoire (GB) |Commentaire
 
 |10k  |12  |830  |Acc=0.89 |12 |Sous-apprentissage
 |100k |95  |1050 |Acc=0.92 |22 |Bon compromis
@@ -124,7 +275,7 @@ Montrer le compromis débit ↔ qualité ↔ mémoire.
 .Tableau D1 — Sensibilité (batch size, précision)
 [cols=">1,>1,>1,>1,>1,>1", options="header"]
 |===
-|Batch |Précision (float16/32) |T_total (min) |Débit (it/s) |Acc./F1 |Mémoire (GB)
+|Batch |Précision (float16/32) |stem:[T_{total}] (min) |Débit (it/s) |Acc./F1 |Mémoire (GB)
 
 |32  |fp32 |120 |12.5 |F1=0.88 |24
 |64  |fp32 |95  |17.6 |F1=0.88 |38
@@ -147,47 +298,50 @@ Montrer le compromis débit ↔ qualité ↔ mémoire.
 |Ressources |<nœuds × CPU/GPU, RAM, stockage>
 |Script |<chemin/job Slurm + options clés>
 |Paramètres |<batch, lr, tolérance, partitions, etc.>
-|Métriques |<T_total, débit, S, E, pic RAM, précision>
+|Métriques |<stem:[T_{total}], débit, S, E, pic RAM, précision>
 |Notes |<observations, goulets d'étranglement>
 |===
 
 .Modèle — Tableau Strong scaling (problème fixe)
 [cols="1,2,>1,>1,>1,>1,>1", options="header"]
 |===
-|Exp ID |Ressources |T_total (s) |Speedup S |Eff. E |Débit |Mémoire (GB)
+|Exp ID |Ressources |stem:[T_{total}] (s) |Speedup S |Eff. E |Débit |Mémoire (GB)
 |      |           |            |         |      |      |
 |===
 
 .Modèle — Tableau Weak scaling (charge constante)
 [cols="1,2,>1,>1,>1,>1", options="header"]
 |===
-|Exp ID |Ressources |T_total (s) |Eff. faible E_w |Débit |Note
+|Exp ID |Ressources |stem:[T_{total}] (s) |Eff. faible stem:[E_w] |Débit |Note
 |      |           |            |                |      |
 |===
 
 .Modèle — Tableau Data scaling
 [cols=">1,>1,>1,>1,>1,2", options="header"]
 |===
-|Taille données |T_total |Débit |Qualité |Mémoire |Commentaire
+|Taille données |stem:[T_{total}] |Débit |Qualité |Mémoire |Commentaire
 |              |        |      |        |        |
 |===
 
 [IMPORTANT]
 ====
-**Checklist d'instrumentation — Reproductibilité** :
-- Seed(s) fixés, `requirements.txt`/`environment.yml`, hash Git, digest d'image (ex. `sha256:`), checksum des données.
-- Scripts d'exécution versionnés (ex. `slurm/train.sbatch`), configuration logguée (YAML/MLflow/DVC).
+Checklist d'instrumentation — Reproductibilité::
++
+* Seed(s) fixés, `requirements.txt`/`environment.yml`, hash Git, digest d'image (ex. `sha256:`), checksum des données.
+* Scripts d'exécution versionnés (ex. `slurm/train.sbatch`), configuration logguée (YAML/MLflow/DVC).
 
-**Mesure** :
-- Temps : `/usr/bin/time -v`, `sacct -j <job> --format=...`.
-- CPU/mémoire : `vmstat`, `pidstat`, `free`, `perf stat`.
-- GPU : `nvidia-smi --query` (ou DCGM), échantillonnage régulier.
-- I/O : `iostat`, `sar`, compteurs FS/objet.
-- Réseau : métriques MPI (profilage), `ibstat`/`rdma`.
+Mesure::
++
+* Temps : `/usr/bin/time -v`, `sacct -j <job> --format=...`.
+* CPU/mémoire : `vmstat`, `pidstat`, `free`, `perf stat`.
+* GPU : `nvidia-smi --query` (ou DCGM), échantillonnage régulier.
+* I/O : `iostat`, `sar`, compteurs FS/objet.
+* Réseau : métriques MPI (profilage), `ibstat`/`rdma`.
 
-**Traçabilité** :
-- Tableau récapitulatif par expérience (ID, ressources, paramètres, métriques).
-- Graphiques : S(N), E(N), débit vs taille, qualité vs batch.
+Traçabilité::
++
+* Tableau récapitulatif par expérience (ID, ressources, paramètres, métriques).
+* Graphiques : stem:[S(N), E(N)], débit vs taille, qualité vs batch.
 ====
 
 === Validation — « Ai-je résolu le bon problème ? » (SI PERTINENT)
@@ -217,10 +371,10 @@ Cette annexe décrit un protocole minimal, reproductible et traçable pour véri
 
 ==== Principes
 - **Reproductibilité**: figer *code* (hash Git), *environnement* (image conteneur + digest), *données* (checksum), *config* (YAML), *seeds*.
-- **Mesure**: collecter `T_total`, débit, mémoire max, utilisation CPU/GPU, et ressources allouées.
+- **Mesure**: collecter stem:[T_{total}], débit, mémoire max, utilisation CPU/GPU, et ressources allouées.
 - **Scalabilité**:
-  - Strong scaling: problème fixe, ressources ↑ ⇒ [stem]++++S(N)=T(1)/T(N),\;E(N)=S(N)/N++++
-  - Weak scaling: charge par ressource ~constante ⇒ stabilité de [stem]++++T(N)++++ et du débit.
+  - Strong scaling: problème fixe, ressources ↑ ⇒ stem:[S(N)=T(1)/T(N),\;E(N)=S(N)/N]
+  - Weak scaling: charge par ressource ~constante ⇒ stabilité de stem:[T(N)] et du débit.
 
 ==== Organisation minimale du dépôt
 ----
