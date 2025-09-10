@@ -463,6 +463,345 @@ Mentionnez les technologies, frameworks et ressources (HPC, conteneurs, CI/CD) e
 </li>
 </ul>
 </div>
+<div class="sect3">
+<h4 id="_tests_de_convergence_numérique"><a class="anchor" href="#_tests_de_convergence_numérique"></a>2.5.1. Tests de convergence numérique</h4>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Les tests de convergence sont <strong>essentiels</strong> pour valider l&#8217;implémentation d&#8217;algorithmes numériques. Ils démontrent que la méthode implémentée converge théoriquement.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>A. Convergence de maillage (méthodes à base d&#8217;éléments finis, différences finies)</strong></p>
+</div>
+<div class="paragraph">
+<p>Utiliser une <strong>solution manufacturée</strong> (Method of Manufactured Solutions - MMS) : partir d&#8217;une solution analytique connue \(u_{exact}(x,y)\), calculer le terme source correspondant, puis vérifier que l&#8217;erreur numérique décroît selon l&#8217;ordre théorique.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Tableau — Test de convergence (solution manufacturée)</caption>
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">h (taille maille)</th>
+<th class="tableblock halign-right valign-top">DOF</th>
+<th class="tableblock halign-right valign-top">\(‖u_h - u_{exact}‖_{L²}\)</th>
+<th class="tableblock halign-right valign-top">Ordre L²</th>
+<th class="tableblock halign-right valign-top">\(‖u_h - u_{exact}‖_{H¹}\)</th>
+<th class="tableblock halign-right valign-top">Ordre H¹</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.1</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1024</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">2.34e-3</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">—</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1.87e-2</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">—</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.05</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">4096</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">5.92e-4</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1.98</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">9.45e-3</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.98</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.025</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">16384</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1.49e-4</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1.99</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">4.73e-3</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1.00</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.0125</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">65536</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">3.74e-5</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1.99</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">2.37e-3</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1.00</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><span class="small">Ordre = \(log(e_i/e_{i+1}) / log(h_i/h_{i+1})\). Éléments P1 ⇒ ordre théorique \(L²=2, H¹=1\).</span></p>
+</div>
+<div class="paragraph">
+<p><strong>B. Convergence d&#8217;algorithmes itératifs</strong></p>
+</div>
+<div class="paragraph">
+<p>Pour les solveurs, optimiseurs, méthodes de point fixe : montrer la décroissance du résidu/erreur.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Tableau — Convergence résidu (Newton-Raphson, GMRES, etc.)</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Itération</th>
+<th class="tableblock halign-right valign-top">Résidu \(‖r‖\)</th>
+<th class="tableblock halign-right valign-top">Erreur \(‖e‖\)</th>
+<th class="tableblock halign-right valign-top">Taux</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1.0e+0</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">—</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">—</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">3.2e-2</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">8.1e-3</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">—</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1.0e-4</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">2.6e-5</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.031</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">3.2e-7</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">8.2e-8</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.032</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">20</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1.0e-9</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">2.6e-10</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.031</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><span class="small">Taux = \(‖r_{k+1}‖/‖r_k‖\) (convergence linéaire si constant &lt; 1).</span></p>
+</div>
+<div class="paragraph">
+<p><strong>C. Convergence de loss (apprentissage automatique)</strong></p>
+</div>
+<div class="paragraph">
+<p>Montrer la décroissance des fonctions de coût (entraînement + validation) et la stabilisation des métriques.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Tableau — Évolution loss et métriques</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-right valign-top">Époque</th>
+<th class="tableblock halign-right valign-top">Loss train</th>
+<th class="tableblock halign-right valign-top">Loss val</th>
+<th class="tableblock halign-right valign-top">Acc train</th>
+<th class="tableblock halign-right valign-top">Acc val</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">2.31</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">2.28</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.12</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.15</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1.85</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1.92</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.34</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.31</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.97</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1.18</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.67</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.59</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">100</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.52</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.94</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.83</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.71</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock">200</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.31</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.87</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.91</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0.74</p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python"># Exemple : vérification convergence loss
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Charger logs d'entraînement
+epochs = [1, 10, 50, 100, 200]
+train_loss = [2.31, 1.85, 0.97, 0.52, 0.31]
+val_loss = [2.28, 1.92, 1.18, 0.94, 0.87]
+
+plt.figure(figsize=(10, 4))
+plt.subplot(1, 2, 1)
+plt.semilogy(epochs, train_loss, 'b-o', label='Train')
+plt.semilogy(epochs, val_loss, 'r-s', label='Val')
+plt.xlabel('Époque'); plt.ylabel('Loss'); plt.legend()
+plt.title('Convergence de la fonction de coût')
+
+# Vérifier absence d'overfitting
+plt.subplot(1, 2, 2)
+gap = np.array(train_loss) - np.array(val_loss)
+plt.plot(epochs, gap, 'g-^')
+plt.xlabel('Époque'); plt.ylabel('Gap train-val')
+plt.title('Écart train/validation')
+plt.tight_layout()</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>D. Ordres de convergence théoriques (référence)</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. Ordres attendus selon la méthode</caption>
+<colgroup>
+<col style="width: 40%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Méthode</th>
+<th class="tableblock halign-left valign-top">Ordre spatial</th>
+<th class="tableblock halign-left valign-top">Ordre temporel</th>
+<th class="tableblock halign-left valign-top">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diff. finies centrées</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">p (schéma ordre p)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">—</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stable si CFL &lt; C</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Éléments finis Pk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">\(k+1\) (L²), \(k\) (H¹)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">—</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">k = degré polynomial</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runge-Kutta ordre s</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">—</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RK4 ⇒ ordre 4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Euler explicite</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">—</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ordre minimal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Newton-Raphson</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">—</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 (quadratique)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Si \(x₀\) assez proche</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gradient à pas fixe</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">—</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Linéaire</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Taux = \(1 - μ/L\)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>E. Script type pour test de convergence</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">#!/usr/bin/env python3
+# test_convergence.py
+import numpy as np
+import matplotlib.pyplot as plt
+
+def manufactured_solution(x, y):
+    """Solution exacte u = sin(πx)*sin(πy)"""
+    return np.sin(np.pi * x) * np.sin(np.pi * y)
+
+def source_term(x, y):
+    """Terme source f = -Δu = 2π²sin(πx)sin(πy)"""
+    return 2 * np.pi**2 * np.sin(np.pi * x) * np.sin(np.pi * y)
+
+def solve_poisson(h):
+    """Résout -Δu = f avec maillage de pas h"""
+    # Implémentation du solveur (DF, EF, etc.)
+    # Retourne u_h, erreur_L2, erreur_H1
+    pass
+
+# Test de convergence
+h_values = [0.1, 0.05, 0.025, 0.0125]
+errors_L2 = []
+errors_H1 = []
+
+for h in h_values:
+    u_h, err_L2, err_H1 = solve_poisson(h)
+    errors_L2.append(err_L2)
+    errors_H1.append(err_H1)
+    print(f"h={h:6.3f}, L2={err_L2:.2e}, H1={err_H1:.2e}")
+
+# Calcul des ordres
+orders_L2 = []
+orders_H1 = []
+for i in range(1, len(h_values)):
+    order_L2 = np.log(errors_L2[i-1]/errors_L2[i]) / np.log(h_values[i-1]/h_values[i])
+    order_H1 = np.log(errors_H1[i-1]/errors_H1[i]) / np.log(h_values[i-1]/h_values[i])
+    orders_L2.append(order_L2)
+    orders_H1.append(order_H1)
+    print(f"Ordre L2: {order_L2:.2f}, Ordre H1: {order_H1:.2f}")
+
+# Graphique
+plt.loglog(h_values, errors_L2, 'bo-', label='L² error')
+plt.loglog(h_values, errors_H1, 'rs-', label='H¹ error')
+plt.loglog(h_values, [h**2 for h in h_values], 'k--', label='h²')
+plt.loglog(h_values, h_values, 'k:', label='h')
+plt.xlabel('h'); plt.ylabel('Erreur'); plt.legend()
+plt.title('Test de convergence'); plt.grid(True)</code></pre>
+</div>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -471,8 +810,7 @@ Mentionnez les technologies, frameworks et ressources (HPC, conteneurs, CI/CD) e
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Activez en tête du document : <code>:stem: latexmath</code>
-Formules utiles :</p>
+<p>Formules utiles :</p>
 </div>
 <div class="stemblock">
 <div class="content">
@@ -482,13 +820,13 @@ Formules utiles :</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>S(N)</strong>: speedup</p>
+<p><strong>\(S(N)\)</strong>: speedup</p>
 </li>
 <li>
-<p><strong>E(N)</strong>: efficacité parallèle</p>
+<p><strong>\(E(N)\)</strong>: efficacité parallèle</p>
 </li>
 <li>
-<p><strong>T(N)</strong>: temps total avec N ressources (nœuds/GPUs)</p>
+<p><strong>\(T(N)\)</strong>: temps total avec N ressources (nœuds/GPUs)</p>
 </li>
 </ul>
 </div>
@@ -496,8 +834,9 @@ Formules utiles :</p>
 </tr>
 </table>
 </div>
+</div>
 <div class="sect3">
-<h4 id="_exemples_de_tableaux_de_performance_valeurs_fictives"><a class="anchor" href="#_exemples_de_tableaux_de_performance_valeurs_fictives"></a>2.5.1. Exemples de tableaux de performance (valeurs fictives)</h4>
+<h4 id="_exemples_de_tableaux_de_performance_valeurs_fictives"><a class="anchor" href="#_exemples_de_tableaux_de_performance_valeurs_fictives"></a>2.5.2. Exemples de tableaux de performance (valeurs fictives)</h4>
 <div class="paragraph">
 <p><strong>A. Forte scalabilité (strong scaling) — taille de problème fixe</strong></p>
 </div>
@@ -505,7 +844,7 @@ Formules utiles :</p>
 <p>Le travail est identique, on augmente les ressources.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. Tableau A1 — Strong scaling (problème fixe)</caption>
+<caption class="title">Table 5. Tableau A1 — Strong scaling (problème fixe)</caption>
 <colgroup>
 <col style="width: 12.5%;">
 <col style="width: 25%;">
@@ -519,7 +858,7 @@ Formules utiles :</p>
 <tr>
 <th class="tableblock halign-left valign-top">Exp ID</th>
 <th class="tableblock halign-left valign-top">Ressources (nœuds × CPU/GPU)</th>
-<th class="tableblock halign-right valign-top">T_total (s)</th>
+<th class="tableblock halign-right valign-top">\(T_{total}\) (s)</th>
 <th class="tableblock halign-right valign-top">Speedup S</th>
 <th class="tableblock halign-right valign-top">Eff. E</th>
 <th class="tableblock halign-right valign-top">Débit (it/s)</th>
@@ -566,7 +905,7 @@ Formules utiles :</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p><span class="small">S = T(1)/T(N), E = S/N. Indiquez aussi la version du code, le hash Git et l&#8217;image du conteneur.</span></p>
+<p><span class="small">\(S = T(1)/T(N), E = S/N\). Indiquez aussi la version du code, le hash Git et l&#8217;image du conteneur.</span></p>
 </div>
 <div class="paragraph">
 <p><strong>B. Faible scalabilité (weak scaling) — charge par ressource constante</strong></p>
@@ -575,7 +914,7 @@ Formules utiles :</p>
 <p>On double ressources et taille du problème pour conserver la charge par unité.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 2. Tableau B1 — Weak scaling (charge/device constante)</caption>
+<caption class="title">Table 6. Tableau B1 — Weak scaling (charge/device constante)</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 28.5714%;">
@@ -588,8 +927,8 @@ Formules utiles :</p>
 <tr>
 <th class="tableblock halign-left valign-top">Exp ID</th>
 <th class="tableblock halign-left valign-top">Ressources</th>
-<th class="tableblock halign-right valign-top">T_total (s)</th>
-<th class="tableblock halign-right valign-top">Eff. faible E_w</th>
+<th class="tableblock halign-right valign-top">\(T_{total}\) (s)</th>
+<th class="tableblock halign-right valign-top">Eff. faible \(E_w\)</th>
 <th class="tableblock halign-right valign-top">Débit (unités/s)</th>
 <th class="tableblock halign-right valign-top">Note</th>
 </tr>
@@ -630,7 +969,7 @@ Formules utiles :</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p><span class="small">E_w peut s&#8217;estimer via T(1)/T(N) (problème proportionnel).</span></p>
+<p><span class="small">\(E_w\) peut s&#8217;estimer via \(T(1)/T(N)\) (problème proportionnel).</span></p>
 </div>
 <div class="paragraph">
 <p><strong>C. Scalabilité par taille de données</strong></p>
@@ -639,7 +978,7 @@ Formules utiles :</p>
 <p>Impact du volume de données sur temps, débit et métriques du modèle.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. Tableau C1 — Data scaling (taille dataset ↑)</caption>
+<caption class="title">Table 7. Tableau C1 — Data scaling (taille dataset ↑)</caption>
 <colgroup>
 <col style="width: 16.6666%;">
 <col style="width: 16.6666%;">
@@ -651,7 +990,7 @@ Formules utiles :</p>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Taille données</th>
-<th class="tableblock halign-right valign-top">T_total (min)</th>
+<th class="tableblock halign-right valign-top">\(T_{total}\) (min)</th>
 <th class="tableblock halign-right valign-top">Débit (échant./s)</th>
 <th class="tableblock halign-right valign-top">Acc./RMSE</th>
 <th class="tableblock halign-right valign-top">Mémoire (GB)</th>
@@ -700,7 +1039,7 @@ Formules utiles :</p>
 <p>Montrer le compromis débit ↔ qualité ↔ mémoire.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 4. Tableau D1 — Sensibilité (batch size, précision)</caption>
+<caption class="title">Table 8. Tableau D1 — Sensibilité (batch size, précision)</caption>
 <colgroup>
 <col style="width: 16.6666%;">
 <col style="width: 16.6666%;">
@@ -713,7 +1052,7 @@ Formules utiles :</p>
 <tr>
 <th class="tableblock halign-right valign-top">Batch</th>
 <th class="tableblock halign-right valign-top">Précision (float16/32)</th>
-<th class="tableblock halign-right valign-top">T_total (min)</th>
+<th class="tableblock halign-right valign-top">\(T_{total}\) (min)</th>
 <th class="tableblock halign-right valign-top">Débit (it/s)</th>
 <th class="tableblock halign-right valign-top">Acc./F1</th>
 <th class="tableblock halign-right valign-top">Mémoire (GB)</th>
@@ -756,9 +1095,9 @@ Formules utiles :</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_modèles_de_tableaux_vierges_à_remplir"><a class="anchor" href="#_modèles_de_tableaux_vierges_à_remplir"></a>2.5.2. Modèles de tableaux vierges (à remplir)</h4>
+<h4 id="_modèles_de_tableaux_vierges_à_remplir"><a class="anchor" href="#_modèles_de_tableaux_vierges_à_remplir"></a>2.5.3. Modèles de tableaux vierges (à remplir)</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 5. Modèle — Carte d&#8217;expérience (à répéter)</caption>
+<caption class="title">Table 9. Modèle — Carte d&#8217;expérience (à répéter)</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -804,7 +1143,7 @@ Formules utiles :</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Métriques</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;T_total, débit, S, E, pic RAM, précision&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;\(T_{total}\), débit, S, E, pic RAM, précision&gt;</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Notes</p></td>
@@ -813,7 +1152,7 @@ Formules utiles :</p>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 6. Modèle — Tableau Strong scaling (problème fixe)</caption>
+<caption class="title">Table 10. Modèle — Tableau Strong scaling (problème fixe)</caption>
 <colgroup>
 <col style="width: 12.5%;">
 <col style="width: 25%;">
@@ -827,7 +1166,7 @@ Formules utiles :</p>
 <tr>
 <th class="tableblock halign-left valign-top">Exp ID</th>
 <th class="tableblock halign-left valign-top">Ressources</th>
-<th class="tableblock halign-right valign-top">T_total (s)</th>
+<th class="tableblock halign-right valign-top">\(T_{total}\) (s)</th>
 <th class="tableblock halign-right valign-top">Speedup S</th>
 <th class="tableblock halign-right valign-top">Eff. E</th>
 <th class="tableblock halign-right valign-top">Débit</th>
@@ -847,7 +1186,7 @@ Formules utiles :</p>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 7. Modèle — Tableau Weak scaling (charge constante)</caption>
+<caption class="title">Table 11. Modèle — Tableau Weak scaling (charge constante)</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 28.5714%;">
@@ -860,8 +1199,8 @@ Formules utiles :</p>
 <tr>
 <th class="tableblock halign-left valign-top">Exp ID</th>
 <th class="tableblock halign-left valign-top">Ressources</th>
-<th class="tableblock halign-right valign-top">T_total (s)</th>
-<th class="tableblock halign-right valign-top">Eff. faible E_w</th>
+<th class="tableblock halign-right valign-top">\(T_{total}\) (s)</th>
+<th class="tableblock halign-right valign-top">Eff. faible \(E_w\)</th>
 <th class="tableblock halign-right valign-top">Débit</th>
 <th class="tableblock halign-right valign-top">Note</th>
 </tr>
@@ -878,7 +1217,7 @@ Formules utiles :</p>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 8. Modèle — Tableau Data scaling</caption>
+<caption class="title">Table 12. Modèle — Tableau Data scaling</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 14.2857%;">
@@ -890,7 +1229,7 @@ Formules utiles :</p>
 <thead>
 <tr>
 <th class="tableblock halign-right valign-top">Taille données</th>
-<th class="tableblock halign-right valign-top">T_total</th>
+<th class="tableblock halign-right valign-top">\(T_{total}\)</th>
 <th class="tableblock halign-right valign-top">Débit</th>
 <th class="tableblock halign-right valign-top">Qualité</th>
 <th class="tableblock halign-right valign-top">Mémoire</th>
@@ -915,23 +1254,57 @@ Formules utiles :</p>
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-<div class="paragraph">
-<p><strong>Checklist d&#8217;instrumentation — Reproductibilité</strong> :
-- Seed(s) fixés, <code>requirements.txt</code>/<code>environment.yml</code>, hash Git, digest d&#8217;image (ex. <code>sha256:</code>), checksum des données.
-- Scripts d&#8217;exécution versionnés (ex. <code>slurm/train.sbatch</code>), configuration logguée (YAML/MLflow/DVC).</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Checklist d&#8217;instrumentation — Reproductibilité</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Seed(s) fixés, <code>requirements.txt</code>/<code>environment.yml</code>, hash Git, digest d&#8217;image (ex. <code>sha256:</code>), checksum des données.</p>
+</li>
+<li>
+<p>Scripts d&#8217;exécution versionnés (ex. <code>slurm/train.sbatch</code>), configuration logguée (YAML/MLflow/DVC).</p>
+</li>
+</ul>
 </div>
-<div class="paragraph">
-<p><strong>Mesure</strong> :
-- Temps : <code>/usr/bin/time -v</code>, <code>sacct -j &lt;job&gt; --format=&#8230;&#8203;</code>.
-- CPU/mémoire : <code>vmstat</code>, <code>pidstat</code>, <code>free</code>, <code>perf stat</code>.
-- GPU : <code>nvidia-smi --query</code> (ou DCGM), échantillonnage régulier.
-- I/O : <code>iostat</code>, <code>sar</code>, compteurs FS/objet.
-- Réseau : métriques MPI (profilage), <code>ibstat</code>/<code>rdma</code>.</p>
+</dd>
+<dt class="hdlist1">Mesure</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Temps : <code>/usr/bin/time -v</code>, <code>sacct -j &lt;job&gt; --format=&#8230;&#8203;</code>.</p>
+</li>
+<li>
+<p>CPU/mémoire : <code>vmstat</code>, <code>pidstat</code>, <code>free</code>, <code>perf stat</code>.</p>
+</li>
+<li>
+<p>GPU : <code>nvidia-smi --query</code> (ou DCGM), échantillonnage régulier.</p>
+</li>
+<li>
+<p>I/O : <code>iostat</code>, <code>sar</code>, compteurs FS/objet.</p>
+</li>
+<li>
+<p>Réseau : métriques MPI (profilage), <code>ibstat</code>/<code>rdma</code>.</p>
+</li>
+</ul>
 </div>
-<div class="paragraph">
-<p><strong>Traçabilité</strong> :
-- Tableau récapitulatif par expérience (ID, ressources, paramètres, métriques).
-- Graphiques : S(N), E(N), débit vs taille, qualité vs batch.</p>
+</dd>
+<dt class="hdlist1">Traçabilité</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Tableau récapitulatif par expérience (ID, ressources, paramètres, métriques).</p>
+</li>
+<li>
+<p>Graphiques : \(S(N), E(N)\), débit vs taille, qualité vs batch.</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
 </div>
 </td>
 </tr>
@@ -1011,16 +1384,16 @@ Cette annexe décrit un protocole minimal, reproductible et traçable pour véri
 <p><strong>Reproductibilité</strong>: figer <strong>code</strong> (hash Git), <strong>environnement</strong> (image conteneur + digest), <strong>données</strong> (checksum), <strong>config</strong> (YAML), <strong>seeds</strong>.</p>
 </li>
 <li>
-<p><strong>Mesure</strong>: collecter <code>T_total</code>, débit, mémoire max, utilisation CPU/GPU, et ressources allouées.</p>
+<p><strong>Mesure</strong>: collecter \(T_{total}\), débit, mémoire max, utilisation CPU/GPU, et ressources allouées.</p>
 </li>
 <li>
 <p><strong>Scalabilité</strong>:</p>
 </li>
 <li>
-<p>Strong scaling: problème fixe, ressources ↑ ⇒ <span class="stem">+S(N)=T(1)/T(N),\;E(N)=S(N)/N</span>+</p>
+<p>Strong scaling: problème fixe, ressources ↑ ⇒ \(S(N)=T(1)/T(N),\;E(N)=S(N)/N\)</p>
 </li>
 <li>
-<p>Weak scaling: charge par ressource ~constante ⇒ stabilité de <span class="stem">+T(N)</span>+ et du débit.</p>
+<p>Weak scaling: charge par ressource ~constante ⇒ stabilité de \(T(N)\) et du débit.</p>
 </li>
 </ul>
 </div>
