@@ -1,116 +1,654 @@
-= Guide for Internship Reports
-:sectnums:
-:experimental:
-:collapsible:
+= Internship Report
 :stem: latexmath
-:eqnums: all
 
-NOTE: The following information is taken in full from https://gitlab.com/pdagog/ens[tips for writing a good internship report by Pierre David], who teaches in the CSMI Master's program and heads the SIRIS Master's program in Computer Science.
+NOTE: The guidelines below are taken in full from https://gitlab.com/pdagog/ens[tips for writing a good internship report by Pierre David], who teaches in the CSMI Master's program and heads the SIRIS Master's program in Computer Science.
 
 == Introduction 
 
-The dissertation is an essential part of your internship: its aim is to
-present, as faithfully as possible, both the scope of the internship (organizational and/or
-(organizational and/or technical) and your contribution.
+The report is an essential element of your internship: its purpose is to present, as faithfully as possible, both the scope of the internship (organizational and/or technical) and your contribution.
 
-Your thesis will be read by a _rapporteur_, i.e. a member
-teacher from the teaching team (i.e. someone with expertise in your discipline), whose job it is to evaluate your thesis to understand :
-- the context in which you have evolved,
-- your contribution (technical achievement, scientific work) its relevance to the Master's courses.
+Your report will be read by a _rapporteur_, i.e., a member of the teaching team (a person with expertise in your field), whose role is to evaluate your work to understand:
+- the context in which you worked,
+- your contribution (technical achievement, scientific work) and its relevance with respect to the Master's curriculum.
 
-CAUTION: You are reminded that plagiarism is punishable by law, by the university and by your examiners: if short quotations are authorized, you must indicate the source.
+CAUTION: You are reminded that plagiarism is punishable by law, by the university, and by your examiners. Short quotes are allowed, but you must indicate their source.
 
 
 == Outline
 
-The exercise consists in presenting a description of your organizational context.
-organizational context: your referee is not likely to know your
-the host organization, so you need to present it in terms of its line of business
-industry and its key figures. 
-In addition, you'll need to describe your place in the organization: you'll need to follow a "funnel" description, i.e. start with the organization as a whole and work your way down to your place as a trainee. An organization chart can help you understand your place in the organization or department concerned.
-
-TIP: Avoid copying the company's website, as this may not go down well with the reporter.
-
-NOTE: presentation of the host organization is compulsory,
-even if you know that the structure is well known to your rapporteur
-(e.g. for an internship at the IRMA/Cemosis laboratory).
-IRMA/Cemosis laboratory). All interns are assessed on this criterion, without exception.
-
+NOTE: The section Verification is mandatory. The sections Validation and Uncertainty Quantification are recommended if relevant to your project — with a brief justification if omitted.
 
 === Missions & Objectives
-
-
-As an intern, you will have one or more defined _missions_ corresponding
-corresponding to the duration of your internship. 
-These are unlikely to be known to the reporter. 
-Describe them, preferably early on in the brief, putting them into perspective in relation to the organization's needs. 
-In addition, describe any particular constraints (financial, technical or other) and the _objectives_ to be achieved, which will help to *assess the success of the project.*.
-
+Describe the assigned missions, measurable objectives, expected deliverables, and constraints (technical, schedule, data, security).
+Indicate your precise role and the parts of the work you were responsible for.
 
 === Context
-
-The technical or organizational context must be presented.
-
-NOTE: Remember that your rapporteur has a good grasp of technical concepts, but is not familiar with the particular constraints of your host organization or its business.
-
-CAUTION: Don't overdo the context: you need to present the minimum to enable the reporter to understand the specific constraints of your internship and your contribution. 
-
+Briefly present the host organization and the business/technical context needed to understand the project (do not copy-paste the website).
+Specify what already existed (tools, models, datasets, pipeline) and any imposed choices.
 
 === Contributions
+Summarize your contributions (methodology, modeling, implementation, experimentation).
+Mention the technologies, frameworks, and resources (HPC, containers, CI/CD) actually used.
 
-This is the main part of your dissertation.
-You must present your contribution (modeling, methodology, mathematics, presentation of data and initial processing, software realization, state of the art, method, algorithm, evaluation, etc.) in a synthetic manner,
-without getting bogged down in technical details, but without glossing over the
-concrete points that will give the rapporteur the most accurate
-vision of what you've implemented. 
+=== Datasets
+[NOTE]
+====
+This section is required for any project handling data.
+====
+- Origin & rights: source(s), licenses, GDPR/ethics if applicable.
+- Description: size, formats, target variables/features, basic statistics.
+- Splits: train/val/test (or CV); avoid data leakage; temporal/spatial logic if needed.
+- Preprocessing: cleaning, filtering, normalization, enrichment, handling missing values.
+- Relevance/limitations: alignment with objectives, known biases, representativeness.
 
-CAUTION: Don't sweep any difficulties under the carpet. On the contrary, try to present them and explain where the hard points lie.
+=== Verification — “Did I solve the problem correctly?” (MANDATORY)
+[IMPORTANT]
+====
+Verification demonstrates technical correctness (math/numerical/software): correct implementation, reproducible experiments, correctly computed metrics.
+====
 
+- Strategy: unit/integration tests, simple oracles, toy cases, preservation of invariants.
+- Numerical: convergence studies, sensitivity to steps/meshes, stability, tolerances.
+- Reproducibility: random seed(s), environment (versions, container), experiment scripts.
+- Measurements: appropriate metrics (e.g., RMSE, MAE, F1, AUC, energy, time, memory).
+- Comparisons: simple baselines, ablations, HPC profiling (if relevant: kernel time, scaling, I/O).
+- Traceability: summary table of experiments (id, data, parameters, metrics).
 
-NOTE: *Be precise and factual*: technologies, algorithms or methods used
-algorithms or methods used, quantitative data to assess the
-comparisons made, etc. If you have worked
-cooperation with others (your supervisor, other people or trainees), please
-trainees), please give details of your role and achievements.
-achievements.
+==== Numerical convergence tests
+[IMPORTANT]
+====
+Convergence tests are essential to validate the implementation of numerical algorithms. They demonstrate that the implemented method converges as theoretically expected.
+====
 
+A. Mesh convergence (finite-/finite-difference-based methods)
 
-The _methodology_ with which you proceed is one of the main criteria for
-criteria for evaluating your work: problems must be analysed
-must be analyzed, and the choices you make (or take part in) must be
-must be explained and justified.
+Use a manufactured solution (Method of Manufactured Solutions — MMS): start from a known analytical solution stem:[u_{exact}(x,y)], compute the corresponding source term, then verify that the numerical error decreases according to the theoretical order.
 
-IMPORTANT: It often happens that, as a trainee, choices are imposed on you: you're inserting yourself into a context that existed before your arrival, and certain choices are made upstream or implicitly. You need to
-make them explicit, and show that you have mastered the ins and outs
-in other words, you have to justify certain choices,
-even if they're not your own, to demonstrate your understanding
-of what's at stake.
+.Table — Convergence test (manufactured solution)
+[cols=">1,>1,>1,>1,>1,>1", options="header"]
+|===
+|h (mesh size) |DOF |stem:[‖u_h - u_{exact}‖_{L²}] |L² order |stem:[‖u_h - u_{exact}‖_{H¹}] |H¹ order
 
+|0.1    |1024   |2.34e-3 |—    |1.87e-2 |—
+|0.05   |4096   |5.92e-4 |1.98 |9.45e-3 |0.98
+|0.025  |16384  |1.49e-4 |1.99 |4.73e-3 |1.00
+|0.0125 |65536  |3.74e-5 |1.99 |2.37e-3 |1.00
+|===
+[small]#Order = stem:[log(e_i/e_{i+1}) / log(h_i/h_{i+1})]. P1 elements ⇒ theoretical order stem:[L²=2, H¹=1].#
+
+B. Convergence of iterative algorithms
+
+For solvers, optimizers, fixed-point methods: show the decrease of residual/error.
+
+.Table — Residual convergence (Newton–Raphson, GMRES, etc.)
+[cols=">1,>1,>1,>1", options="header"]
+|===
+|Iteration |Residual stem:[‖r‖] |Error stem:[‖e‖] |Rate
+
+|0  |1.0e+0  |—       |—
+|5  |3.2e-2  |8.1e-3  |—
+|10 |1.0e-4  |2.6e-5  |0.031
+|15 |3.2e-7  |8.2e-8  |0.032
+|20 |1.0e-9  |2.6e-10 |0.031
+|===
+[small]#Rate = stem:[‖r_{k+1}‖/‖r_k‖] (linear convergence if constant < 1).#
+
+C. Loss convergence (machine learning)
+
+Show the decrease of loss functions (train + validation) and stabilization of metrics.
+
+.Table — Evolution of loss and metrics
+[cols=">1,>1,>1,>1,>1", options="header"]
+|===
+|Epoch |Train loss |Val loss |Train acc |Val acc
+
+|1    |2.31  |2.28  |0.12  |0.15
+|10   |1.85  |1.92  |0.34  |0.31
+|50   |0.97  |1.18  |0.67  |0.59
+|100  |0.52  |0.94  |0.83  |0.71
+|200  |0.31  |0.87  |0.91  |0.74
+|===
+
+[source,python]
+----
+# Example: verifying loss convergence
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Load training logs
+epochs = [1, 10, 50, 100, 200]
+train_loss = [2.31, 1.85, 0.97, 0.52, 0.31]
+val_loss = [2.28, 1.92, 1.18, 0.94, 0.87]
+
+plt.figure(figsize=(10, 4))
+plt.subplot(1, 2, 1)
+plt.semilogy(epochs, train_loss, 'b-o', label='Train')
+plt.semilogy(epochs, val_loss, 'r-s', label='Val')
+plt.xlabel('Epoch'); plt.ylabel('Loss'); plt.legend()
+plt.title('Loss convergence')
+
+# Check absence of overfitting
+plt.subplot(1, 2, 2)
+gap = np.array(train_loss) - np.array(val_loss)
+plt.plot(epochs, gap, 'g-^')
+plt.xlabel('Epoch'); plt.ylabel('Train–val gap')
+plt.title('Train/validation gap')
+plt.tight_layout()
+----
+
+D. Theoretical orders of convergence (reference)
+
+.Expected orders by method
+[cols="2,1,1,1", options="header"]
+|===
+|Method |Spatial order |Temporal order |Notes
+
+|Centered finite differences |p (scheme of order p) |— |Stable if CFL < C
+|Finite elements Pk |stem:[k+1] (L²), stem:[k] (H¹) |— |k = polynomial degree
+|Runge–Kutta order s |— |s |RK4 ⇒ order 4
+|Explicit Euler |— |1 |Minimal order
+|Newton–Raphson |— |2 (quadratic) |If stem:[x₀] close enough
+|Fixed-step gradient |— |Linear |Rate = stem:[1 - μ/L]
+|===
+
+E. Template script for a convergence test
+
+[source,python]
+----
+#!/usr/bin/env python3
+# test_convergence.py
+import numpy as np
+import matplotlib.pyplot as plt
+
+def manufactured_solution(x, y):
+    """Exact solution u = sin(πx)*sin(πy)"""
+    return np.sin(np.pi * x) * np.sin(np.pi * y)
+
+def source_term(x, y):
+    """Source term f = -Δu = 2π² sin(πx) sin(πy)"""
+    return 2 * np.pi**2 * np.sin(np.pi * x) * np.sin(np.pi * y)
+
+def solve_poisson(h):
+    """Solve -Δu = f on a mesh with step h"""
+    # Implement the solver (FD, FE, etc.)
+    # Return u_h, err_L2, err_H1
+    pass
+
+# Convergence test
+h_values = [0.1, 0.05, 0.025, 0.0125]
+errors_L2 = []
+errors_H1 = []
+
+for h in h_values:
+    u_h, err_L2, err_H1 = solve_poisson(h)
+    errors_L2.append(err_L2)
+    errors_H1.append(err_H1)
+    print(f"h={h:6.3f}, L2={err_L2:.2e}, H1={err_H1:.2e}")
+
+# Compute orders
+orders_L2 = []
+orders_H1 = []
+for i in range(1, len(h_values)):
+    order_L2 = np.log(errors_L2[i-1]/errors_L2[i]) / np.log(h_values[i-1]/h_values[i])
+    order_H1 = np.log(errors_H1[i-1]/errors_H1[i]) / np.log(h_values[i-1]/h_values[i])
+    orders_L2.append(order_L2)
+    orders_H1.append(order_H1)
+    print(f"L2 order: {order_L2:.2f}, H1 order: {order_H1:.2f}")
+
+# Plot
+plt.loglog(h_values, errors_L2, 'bo-', label='L² error')
+plt.loglog(h_values, errors_H1, 'rs-', label='H¹ error')
+plt.loglog(h_values, [h**2 for h in h_values], 'k--', label='h²')
+plt.loglog(h_values, h_values, 'k:', label='h')
+plt.xlabel('h'); plt.ylabel('Error'); plt.legend()
+plt.title('Convergence test'); plt.grid(True)
+----
+
+[NOTE]
+====
+Useful formulas:
+[stem]
+++++
+S(N) = T(1) / T(N), \quad E(N) = S(N)/N
+++++
+- stem:[S(N)]: speedup
+- stem:[E(N)]: parallel efficiency
+- stem:[T(N)]: total time with N resources (nodes/GPUs)
+====
+
+==== Example performance tables (mock values)
+
+A. Strong scaling — fixed problem size
+
+Workload is identical; increase resources.
+
+.Table A1 — Strong scaling (fixed problem)
+[cols="1,2,>1,>1,>1,>1,>1", options="header"]
+|===
+|Exp ID |Resources (nodes × CPU/GPU) |stem:[T_{total}] (s) |Speedup S |Eff. E |Throughput (it/s) |Memory (GB)
+
+|SS-01 |1×(32/0) |1200 |1.00 |1.00 |85  |56
+|SS-02 |2×(32/0) | 640 |1.88 |0.94 |160 |60
+|SS-03 |4×(32/0) | 340 |3.53 |0.88 |300 |68
+|SS-04 |8×(32/0) | 190 |6.32 |0.79 |520 |76
+|===
+[small]#stem:[S = T(1)/T(N), E = S/N]. Also indicate code version, Git hash, and container image.#
+
+B. Weak scaling — constant load per resource
+
+Double resources and problem size to keep per-resource load roughly constant.
+
+.Table B1 — Weak scaling (constant load per device)
+[cols="1,2,>1,>1,>1,>1", options="header"]
+|===
+|Exp ID |Resources |stem:[T_{total}] (s) |Weak eff. stem:[E_w] |Throughput (units/s) |Note
+
+|WS-01 |1×(32/0) |300 |1.00 |3.2 |Baseline
+|WS-02 |2×(32/0) |310 |0.97 |6.3 |I/O starts to dominate
+|WS-03 |4×(32/0) |325 |0.92 |12.3|MPI sync more costly
+|WS-04 |8×(32/0) |360 |0.83 |24.8|Network bandwidth limits
+|===
+[small]#stem:[E_w] can be estimated via stem:[T(1)/T(N)] (proportional problem).#
+
+C. Scaling by data size
+
+Impact of data volume on time, throughput, and model metrics.
+
+.Table C1 — Data scaling (dataset size ↑)
+[cols="1,>1,>1,>1,>1,>1", options="header"]
+|===
+|Data size |stem:[T_{total}] (min) |Throughput (samples/s) |Acc./RMSE |Memory (GB) |Comment
+
+|10k  |12  |830  |Acc=0.89 |12 |Underfitting
+|100k |95  |1050 |Acc=0.92 |22 |Good tradeoff
+|1M   |980 |1010 |Acc=0.925|76 |I/O + memory bound
+|10M  |—   |—    |—        |>256|Not feasible without sharding
+|===
+
+D. Sensitivity to execution parameters (e.g., batch size)
+
+Show the throughput ↔ quality ↔ memory tradeoff.
+
+.Table D1 — Sensitivity (batch size, precision)
+[cols=">1,>1,>1,>1,>1,>1", options="header"]
+|===
+|Batch |Precision (float16/32) |stem:[T_{total}] (min) |Throughput (it/s) |Acc./F1 |Memory (GB)
+
+|32  |fp32 |120 |12.5 |F1=0.88 |24
+|64  |fp32 |95  |17.6 |F1=0.88 |38
+|128 |fp16 |70  |31.0 |F1=0.87 |26
+|256 |fp16 |62  |35.2 |F1=0.86 |28
+|===
+
+==== Blank table templates (to fill)
+
+.Template — Experiment card (repeat)
+[cols="1,3", options="header"]
+|===
+|Field |Value
+
+|Exp ID |EXP-YYYYMMDD-XX
+|Objective |(baseline / strong / weak / data scaling / sensitivity)
+|Code version |<short git hash>
+|Container |<registry/image:tag + digest>
+|Data |<source + checksum + split>
+|Resources |<nodes × CPU/GPU, RAM, storage>
+|Script |<Slurm job path + key options>
+|Parameters |<batch, lr, tolerance, partitions, etc.>
+|Metrics |<stem:[T_{total}], throughput, S, E, peak RAM, accuracy>
+|Notes |<observations, bottlenecks>
+|===
+
+.Template — Strong scaling table (fixed problem)
+[cols="1,2,>1,>1,>1,>1,>1", options="header"]
+|===
+|Exp ID |Resources |stem:[T_{total}] (s) |Speedup S |Eff. E |Throughput |Memory (GB)
+|      |          |            |         |      |      |
+|===
+
+.Template — Weak scaling table (constant load)
+[cols="1,2,>1,>1,>1,>1", options="header"]
+|===
+|Exp ID |Resources |stem:[T_{total}] (s) |Weak eff. stem:[E_w] |Throughput |Note
+|      |          |            |                |      |
+|===
+
+.Template — Data scaling table
+[cols=">1,>1,>1,>1,>1,2", options="header"]
+|===
+|Data size |stem:[T_{total}] |Throughput |Quality |Memory |Comment
+|          |        |      |        |        |
+|===
+
+[IMPORTANT]
+====
+Instrumentation checklist — Reproducibility::
++
+* Fixed seed(s), `requirements.txt`/`environment.yml`, Git hash, container image digest (e.g., `sha256:`), data checksums.
+* Versioned execution scripts (e.g., `slurm/train.sbatch`), logged configuration (YAML/MLflow/DVC).
+
+Measurement::
++
+* Time: `/usr/bin/time -v`, `sacct -j <job> --format=...`.
+* CPU/memory: `vmstat`, `pidstat`, `free`, `perf stat`.
+* GPU: `nvidia-smi --query` (or DCGM), regular sampling.
+* I/O: `iostat`, `sar`, filesystem/object counters.
+* Network: MPI metrics (profiling), `ibstat`/`rdma`.
+
+Traceability::
++
+* Summary table per experiment (ID, resources, parameters, metrics).
+* Plots: stem:[S(N), E(N)], throughput vs. size, quality vs. batch.
+====
+
+=== Validation — “Did I solve the right problem?” (IF RELEVANT)
+[TIP]
+====
+Validation assesses scientific/business relevance by confronting results with reality (physics/biology/usage). If not applicable, indicate it in 1–2 sentences and justify.
+====
+- External/field data: comparison protocol, measurement uncertainties.
+- Business/physical criteria: units, acceptance thresholds, dimensional consistency.
+- Results: model–reality gaps, edge cases, domain of validity.
+- Discussion: explanations, limitations, improvement directions.
+
+=== Uncertainty Quantification (UQ) (IF RELEVANT)
+- Method: MC, ensembles, intervals/bootstraps, sensitivity (Sobol, LHS), GPs, etc.
+- Results: confidence intervals, variances, uncertainty propagation.
+- Impact: robustness of conclusions, recommendations (critical data/parameters).
+[NOTE]
+====
+If UQ not performed, indicate why (scope/time/data) and what would be done next.
+====
+
+=== Appendix — Benchmarking procedure (HPC + local)
+
+[abstract]
+This appendix describes a minimal, reproducible, and traceable protocol to verify performance and scalability (strong/weak) of a project. It is intended for Slurm on HPC (Apptainer/Singularity or Docker per site policy) and for local inference.
+
+==== Principles
+- Reproducibility: freeze code (Git hash), environment (container image + digest), data (checksums), config (YAML), seeds.
+- Measurement: collect stem:[T_{total}], throughput, max memory, CPU/GPU utilization, and allocated resources.
+- Scalability:
+  - Strong scaling: fixed problem, resources ↑ ⇒ stem:[S(N)=T(1)/T(N),\;E(N)=S(N)/N]
+  - Weak scaling: roughly constant load per resource ⇒ stability of stem:[T(N)] and throughput.
+
+==== Minimal repository layout
+----
+project/
+├─ configs/exp.yaml
+├─ data/              # (or DVC if used)
+├─ images/ml.sif      # local Apptainer image (optional)
+├─ scripts/
+│  ├─ train.sh        # launch training (local/HPC)
+│  ├─ strong_scaling.sh
+│  └─ weak_scaling.sh
+├─ slurm/
+│  ├─ train_cpu.sbatch
+│  └─ train_gpu.sbatch
+├─ tools/
+│  ├─ log_metrics.py  # append CSV
+│  └─ parse_sacct.sh  # fetch Slurm metrics
+└─ results/
+   ├─ runs.csv
+   └─ logs/
+----
+
+==== Container & environment
+[NOTE]
+====
+- Apptainer recommended on HPC: `apptainer build images/ml.sif docker://ghcr.io/<org>/<img>:<tag>`
+- Otherwise, use an image already provided by the HPC site.
+- Always cite the image + digest in the report.
+====
+
+==== Slurm script — CPU
+.slurm/train_cpu.sbatch
+[source,bash]
+----
+#!/usr/bin/env bash
+#SBATCH -J train_cpu
+#SBATCH -A <account>              # project account
+#SBATCH -p <partition>            # e.g., cpu, long, normal
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=32
+#SBATCH --time=02:00:00
+#SBATCH -o results/logs/%x-%j.out
+#SBATCH -e results/logs/%x-%j.err
+
+set -euo pipefail
+
+# Experiment parameters
+EXP_ID=${EXP_ID:-"EXP-$(date +%Y%m%d-%H%M%S)"}
+CONFIG=${CONFIG:-"configs/exp.yaml"}
+DATA_DIR=${DATA_DIR:-"$PWD/data"}
+RESULTS=${RESULTS:-"$PWD/results"}
+CSV=${CSV:-"$RESULTS/runs.csv"}
+CONTAINER=${CONTAINER:-"$PWD/images/ml.sif"}  # or "docker://ghcr.io/<org>/<img>:<tag>"
+
+mkdir -p "$RESULTS/logs"
+
+START_TS=$(date +%s)
+
+# Example Apptainer (CPU)
+srun apptainer exec \
+  --bind "$DATA_DIR:/workspace/data","$RESULTS:/workspace/results" \
+  "$CONTAINER" \
+  bash -lc "python -m project.train --config $CONFIG --device cpu"
+
+END_TS=$(date +%s)
+T_TOTAL=$(( END_TS - START_TS ))
+
+# Fetch Slurm metrics
+tools/parse_sacct.sh "$SLURM_JOB_ID" > "$RESULTS/logs/${EXP_ID}-${SLURM_JOB_ID}.sacct"
+
+# Log
+python tools/log_metrics.py \
+  --csv "$CSV" \
+  --exp-id "$EXP_ID" \
+  --resources "nodes=${SLURM_NNODES};ntasks_per_node=${SLURM_NTASKS_PER_NODE}" \
+  --t-total "$T_TOTAL" \
+  --container "$CONTAINER" \
+  --config "$CONFIG" \
+  --notes "cpu-run"
+----
+
+==== Slurm script — GPU
+.slurm/train_gpu.sbatch
+[source,bash]
+----
+#!/usr/bin/env bash
+#SBATCH -J train_gpu
+#SBATCH -A <account>
+#SBATCH -p <partition>            # e.g., gpu
+#SBATCH --nodes=1
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=16
+#SBATCH --time=02:00:00
+#SBATCH -o results/logs/%x-%j.out
+#SBATCH -e results/logs/%x-%j.err
+
+set -euo pipefail
+
+EXP_ID=${EXP_ID:-"EXP-$(date +%Y%m%d-%H%M%S)"}
+CONFIG=${CONFIG:-"configs/exp.yaml"}
+DATA_DIR=${DATA_DIR:-"$PWD/data"}
+RESULTS=${RESULTS:-"$PWD/results"}
+CSV=${CSV:-"$RESULTS/runs.csv"}
+CONTAINER=${CONTAINER:-"$PWD/images/ml.sif"}
+
+mkdir -p "$RESULTS/logs"
+
+START_TS=$(date +%s)
+
+# Example Apptainer (GPU)
+srun apptainer exec --nv \
+  --bind "$DATA_DIR:/workspace/data","$RESULTS:/workspace/results" \
+  "$CONTAINER" \
+  bash -lc "python -m project.train --config $CONFIG --device cuda"
+
+END_TS=$(date +%s)
+T_TOTAL=$(( END_TS - START_TS ))
+
+tools/parse_sacct.sh "$SLURM_JOB_ID" > "$RESULTS/logs/${EXP_ID}-${SLURM_JOB_ID}.sacct"
+
+python tools/log_metrics.py \
+  --csv "$CSV" \
+  --exp-id "$EXP_ID" \
+  --resources "nodes=${SLURM_NNODES};gpu=1;cpus_per_task=${SLURM_CPUS_PER_TASK}" \
+  --t-total "$T_TOTAL" \
+  --container "$CONTAINER" \
+  --config "$CONFIG" \
+  --notes "gpu-run"
+----
+
+==== “Scaling” launches
+.scripts/strong_scaling.sh (fixed problem, N nodes ∈ {1,2,4,8})
+[source,bash]
+----
+#!/usr/bin/env bash
+set -euo pipefail
+for N in 1 2 4 8; do
+  EXP_ID="SS-N${N}-$(date +%Y%m%d-%H%M%S)"
+  sbatch --nodes=$N --export=ALL,EXP_ID=$EXP_ID,CONFIG=configs/exp.yaml slurm/train_cpu.sbatch
+done
+----
+
+.scripts/weak_scaling.sh (fixed per-device load; increase data and resources)
+[source,bash]
+----
+#!/usr/bin/env bash
+set -euo pipefail
+# Pair (N, data_size) to keep per-resource load ~constant
+declare -a NS=(1 2 4 8)
+declare -a DS=("10k" "20k" "40k" "80k")
+for i in "${!NS[@]}"; do
+  N=${NS[$i]}; D=${DS[$i]}
+  EXP_ID="WS-N${N}-D${D}-$(date +%Y%m%d-%H%M%S)"
+  sbatch --nodes=$N --export=ALL,EXP_ID=$EXP_ID,CONFIG=configs/exp_${D}.yaml slurm/train_cpu.sbatch
+done
+----
+
+==== Extract Slurm metrics & logs
+.tools/parse_sacct.sh
+[source,bash]
+----
+#!/usr/bin/env bash
+# Usage: tools/parse_sacct.sh <jobid>
+JOB=$1
+sacct -j "$JOB" --format=JobID,Elapsed,MaxRSS,MaxVMSize,TotalCPU,AllocTRES%30,State -P
+----
+
+==== CSV logging
+.tools/log_metrics.py
+[source,python]
+----
+#!/usr/bin/env python3
+import argparse, csv, os, subprocess, hashlib, json, time
+
+p = argparse.ArgumentParser()
+p.add_argument("--csv", required=True)
+p.add_argument("--exp-id", required=True)
+p.add_argument("--resources", default="")
+p.add_argument("--t-total", type=float, required=True)
+p.add_argument("--container", required=True)
+p.add_argument("--config", required=True)
+p.add_argument("--notes", default="")
+args = p.parse_args()
+
+def git_commit():
+    try:
+        return subprocess.check_output(["git","rev-parse","--short","HEAD"]).decode().strip()
+    except Exception:
+        return "NA"
+
+def file_sha256(path):
+    if not os.path.exists(path): return "NA"
+    h=hashlib.sha256()
+    with open(path,"rb") as f:
+        for chunk in iter(lambda: f.read(1<<20), b""): h.update(chunk)
+    return h.hexdigest()
+
+row = {
+  "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+  "exp_id": args.exp_id,
+  "git_commit": git_commit(),
+  "container": args.container,
+  "container_sha256": file_sha256(args.container) if args.container.endswith(".sif") else "NA",
+  "config": args.config,
+  "config_sha256": file_sha256(args.config),
+  "resources": args.resources,
+  "t_total_s": args.t_total,
+  "notes": args.notes
+}
+
+file_exists = os.path.exists(args.csv)
+os.makedirs(os.path.dirname(args.csv), exist_ok=True)
+with open(args.csv, "a", newline="") as f:
+    w = csv.DictWriter(f, fieldnames=list(row.keys()))
+    if not file_exists: w.writeheader()
+    w.writerow(row)
+print(json.dumps(row, indent=2))
+----
+
+==== CSV example (results/runs.csv)
+[source,csv]
+----
+timestamp,exp_id,git_commit,container,container_sha256,config,config_sha256,resources,t_total_s,notes
+2025-09-09 09:15:02,SS-N1-20250909-091502,abc1234,images/ml.sif,sha256:...,configs/exp.yaml,sha256:...,nodes=1;ntasks_per_node=32,1200,cpu-run
+2025-09-09 09:48:31,SS-N2-20250909-094831,abc1234,images/ml.sif,sha256:...,configs/exp.yaml,sha256:...,nodes=2;ntasks_per_node=32,640,cpu-run
+----
+
+==== Post-processing — compute S(N), E(N)
+[NOTE]
+====
+These computations are used to fill the Verification tables (strong/weak scaling).
+====
+
+[source,python]
+----
+# tools/compute_scaling.py (example)
+import pandas as pd, sys
+df = pd.read_csv("results/runs.csv")
+# Filter strong scaling campaign:
+ss = df[df["exp_id"].str.contains("SS-N")]
+# Extract N from "resources" (e.g., nodes=4;ntasks_per_node=32)
+def get_nodes(s): 
+    for kv in s.split(";"):
+        if kv.startswith("nodes="): return int(kv.split("=")[1])
+    return 1
+ss["N"] = ss["resources"].apply(get_nodes)
+T1 = ss.loc[ss["N"]==1, "t_total_s"].min()
+ss["S"] = T1 / ss["t_total_s"]
+ss["E"] = ss["S"] / ss["N"]
+print(ss[["exp_id","N","t_total_s","S","E"]].sort_values("N"))
+----
+
+==== Good practices (reminder)
+[IMPORTANT]
+====
+- Verification = MANDATORY: at least one performance table (total time, throughput, max memory) and, if possible, a strong scaling campaign.
+- Validation / UQ = IF RELEVANT: if omitted, indicate and justify in 1–2 sentences.
+- Link each result to a specific commit and image (digest/sha).
+- Keep all artifacts: Slurm scripts, logs, CSVs, config versions.
+====
 
 === Assessment
-
-The internship completes your training: you need to take a step back to
-relate your internship to the skills you acquired during your training, and present the additional skills (technical, personal, behavioral, etc.) you acquired during the internship.
-
-The _bilan_ should show how you stand back from your internship: you can then look back on the course of your internship, your behavior, your approach, your choices, your achievements and your host organization.
+- Contributions: technical, scientific, methodological, collaboration/management.
+- Limits & risks: hard points, technical debt.
+- Perspectives: research/industrialization, data/model extensions, production monitoring.
 
 
 == Form
 
-
 === Typography
 
-Writing texts obeys precise rules in
-French: this is called _typographie_, see <<<JAndre, les petites leçons de typographie de Jacques André>>>. 
+Writing in French follows precise typographic rules: see <<<JAndre, les petites leçons de typographie de Jacques André>>>.
 
-TIP: It's worth getting to grips with it to give your document a quality look and avoid gross errors.
+TIP: It’s worth becoming familiar with them to give your document a polished look and avoid gross mistakes.
 
+=== Spelling and Grammar
 
-=== Spelling and grammar
-
-Spelling and grammar are essential prerequisites for
-writing a dissertation. If you're not sure of your spelling and grammar
-proofread by a third party. It's a shame to lose points on this criterion.
+Spelling and grammar are essential prerequisites for writing the report. If you’re unsure, have a third party proofread your work. It’s a pity to lose points on this criterion.
 
 === Numbering
 
@@ -124,9 +662,9 @@ Number everything that can be numbered.
 - equations,
 - bibliography. 
 
-TIP: Leave the automatic numbering to Latex, which will do it better than you _manually_. 
+TIP: Let LaTeX handle automatic numbering; it will do better than you manually.
 
-For Antora users, here's a template for equations that use a counter:
+For Antora users, here is a template for equations that use a counter:
 [source,asciidoc]
 ----
 [stem#eq-<some label>,reftext=Equation ({counter:eqs})]
@@ -135,76 +673,54 @@ For Antora users, here's a template for equations that use a counter:
 ++++
 ----
 
-Complete example with equation numbering 
+.Complete example with equation numbering 
 [source#ex-eqnum,asciidoc]
 ----
 include::example$eqnum.adoc[]
 ----
 
-View result of <<ex-eqnum>>
+.View result of <<ex-eqnum>>
 [%collapsible]
 ===
 include::example$eqnum.adoc[]
 ===
 
-TIP: Use references if you need to relate several elements of your speech in Latex (`ref`, `pageref` and `label`).
-
+TIP: Use references if you need to relate several elements in LaTeX (`\ref`, `\pageref`, `\label`).
 
 === Bibliography
 
-The bibliography is an important part of your dissertation.
-It is a criterion of the quality of your work (have you found the right
-are the documents on which you rely reliable?
-serious?) You must indicate which documents :
+The bibliography is an important part of your report. It is a criterion of quality (did you find the right sources? are the documents you rely on serious?). You must indicate documents:
 
-- reference documents you consulted in your research, to familiarize yourself with your subject or to learn specific techniques ;
+- of reference that you consulted in your research, to familiarize yourself with your subject or to learn specific techniques;
+- that you consulted to make your choices or to implement a software or other setup;
+- that allow the reader to find out more on certain points of your report that you cannot further develop.
 
-- that you consulted to make your choices or to implement a software or other device;
+The bibliography — see <<<SavoirsCDI, the document on citing sources and presenting a bibliography by Savoirs CDI>>> — appears in an appendix and must give all information necessary for the reader to retrieve the documents concerned: author, title of the document or book, publisher, year of publication, URL if necessary, date of consultation for a website, etc.
 
-- that allow the reader to find out more about a particular point in your brief that you can't develop further.
-
-
-The bibliography, see <<<SavoirsCDI, le document sur citer ses sources et présenter une bibliographie par Savoirs CDI>>> comes as an appendix, and should give all the information necessary to enable the reader to find the documents concerned: author, title of the document or work, publisher, year of publication, URL if necessary, date of consultation for a website, etc.
-
-Each document in the bibliography has a reference (number, abbreviation, etc.), which you must cite in the text: a document that is not cited should not appear in the bibliography.
-
+Each document in the bibliography has a reference (a number, an abbreviation, etc.), which you must cite in the text: a document not cited should not appear in the bibliography.
 
 == Defense
 
-Presentations take place at the end of August, and enable students to present their work concisely to a panel of 3 people who attend all presentations.
+Defenses take place at the end of August; they allow the student to present their work concisely before a jury of three people who attend all presentations.
 
-Presentations last 30 minutes, including 20 minutes of presentations and 10 minutes of questions.
+Presentations last 30 minutes, including 20 minutes of presentation and 10 minutes of questions.
 
-
-- Don't reproduce the brief in your presentation: you don't have the space or the time. Detach yourself from the brief and start from scratch to build a new speech that takes into account the time constraint.
-
-- Work on the ideas and messages you want to get across. Count on one idea per slide. Explain the ideas, don't just suggest them.
-
-- Don't overload the text of your presentation: don't make sentences, but rather insist on a few words to set out your ideas.
-
-- While you can take liberties with grammar and leave sentences out, you're not exempt from respecting spelling.
-
-- Use a sober background so as not to disrupt your message. Number your slides.
-
-- Use illustrations (diagrams, figures, curves) that can be read from several meters away. Don't hesitate to take liberties with your presentation style to create a full-page figure.
-
-- Beware of contrasts: your presentation projected in a brightly lit room will have much poorer contrast than your laptop screen. So avoid light colors on a light background, or light colors on a dark background.
-
-- One of your missions is to keep your audience's attention.
-audience. Remember that the members of the jury may already have a dozen presentations under their belts, as well as a good meal... You need to motivate them to listen to you.
-
-- Above all, don't read the slides you're presenting or, even worse, a text you've prepared. Look at the audience, not at your slides.
-
-- Keep to the length of your presentation. Don't finish too early (so you have nothing to say?), don't finish too late (so you can't synthesize and take into account a constraint?).
-
-- Rehearse. Rehearse. Rehearse. Repeat. Repeat. Repeat. Repeat. Repeat. Repeat. Repeat. Repeat. Repeat.
-
-- During the question session, let the members of the jury get to the end of their questions, without interrupting them. Don't hesitate to take a few seconds to reflect on each question, or even to rephrase it to make sure you've understood it correctly.
-
+- Do not reproduce the report in your presentation: you neither have the space nor the time. Detach yourself from the report and start from scratch to build a new talk that accounts for the time constraint.
+- Work on the ideas and messages you want to convey. Aim for one idea per slide. Make ideas explicit; do not merely suggest them.
+- Do not overload text: avoid full sentences; emphasize a few words to convey your ideas.
+- You may take liberties with grammar and omit sentences, but you must still respect spelling.
+- Use a sober background to avoid distracting from your message. Number your slides.
+- Use illustrations (schematics, figures, curves) that can be read from several meters away. Do not hesitate to devote a full page to a figure if helpful.
+- Mind contrast: a projection in a lit room has worse contrast than your laptop screen. Avoid pale colors on light backgrounds or low-contrast colors on dark backgrounds.
+- One of your missions is to maintain your audience’s attention. The jury members may already have sat through a dozen talks — and a good meal. You must motivate them to listen to you.
+- Above all, do not read the slides or, worse, a prepared text. Look at the audience, not your slides.
+- Respect the allocated time. Do not finish too early (nothing to say?) or too late (unable to synthesize or honor constraints?).
+- Rehearse. Rehearse. Rehearse. Rehearse. Rehearse. Rehearse. Rehearse. Rehearse. Rehearse. Rehearse. Rehearse. Rehearse.
+- During questions, let the jury finish without interrupting. Do not hesitate to take a few seconds to think about each question, or to rephrase it to ensure you understood it correctly.
 
 [bibliography]
 == References
 
-- J. André. J. André. Petites leçons de typographie. Technical report, IRISA, 1990. btn:[http://jacques-andre.fr/faqtypo/lessons.pdf[> Website]].
-- [[[SavoirsCDI]]] Savoirs CDI. Citing sources and presenting a bibliography, 2016. btn:[https://www.reseau-canope.fr/savoirscdi/centre-de-ressources/fonds-documentaire-acquisition-traitement/le-traitement-documentaire/citer-ses-sources-et-presenter-une-bibliographie-lycee.html[> Website]]
-.
+- [[[JAndre]]] J. André. Petites leçons de typographie. Technical report, IRISA, 1990. btn:[http://jacques-andre.fr/faqtypo/lessons.pdf[> Website]].
+- [[[SavoirsCDI]]] Savoirs CDI. Citer ses sources et présenter une bibliographie, 2016. btn:[https://www.reseau-canope.fr/savoirscdi/centre-de-ressources/fonds-documentaire-acquisition-traitement/le-traitement-documentaire/citer-ses-sources-et-presenter-une-bibliographie-lycee.html[> Website]]
+
